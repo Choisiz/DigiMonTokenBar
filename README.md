@@ -183,7 +183,7 @@ Reset countdowns include the clock time, and the colored percentage stays aligne
 
 <img src="assets/screenshot-usage-recap.png" width="360" alt="Usage recap for a selected period">
 
-<small>The form, Shop, difficulty, daily-chart, and recap images above are local renders of the production UI with sample data.</small>
+<small>The Settings, form, Shop, difficulty, daily-chart, and recap images above are local renders of the production UI with sample data.</small>
 
 ## Works with
 
