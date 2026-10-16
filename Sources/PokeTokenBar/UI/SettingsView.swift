@@ -93,9 +93,8 @@ struct SettingsView: View {
                         advancedExpanded = true
                         Task { @MainActor in
                             try? await Task.sleep(nanoseconds: 80_000_000)
-                            withAnimation(.easeInOut(duration: 0.25)) {
-                                proxy.scrollTo("advancedSettingsSection", anchor: .top)
-                            }
+                            // Initial navigation must reveal the repair field without waiting for an animation.
+                            proxy.scrollTo("advancedSettingsSection", anchor: .top)
                             sessionKeyFocused = true
                         }
                     }
