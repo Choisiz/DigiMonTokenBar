@@ -1088,6 +1088,11 @@ struct L {
     var normalForm: String {
         t("노말폼", "Normal Form", "ノーマルフォルム", "Forma Normal", "Forme Normale", "Forma Normal", "Normalform", "Обычная форма")
     }
+    var defaultFormDataNote: String {
+        t("정보는 기본 폼 기준", "Data uses the default form", "データは基本フォルムに基づきます",
+          "Datos de la forma predeterminada", "Données de la forme par défaut", "Dados da forma padrão",
+          "Daten der Standardform", "Данные обычной формы")
+    }
     var formNotCollected: String {
         t("미수집", "Not collected", "未収集", "Sin conseguir", "Non collectionnée", "Não coletada", "Noch nicht gesammelt", "Не собрано")
     }

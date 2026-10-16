@@ -12,7 +12,7 @@ read_when:
 # 결함 대응 축적 규칙
 
 `CLAUDE.md` §결함 대응 프로토콜의 4단계(근본원인 → 부류 스윕 → 회귀 테스트 → 영구 캡처)를 거쳐
-남은 규칙들이다. 각 항목은 실제로 겪은 회귀에 묶여 있다.
+남은 규칙들이다. 각 항목은 실제로 확인한 결함·회귀·표시 공백에 묶여 있다.
 
 ## 스프라이트 전환
 
@@ -24,6 +24,61 @@ read_when:
   GIF 픽셀·크기, 캐시 재사용, 프레임 지연, 정적 원본 보존을 검사한다.
 
 ## 판정·데이터
+
+- **A model-price test needs an independent bucket-level oracle.** Sonnet 5.5 copied Sonnet 5's
+  cache-read rate ($0.20/MTok) although its official rate is $0.10; source-unpriced Claude logs
+  therefore doubled that bucket's estimate. The standard-row test repeated the wrong literal,
+  and model coverage only required a positive estimate. Check each newly introduced model row
+  and long-context rule against primary pricing, then exercise real-format JSONL through
+  `LocalUsageCache` and aggregation. `testSonnet55ClaudeLogPricesColdWarmAndPersistedTokenCaches`
+  independently prices input/output/cache-write/cache-read = 100/10/40/1000 as 1,150 tokens and
+  $0.0005; old code returns $0.0006000000000000001 and fails all five cold aggregation assertions.
+  Fixed cold, warm and persisted-cache paths pass; `ModelPricingTests` has 12 tests and
+  `UsageCostTests` 13 (one skipped), zero failures. The class sweep confirmed Claude disk blobs
+  persist raw token/model entries, not estimated money: do not bump the parser version or discard
+  caches for this price-only change. Keep explicit source cost, including zero, authoritative.
+
+- **Snapshot summaries must carry the current individual's species-resolved form.** Saved Sky
+  Shaymin restored correctly but Settings listed its thumbnail as Land: `SaveSnapshot` retained
+  species/shiny metadata without a form, and the row omitted `SpriteView.form`. Correct payload
+  and restore checks did not cover this derived-summary-to-view boundary. Derive `currentForm`
+  for the active current species in create, envelope listing and raw legacy listing, then forward
+  it to the sprite; do not copy a future evolution's carried form. The list model is non-Codable,
+  so no schema bump, payload rewrite or restore change is needed. Sweep all three constructors
+  and preserve `displaysShiny` for disguised Ditto. Guards:
+  `testSnapshotKeepsNonDefaultFormInSummaryAndRestoredState` and
+  `testSnapshotSummariesResolveCurrentAppearanceAcrossLegacyAndEnvelopeFiles`, including missing/
+  invalid forms, legacy Unown, precursor/single-appearance species and eggs. Restoring old summary
+  behavior fails both tests with 16 assertions; the fixed `SaveSnapshotTests` passes all 11 tests.
+  Non-A Unown already had this display gap; generic forms widened it, without corrupting saves.
+
+- **Temporary refresh failure must retain the credential needed for the next automatic retry.**
+  An expired Keychain-only Antigravity credential fell back to its expired access token after a
+  grant timeout/429/5xx. Quota401 invalidation then deleted the only cached refresh token, and
+  automatic polls could not reopen Keychain. This recovery gap already existed in v2.5.5; it is
+  not a newly broken working path. Tests covered successful grants and permanent invalid_grant,
+  not transient failure followed by another automatic poll. Cache the acquired credential before
+  awaiting the grant; throw temporary errors before sending expired access, classify 429/5xx,
+  and preserve valid-token fallback and permanent-error behavior. Sweep provider-specific grant
+  ownership rather than copying this policy to Claude/Cursor. Four new recovery tests (timeout,
+  503, 429 and initial manual timeout) all fail against old behavior; all 21 fixed
+  `CredentialSwitchCacheTests` pass, including valid-token manual fallback, with no automatic
+  Keychain reread. These use production token/cache transport with synthetic credentials; the
+  quota401-to-invalidate transition is modeled, not a live provider or Keychain verification.
+
+- **Appearance-only forms need an explicit default-data note at both metadata presentations.**
+  Home and Pokédex showed an alternate-form name/sprite beside default-form metadata without
+  explaining the difference. Existing appearance/collection checks did not test that disclosure;
+  the intended species-based API/cache/profile contract itself was not a failed form lookup.
+  Keep that contract: do not expand this fix into per-form API data or profile regeneration.
+  Show `L.defaultFormDataNote` only for loaded details and a non-default displayed form, using
+  Home's current species and the Pokédex's displayed selection/representative, not its aggregate
+  input. Sweep both call sites, normalized nil/invalid/foreign forms, eggs, unavailable details
+  and all eight localization columns. The two production-view native tests
+  `testHomeExplainsLoadedAlternateMetadataOnly` and
+  `testDexExplainsTheDisplayedFormRatherThanTheOriginalSelection` pass and cover initial Home
+  and Pokédex presentations. Keep mounted picker transitions and localized layout checks
+  separate from these initial-render guards.
 
 - **An idle day must not erase historical usage.** The store admitted enrichment-only snapshots
   only for a positive active block, so providers with no usage today lost their week/month totals

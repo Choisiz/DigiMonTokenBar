@@ -717,6 +717,11 @@ struct CompanionHeader: View {
                     }
                     if store.hasActive, let id = store.currentSpeciesID, let details = store.pokemonDetailsByID[id] {
                         TypeBadges(types: details.types, language: store.language)
+                        if !PokemonForm.isDefault(store.currentForm, speciesID: id) {
+                            Text(store.l.defaultFormDataNote)
+                                .font(.caption2).foregroundStyle(.secondary)
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
                     }
                     if store.hasActive {
                         // 단계 + 성격(부화 시 확정된 개체 아이덴티티)
@@ -1730,6 +1735,11 @@ struct PokemonDetailView: View {
                 if let details = store.pokemonDetailsByID[species.id] {
                     TypeBadges(types: details.types, language: store.language, size: 11,
                                horizontalPadding: 7, verticalPadding: 2)
+                    if !PokemonForm.isDefault(species.form, speciesID: species.id) {
+                        Text(store.l.defaultFormDataNote)
+                            .font(.caption2).foregroundStyle(.secondary)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
                 }
                 if displayedShiny { Text("✨ \(store.l.dexShinyLabel)").font(.callout) }
                 if let individual, store.isActiveDexEntry(individual) { Text(store.l.dexRaising).font(.callout).foregroundStyle(Color.accentColor) }
