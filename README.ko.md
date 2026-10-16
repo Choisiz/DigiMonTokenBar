@@ -32,7 +32,7 @@ PokeTokenBar는 당신이 이미 태우고 있는 AI 코딩 토큰(Claude Code �
 - 공식 **5시간 / 주간** 한도를 리셋 카운트다운과 함께 추적하고, 현재 burn rate로 언제 도달할지 예측합니다.
 
 <div align="center">
-<img src="assets/screenshot-home.png" width="420" alt="팝오버 홈 — companion, 오늘 토큰, 공식 한도">
+<img src="assets/screenshot-home.png" width="420" alt="팝오버 홈 — 포켓몬, 오늘 토큰, 일별 차트">
 </div>
 
 ## 어떻게 자라나요
@@ -184,7 +184,7 @@ Pi는 모델 여러 개를 세션 로그 하나로 흘려보낼 수 있습니다
 
 <img src="assets/screenshot-usage-recap-ko.png" width="360" alt="선택한 기간의 사용량 돌아보기">
 
-<small>위 설정·폼·상점·난이도·일별 차트·회고 이미지는 샘플 데이터로 실제 UI를 로컬 렌더링한 이미지입니다.</small>
+<small>위 홈·설정·폼·상점·가방·난이도·일별 차트·회고 이미지는 샘플 데이터로 실제 UI를 로컬 렌더링한 이미지입니다.</small>
 
 ## 지원 도구
 

@@ -31,7 +31,7 @@ PokeTokenBar turns the AI coding tokens you're already burning — Claude Code, 
 - Track official **5-hour / weekly** limits with reset countdowns and a burn-rate forecast for when you'll hit them.
 
 <div align="center">
-<img src="assets/screenshot-home.png" width="420" alt="Popover home — companion, today's tokens, official limits">
+<img src="assets/screenshot-home.png" width="420" alt="Popover home — companion, today's tokens, daily chart">
 </div>
 
 ## How it works
@@ -183,7 +183,7 @@ Reset countdowns include the clock time, and the colored percentage stays aligne
 
 <img src="assets/screenshot-usage-recap.png" width="360" alt="Usage recap for a selected period">
 
-<small>The Settings, form, Shop, difficulty, daily-chart, and recap images above are local renders of the production UI with sample data.</small>
+<small>The Home, Settings, form, Shop, Bag, difficulty, daily-chart, and recap images above are local renders of the production UI with sample data.</small>
 
 ## Works with
 

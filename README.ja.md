@@ -32,7 +32,7 @@ PokeTokenBar は、あなたがすでに使っている AI コーディングト
 - 公式の **5時間 / 週間** 上限をリセットのカウントダウンとともに追跡し、現在の burn rate でいつ到達するかを予測します。
 
 <div align="center">
-<img src="assets/screenshot-home.png" width="420" alt="ポップオーバー ホーム — パートナー、今日のトークン、公式上限">
+<img src="assets/screenshot-home.png" width="420" alt="ポップオーバー ホーム — パートナー、今日のトークン、日別グラフ">
 </div>
 
 ## しくみ
@@ -184,7 +184,7 @@ Pi は複数のモデルを一つのセッションログに流すことがあ�
 
 <img src="assets/screenshot-usage-recap-ja.png" width="360" alt="選択した期間の使用量の振り返り">
 
-<small>上の設定・フォルム・ショップ・難易度・日別グラフ・振り返り画像は、サンプルデータで実際の UI をローカル描画したものです。</small>
+<small>上のホーム・設定・フォルム・ショップ・バッグ・難易度・日別グラフ・振り返り画像は、サンプルデータで実際の UI をローカル描画したものです。</small>
 
 ## 対応ツール
 
