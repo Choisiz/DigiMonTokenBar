@@ -37,7 +37,7 @@ final class DigimonArtworkCacheTests: XCTestCase {
     private var root: URL!
     private var session: URLSession!
     private var png: Data!
-    override func setUpWithError() throws {
+    override func setUp() async throws {
         SpriteLoader.imageCache.removeAllObjects()
         root = FileManager.default.temporaryDirectory.appendingPathComponent("digimon-artwork-\(UUID())")
         try FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
@@ -50,7 +50,7 @@ final class DigimonArtworkCacheTests: XCTestCase {
         png = try XCTUnwrap(bitmap.representation(using: .png, properties: [:]))
         ArtworkURLProtocol.state.configure([])
     }
-    override func tearDownWithError() throws {
+    override func tearDown() async throws {
         session.invalidateAndCancel()
         try FileManager.default.removeItem(at: root)
     }

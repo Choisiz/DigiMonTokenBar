@@ -6,8 +6,7 @@ import XCTest
 /// Reusing raw Data alone does not prevent View.init from reopening files and creating NSImages.
 @MainActor
 final class SpriteImageCacheTests: XCTestCase {
-    override func setUp() {
-        super.setUp()
+    override func setUp() async throws {
         // These tests assert warm-cache identity below its 64-entry bound, not eviction behavior.
         // Earlier rendering suites must not fill the shared cache before this test starts.
         SpriteLoader.imageCache.removeAllObjects()

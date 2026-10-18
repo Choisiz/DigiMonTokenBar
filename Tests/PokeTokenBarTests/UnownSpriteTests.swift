@@ -72,8 +72,7 @@ final class UnownSpriteTests: XCTestCase {
 /// A correct filename helper alone cannot prove the production loaders forward the selected form.
 @MainActor
 final class UnownSpriteCacheTests: XCTestCase {
-    override func setUp() {
-        super.setUp()
+    override func setUp() async throws {
         // These tests assert warm-cache identity below its 64-entry bound, not eviction behavior.
         // Earlier rendering suites must not fill the shared cache before this test starts.
         SpriteLoader.imageCache.removeAllObjects()
