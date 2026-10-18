@@ -553,7 +553,7 @@ final class SaveTransferTests: XCTestCase {
         let progress: Set<String> = ["usedSinceInstall", "spentTokens", "eggUsage", "eggTier",
                                      "pendingHatchID", "pendingForm", "active",
                                      "representativeSpeciesID", "representativeForm", "dex",
-                                     "collectedFinals", "inventory"]
+                                     "collectedFinals", "inventory", "storedTraining", "specialEvolutionSpecies"]
         let deviceLedger: Set<String> = ["installBaselineSet", "claimedTodayTokensByProvider", "lastDate"]
         let accountLedger: Set<String> = ["candyGrantTier", "candyWindowEpoch", "candyFeatureSeeded"]
         let devicePreference: Set<String> = ["language"]
@@ -721,7 +721,7 @@ final class SaveTransferTests: XCTestCase {
     /// 상위 스키마 세이브는 본문 모양이 달라 전체 디코드가 실패할 수 있다. 그래도 "세이브 파일이
     /// 아니에요"가 아니라 "앱을 업데이트하라"로 안내해야 한다 — 헤더를 먼저 읽는 이유다.
     func testNewerSchemaIsReportedEvenWhenTheBodyIsUnreadable() throws {
-        let json = #"{"format":"poketokenbar.save","schema":99,"whatever":{"unknown":true}}"#
+        let json = #"{"format":"digitokenbar.save","schema":99,"whatever":{"unknown":true}}"#
         XCTAssertThrowsError(try SaveTransfer.decode(Data(json.utf8))) { error in
             XCTAssertEqual(error as? SaveTransferError,
                            .newerSchema(found: 99, supported: SaveEnvelope.schemaVersion))
@@ -753,7 +753,7 @@ final class SaveTransferTests: XCTestCase {
     func testSuggestedFileNameCarriesDate() {
         // 2026-08-03 12:00 UTC — 정오라 표준시대가 달라도 날짜 경계를 넘지 않는다(파일명은 로컬 날짜).
         let name = SaveTransfer.suggestedFileName(date: Date(timeIntervalSince1970: 1_785_758_400))
-        XCTAssertTrue(name.hasPrefix("PokeTokenBar-Save-"))
+        XCTAssertTrue(name.hasPrefix("DigiTokenBar-Save-"))
         XCTAssertTrue(name.hasSuffix(".json"))
         XCTAssertTrue(name.contains("2026-08-03"), "실제 이름: \(name)")
     }

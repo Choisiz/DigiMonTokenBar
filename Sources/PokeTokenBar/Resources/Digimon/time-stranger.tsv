@@ -1,0 +1,475 @@
+1|Kuramon|0|16,12
+2|Choromon|0|8
+3|Dodomon|0|20,14
+4|Pabumon|0|19,17,10
+5|Punimon|0|11,15
+6|Botamon|0|9
+7|Poyomon|0|18,13
+8|Kapurimon|1|71,45,29,26
+9|Koromon|1|21,64,49,47,74,48
+10|Tanemon|1|73,56,53,75,54
+11|Tsunomon|1|65,77,43,38,40,25
+12|Tsumemon|1|70,66,80,468,469
+13|Tokomon|1|51,24,27,76,39
+14|Dorimon|1|50,37,68,59
+15|Nyaromon|1|57,22,34,52
+16|Pagumon|1|60,72,62,61
+17|Yokomon|1|32,36,33,78,31,55
+18|Bukamon|1|44,42,23,63,67
+19|Motimon|1|69,28,79,46
+20|Wanyamon|1|41,30,35,58
+21|Agumon|2|107,92,160,90,149,449
+22|Kudamon|2|83,110,84,88,188,96
+23|Gomamon|2|104,82,105,162,138
+24|Coronamon|2|100,135,145,133,99,187
+25|Zubamon|2|169,102,125,95,174,176
+26|Solarmon|2|124,150,135,176
+27|Terriermon|2|104,137,115,86,422
+28|Tentomon|2|85,120,146,172,94
+29|ToyAgumon|2|134,108,171,125,86
+30|Tapirmon|2|135,87,161,106,117
+31|Hyokomon|2|103,99,127,102
+32|Biyomon|2|173,99,106,112
+33|Falcomon|2|103,88,116
+34|Salamon|2|97,153,98,82,101,131
+35|Bearmon|2|89,114,104,109,470
+36|Penmon|2|103,102,116,173
+37|Monodramon|2|93,107,157,178,152
+38|Ryudamon|2|110,122,88,90,136
+39|Lucemon|2|296
+40|Elecmon|2|81,121,106,146,147
+41|Gaomon|2|93,114,109,159,129
+42|Crabmon|2|115,142,123,171,94,122
+43|Gabumon|2|87,82,131,117,148,451
+44|Kamemon|2|115,142,123,144,127,96
+45|Kokuwamon|2|119,146,118,172,170
+46|Gotsumon|2|124,143,151,136,111,126
+47|Kotemon|2|129,169,108,127,91
+48|Shoutmon|2|234,95,86,176
+49|Dracomon|2|149,91,157,101,121,128
+50|Dorumon|2|107,83,153,175,131,132
+51|Patamon|2|84,184,106,119
+52|Huckmon|2|97,92,145,133,90
+53|Palmon|2|104,167,130,140,178,165
+54|Floramon|2|167,130,140,120,116
+55|Muchomon|2|83,103,99,163
+56|Lalamon|2|120,130,108,126,129
+57|Lunamon|2|137,87,105,162,96,111
+58|Renamon|2|137,120,110,117,470
+59|Lopmon|2|89,168,109,129,139,126
+60|Impmon|2|161,112,118,153,156,113
+61|Otamamon|2|121,160,147,144,165
+62|Gazimon|2|153,166,114,133,98,132
+63|Gizamon|2|152,164,95,174,148,189
+64|Guilmon|2|92,145,175,128,471
+65|Goblimon|2|151,139,157,155,141
+66|Shamamon|2|168,169,163,113
+67|Syakomon|2|122,123,144,142,171
+68|SnowGoblimon|2|97,136,105,162,138,111
+69|Chuumon|2|166,154,97,147,148,165
+70|Dracmon|2|153,154,112,124
+71|Hagurumon|2|118,170,125,143,134
+72|DemiDevimon|2|161,138,156,141,471
+73|FunBeemon|2|172,164,158,177,150,85
+74|Betamon|2|121,122,156,160,167,155
+75|Mushroomon|2|154,159,140,164
+76|Armadillomon|2|181,179,151,174
+77|Veemon|2|175,101,186,423,183
+78|Hawkmon|2|100,185,180,173
+79|Wormmon|2|177,158,94
+80|Keramon|2|158,139,142,170,178
+81|Aegiomon|3|193,195,197,196,194
+82|Ikkakumon|3|220,260,212,280
+83|Airdramon|3|217,293,201,272
+84|Angemon|3|254,221,241,300
+85|Kabuterimon|3|262,198,273,235
+86|Gargomon|3|236,258,227
+87|Garurumon|3|229,288,242,235
+88|Ginryumon|3|217,278,218
+89|Grizzlymon|3|229,205,207
+90|Greymon|3|223,293,278,235
+91|Coredramon (Blue)|3|200,201,272
+92|GeoGreymon|3|226,295,210
+93|Strikedramon|3|210,240,264
+94|Snimon|3|269,286,266,211
+95|ZubaEagermon|3|206,294,214,248
+96|Sorcermon|3|221,253,298
+97|Gatomon|3|182,203,301
+98|Dobermon|3|290,281,208,291
+99|Birdramon|3|219,204,244,215
+100|Firamon|3|219,240,292
+101|Veedramon|3|200,201,210,472
+102|Buraimon|3|218,214,204
+103|Peckmon|3|213,267,225
+104|Mojyamon|3|212,253,292,222
+105|Frigimon|3|237,203,216,233,222
+106|Unimon|3|254,221,213
+107|Raptordramon|3|206,272,283
+108|Deputymon|3|250,238,298
+109|Leomon|3|219,205,216,228
+110|Reppamon|3|213,260,203,247
+111|Icemon|3|237,233,216
+112|Wizardmon|3|285,292,298
+113|Witchmon|3|297,203,263
+114|Gaogamon|3|258,240,281
+115|Gawappamon|3|276,249,284
+116|Kiwimon|3|262,241,245,277
+117|Kyubimon|3|288,208,242,231
+118|Clockmon|3|202,199,212,248
+119|Centarumon|3|199,285,227
+120|Sunflowmon|3|262,263,245,251
+121|Seadramon|3|220,260,299,217,275,280
+122|Coelamon|3|299,295,230,249,280
+123|Shellmon|3|220,253,230
+124|Starmon|3|256,238,281,259
+125|Tankmon|3|252,264,283
+126|MudFrigimon|3|245,271,232
+127|Dinohyumon|3|276,206,248
+128|Tyrannomon|3|202,274,223,295
+129|Turuiemon|3|290,258,232
+130|Togemon|3|263,277,251
+131|Drimogemon|3|246,228,255
+132|Dorugamon|3|226,247,207,472
+133|BaoHuckmon|3|226,240,228
+134|Blimpmon|3|264,261,257
+135|Meramon|3|252,288,244
+136|Monochromon|3|246,208,222
+137|Lekismon|3|237,229,205
+138|IceDevimon|3|237,297,216,231
+139|Wendigomon|3|266,244,232
+140|Woodmon|3|277,242,251
+141|Ogremon|3|279,291,243
+142|Octomon|3|282,243,249
+143|Guardromon|3|236,264,199
+144|ShellNumemon|3|270,299,287,250
+145|Growlmon|3|294,274,247
+146|Kuwagamon|3|277,269,230,235
+147|Gekomon|3|241,284,249
+148|Geremon|3|236,238,224
+149|Coredramon (Green)|3|294,274,278
+150|GoldNumemon|3|299,289,287
+151|Golemon|3|256,222,233,460
+152|Cyclonemon|3|206,210,255
+153|Sangloupmon|3|290,267,265,473
+154|Sukamon|3|224,268,271,259
+155|Tuskmon|3|246,274,243
+156|Devimon|3|267,297,304,279,265
+157|Deltamon|3|270,235,239,223,275
+158|Dokugumon|3|266,291,198,304
+159|Nanimon|3|256,238,268,259
+160|Numemon|3|224,281,268
+161|Bakemon|3|267,288,286,231
+162|Hyogamon|3|212,286,216
+163|Fugamon|3|256,279,204
+164|Flymon|3|293,198,269,211
+165|PlatinumSukamon|3|289,259,261
+166|BlackGatomon|3|250,297,239,473
+167|Vegiemon|3|284,271,289
+168|Minotarumon|3|246,268,205
+169|Musyamon|3|206,218,217
+170|Mekanorimon|3|252,293,285
+171|Raremon|3|282,287,284,202,239
+172|Waspmon|3|227,273,283
+173|Aquilamon|3|204,215,301,225
+174|Ankylomon|3|300,233,255
+175|ExVeemon|3|302,226,303
+176|Guardromon (Gold)|3|214,273,257
+177|Stingmon|3|269,211,302,303
+178|Kurisarimon|3|282,270,266,304
+179|Submarimon|3|
+180|Shurimon|3|
+181|Digmon|3|
+182|Nefertimon|3|
+183|Flamedramon|3|
+184|Pegasusmon|3|
+185|Halsemon|3|
+186|Lighdramon|3|
+187|Agunimon|3|305,190
+188|Lobomon|3|306,192
+189|Lanamon|3|191
+190|BurningGreymon|3|305,187
+191|Calmaramon|3|189
+192|KendoGarurumon|3|306,188
+193|Aegiochusmon|4|340
+194|Aegiochusmon: Green|4|340
+195|Aegiochusmon: Dark|4|380
+196|Aegiochusmon: Blue|4|340
+197|Aegiochusmon: Holy|4|340
+198|MegaKabuterimon|4|386,334
+199|Andromon|4|332,362,316
+200|Wingdramon|4|322,310,327
+201|AeroVeedramon|4|321,327,309
+202|ExTyrannomon|4|412,402,320
+203|Angewomon|4|410,314,336,337
+204|Garudamon|4|347,335,352
+205|GrapLeomon|4|333,339,350,356
+206|Grademon|4|308,330,355
+207|GreatGrizzlymon|4|376,319
+208|Cerberusmon|4|397,209,350,475
+209|Cerberusmon WM|4|397,208,350,475
+210|Cyberdramon|4|309,323
+211|JewelBeemon|4|334,384,461
+212|Zudomon|4|418,361
+213|Chirinmon|4|326,317,419
+214|Duramon|4|312,388,330
+215|Parrotmon|4|317,335
+216|IceLeomon|4|363,350
+217|Hisyaryumon|4|313,373
+218|Butenmon|4|318,380,347,373
+219|Flaremon|4|307,328,474
+220|Whamon|4|413,331,361,338
+221|MagnaAngemon|4|321,328,315,325
+222|Mammothmon|4|418,324
+223|MetalGreymon|4|312,373,454
+224|Monzaemon|4|378,376
+225|Crowmon|4|310,341,345
+226|RizeGreymon|4|326,322,403
+227|Rapidmon|4|329,332
+228|LoaderLeomon|4|333,364,375
+229|WereGarurumon|4|409,364,452
+230|Scorpiomon|4|343,395
+231|Enbarrmon|4|326,324,428
+232|Antylamon|4|354,320,319
+233|Meteormon|4|408,362
+234|OmniShoutmon|4|359,403,330
+235|Kimeramon|4|379,405,406
+236|CatchMamemon|4|396,360,475
+237|Crescemon|4|354,320,415
+238|SuperStarmon|4|321,360,323
+239|SkullBaluchimon|4|324,442
+240|SaviorHuckmon|4|344,384,352
+241|Sirenmon|4|338,348
+242|Taomon|4|311,351,345
+243|Digitamamon|4|389,385
+244|SkullMeramon|4|401,362,369
+245|Deramon|4|310,348,396
+246|Triceramon|4|398,342
+247|DoruGreymon|4|358,308
+248|Knightmon|4|381,325,415,356
+249|Divermon|4|331,361
+250|Pandamon|4|409,363,323
+251|Pumpkinmon|4|367,368
+252|BigMamemon|4|396,360,346
+253|Piximon|4|311,314,315
+254|HippoGryphonmon|4|347,317,355
+255|Brachiomon|4|313,412,342
+256|Volcanomon|4|333,359,344,307
+257|MasterBlimpmon|4|346,377
+258|MachGaogamon|4|363,329
+259|Mamemon|4|395,360,458
+260|MegaSeadramon|4|353,313,365
+261|MetalMamemon|4|364,403
+262|Lilamon|4|414,367,393
+263|Lillymon|4|367,348,459
+264|Locomon|4|346,332
+265|Astamon|4|401,397,402,371
+266|Arukenimon|4|414,386,368
+267|Myotismon|4|387,399,371
+268|Etemon|4|359,378,408
+269|Okuwamon|4|386,334,420
+270|Orochimon|4|389,377,404
+271|Garbagemon|4|353,408
+272|Gigadramon|4|377,375
+273|CannonBeemon|4|329,384
+274|Groundramon|4|407,398
+275|Sharkmon|4|331,365
+276|Shaujinmon|4|391,353,393
+277|Cherrymon|4|393,367,420
+278|SkullGreymon|4|385,324
+279|SkullSatamon|4|391,392,370
+280|SkullSeadramon|4|413,365
+281|DarkSuperStarmon|4|400,385,341
+282|Dragomon|4|343,370,453
+283|Tankdramon|4|377,383
+284|ShogunGekomon|4|378,389,395
+285|Datamon|4|394,421
+286|Phantomon|4|351,392,402,341
+287|BlackKingNumemon|4|396,408
+288|BlueMeramon|4|339,394
+289|Vademon|4|370,369
+290|Matadormon|4|379,325,345
+291|Mummymon|4|394,332,369
+292|Mistymon|4|374,381,366,355
+293|Megadramon|4|407,406
+294|WarGrowlmon|4|407,388,374,375
+295|MetalTyrannomon|4|412,406,342
+296|Lucemon CM|4|447
+297|LadyDevimon|4|414,400,337
+298|Wisemon|4|387,374,372
+299|WaruSeadramon|4|413,407,365
+300|Shakkoumon|4|321,410,418,336
+301|Silphymon|4|400,404,419
+302|Dinobeemon|4|420,384
+303|Paildramon|4|358,416,383
+304|Infermon|4|399,421,319,453
+305|Aldamon|3|424
+306|Beowolfmon|3|425
+307|Apollomon|5|434
+308|Alphamon|5|427
+309|UlforceVeedramon|5|463
+310|Varodurumon|5|433
+311|Venusmon|5|
+312|WarGreymon|5|430
+313|Ouryumon|5|427
+314|Ophanimon|5|
+315|ClavisAngemon|5|
+316|Craniamon|5|428
+317|Eaglemon|5|
+318|Chronomon HM|5|
+319|Cherubimon (Black)|5|
+320|Cherubimon (Good)|5|
+321|Goldramon|5|
+322|ShineGreymon|5|435
+323|Justimon|5|
+324|SkullMammothmon|5|
+325|SlashAngemon|5|
+326|Kentaurosmon|5|
+327|Slayerdramon|5|439
+328|Seraphimon|5|
+329|MegaGargomon|5|
+330|Durandamon|5|
+331|Neptunemon|5|
+332|HiAndromon|5|
+333|BanchoLeomon|5|433,432
+334|HerculesKabuterimon|5|
+335|Phoenixmon|5|
+336|Magnadramon|5|
+337|Mastemon|5|
+338|MarineAngemon|5|
+339|Marsmon|5|
+340|Jupitermon|5|437
+341|Ravemon|5|438
+342|UltimateBrachiomon|5|
+343|Vulcanusmon|5|
+344|Gankoomon|5|
+345|Kuzuhamon|5|
+346|GroundLocomon|5|
+347|Gryphonmon|5|
+348|Ceresmon|5|349
+349|Ceresmon Medium|5|
+350|SaberLeomon|5|
+351|Sakuyamon|5|
+352|Jesmon|5|465
+353|JumboGamemon|5|
+354|Dianamon|5|434
+355|Dynasmon|5|
+356|Leopardmon|5|357
+357|Leopardmon LM|5|
+358|Dorugoramon|5|
+359|PileVolcanomon|5|
+360|PrinceMamemon|5|
+361|Plesiomon|5|
+362|Boltmon|5|
+363|MirageGaogamon|5|440
+364|MetalGarurumon|5|430
+365|MetalSeadramon|5|
+366|MedievalGallantmon|5|
+367|Rosemon|5|441
+368|Lotosmon|5|
+369|AvengeKidmon|5|
+370|Ebemon|5|
+371|VenomMyotismon|5|
+372|AncientWisemon|5|
+373|Gaiomon|5|
+374|ChaosGallantmon|5|
+375|Chaosdramon|5|
+376|Callismon|5|
+377|Gundramon|5|
+378|KingEtemon|5|
+379|GranDracmon|5|
+380|Chronomon DM|5|
+381|Zanbamon|5|
+382|ZombiePlutomon|5|
+383|Darkdramon|5|432
+384|TigerVespamon|5|
+385|Titamon|5|442
+386|TyrantKabuterimon|5|
+387|Creepymon|5|
+388|Gallantmon|5|443,466
+389|Bacchusmon|5|390
+390|Bacchusmon DM|5|
+391|Barbamon|5|
+392|Piedmon|5|450
+393|Puppetmon|5|
+394|Pharaohmon|5|
+395|Pukumon|5|
+396|PlatinumNumemon|5|
+397|Plutomon|5|382
+398|Breakdramon|5|439
+399|MaloMyotismon|5|
+400|BeelStarmon|5|
+401|Beelzemon|5|444
+402|Belphemon SM|5|445
+403|MagnaKidmon|5|
+404|Minervamon|5|446
+405|Millenniummon|5|
+406|Machinedramon|5|405
+407|Megidramon|5|
+408|MetalEtemon|5|
+409|Merukimon|5|
+410|Junomon|5|411
+411|Junomon HM|5|
+412|RustTyrannomon|5|
+413|Leviamon|5|
+414|Lilithmon|5|
+415|LordKnightmon|5|
+416|Imperialdramon DM|5|417,429
+417|Imperialdramon FM|5|
+418|Vikemon|5|
+419|Valkyrimon|5|
+420|GranKuwagamon|5|
+421|Diaboromon|5|448
+422|Rapidmon (Armor)|3|
+423|Magnamon|3|464
+424|EmperorGreymon|3|436
+425|MagnaGarurumon|3|436,426
+426|MagnaGarurumon (Detached)|3|
+427|Alphamon: Ouryuken|6|
+428|Craniamon + Enbarrmon|6|
+429|Imperialdramon PM|6|
+430|Omnimon|6|462,467
+431|Omnimon Zwart|6|457
+432|Chaosmon|6|
+433|Chaosmon: Valdur Arm|6|
+434|GraceNovamon|6|
+435|ShineGreymon BM|6|
+436|Susanomon|6|
+437|Jupitermon WM|6|
+438|Ravemon BM|6|
+439|Examon|6|
+440|MirageGaogamon BM|6|
+441|Rosemon BM|6|
+442|Titamon + SkullBaluchimon|6|
+443|Gallantmon CM|6|
+444|Beelzemon BM|6|
+445|Belphemon RM|6|
+446|Mervamon|6|
+447|Lucemon SM|6|
+448|Armageddemon|6|
+449|Agumon (Bond of Bravery)|6|
+450|Apocalymon|6|
+451|Gabumon (Bond of Friendship)|6|
+452|CresGarurumon|5|456
+453|Parallelmon|5|
+454|BlitzGreymon|5|456
+455|Omnimon Alter-B|6|456
+456|Omnimon Alter-S|6|455
+457|Omnimon Zwart Defeat|6|455
+458|BanchoMamemon|5|
+459|BanchoLillymon|5|
+460|BanchoGolemon|5|
+461|BanchoStingmon|5|
+462|Omnimon MM|6|
+463|UlforceVeedramon (X Antibody)|5|
+464|Magnamon (X Antibody)|5|423
+465|Jesmon (X Antibody)|5|
+466|Gallantmon (X Antibody)|5|
+467|Omnimon (X Antibody)|6|430
+468|Agumon (Black)|2|93,155,156,91,471
+469|Gabumon (Black)|2|168,166,98,132,163,470
+470|Garurumon (Black)|3|279,250,473
+471|Greymon (Blue)|3|200,239,472
+472|MetalGreymon (Blue)|4|474,383,319
+473|WereGarurumon (Black)|4|359,475
+474|BlackWarGreymon|5|431
+475|MetalGarurumon (Black)|5|431

@@ -1,0 +1,1958 @@
+{
+  "species-10001": {
+    "url": "https://digi-api.com/images/digimon/w/Kuramon.png",
+    "pageImage": false
+  },
+  "species-10002": {
+    "url": "https://digi-api.com/images/digimon/w/Choromon.png",
+    "pageImage": false
+  },
+  "species-10003": {
+    "url": "https://digi-api.com/images/digimon/w/Dodomon.png",
+    "pageImage": false
+  },
+  "species-10004": {
+    "url": "https://www.grindosaur.com/img/games/digimon-story-time-stranger/icons/pabumon-icon.png",
+    "pageImage": false
+  },
+  "species-2007": {
+    "url": "https://digimon.shadowsmith.com/img/punimon.jpg",
+    "pageImage": false
+  },
+  "species-2001": {
+    "url": "https://digimon.shadowsmith.com/img/botamon.jpg",
+    "pageImage": false
+  },
+  "species-10007": {
+    "url": "https://digi-api.com/images/digimon/w/Poyomon.png",
+    "pageImage": false
+  },
+  "species-10008": {
+    "url": "https://digi-api.com/images/digimon/w/Caprimon.png",
+    "pageImage": false
+  },
+  "species-2002": {
+    "url": "https://digimon.shadowsmith.com/img/koromon.jpg",
+    "pageImage": false
+  },
+  "species-10010": {
+    "url": "https://digi-api.com/images/digimon/w/Tanemon.png",
+    "pageImage": false
+  },
+  "species-2008": {
+    "url": "https://digimon.shadowsmith.com/img/tsunomon.jpg",
+    "pageImage": false
+  },
+  "species-10012": {
+    "url": "https://digi-api.com/images/digimon/w/Tsumemon.png",
+    "pageImage": false
+  },
+  "species-10013": {
+    "url": "https://digi-api.com/images/digimon/w/Tokomon.png",
+    "pageImage": false
+  },
+  "species-10014": {
+    "url": "https://digi-api.com/images/digimon/w/Dorimon.png",
+    "pageImage": false
+  },
+  "species-10015": {
+    "url": "https://digi-api.com/images/digimon/w/Nyaromon.png",
+    "pageImage": false
+  },
+  "species-10016": {
+    "url": "https://digi-api.com/images/digimon/w/Pagumon.png",
+    "pageImage": false
+  },
+  "species-10017": {
+    "url": "https://digi-api.com/images/digimon/w/Pyocomon.png",
+    "pageImage": false
+  },
+  "species-10018": {
+    "url": "https://digi-api.com/images/digimon/w/Pukamon.png",
+    "pageImage": false
+  },
+  "species-10019": {
+    "url": "https://digi-api.com/images/digimon/w/Mochimon.png",
+    "pageImage": false
+  },
+  "species-10020": {
+    "url": "https://digi-api.com/images/digimon/w/Wanyamon.png",
+    "pageImage": false
+  },
+  "species-2003": {
+    "url": "https://digimon.shadowsmith.com/img/agumon.jpg",
+    "pageImage": false
+  },
+  "species-10022": {
+    "url": "https://digi-api.com/images/digimon/w/Kudamon.png",
+    "pageImage": false
+  },
+  "species-10023": {
+    "url": "https://digi-api.com/images/digimon/w/Gomamon.png",
+    "pageImage": false
+  },
+  "species-10024": {
+    "url": "https://digi-api.com/images/digimon/w/Coronamon.png",
+    "pageImage": false
+  },
+  "species-10025": {
+    "url": "https://digi-api.com/images/digimon/w/Zubamon.png",
+    "pageImage": false
+  },
+  "species-10026": {
+    "url": "https://digi-api.com/images/digimon/w/Solarmon.png",
+    "pageImage": false
+  },
+  "species-10027": {
+    "url": "https://digi-api.com/images/digimon/w/Terriermon.png",
+    "pageImage": false
+  },
+  "species-10028": {
+    "url": "https://digi-api.com/images/digimon/w/Tentomon.png",
+    "pageImage": false
+  },
+  "species-10029": {
+    "url": "https://digi-api.com/images/digimon/w/Toy_Agumon.png",
+    "pageImage": false
+  },
+  "species-10030": {
+    "url": "https://digi-api.com/images/digimon/w/Bakumon.png",
+    "pageImage": false
+  },
+  "species-10031": {
+    "url": "https://digi-api.com/images/digimon/w/Hyokomon.png",
+    "pageImage": false
+  },
+  "species-10032": {
+    "url": "https://digi-api.com/images/digimon/w/Piyomon.png",
+    "pageImage": false
+  },
+  "species-10033": {
+    "url": "https://digi-api.com/images/digimon/w/Falcomon.png",
+    "pageImage": false
+  },
+  "species-10034": {
+    "url": "https://digi-api.com/images/digimon/w/Plotmon.png",
+    "pageImage": false
+  },
+  "species-10035": {
+    "url": "https://digi-api.com/images/digimon/w/Bearmon.png",
+    "pageImage": false
+  },
+  "species-10036": {
+    "url": "https://digi-api.com/images/digimon/w/Penmon.png",
+    "pageImage": false
+  },
+  "species-10037": {
+    "url": "https://digi-api.com/images/digimon/w/Monodramon.png",
+    "pageImage": false
+  },
+  "species-10038": {
+    "url": "https://digi-api.com/images/digimon/w/Ryudamon.png",
+    "pageImage": false
+  },
+  "species-10039": {
+    "url": "https://digi-api.com/images/digimon/w/Lucemon.png",
+    "pageImage": false
+  },
+  "species-10040": {
+    "url": "https://digi-api.com/images/digimon/w/Elecmon.png",
+    "pageImage": false
+  },
+  "species-10041": {
+    "url": "https://digi-api.com/images/digimon/w/Gaomon.png",
+    "pageImage": false
+  },
+  "species-10042": {
+    "url": "https://digi-api.com/images/digimon/w/Ganimon.png",
+    "pageImage": false
+  },
+  "species-2009": {
+    "url": "https://digimon.shadowsmith.com/img/gabumon.jpg",
+    "pageImage": false
+  },
+  "species-10044": {
+    "url": "https://digi-api.com/images/digimon/w/Kamemon.png",
+    "pageImage": false
+  },
+  "species-10045": {
+    "url": "https://digi-api.com/images/digimon/w/Kokuwamon.png",
+    "pageImage": false
+  },
+  "species-10046": {
+    "url": "https://digi-api.com/images/digimon/w/Gottsumon.png",
+    "pageImage": false
+  },
+  "species-10047": {
+    "url": "https://digi-api.com/images/digimon/w/Kotemon.png",
+    "pageImage": false
+  },
+  "species-10048": {
+    "url": "https://digi-api.com/images/digimon/w/Shoutmon.png",
+    "pageImage": false
+  },
+  "species-10049": {
+    "url": "https://digi-api.com/images/digimon/w/Dracomon.png",
+    "pageImage": false
+  },
+  "species-10050": {
+    "url": "https://digi-api.com/images/digimon/w/DORUmon.png",
+    "pageImage": false
+  },
+  "species-10051": {
+    "url": "https://digi-api.com/images/digimon/w/Patamon.png",
+    "pageImage": false
+  },
+  "species-10052": {
+    "url": "https://digi-api.com/images/digimon/w/Hackmon.png",
+    "pageImage": false
+  },
+  "species-10053": {
+    "url": "https://digi-api.com/images/digimon/w/Palmon.png",
+    "pageImage": false
+  },
+  "species-10054": {
+    "url": "https://digi-api.com/images/digimon/w/Floramon.png",
+    "pageImage": false
+  },
+  "species-10055": {
+    "url": "https://digi-api.com/images/digimon/w/Muchomon.png",
+    "pageImage": false
+  },
+  "species-10056": {
+    "url": "https://digi-api.com/images/digimon/w/Lalamon.png",
+    "pageImage": false
+  },
+  "species-10057": {
+    "url": "https://digi-api.com/images/digimon/w/Lunamon.png",
+    "pageImage": false
+  },
+  "species-10058": {
+    "url": "https://digi-api.com/images/digimon/w/Renamon.png",
+    "pageImage": false
+  },
+  "species-10059": {
+    "url": "https://digi-api.com/images/digimon/w/Lopmon.png",
+    "pageImage": false
+  },
+  "species-10060": {
+    "url": "https://digi-api.com/images/digimon/w/Impmon.png",
+    "pageImage": false
+  },
+  "species-10061": {
+    "url": "https://digi-api.com/images/digimon/w/Otamamon.png",
+    "pageImage": false
+  },
+  "species-10062": {
+    "url": "https://digi-api.com/images/digimon/w/Gazimon.png",
+    "pageImage": false
+  },
+  "species-10063": {
+    "url": "https://digi-api.com/images/digimon/w/Gizamon.png",
+    "pageImage": false
+  },
+  "species-10064": {
+    "url": "https://digi-api.com/images/digimon/w/Guilmon.png",
+    "pageImage": false
+  },
+  "species-10065": {
+    "url": "https://digi-api.com/images/digimon/w/Goburimon.png",
+    "pageImage": false
+  },
+  "species-10066": {
+    "url": "https://digi-api.com/images/digimon/w/Shamamon.png",
+    "pageImage": false
+  },
+  "species-10067": {
+    "url": "https://digi-api.com/images/digimon/w/Shakomon.png",
+    "pageImage": false
+  },
+  "species-10068": {
+    "url": "https://digi-api.com/images/digimon/w/Snow_Goburimon.png",
+    "pageImage": false
+  },
+  "species-10069": {
+    "url": "https://digi-api.com/images/digimon/w/Tyumon.png",
+    "pageImage": false
+  },
+  "species-10070": {
+    "url": "https://digi-api.com/images/digimon/w/Dracumon.png",
+    "pageImage": false
+  },
+  "species-10071": {
+    "url": "https://digi-api.com/images/digimon/w/Hagurumon.png",
+    "pageImage": false
+  },
+  "species-10072": {
+    "url": "https://digi-api.com/images/digimon/w/Pico_Devimon.png",
+    "pageImage": false
+  },
+  "species-10073": {
+    "url": "https://digi-api.com/images/digimon/w/Funbeemon.png",
+    "pageImage": false
+  },
+  "species-10074": {
+    "url": "https://digi-api.com/images/digimon/w/Betamon.png",
+    "pageImage": false
+  },
+  "species-10075": {
+    "url": "https://digi-api.com/images/digimon/w/Mushmon.png",
+    "pageImage": false
+  },
+  "species-10076": {
+    "url": "https://digi-api.com/images/digimon/w/Armadimon.png",
+    "pageImage": false
+  },
+  "species-10077": {
+    "url": "https://digi-api.com/images/digimon/w/V-mon.png",
+    "pageImage": false
+  },
+  "species-10078": {
+    "url": "https://digi-api.com/images/digimon/w/Hawkmon.png",
+    "pageImage": false
+  },
+  "species-10079": {
+    "url": "https://digi-api.com/images/digimon/w/Wormmon.png",
+    "pageImage": false
+  },
+  "species-10080": {
+    "url": "https://digi-api.com/images/digimon/w/Keramon.png",
+    "pageImage": false
+  },
+  "species-10081": {
+    "url": "https://digi-api.com/images/digimon/w/Aegiomon.png",
+    "pageImage": false
+  },
+  "species-10082": {
+    "url": "https://digi-api.com/images/digimon/w/Ikkakumon.png",
+    "pageImage": false
+  },
+  "species-10083": {
+    "url": "https://digi-api.com/images/digimon/w/Airdramon.png",
+    "pageImage": false
+  },
+  "species-10084": {
+    "url": "https://digi-api.com/images/digimon/w/Angemon.png",
+    "pageImage": false
+  },
+  "species-10085": {
+    "url": "https://digi-api.com/images/digimon/w/Kabuterimon.png",
+    "pageImage": false
+  },
+  "species-10086": {
+    "url": "https://digi-api.com/images/digimon/w/Gargomon.png",
+    "pageImage": false
+  },
+  "species-2010": {
+    "url": "https://digimon.shadowsmith.com/img/garurumon.jpg",
+    "pageImage": false
+  },
+  "species-10088": {
+    "url": "https://digi-api.com/images/digimon/w/Ginryumon.png",
+    "pageImage": false
+  },
+  "species-10089": {
+    "url": "https://digi-api.com/images/digimon/w/Gryzmon.png",
+    "pageImage": false
+  },
+  "species-2004": {
+    "url": "https://digimon.shadowsmith.com/img/greymon.jpg",
+    "pageImage": false
+  },
+  "species-10091": {
+    "url": "https://digi-api.com/images/digimon/w/Coredramon_(Blue).png",
+    "pageImage": false
+  },
+  "species-10092": {
+    "url": "https://digi-api.com/images/digimon/w/Geo_Greymon.png",
+    "pageImage": false
+  },
+  "species-10093": {
+    "url": "https://digi-api.com/images/digimon/w/Strikedramon.png",
+    "pageImage": false
+  },
+  "species-10094": {
+    "url": "https://digi-api.com/images/digimon/w/Snimon.png",
+    "pageImage": false
+  },
+  "species-10095": {
+    "url": "https://digi-api.com/images/digimon/w/Zubaeagermon.png",
+    "pageImage": false
+  },
+  "species-10096": {
+    "url": "https://digi-api.com/images/digimon/w/Sorcerimon.png",
+    "pageImage": false
+  },
+  "species-10097": {
+    "url": "https://digi-api.com/images/digimon/w/Tailmon.png",
+    "pageImage": false
+  },
+  "species-10098": {
+    "url": "https://digi-api.com/images/digimon/w/Dobermon.png",
+    "pageImage": false
+  },
+  "species-10099": {
+    "url": "https://digi-api.com/images/digimon/w/Birdramon.png",
+    "pageImage": false
+  },
+  "species-10100": {
+    "url": "https://digi-api.com/images/digimon/w/Firamon.png",
+    "pageImage": false
+  },
+  "species-10101": {
+    "url": "https://digi-api.com/images/digimon/w/V-dramon.png",
+    "pageImage": false
+  },
+  "species-10102": {
+    "url": "https://digi-api.com/images/digimon/w/Buraimon.png",
+    "pageImage": false
+  },
+  "species-10103": {
+    "url": "https://digi-api.com/images/digimon/w/Peckmon.png",
+    "pageImage": false
+  },
+  "species-10104": {
+    "url": "https://digi-api.com/images/digimon/w/Mojyamon.png",
+    "pageImage": false
+  },
+  "species-10105": {
+    "url": "https://digi-api.com/images/digimon/w/Yukidarumon.png",
+    "pageImage": false
+  },
+  "species-10106": {
+    "url": "https://digi-api.com/images/digimon/w/Unimon.png",
+    "pageImage": false
+  },
+  "species-10107": {
+    "url": "https://digi-api.com/images/digimon/w/Raptordramon.png",
+    "pageImage": false
+  },
+  "species-10108": {
+    "url": "https://digi-api.com/images/digimon/w/Revolmon.png",
+    "pageImage": false
+  },
+  "species-10109": {
+    "url": "https://digi-api.com/images/digimon/w/Leomon.png",
+    "pageImage": false
+  },
+  "species-10110": {
+    "url": "https://digi-api.com/images/digimon/w/Reppamon.png",
+    "pageImage": false
+  },
+  "species-10111": {
+    "url": "https://digi-api.com/images/digimon/w/Icemon.png",
+    "pageImage": false
+  },
+  "species-10112": {
+    "url": "https://digi-api.com/images/digimon/w/Wizarmon.png",
+    "pageImage": false
+  },
+  "species-10113": {
+    "url": "https://digi-api.com/images/digimon/w/Witchmon.png",
+    "pageImage": false
+  },
+  "species-10114": {
+    "url": "https://digi-api.com/images/digimon/w/Gaogamon.png",
+    "pageImage": false
+  },
+  "species-10115": {
+    "url": "https://digi-api.com/images/digimon/w/Gawappamon.png",
+    "pageImage": false
+  },
+  "species-10116": {
+    "url": "https://digi-api.com/images/digimon/w/Kiwimon.png",
+    "pageImage": false
+  },
+  "species-10117": {
+    "url": "https://digi-api.com/images/digimon/w/Kyubimon.png",
+    "pageImage": false
+  },
+  "species-10118": {
+    "url": "https://digi-api.com/images/digimon/w/Clockmon.png",
+    "pageImage": false
+  },
+  "species-10119": {
+    "url": "https://digi-api.com/images/digimon/w/Centalmon.png",
+    "pageImage": false
+  },
+  "species-10120": {
+    "url": "https://digi-api.com/images/digimon/w/Sunflowmon.png",
+    "pageImage": false
+  },
+  "species-10121": {
+    "url": "https://digi-api.com/images/digimon/w/Seadramon.png",
+    "pageImage": false
+  },
+  "species-10122": {
+    "url": "https://digi-api.com/images/digimon/w/Coelamon.png",
+    "pageImage": false
+  },
+  "species-10123": {
+    "url": "https://digi-api.com/images/digimon/w/Shellmon.png",
+    "pageImage": false
+  },
+  "species-10124": {
+    "url": "https://digi-api.com/images/digimon/w/Starmon.png",
+    "pageImage": false
+  },
+  "species-10125": {
+    "url": "https://digi-api.com/images/digimon/w/Tankmon.png",
+    "pageImage": false
+  },
+  "species-10126": {
+    "url": "https://www.grindosaur.com/img/games/digimon-story-time-stranger/icons/mudfrigimon-icon.png",
+    "pageImage": false
+  },
+  "species-10127": {
+    "url": "https://digi-api.com/images/digimon/w/Dinohumon.png",
+    "pageImage": false
+  },
+  "species-10128": {
+    "url": "https://digi-api.com/images/digimon/w/Tyranomon.png",
+    "pageImage": false
+  },
+  "species-10129": {
+    "url": "https://digi-api.com/images/digimon/w/Turuiemon.png",
+    "pageImage": false
+  },
+  "species-10130": {
+    "url": "https://digi-api.com/images/digimon/w/Togemon.png",
+    "pageImage": false
+  },
+  "species-10131": {
+    "url": "https://digi-api.com/images/digimon/w/Drimogemon.png",
+    "pageImage": false
+  },
+  "species-10132": {
+    "url": "https://digi-api.com/images/digimon/w/DORUgamon.png",
+    "pageImage": false
+  },
+  "species-10133": {
+    "url": "https://digi-api.com/images/digimon/w/Bao_Hackmon.png",
+    "pageImage": false
+  },
+  "species-10134": {
+    "url": "https://digi-api.com/images/digimon/w/Blimpmon.png",
+    "pageImage": false
+  },
+  "species-10135": {
+    "url": "https://digi-api.com/images/digimon/w/Meramon.png",
+    "pageImage": false
+  },
+  "species-10136": {
+    "url": "https://digi-api.com/images/digimon/w/Monochromon.png",
+    "pageImage": false
+  },
+  "species-10137": {
+    "url": "https://digi-api.com/images/digimon/w/Lekismon.png",
+    "pageImage": false
+  },
+  "species-10138": {
+    "url": "https://digi-api.com/images/digimon/w/Ice_Devimon.png",
+    "pageImage": false
+  },
+  "species-10139": {
+    "url": "https://digi-api.com/images/digimon/w/Wendimon.png",
+    "pageImage": false
+  },
+  "species-10140": {
+    "url": "https://digi-api.com/images/digimon/w/Woodmon.png",
+    "pageImage": false
+  },
+  "species-10141": {
+    "url": "https://digi-api.com/images/digimon/w/Orgemon.png",
+    "pageImage": false
+  },
+  "species-10142": {
+    "url": "https://digi-api.com/images/digimon/w/Octmon.png",
+    "pageImage": false
+  },
+  "species-10143": {
+    "url": "https://digi-api.com/images/digimon/w/Guardromon.png",
+    "pageImage": false
+  },
+  "species-10144": {
+    "url": "https://digi-api.com/images/digimon/w/Karatuki_Numemon.png",
+    "pageImage": false
+  },
+  "species-10145": {
+    "url": "https://digi-api.com/images/digimon/w/Growmon.png",
+    "pageImage": false
+  },
+  "species-10146": {
+    "url": "https://digi-api.com/images/digimon/w/Kuwagamon.png",
+    "pageImage": false
+  },
+  "species-10147": {
+    "url": "https://digi-api.com/images/digimon/w/Gekomon.png",
+    "pageImage": false
+  },
+  "species-10148": {
+    "url": "https://digi-api.com/images/digimon/w/Geremon.png",
+    "pageImage": false
+  },
+  "species-10149": {
+    "url": "https://digi-api.com/images/digimon/w/Coredramon_(Green).png",
+    "pageImage": false
+  },
+  "species-10150": {
+    "url": "https://digi-api.com/images/digimon/w/Gold_Numemon.png",
+    "pageImage": false
+  },
+  "species-10151": {
+    "url": "https://digi-api.com/images/digimon/w/Golemon.png",
+    "pageImage": false
+  },
+  "species-10152": {
+    "url": "https://digi-api.com/images/digimon/w/Cyclomon.png",
+    "pageImage": false
+  },
+  "species-10153": {
+    "url": "https://digi-api.com/images/digimon/w/Sangloupmon.png",
+    "pageImage": false
+  },
+  "species-10154": {
+    "url": "https://digi-api.com/images/digimon/w/Sukamon.png",
+    "pageImage": false
+  },
+  "species-10155": {
+    "url": "https://digi-api.com/images/digimon/w/Tuskmon.png",
+    "pageImage": false
+  },
+  "species-10156": {
+    "url": "https://digi-api.com/images/digimon/w/Devimon.png",
+    "pageImage": false
+  },
+  "species-10157": {
+    "url": "https://digi-api.com/images/digimon/w/Deltamon.png",
+    "pageImage": false
+  },
+  "species-10158": {
+    "url": "https://digi-api.com/images/digimon/w/Dokugumon.png",
+    "pageImage": false
+  },
+  "species-10159": {
+    "url": "https://digi-api.com/images/digimon/w/Nanimon.png",
+    "pageImage": false
+  },
+  "species-10160": {
+    "url": "https://digi-api.com/images/digimon/w/Numemon.png",
+    "pageImage": false
+  },
+  "species-10161": {
+    "url": "https://digi-api.com/images/digimon/w/Bakemon.png",
+    "pageImage": false
+  },
+  "species-10162": {
+    "url": "https://www.grindosaur.com/img/games/digimon-story-time-stranger/icons/hyogamon-icon.png",
+    "pageImage": false
+  },
+  "species-10163": {
+    "url": "https://digi-api.com/images/digimon/w/Fugamon.png",
+    "pageImage": false
+  },
+  "species-10164": {
+    "url": "https://digi-api.com/images/digimon/w/Flymon.png",
+    "pageImage": false
+  },
+  "species-10165": {
+    "url": "https://digi-api.com/images/digimon/w/Platinum_Sukamon.png",
+    "pageImage": false
+  },
+  "species-10166": {
+    "url": "https://digi-api.com/images/digimon/w/Black_Tailmon.png",
+    "pageImage": false
+  },
+  "species-10167": {
+    "url": "https://digi-api.com/images/digimon/w/Vegimon.png",
+    "pageImage": false
+  },
+  "species-10168": {
+    "url": "https://digi-api.com/images/digimon/w/Minotaurmon.png",
+    "pageImage": false
+  },
+  "species-10169": {
+    "url": "https://digi-api.com/images/digimon/w/Musyamon.png",
+    "pageImage": false
+  },
+  "species-10170": {
+    "url": "https://digi-api.com/images/digimon/w/Mechanorimon.png",
+    "pageImage": false
+  },
+  "species-10171": {
+    "url": "https://digi-api.com/images/digimon/w/Raremon.png",
+    "pageImage": false
+  },
+  "species-10172": {
+    "url": "https://digi-api.com/images/digimon/w/Waspmon.png",
+    "pageImage": false
+  },
+  "species-10173": {
+    "url": "https://digi-api.com/images/digimon/w/Aquilamon.png",
+    "pageImage": false
+  },
+  "species-10174": {
+    "url": "https://digi-api.com/images/digimon/w/Ankylomon.png",
+    "pageImage": false
+  },
+  "species-10175": {
+    "url": "https://digi-api.com/images/digimon/w/XV-mon.png",
+    "pageImage": false
+  },
+  "species-10176": {
+    "url": "https://digi-api.com/images/digimon/w/Guardromon_(Gold).png",
+    "pageImage": false
+  },
+  "species-10177": {
+    "url": "https://digi-api.com/images/digimon/w/Stingmon.png",
+    "pageImage": false
+  },
+  "species-10178": {
+    "url": "https://digi-api.com/images/digimon/w/Chrysalimon.png",
+    "pageImage": false
+  },
+  "species-10179": {
+    "url": "https://digi-api.com/images/digimon/w/Submarimon.png",
+    "pageImage": false
+  },
+  "species-10180": {
+    "url": "https://digi-api.com/images/digimon/w/Shurimon.png",
+    "pageImage": false
+  },
+  "species-10181": {
+    "url": "https://digi-api.com/images/digimon/w/Digmon.png",
+    "pageImage": false
+  },
+  "species-10182": {
+    "url": "https://digi-api.com/images/digimon/w/Nefertimon.png",
+    "pageImage": false
+  },
+  "species-10183": {
+    "url": "https://digi-api.com/images/digimon/w/Fladramon.png",
+    "pageImage": false
+  },
+  "species-10184": {
+    "url": "https://digi-api.com/images/digimon/w/Pegasmon.png",
+    "pageImage": false
+  },
+  "species-10185": {
+    "url": "https://digi-api.com/images/digimon/w/Holsmon.png",
+    "pageImage": false
+  },
+  "species-10186": {
+    "url": "https://digi-api.com/images/digimon/w/Lighdramon.png",
+    "pageImage": false
+  },
+  "species-10187": {
+    "url": "https://digi-api.com/images/digimon/w/Agnimon.png",
+    "pageImage": false
+  },
+  "species-10188": {
+    "url": "https://digi-api.com/images/digimon/w/Wolfmon.png",
+    "pageImage": false
+  },
+  "species-10189": {
+    "url": "https://digi-api.com/images/digimon/w/Ranamon.png",
+    "pageImage": false
+  },
+  "species-10190": {
+    "url": "https://digi-api.com/images/digimon/w/Vritramon.png",
+    "pageImage": false
+  },
+  "species-10191": {
+    "url": "https://digi-api.com/images/digimon/w/Calamaramon.png",
+    "pageImage": false
+  },
+  "species-10192": {
+    "url": "https://www.grindosaur.com/img/games/digimon-story-time-stranger/icons/kendogarurumon-icon.png",
+    "pageImage": false
+  },
+  "species-10193": {
+    "url": "https://digi-api.com/images/digimon/w/Aegiochusmon.png",
+    "pageImage": false
+  },
+  "species-10194": {
+    "url": "https://digi-api.com/images/digimon/w/Aegiochusmon(Green).png",
+    "pageImage": false
+  },
+  "species-10195": {
+    "url": "https://digi-api.com/images/digimon/w/Aegiochusmon(Dark).png",
+    "pageImage": false
+  },
+  "species-10196": {
+    "url": "https://digi-api.com/images/digimon/w/Aegiochusmon(Blue).png",
+    "pageImage": false
+  },
+  "species-10197": {
+    "url": "https://digi-api.com/images/digimon/w/Aegiochusmon(Holy).png",
+    "pageImage": false
+  },
+  "species-10198": {
+    "url": "https://digi-api.com/images/digimon/w/Atlur_Kabuterimon_(Red).png",
+    "pageImage": false
+  },
+  "species-10199": {
+    "url": "https://digi-api.com/images/digimon/w/Andromon.png",
+    "pageImage": false
+  },
+  "species-10200": {
+    "url": "https://digi-api.com/images/digimon/w/Wingdramon.png",
+    "pageImage": false
+  },
+  "species-10201": {
+    "url": "https://digi-api.com/images/digimon/w/Aero_V-dramon.png",
+    "pageImage": false
+  },
+  "species-10202": {
+    "url": "https://digi-api.com/images/digimon/w/Ex-Tyranomon.png",
+    "pageImage": false
+  },
+  "species-10203": {
+    "url": "https://digi-api.com/images/digimon/w/Angewomon.png",
+    "pageImage": false
+  },
+  "species-10204": {
+    "url": "https://digi-api.com/images/digimon/w/Garudamon.png",
+    "pageImage": false
+  },
+  "species-10205": {
+    "url": "https://digi-api.com/images/digimon/w/Grappu_Leomon.png",
+    "pageImage": false
+  },
+  "species-10206": {
+    "url": "https://digi-api.com/images/digimon/w/Grademon.png",
+    "pageImage": false
+  },
+  "species-10207": {
+    "url": "https://www.grindosaur.com/img/games/digimon-story-time-stranger/icons/greatgrizzlymon-icon.png",
+    "pageImage": false
+  },
+  "species-10208": {
+    "url": "https://digi-api.com/images/digimon/w/Cerberumon.png",
+    "pageImage": false
+  },
+  "species-10209": {
+    "url": "https://digi-api.com/images/digimon/w/Cerberumon(Werewolf_Mode).png",
+    "pageImage": false
+  },
+  "species-10210": {
+    "url": "https://digi-api.com/images/digimon/w/Cyberdramon.png",
+    "pageImage": false
+  },
+  "species-10211": {
+    "url": "https://digi-api.com/images/digimon/w/Jewelbeemon.png",
+    "pageImage": false
+  },
+  "species-10212": {
+    "url": "https://digi-api.com/images/digimon/w/Zudomon.png",
+    "pageImage": false
+  },
+  "species-10213": {
+    "url": "https://digi-api.com/images/digimon/w/Tyilinmon.png",
+    "pageImage": false
+  },
+  "species-10214": {
+    "url": "https://digi-api.com/images/digimon/w/Duramon.png",
+    "pageImage": false
+  },
+  "species-10215": {
+    "url": "https://digi-api.com/images/digimon/w/Parrotmon.png",
+    "pageImage": false
+  },
+  "species-10216": {
+    "url": "https://digi-api.com/images/digimon/w/Panjyamon.png",
+    "pageImage": false
+  },
+  "species-10217": {
+    "url": "https://digi-api.com/images/digimon/w/Hisyaryumon.png",
+    "pageImage": false
+  },
+  "species-10218": {
+    "url": "https://digi-api.com/images/digimon/w/Butenmon.png",
+    "pageImage": false
+  },
+  "species-10219": {
+    "url": "https://digi-api.com/images/digimon/w/Flaremon.png",
+    "pageImage": false
+  },
+  "species-10220": {
+    "url": "https://digi-api.com/images/digimon/w/Whamon.png",
+    "pageImage": false
+  },
+  "species-10221": {
+    "url": "https://digi-api.com/images/digimon/w/Holy_Angemon.png",
+    "pageImage": false
+  },
+  "species-10222": {
+    "url": "https://digi-api.com/images/digimon/w/Mammon.png",
+    "pageImage": false
+  },
+  "species-2005": {
+    "url": "https://digimon.shadowsmith.com/img/metalgreymon.jpg",
+    "pageImage": false
+  },
+  "species-10224": {
+    "url": "https://digi-api.com/images/digimon/w/Monzaemon.png",
+    "pageImage": false
+  },
+  "species-10225": {
+    "url": "https://digi-api.com/images/digimon/w/Yatagaramon.png",
+    "pageImage": false
+  },
+  "species-10226": {
+    "url": "https://digi-api.com/images/digimon/w/Rize_Greymon.png",
+    "pageImage": false
+  },
+  "species-10227": {
+    "url": "https://digi-api.com/images/digimon/w/Rapidmon_Perfect.png",
+    "pageImage": false
+  },
+  "species-10228": {
+    "url": "https://digi-api.com/images/digimon/w/Loader_Leomon.png",
+    "pageImage": false
+  },
+  "species-2011": {
+    "url": "https://digimon.shadowsmith.com/img/weregarurumon.jpg",
+    "pageImage": false
+  },
+  "species-10230": {
+    "url": "https://digi-api.com/images/digimon/w/Scorpiomon.png",
+    "pageImage": false
+  },
+  "species-10231": {
+    "url": "https://www.grindosaur.com/img/games/digimon-story-time-stranger/icons/enbarrmon-icon.png",
+    "pageImage": false
+  },
+  "species-10232": {
+    "url": "https://digi-api.com/images/digimon/w/Andiramon.png",
+    "pageImage": false
+  },
+  "species-10233": {
+    "url": "https://digi-api.com/images/digimon/w/Insekimon.png",
+    "pageImage": false
+  },
+  "species-10234": {
+    "url": "https://digi-api.com/images/digimon/w/Omega_Shoutmon.png",
+    "pageImage": false
+  },
+  "species-10235": {
+    "url": "https://digi-api.com/images/digimon/w/Chimairamon.png",
+    "pageImage": false
+  },
+  "species-10236": {
+    "url": "https://digi-api.com/images/digimon/w/Catch_Mamemon.png",
+    "pageImage": false
+  },
+  "species-10237": {
+    "url": "https://digi-api.com/images/digimon/w/Crescemon.png",
+    "pageImage": false
+  },
+  "species-10238": {
+    "url": "https://digi-api.com/images/digimon/w/Superstarmon.png",
+    "pageImage": false
+  },
+  "species-10239": {
+    "url": "https://digi-api.com/images/digimon/w/Skull_Baluchimon.png",
+    "pageImage": false
+  },
+  "species-10240": {
+    "url": "https://digi-api.com/images/digimon/w/Savior_Hackmon.png",
+    "pageImage": false
+  },
+  "species-10241": {
+    "url": "https://digi-api.com/images/digimon/w/Sirenmon.png",
+    "pageImage": false
+  },
+  "species-10242": {
+    "url": "https://digi-api.com/images/digimon/w/Taomon.png",
+    "pageImage": false
+  },
+  "species-10243": {
+    "url": "https://digi-api.com/images/digimon/w/Digitamamon.png",
+    "pageImage": false
+  },
+  "species-10244": {
+    "url": "https://digi-api.com/images/digimon/w/Death_Meramon.png",
+    "pageImage": false
+  },
+  "species-10245": {
+    "url": "https://digi-api.com/images/digimon/w/Delumon.png",
+    "pageImage": false
+  },
+  "species-10246": {
+    "url": "https://digi-api.com/images/digimon/w/Triceramon.png",
+    "pageImage": false
+  },
+  "species-10247": {
+    "url": "https://digi-api.com/images/digimon/w/DORUguremon.png",
+    "pageImage": false
+  },
+  "species-10248": {
+    "url": "https://digi-api.com/images/digimon/w/Knightmon.png",
+    "pageImage": false
+  },
+  "species-10249": {
+    "url": "https://digi-api.com/images/digimon/w/Hangyomon.png",
+    "pageImage": false
+  },
+  "species-10250": {
+    "url": "https://digi-api.com/images/digimon/w/Pandamon.png",
+    "pageImage": false
+  },
+  "species-10251": {
+    "url": "https://digi-api.com/images/digimon/w/Pumpmon.png",
+    "pageImage": false
+  },
+  "species-10252": {
+    "url": "https://digi-api.com/images/digimon/w/Big_Mamemon.png",
+    "pageImage": false
+  },
+  "species-10253": {
+    "url": "https://digi-api.com/images/digimon/w/Piccolomon.png",
+    "pageImage": false
+  },
+  "species-10254": {
+    "url": "https://digi-api.com/images/digimon/w/Hippogriffomon.png",
+    "pageImage": false
+  },
+  "species-10255": {
+    "url": "https://digi-api.com/images/digimon/w/Brachimon.png",
+    "pageImage": false
+  },
+  "species-10256": {
+    "url": "https://digi-api.com/images/digimon/w/Volcamon.png",
+    "pageImage": false
+  },
+  "species-10257": {
+    "url": "https://www.grindosaur.com/img/games/digimon-story-time-stranger/icons/masterblimpmon-icon.png",
+    "pageImage": false
+  },
+  "species-10258": {
+    "url": "https://digi-api.com/images/digimon/w/Mach_Gaogamon.png",
+    "pageImage": false
+  },
+  "species-10259": {
+    "url": "https://digi-api.com/images/digimon/w/Mamemon.png",
+    "pageImage": false
+  },
+  "species-10260": {
+    "url": "https://digi-api.com/images/digimon/w/Mega_Seadramon.png",
+    "pageImage": false
+  },
+  "species-10261": {
+    "url": "https://digi-api.com/images/digimon/w/Metal_Mamemon.png",
+    "pageImage": false
+  },
+  "species-10262": {
+    "url": "https://digi-api.com/images/digimon/w/Lilamon.png",
+    "pageImage": false
+  },
+  "species-10263": {
+    "url": "https://digi-api.com/images/digimon/w/Lilimon.png",
+    "pageImage": false
+  },
+  "species-10264": {
+    "url": "https://digi-api.com/images/digimon/w/Locomon.png",
+    "pageImage": false
+  },
+  "species-10265": {
+    "url": "https://digi-api.com/images/digimon/w/Astamon.png",
+    "pageImage": false
+  },
+  "species-10266": {
+    "url": "https://digi-api.com/images/digimon/w/Archnemon.png",
+    "pageImage": false
+  },
+  "species-10267": {
+    "url": "https://digi-api.com/images/digimon/w/Vamdemon.png",
+    "pageImage": false
+  },
+  "species-10268": {
+    "url": "https://digi-api.com/images/digimon/w/Etemon.png",
+    "pageImage": false
+  },
+  "species-10269": {
+    "url": "https://digi-api.com/images/digimon/w/Okuwamon.png",
+    "pageImage": false
+  },
+  "species-10270": {
+    "url": "https://digi-api.com/images/digimon/w/Orochimon.png",
+    "pageImage": false
+  },
+  "species-10271": {
+    "url": "https://digi-api.com/images/digimon/w/Gerbemon.png",
+    "pageImage": false
+  },
+  "species-10272": {
+    "url": "https://digi-api.com/images/digimon/w/Gigadramon.png",
+    "pageImage": false
+  },
+  "species-10273": {
+    "url": "https://digi-api.com/images/digimon/w/Cannonbeemon.png",
+    "pageImage": false
+  },
+  "species-10274": {
+    "url": "https://digi-api.com/images/digimon/w/Groundramon.png",
+    "pageImage": false
+  },
+  "species-10275": {
+    "url": "https://www.grindosaur.com/img/games/digimon-story-time-stranger/icons/sharkmon-icon.png",
+    "pageImage": false
+  },
+  "species-10276": {
+    "url": "https://digi-api.com/images/digimon/w/Shawujinmon.png",
+    "pageImage": false
+  },
+  "species-10277": {
+    "url": "https://digi-api.com/images/digimon/w/Jyureimon.png",
+    "pageImage": false
+  },
+  "species-10278": {
+    "url": "https://digi-api.com/images/digimon/w/Skull_Greymon.png",
+    "pageImage": false
+  },
+  "species-10279": {
+    "url": "https://digi-api.com/images/digimon/w/Skull_Satamon.png",
+    "pageImage": false
+  },
+  "species-10280": {
+    "url": "https://www.grindosaur.com/img/games/digimon-story-time-stranger/icons/skullseadramon-icon.png",
+    "pageImage": false
+  },
+  "species-10281": {
+    "url": "https://digi-api.com/images/digimon/w/Dark_Superstarmon.png",
+    "pageImage": false
+  },
+  "species-10282": {
+    "url": "https://digi-api.com/images/digimon/w/Dagomon.png",
+    "pageImage": false
+  },
+  "species-10283": {
+    "url": "https://digi-api.com/images/digimon/w/Tankdramon.png",
+    "pageImage": false
+  },
+  "species-10284": {
+    "url": "https://digi-api.com/images/digimon/w/Tonosama_Gekomon.png",
+    "pageImage": false
+  },
+  "species-10285": {
+    "url": "https://digi-api.com/images/digimon/w/Nanomon.png",
+    "pageImage": false
+  },
+  "species-10286": {
+    "url": "https://digi-api.com/images/digimon/w/Fantomon.png",
+    "pageImage": false
+  },
+  "species-10287": {
+    "url": "https://digi-api.com/images/digimon/w/Black_King_Numemon.png",
+    "pageImage": false
+  },
+  "species-10288": {
+    "url": "https://digi-api.com/images/digimon/w/Blue_Meramon.png",
+    "pageImage": false
+  },
+  "species-10289": {
+    "url": "https://digi-api.com/images/digimon/w/Vademon.png",
+    "pageImage": false
+  },
+  "species-10290": {
+    "url": "https://digi-api.com/images/digimon/w/Matadrmon.png",
+    "pageImage": false
+  },
+  "species-10291": {
+    "url": "https://digi-api.com/images/digimon/w/Mummymon.png",
+    "pageImage": false
+  },
+  "species-10292": {
+    "url": "https://digi-api.com/images/digimon/w/Mistymon.png",
+    "pageImage": false
+  },
+  "species-10293": {
+    "url": "https://digi-api.com/images/digimon/w/Megadramon.png",
+    "pageImage": false
+  },
+  "species-10294": {
+    "url": "https://digi-api.com/images/digimon/w/Megalo_Growmon.png",
+    "pageImage": false
+  },
+  "species-10295": {
+    "url": "https://digi-api.com/images/digimon/w/Metal_Tyranomon.png",
+    "pageImage": false
+  },
+  "species-10296": {
+    "url": "https://digi-api.com/images/digimon/w/Lucemon(Falldown_Mode).png",
+    "pageImage": false
+  },
+  "species-10297": {
+    "url": "https://digi-api.com/images/digimon/w/Lady_Devimon.png",
+    "pageImage": false
+  },
+  "species-10298": {
+    "url": "https://digi-api.com/images/digimon/w/Wisemon.png",
+    "pageImage": false
+  },
+  "species-10299": {
+    "url": "https://digi-api.com/images/digimon/w/Waru_Seadramon.png",
+    "pageImage": false
+  },
+  "species-10300": {
+    "url": "https://digi-api.com/images/digimon/w/Shakkoumon.png",
+    "pageImage": false
+  },
+  "species-10301": {
+    "url": "https://digi-api.com/images/digimon/w/Silphymon.png",
+    "pageImage": false
+  },
+  "species-10302": {
+    "url": "https://digi-api.com/images/digimon/w/Dinobeemon.png",
+    "pageImage": false
+  },
+  "species-10303": {
+    "url": "https://digi-api.com/images/digimon/w/Paildramon.png",
+    "pageImage": false
+  },
+  "species-10304": {
+    "url": "https://digi-api.com/images/digimon/w/Infermon.png",
+    "pageImage": false
+  },
+  "species-10305": {
+    "url": "https://digi-api.com/images/digimon/w/Aldamon.png",
+    "pageImage": false
+  },
+  "species-10306": {
+    "url": "https://digi-api.com/images/digimon/w/Beowolfmon.png",
+    "pageImage": false
+  },
+  "species-10307": {
+    "url": "https://digi-api.com/images/digimon/w/Apollomon.png",
+    "pageImage": false
+  },
+  "species-10308": {
+    "url": "https://digi-api.com/images/digimon/w/Alphamon.png",
+    "pageImage": false
+  },
+  "species-10309": {
+    "url": "https://digi-api.com/images/digimon/w/Ulforce_V-dramon.png",
+    "pageImage": false
+  },
+  "species-10310": {
+    "url": "https://digi-api.com/images/digimon/w/Valdurmon.png",
+    "pageImage": false
+  },
+  "species-10311": {
+    "url": "https://digi-api.com/images/digimon/w/Venusmon.png",
+    "pageImage": false
+  },
+  "species-2006": {
+    "url": "https://digimon.shadowsmith.com/img/wargreymon.jpg",
+    "pageImage": false
+  },
+  "species-10313": {
+    "url": "https://digi-api.com/images/digimon/w/Ouryumon.png",
+    "pageImage": false
+  },
+  "species-10314": {
+    "url": "https://digi-api.com/images/digimon/w/Ofanimon.png",
+    "pageImage": false
+  },
+  "species-10315": {
+    "url": "https://digi-api.com/images/digimon/w/Clavis_Angemon.png",
+    "pageImage": false
+  },
+  "species-10316": {
+    "url": "https://digi-api.com/images/digimon/w/Craniummon.png",
+    "pageImage": false
+  },
+  "species-10317": {
+    "url": "https://digi-api.com/images/digimon/w/Crossmon.png",
+    "pageImage": false
+  },
+  "species-10318": {
+    "url": "https://digi-api.com/images/digimon/w/Chronomon_Holy_Mode.png",
+    "pageImage": false
+  },
+  "species-10319": {
+    "url": "https://digi-api.com/images/digimon/w/Cherubimon_(Vice).png",
+    "pageImage": false
+  },
+  "species-10320": {
+    "url": "https://digi-api.com/images/digimon/w/Cherubimon_(Virtue).png",
+    "pageImage": false
+  },
+  "species-10321": {
+    "url": "https://digi-api.com/images/digimon/w/Goddramon.png",
+    "pageImage": false
+  },
+  "species-10322": {
+    "url": "https://digi-api.com/images/digimon/w/Shine_Greymon.png",
+    "pageImage": false
+  },
+  "species-10323": {
+    "url": "https://digi-api.com/images/digimon/w/Justimon(Blitz_Arm).png",
+    "pageImage": false
+  },
+  "species-10324": {
+    "url": "https://digi-api.com/images/digimon/w/Skull_Mammon.png",
+    "pageImage": false
+  },
+  "species-10325": {
+    "url": "https://digi-api.com/images/digimon/w/Slash_Angemon.png",
+    "pageImage": false
+  },
+  "species-10326": {
+    "url": "https://digi-api.com/images/digimon/w/Sleipmon.png",
+    "pageImage": false
+  },
+  "species-10327": {
+    "url": "https://digi-api.com/images/digimon/w/Slayerdramon.png",
+    "pageImage": false
+  },
+  "species-10328": {
+    "url": "https://digi-api.com/images/digimon/w/Seraphimon.png",
+    "pageImage": false
+  },
+  "species-10329": {
+    "url": "https://digi-api.com/images/digimon/w/Saint_Galgomon.png",
+    "pageImage": false
+  },
+  "species-10330": {
+    "url": "https://digi-api.com/images/digimon/w/Durandamon.png",
+    "pageImage": false
+  },
+  "species-10331": {
+    "url": "https://digi-api.com/images/digimon/w/Neptunemon.png",
+    "pageImage": false
+  },
+  "species-10332": {
+    "url": "https://digi-api.com/images/digimon/w/Hi_Andromon.png",
+    "pageImage": false
+  },
+  "species-10333": {
+    "url": "https://digi-api.com/images/digimon/w/Bancho_Leomon.png",
+    "pageImage": false
+  },
+  "species-10334": {
+    "url": "https://digi-api.com/images/digimon/w/Herakle_Kabuterimon.png",
+    "pageImage": false
+  },
+  "species-10335": {
+    "url": "https://digi-api.com/images/digimon/w/Hououmon.png",
+    "pageImage": false
+  },
+  "species-10336": {
+    "url": "https://digi-api.com/images/digimon/w/Holydramon.png",
+    "pageImage": false
+  },
+  "species-10337": {
+    "url": "https://digi-api.com/images/digimon/w/Mastemon.png",
+    "pageImage": false
+  },
+  "species-10338": {
+    "url": "https://digi-api.com/images/digimon/w/Marin_Angemon.png",
+    "pageImage": false
+  },
+  "species-10339": {
+    "url": "https://digi-api.com/images/digimon/w/Marsmon.png",
+    "pageImage": false
+  },
+  "species-10340": {
+    "url": "https://digi-api.com/images/digimon/w/Jupitermon.png",
+    "pageImage": false
+  },
+  "species-10341": {
+    "url": "https://digi-api.com/images/digimon/w/Ravmon.png",
+    "pageImage": false
+  },
+  "species-10342": {
+    "url": "https://digi-api.com/images/digimon/w/Ultimate_Brachimon.png",
+    "pageImage": false
+  },
+  "species-10343": {
+    "url": "https://digi-api.com/images/digimon/w/Vulcanusmon.png",
+    "pageImage": false
+  },
+  "species-10344": {
+    "url": "https://digi-api.com/images/digimon/w/Gankoomon.png",
+    "pageImage": false
+  },
+  "species-10345": {
+    "url": "https://digi-api.com/images/digimon/w/Kuzuhamon.png",
+    "pageImage": false
+  },
+  "species-10346": {
+    "url": "https://digi-api.com/images/digimon/w/Grand_Locomon.png",
+    "pageImage": false
+  },
+  "species-10347": {
+    "url": "https://digi-api.com/images/digimon/w/Griffomon.png",
+    "pageImage": false
+  },
+  "species-10348": {
+    "url": "https://digi-api.com/images/digimon/w/Ceresmon.png",
+    "pageImage": false
+  },
+  "species-10349": {
+    "url": "https://digi-api.com/images/digimon/w/Ceresmon_Medium.png",
+    "pageImage": false
+  },
+  "species-10350": {
+    "url": "https://digi-api.com/images/digimon/w/Saber_Leomon.png",
+    "pageImage": false
+  },
+  "species-10351": {
+    "url": "https://digi-api.com/images/digimon/w/Sakuyamon.png",
+    "pageImage": false
+  },
+  "species-10352": {
+    "url": "https://digi-api.com/images/digimon/w/JESmon.png",
+    "pageImage": false
+  },
+  "species-10353": {
+    "url": "https://digi-api.com/images/digimon/w/Jumbo_Gamemon.png",
+    "pageImage": false
+  },
+  "species-10354": {
+    "url": "https://digi-api.com/images/digimon/w/Dianamon.png",
+    "pageImage": false
+  },
+  "species-10355": {
+    "url": "https://digi-api.com/images/digimon/w/Dynasmon.png",
+    "pageImage": false
+  },
+  "species-10356": {
+    "url": "https://digi-api.com/images/digimon/w/Duftmon.png",
+    "pageImage": false
+  },
+  "species-10357": {
+    "url": "https://digi-api.com/images/digimon/w/Duftmon(Leopard_Mode).png",
+    "pageImage": false
+  },
+  "species-10358": {
+    "url": "https://digi-api.com/images/digimon/w/DORUgoramon.png",
+    "pageImage": false
+  },
+  "species-10359": {
+    "url": "https://digi-api.com/images/digimon/w/Pile_Volcamon.png",
+    "pageImage": false
+  },
+  "species-10360": {
+    "url": "https://digi-api.com/images/digimon/w/Prince_Mamemon.png",
+    "pageImage": false
+  },
+  "species-10361": {
+    "url": "https://digi-api.com/images/digimon/w/Plesiomon.png",
+    "pageImage": false
+  },
+  "species-10362": {
+    "url": "https://digi-api.com/images/digimon/w/Boltmon.png",
+    "pageImage": false
+  },
+  "species-10363": {
+    "url": "https://digi-api.com/images/digimon/w/Mirage_Gaogamon.png",
+    "pageImage": false
+  },
+  "species-2012": {
+    "url": "https://digimon.shadowsmith.com/img/metalgarurumon.jpg",
+    "pageImage": false
+  },
+  "species-10365": {
+    "url": "https://digi-api.com/images/digimon/w/Metal_Seadramon.png",
+    "pageImage": false
+  },
+  "species-10366": {
+    "url": "https://digi-api.com/images/digimon/w/Medieval_Dukemon.png",
+    "pageImage": false
+  },
+  "species-10367": {
+    "url": "https://digi-api.com/images/digimon/w/Rosemon.png",
+    "pageImage": false
+  },
+  "species-10368": {
+    "url": "https://digi-api.com/images/digimon/w/Lotusmon.png",
+    "pageImage": false
+  },
+  "species-10369": {
+    "url": "https://digi-api.com/images/digimon/w/Avenge_Kidmon.png",
+    "pageImage": false
+  },
+  "species-10370": {
+    "url": "https://digi-api.com/images/digimon/w/EBEmon.png",
+    "pageImage": false
+  },
+  "species-10371": {
+    "url": "https://digi-api.com/images/digimon/w/Venom_Vamdemon.png",
+    "pageImage": false
+  },
+  "species-10372": {
+    "url": "https://digi-api.com/images/digimon/w/Ancient_Wisemon.png",
+    "pageImage": false
+  },
+  "species-10373": {
+    "url": "https://digi-api.com/images/digimon/w/Gaioumon.png",
+    "pageImage": false
+  },
+  "species-10374": {
+    "url": "https://digi-api.com/images/digimon/w/Chaos_Dukemon.png",
+    "pageImage": false
+  },
+  "species-10375": {
+    "url": "https://digi-api.com/images/digimon/w/Chaosdramon.png",
+    "pageImage": false
+  },
+  "species-10376": {
+    "url": "https://digi-api.com/images/digimon/w/Callismon.png",
+    "pageImage": false
+  },
+  "species-10377": {
+    "url": "https://digi-api.com/images/digimon/w/Gundramon.png",
+    "pageImage": false
+  },
+  "species-10378": {
+    "url": "https://digi-api.com/images/digimon/w/King_Etemon.png",
+    "pageImage": false
+  },
+  "species-10379": {
+    "url": "https://www.grindosaur.com/img/games/digimon-story-time-stranger/icons/grandracmon-icon.png",
+    "pageImage": false
+  },
+  "species-10380": {
+    "url": "https://digi-api.com/images/digimon/w/Chronomon_Destroy_Mode.png",
+    "pageImage": false
+  },
+  "species-10381": {
+    "url": "https://digi-api.com/images/digimon/w/Zanbamon.png",
+    "pageImage": false
+  },
+  "species-10382": {
+    "url": "https://www.grindosaur.com/img/games/digimon-story-time-stranger/icons/zombieplutomon-icon.png",
+    "pageImage": false
+  },
+  "species-10383": {
+    "url": "https://digi-api.com/images/digimon/w/Darkdramon.png",
+    "pageImage": false
+  },
+  "species-10384": {
+    "url": "https://digi-api.com/images/digimon/w/Tiger_Vespamon.png",
+    "pageImage": false
+  },
+  "species-10385": {
+    "url": "https://digi-api.com/images/digimon/w/Titamon.png",
+    "pageImage": false
+  },
+  "species-10386": {
+    "url": "https://digi-api.com/images/digimon/w/Tyrant_Kabuterimon.png",
+    "pageImage": false
+  },
+  "species-10387": {
+    "url": "https://digi-api.com/images/digimon/w/Demon.png",
+    "pageImage": false
+  },
+  "species-10388": {
+    "url": "https://digi-api.com/images/digimon/w/Dukemon.png",
+    "pageImage": false
+  },
+  "species-10389": {
+    "url": "https://digi-api.com/images/digimon/w/Bacchusmon.png",
+    "pageImage": false
+  },
+  "species-10390": {
+    "url": "https://www.grindosaur.com/img/games/digimon-story-time-stranger/icons/bacchusmon-dm-icon.png",
+    "pageImage": false
+  },
+  "species-10391": {
+    "url": "https://digi-api.com/images/digimon/w/Barbamon.png",
+    "pageImage": false
+  },
+  "species-10392": {
+    "url": "https://digi-api.com/images/digimon/w/Piemon.png",
+    "pageImage": false
+  },
+  "species-10393": {
+    "url": "https://www.grindosaur.com/img/games/digimon-story-time-stranger/icons/puppetmon-icon.png",
+    "pageImage": false
+  },
+  "species-10394": {
+    "url": "https://digi-api.com/images/digimon/w/Pharaohmon.png",
+    "pageImage": false
+  },
+  "species-10395": {
+    "url": "https://digi-api.com/images/digimon/w/Pukumon.png",
+    "pageImage": false
+  },
+  "species-10396": {
+    "url": "https://digi-api.com/images/digimon/w/Platinum_Numemon.png",
+    "pageImage": false
+  },
+  "species-10397": {
+    "url": "https://digi-api.com/images/digimon/w/Plutomon.png",
+    "pageImage": false
+  },
+  "species-10398": {
+    "url": "https://digi-api.com/images/digimon/w/Breakdramon.png",
+    "pageImage": false
+  },
+  "species-10399": {
+    "url": "https://digi-api.com/images/digimon/w/Belial_Vamdemon.png",
+    "pageImage": false
+  },
+  "species-10400": {
+    "url": "https://digi-api.com/images/digimon/w/Beel_Starmon.png",
+    "pageImage": false
+  },
+  "species-10401": {
+    "url": "https://digi-api.com/images/digimon/w/Beelzebumon.png",
+    "pageImage": false
+  },
+  "species-10402": {
+    "url": "https://digi-api.com/images/digimon/w/Belphemon(Sleep_Mode).png",
+    "pageImage": false
+  },
+  "species-10403": {
+    "url": "https://digi-api.com/images/digimon/w/Magna_Kidmon.png",
+    "pageImage": false
+  },
+  "species-10404": {
+    "url": "https://digi-api.com/images/digimon/w/Minervamon.png",
+    "pageImage": false
+  },
+  "species-10405": {
+    "url": "https://digi-api.com/images/digimon/w/Millenniumon.png",
+    "pageImage": false
+  },
+  "species-10406": {
+    "url": "https://digi-api.com/images/digimon/w/Mugendramon.png",
+    "pageImage": false
+  },
+  "species-10407": {
+    "url": "https://digi-api.com/images/digimon/w/Megidramon.png",
+    "pageImage": false
+  },
+  "species-10408": {
+    "url": "https://digi-api.com/images/digimon/w/Metal_Etemon.png",
+    "pageImage": false
+  },
+  "species-10409": {
+    "url": "https://digi-api.com/images/digimon/w/Mercurymon.png",
+    "pageImage": false
+  },
+  "species-10410": {
+    "url": "https://digi-api.com/images/digimon/w/Junomon.png",
+    "pageImage": false
+  },
+  "species-10411": {
+    "url": "https://digi-api.com/images/digimon/w/Junomon(Hysteric_Mode).png",
+    "pageImage": false
+  },
+  "species-10412": {
+    "url": "https://digi-api.com/images/digimon/w/Rust_Tyranomon.png",
+    "pageImage": false
+  },
+  "species-10413": {
+    "url": "https://digi-api.com/images/digimon/w/Leviamon.png",
+    "pageImage": false
+  },
+  "species-10414": {
+    "url": "https://digi-api.com/images/digimon/w/Lilithmon.png",
+    "pageImage": false
+  },
+  "species-10415": {
+    "url": "https://digi-api.com/images/digimon/w/Lord_Knightmon.png",
+    "pageImage": false
+  },
+  "species-10416": {
+    "url": "https://digi-api.com/images/digimon/w/Imperialdramon(Dragon_Mode).png",
+    "pageImage": false
+  },
+  "species-10417": {
+    "url": "https://digi-api.com/images/digimon/w/Imperialdramon(Fighter_Mode).png",
+    "pageImage": false
+  },
+  "species-10418": {
+    "url": "https://digi-api.com/images/digimon/w/Vikemon.png",
+    "pageImage": false
+  },
+  "species-10419": {
+    "url": "https://digi-api.com/images/digimon/w/Valkyrimon.png",
+    "pageImage": false
+  },
+  "species-10420": {
+    "url": "https://digi-api.com/images/digimon/w/Gran_Kuwagamon.png",
+    "pageImage": false
+  },
+  "species-10421": {
+    "url": "https://digi-api.com/images/digimon/w/Diablomon.png",
+    "pageImage": false
+  },
+  "species-10422": {
+    "url": "https://digi-api.com/images/digimon/w/Rapidmon_Armor.png",
+    "pageImage": false
+  },
+  "species-10423": {
+    "url": "https://digi-api.com/images/digimon/w/Magnamon.png",
+    "pageImage": false
+  },
+  "species-10424": {
+    "url": "https://digi-api.com/images/digimon/w/Kaiser_Greymon.png",
+    "pageImage": false
+  },
+  "species-10425": {
+    "url": "https://digi-api.com/images/digimon/w/Magna_Garurumon.png",
+    "pageImage": false
+  },
+  "species-10426": {
+    "url": "https://www.grindosaur.com/img/games/digimon-story-time-stranger/icons/magnagarurumon-detached-icon.png",
+    "pageImage": false
+  },
+  "species-10427": {
+    "url": "https://digi-api.com/images/digimon/w/Alphamon(Ouryuken).png",
+    "pageImage": false
+  },
+  "species-10428": {
+    "url": "https://www.grindosaur.com/img/games/digimon-story-time-stranger/icons/craniamon-plus-enbarrmon-icon.png",
+    "pageImage": false
+  },
+  "species-10429": {
+    "url": "https://digi-api.com/images/digimon/w/Imperialdramon(Paladin_Mode).png",
+    "pageImage": false
+  },
+  "species-10430": {
+    "url": "https://digi-api.com/images/digimon/w/Omegamon.png",
+    "pageImage": false
+  },
+  "species-10431": {
+    "url": "https://digi-api.com/images/digimon/w/Omegamon_Zwart.png",
+    "pageImage": false
+  },
+  "species-10432": {
+    "url": "https://digi-api.com/images/digimon/w/Chaosmon.png",
+    "pageImage": false
+  },
+  "species-10433": {
+    "url": "https://digi-api.com/images/digimon/w/Chaosmon(Valdur_Arm).png",
+    "pageImage": false
+  },
+  "species-10434": {
+    "url": "https://digi-api.com/images/digimon/w/Grace_Novamon.png",
+    "pageImage": false
+  },
+  "species-10435": {
+    "url": "https://digi-api.com/images/digimon/w/Shine_Greymon(Burst_Mode).png",
+    "pageImage": false
+  },
+  "species-10436": {
+    "url": "https://digi-api.com/images/digimon/w/Susanoomon.png",
+    "pageImage": false
+  },
+  "species-10437": {
+    "url": "https://digi-api.com/images/digimon/w/Jupitermon(Wrath_Mode).png",
+    "pageImage": false
+  },
+  "species-10438": {
+    "url": "https://digi-api.com/images/digimon/w/Ravmon(Burst_Mode).png",
+    "pageImage": false
+  },
+  "species-10439": {
+    "url": "https://digi-api.com/images/digimon/w/Examon.png",
+    "pageImage": false
+  },
+  "species-10440": {
+    "url": "https://digi-api.com/images/digimon/w/Mirage_Gaogamon(Burst_Mode).png",
+    "pageImage": false
+  },
+  "species-10441": {
+    "url": "https://digi-api.com/images/digimon/w/Rosemon(Burst_Mode).png",
+    "pageImage": false
+  },
+  "species-10442": {
+    "url": "https://www.grindosaur.com/img/games/digimon-story-time-stranger/icons/titamon-plus-skullbaluchimon-icon.png",
+    "pageImage": false
+  },
+  "species-10443": {
+    "url": "https://digi-api.com/images/digimon/w/Dukemon(Crimson_Mode).png",
+    "pageImage": false
+  },
+  "species-10444": {
+    "url": "https://digi-api.com/images/digimon/w/Beelzebumon(Blast_Mode).png",
+    "pageImage": false
+  },
+  "species-10445": {
+    "url": "https://digi-api.com/images/digimon/w/Belphemon(Rage_Mode).png",
+    "pageImage": false
+  },
+  "species-10446": {
+    "url": "https://digi-api.com/images/digimon/w/Mervamon.png",
+    "pageImage": false
+  },
+  "species-10447": {
+    "url": "https://digi-api.com/images/digimon/w/Lucemon(Satan_Mode).png",
+    "pageImage": false
+  },
+  "species-10448": {
+    "url": "https://digi-api.com/images/digimon/w/Armagemon.png",
+    "pageImage": false
+  },
+  "species-10449": {
+    "url": "https://digi-api.com/images/digimon/w/Agumon_-Yuki_no_Kizuna-.png",
+    "pageImage": false
+  },
+  "species-10450": {
+    "url": "https://digi-api.com/images/digimon/w/Apocalymon.png",
+    "pageImage": false
+  },
+  "species-10451": {
+    "url": "https://digi-api.com/images/digimon/w/Gabumon_-Yujo_no_Kizuna-.png",
+    "pageImage": false
+  },
+  "species-10452": {
+    "url": "https://digi-api.com/images/digimon/w/Cres_Garurumon.png",
+    "pageImage": false
+  },
+  "species-10453": {
+    "url": "https://digi-api.com/images/digimon/w/Parallelmon.png",
+    "pageImage": false
+  },
+  "species-10454": {
+    "url": "https://digi-api.com/images/digimon/w/Blitz_Greymon.png",
+    "pageImage": false
+  },
+  "species-10455": {
+    "url": "https://digi-api.com/images/digimon/w/Omegamon_Alter-B.png",
+    "pageImage": false
+  },
+  "species-10456": {
+    "url": "https://digi-api.com/images/digimon/w/Omegamon_Alter-S.png",
+    "pageImage": false
+  },
+  "species-10457": {
+    "url": "https://digi-api.com/images/digimon/w/Omegamon_Zwart_Defeat.png",
+    "pageImage": false
+  },
+  "species-10458": {
+    "url": "https://digi-api.com/images/digimon/w/Bancho_Mamemon.png",
+    "pageImage": false
+  },
+  "species-10459": {
+    "url": "https://digi-api.com/images/digimon/w/Bancho_Lilimon.png",
+    "pageImage": false
+  },
+  "species-10460": {
+    "url": "https://digi-api.com/images/digimon/w/Bancho_Golemon.png",
+    "pageImage": false
+  },
+  "species-10461": {
+    "url": "https://digi-api.com/images/digimon/w/Bancho_Stingmon.png",
+    "pageImage": false
+  },
+  "species-10462": {
+    "url": "https://digi-api.com/images/digimon/w/Omegamon(Merciful_Mode).png",
+    "pageImage": false
+  },
+  "species-10463": {
+    "url": "https://digi-api.com/images/digimon/w/Ulforce_V-dramon_(X-Antibody).png",
+    "pageImage": false
+  },
+  "species-10464": {
+    "url": "https://digi-api.com/images/digimon/w/Magnamon_(X-Antibody).png",
+    "pageImage": false
+  },
+  "species-10465": {
+    "url": "https://digi-api.com/images/digimon/w/JESmon_(X-Antibody).png",
+    "pageImage": false
+  },
+  "species-10466": {
+    "url": "https://digi-api.com/images/digimon/w/Dukemon_(X-Antibody).png",
+    "pageImage": false
+  },
+  "species-10467": {
+    "url": "https://digi-api.com/images/digimon/w/Omegamon_(X-Antibody).png",
+    "pageImage": false
+  },
+  "species-10468": {
+    "url": "https://digi-api.com/images/digimon/w/Agumon_(Black).png",
+    "pageImage": false
+  },
+  "species-10469": {
+    "url": "https://digi-api.com/images/digimon/w/Gabumon_(Black).png",
+    "pageImage": false
+  },
+  "species-10470": {
+    "url": "https://digi-api.com/images/digimon/w/Garurumon_(Black).png",
+    "pageImage": false
+  },
+  "species-10471": {
+    "url": "https://digi-api.com/images/digimon/w/Greymon_(Blue).png",
+    "pageImage": false
+  },
+  "species-10472": {
+    "url": "https://digi-api.com/images/digimon/w/Metal_Greymon_(Virus).png",
+    "pageImage": false
+  },
+  "species-10473": {
+    "url": "https://digi-api.com/images/digimon/w/Were_Garurumon_(Black).png",
+    "pageImage": false
+  },
+  "species-10474": {
+    "url": "https://digi-api.com/images/digimon/w/Black_War_Greymon.png",
+    "pageImage": false
+  },
+  "species-10475": {
+    "url": "https://digi-api.com/images/digimon/w/Metal_Garurumon_(Black).png",
+    "pageImage": false
+  },
+  "gennai": {
+    "url": "https://wikimon.net/images/2/2e/Gennai.jpg",
+    "pageImage": false
+  },
+  "evolution-tag": {
+    "url": "https://www.deviantart.com/jojogape/art/Digimon-Tag-HD-578170061",
+    "pageImage": true
+  },
+  "digivice-adventure": {
+    "url": "https://wikimon.net/images/d/dc/Digivice.png",
+    "pageImage": false
+  },
+  "digitama-adventure": {
+    "url": "https://digimon.net/profile/images/profile/labo/img_labo_01.png",
+    "pageImage": false
+  },
+  "capsule-courage": {
+    "url": "https://wikimon.net/images/2/2b/Digimental_courage.jpg",
+    "pageImage": false
+  },
+  "capsule-friendship": {
+    "url": "https://wikimon.net/images/1/13/Digimental_friendship.jpg",
+    "pageImage": false
+  },
+  "capsule-miracles": {
+    "url": "https://wikimon.net/images/a/a8/Digimental_miracles.jpg",
+    "pageImage": false
+  },
+  "capsule-love": {
+    "url": "https://wikimon.net/images/d/de/Digimental_love.jpg",
+    "pageImage": false
+  },
+  "capsule-purity": {
+    "url": "https://wikimon.net/images/3/33/Digimental_purity.jpg",
+    "pageImage": false
+  },
+  "capsule-knowledge": {
+    "url": "https://wikimon.net/images/6/6a/Digimental_knowledge.jpg",
+    "pageImage": false
+  },
+  "capsule-sincerity": {
+    "url": "https://wikimon.net/images/3/34/Digimental_reliability.jpg",
+    "pageImage": false
+  },
+  "capsule-hope": {
+    "url": "https://wikimon.net/images/a/aa/Digimental_hope.jpg",
+    "pageImage": false
+  },
+  "capsule-light": {
+    "url": "https://wikimon.net/images/c/c0/Digimental_light.jpg",
+    "pageImage": false
+  },
+  "capsule-fate": {
+    "url": "https://wikimon.net/images/0/06/Digimental_fate.jpg",
+    "pageImage": false
+  }
+}

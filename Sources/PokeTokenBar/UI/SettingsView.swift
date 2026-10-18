@@ -47,7 +47,7 @@ struct SettingsView: View {
         guard let species = companion.representativeDexSpecies else {
             return l.representativeFollowCurrent
         }
-        return "#\(species.id) \(species.name)\(species.isShiny ? " ✨" : "")"
+        return "\(DigimonCatalog.numberLabel(for: species.id)) \(species.name)\(species.isShiny ? " ✨" : "")"
     }
 
     /// 세이브 봉투에 남길 출처 표기 — 어느 Mac에서 내보낸 파일인지 나중에 알아보기 위한 것.
@@ -103,7 +103,7 @@ struct SettingsView: View {
             Divider()
             footer
         }
-        .frame(height: 460)
+        .frame(height: 640)
     }
 
     private var header: some View {
@@ -131,16 +131,16 @@ struct SettingsView: View {
         HStack(spacing: 5) {
             Text("v\(Self.appVersion)")
             Text("·")
-            footerLink("GitHub", "https://github.com/chattymin/PokeTokenBar")
+            footerLink("GitHub", "https://github.com/Choisiz/DigiTokenBar")
             Text("·")
-            footerLink(l.website, "https://chattymin.github.io/PokeTokenBar/")
+            footerLink("Upstream", "https://github.com/chattymin/PokeTokenBar")
             Text("·")
             // 개발자 후원 — 기능 잠금·너지 없는 푸터 링크
             footerLink("♥ " + l.sponsor, "https://github.com/sponsors/chattymin")
             Spacer()
         }
         .font(.caption2)
-        .foregroundStyle(.tertiary)
+        .foregroundStyle(CyberPalette.muted.opacity(0.85))
         .padding(.horizontal, 16)
         .padding(.vertical, 10)
     }
@@ -198,7 +198,7 @@ struct SettingsView: View {
                 // 메뉴바 스프라이트와 플로팅 펫 **둘 다**에 적용되므로 펫 섹션이 아니라 일반 섹션에 둔다.
                 VStack(alignment: .leading, spacing: 1) {
                     Text(l.animationQualityLabel)
-                    Text(l.animationQualityHint).font(.caption2).foregroundStyle(.tertiary)
+                    Text(l.animationQualityHint).font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                 }
                 Spacer()
                 Picker(l.animationQualityLabel, selection: $store.animationQuality) {
@@ -227,7 +227,7 @@ struct SettingsView: View {
                 VStack(alignment: .leading, spacing: 1) {
                     Text(l.launchAtLogin)
                     if !isBundledApp {
-                        Text(l.bundledOnly).font(.caption2).foregroundStyle(.tertiary)
+                        Text(l.bundledOnly).font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                     }
                     if let launchAtLoginError {
                         Text(l.userFacingError(launchAtLoginError)).font(.caption2).foregroundStyle(.red)
@@ -270,7 +270,7 @@ struct SettingsView: View {
                     groupRow {
                         VStack(alignment: .leading, spacing: 1) {
                             Text(l.menuLimitColor)
-                            Text(l.menuLimitColorHint).font(.caption2).foregroundStyle(.tertiary)
+                            Text(l.menuLimitColorHint).font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                         }
                         Spacer()
                         Picker(l.menuLimitColor, selection: $store.menuLimitColorMode) {
@@ -283,7 +283,7 @@ struct SettingsView: View {
                     }
                 }
             }
-            Text(l.allOffHint).font(.caption2).foregroundStyle(.tertiary).padding(.leading, 4)
+            Text(l.allOffHint).font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85)).padding(.leading, 4)
         }
     }
 
@@ -294,7 +294,7 @@ struct SettingsView: View {
             groupRow {
                 VStack(alignment: .leading, spacing: 1) {
                     Text(l.floatingPetEnableLabel)
-                    Text(l.floatingPetHint).font(.caption2).foregroundStyle(.tertiary)
+                    Text(l.floatingPetHint).font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                 }
                 Spacer()
                 Toggle(l.floatingPetEnableLabel, isOn: $store.floatingPetEnabled)
@@ -344,7 +344,7 @@ struct SettingsView: View {
             groupRow {
                 VStack(alignment: .leading, spacing: 1) {
                     Text(l.statusChecksLabel)
-                    Text(l.statusChecksHint).font(.caption2).foregroundStyle(.tertiary)
+                    Text(l.statusChecksHint).font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                 }
                 Spacer()
                 Toggle(l.statusChecksLabel, isOn: $store.statusChecksEnabled)
@@ -398,7 +398,7 @@ struct SettingsView: View {
                             }
                         }
                     } else {
-                        Text(l.upToDate(Self.appVersion)).font(.caption).foregroundStyle(.secondary)
+                        Text(l.upToDate(Self.appVersion)).font(.caption).foregroundStyle(CyberPalette.muted)
                         Spacer()
                     }
                 }
@@ -415,7 +415,7 @@ struct SettingsView: View {
             groupRow {
                 VStack(alignment: .leading, spacing: 1) {
                     Text(l.exportSaveLabel)
-                    Text(l.exportSaveHint).font(.caption2).foregroundStyle(.tertiary)
+                    Text(l.exportSaveHint).font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                 }
                 Spacer()
                 Button(l.exportSaveButton) { exportSave() }
@@ -424,7 +424,7 @@ struct SettingsView: View {
             groupRow {
                 VStack(alignment: .leading, spacing: 1) {
                     Text(l.importSaveLabel)
-                    Text(l.importSaveHint).font(.caption2).foregroundStyle(.tertiary)
+                    Text(l.importSaveHint).font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                 }
                 Spacer()
                 Button(l.importSaveButton) { importSave(store) }
@@ -437,7 +437,7 @@ struct SettingsView: View {
     @ViewBuilder
     private func snapshotsSection(_ store: UsageStore) -> some View {
         groupRow {
-            Text(l.createSnapshotHint).font(.caption2).foregroundStyle(.tertiary)
+            Text(l.createSnapshotHint).font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
             Spacer()
             Button(l.createSnapshotButton) { takeManualSnapshot() }
         }
@@ -452,7 +452,7 @@ struct SettingsView: View {
             VStack(spacing: 0) {
                 if companion.availableSnapshots.isEmpty {
                     groupRow {
-                        Text(l.noSnapshotsYet).font(.caption2).foregroundStyle(.tertiary)
+                        Text(l.noSnapshotsYet).font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                         Spacer()
                     }
                 } else {
@@ -485,7 +485,7 @@ struct SettingsView: View {
                         tokens: TokenFormatter.compact(snapshot.lifetimeTokens)
                     ))
                     .font(.caption2)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(CyberPalette.muted)
                 }
             }
             Spacer()
@@ -515,7 +515,7 @@ struct SettingsView: View {
                 }
                 // The key only replaces the default login's Keychain read; other accounts have their own below.
                 Text(store.additionalClaudeConfigRoots.isEmpty ? l.sessionKeyHint : l.sessionKeyHint + " " + l.sessionKeyPerAccountNote)
-                    .font(.caption2).foregroundStyle(.tertiary)
+                    .font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                     .fixedSize(horizontal: false, vertical: true)
             }
             Spacer()
@@ -568,7 +568,7 @@ struct SettingsView: View {
                 .padding(.horizontal, 12).padding(.bottom, 6)
         } else if store.sessionKeyConfigured {
             Text(l.sessionKeyStorageNote)
-                .font(.caption2).foregroundStyle(.tertiary)
+                .font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                 .fixedSize(horizontal: false, vertical: true)
                 .padding(.horizontal, 12).padding(.bottom, 6)
         }
@@ -585,7 +585,7 @@ struct SettingsView: View {
         // The storage note is shown once, under the default key when that one is saved.
         if !store.accountSessionKeyPaths.isEmpty, !store.sessionKeyConfigured || store.sessionKeyError != nil {
             Text(l.sessionKeyStorageNote)
-                .font(.caption2).foregroundStyle(.tertiary)
+                .font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                 .fixedSize(horizontal: false, vertical: true)
                 .padding(.horizontal, 12).padding(.bottom, 6)
         }
@@ -615,7 +615,7 @@ struct SettingsView: View {
                 }
                 // The email names the browser login to copy the key from; the folder tells two logins apart.
                 if title != folder {
-                    Text(folder).font(.caption2).foregroundStyle(.tertiary)
+                    Text(folder).font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                 }
             }
             Spacer()
@@ -678,7 +678,7 @@ struct SettingsView: View {
             } label: {
                 HStack(spacing: 6) {
                     Image(systemName: "chevron.forward")
-                        .font(.caption).foregroundStyle(.secondary)
+                        .font(.caption).foregroundStyle(CyberPalette.muted)
                         .rotationEffect(.degrees(advancedExpanded ? 90 : 0))
                     Text(l.advancedDisclosureLabel)
                     Spacer()
@@ -704,7 +704,7 @@ struct SettingsView: View {
                 groupRow {
                     VStack(alignment: .leading, spacing: 1) {
                         Text(l.disableKeychain)
-                        Text(l.disableKeychainHint).font(.caption2).foregroundStyle(.tertiary)
+                        Text(l.disableKeychainHint).font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                     }
                     Spacer()
                     Toggle(l.disableKeychain, isOn: $store.disableKeychainAccess)
@@ -714,7 +714,7 @@ struct SettingsView: View {
                 groupRow {
                     VStack(alignment: .leading, spacing: 1) {
                         Text(l.refreshLimitToken)
-                        Text(l.onlyOnPress).font(.caption2).foregroundStyle(.tertiary)
+                        Text(l.onlyOnPress).font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                     }
                     Spacer()
                     Button {
@@ -740,7 +740,7 @@ struct SettingsView: View {
                 groupRow {
                     VStack(alignment: .leading, spacing: 6) {
                         Text(l.customScanRootsLabel)
-                        Text(l.customScanRootsHint).font(.caption2).foregroundStyle(.tertiary)
+                        Text(l.customScanRootsHint).font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                         HStack {
                             Text(l.customScanProviderLabel).font(.caption)
                             Spacer()
@@ -757,7 +757,7 @@ struct SettingsView: View {
                             .onSubmit { commitCustomScanDraft() }
                         if !customScanDraft.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
                             Text(l.customScanRootsMatches(customScanMatchCount))
-                                .font(.caption2).foregroundStyle(.tertiary)
+                                .font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                         }
                     }
                 }
@@ -784,7 +784,7 @@ struct SettingsView: View {
                 }
                 Divider()
                 Text(l.aggregationNote)
-                    .font(.caption2).foregroundStyle(.tertiary)
+                    .font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                     .padding(.horizontal, 12).padding(.vertical, 8)
             }
         }
@@ -807,7 +807,7 @@ struct SettingsView: View {
             VStack(alignment: .leading, spacing: 6) {
                 VStack(alignment: .leading, spacing: 1) {
                     Text(l.trackedAccountLabel)
-                    Text(l.trackedAccountHint).font(.caption2).foregroundStyle(.tertiary)
+                    Text(l.trackedAccountHint).font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                 }
                 HStack {
                     Spacer()
@@ -830,12 +830,12 @@ struct SettingsView: View {
         groupRow {
             VStack(alignment: .leading, spacing: 6) {
                 Text(l.additionalClaudeAccountsLabel)
-                Text(l.additionalClaudeAccountsHint).font(.caption2).foregroundStyle(.tertiary)
+                Text(l.additionalClaudeAccountsHint).font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                 if !store.detectedClaudeConfigDirs.isEmpty {
                     Text(l.additionalClaudeAccountsDetected(store.detectedClaudeConfigDirs
                         .map { ($0 as NSString).abbreviatingWithTildeInPath }
                         .joined(separator: ", ")))
-                        .font(.caption2).foregroundStyle(.secondary)
+                        .font(.caption2).foregroundStyle(CyberPalette.muted)
                 }
                 TextField(l.additionalClaudeAccountsPlaceholder, text: $additionalAccountsDraft, axis: .vertical)
                     .textFieldStyle(.roundedBorder).font(.caption)
@@ -843,7 +843,7 @@ struct SettingsView: View {
                     .onSubmit { store.additionalClaudeConfigDirs = additionalAccountsDraft }
                 if !additionalAccountsDraft.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
                     Text(l.additionalClaudeAccountsFound(ClaudeAccountRoots.roots(from: additionalAccountsDraft).count))
-                        .font(.caption2).foregroundStyle(.tertiary)
+                        .font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                 }
             }
         }
@@ -859,7 +859,7 @@ struct SettingsView: View {
             groupRow {
                 VStack(alignment: .leading, spacing: 1) {
                     Text(l.reportProblem)
-                    Text(l.reportAttachHint).font(.caption2).foregroundStyle(.tertiary)
+                    Text(l.reportAttachHint).font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                 }
                 Spacer()
                 Button(l.reportProblem) { reportProblem() }
@@ -890,13 +890,10 @@ struct SettingsView: View {
     ) -> some View {
         VStack(alignment: .leading, spacing: 6) {
             Text(title)
-                .font(.caption).fontWeight(.semibold).foregroundStyle(.secondary)
+                .font(.caption).fontWeight(.semibold).foregroundStyle(CyberPalette.cyan)
                 .textCase(.uppercase).padding(.leading, 4)
             VStack(spacing: 0) { content() }
-                .background(Color(nsColor: .controlBackgroundColor),
-                           in: RoundedRectangle(cornerRadius: 8))
-                .overlay(RoundedRectangle(cornerRadius: 8)
-                    .stroke(Color(nsColor: .separatorColor).opacity(0.6), lineWidth: 1))
+                .cyberPanel()
         }
     }
 

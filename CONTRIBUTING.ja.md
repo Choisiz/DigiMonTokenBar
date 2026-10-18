@@ -1,119 +1,23 @@
-# PokeTokenBar への貢献
+# DigiTokenBarへの貢献
 
-[English](CONTRIBUTING.md) · [한국어](CONTRIBUTING.ko.md) · **日本語**
+DigiTokenBar is an independent fan adaptation of
+[chattymin/PokeTokenBar](https://github.com/chattymin/PokeTokenBar). Retain the
+original MIT copyright and permission notices. See [NOTICE](NOTICE.md) and
+[third-party notices](THIRD_PARTY_NOTICES.md) before changing artwork or data.
 
-貢献に興味を持っていただきありがとうございます！PokeTokenBar は小さな非商用の
-ファンプロジェクトで、大小を問わずあらゆる貢献を歓迎します — バグ報告、修正、
-新しい使用量プロバイダー、翻訳、ドキュメント。
+- Use macOS 14+, Swift 6 and Apple developer tools.
+- Build with `./scripts/build-digimon-app.sh`.
+- Validate with `./scripts/test-gate.sh`; focused tests use `swift test --filter <TestCase>`.
+- Package with `./scripts/package-digimon-app.sh`. This creates a local ZIP only.
+- Use English Conventional Commit titles and describe behavior and validation.
+- Keep maintained regression tests; do not commit personal saves, credentials,
+  private paths, agent instructions, local QA fixtures, previews or instrumentation.
+- Do not add downloaded artwork to resources. The distribution allowlist must pass.
+- Runtime downloads do not establish copyright permission; include provenance and
+  verify applicable terms. No official endorsement or rights clearance is claimed.
+- Follow the pull request template. Provide only images you may share when
+  explaining a visible UI change; never include private data.
 
-プルリクエストを開く前に、以下の短いセクションをお読みください。
-
-## 前提条件
-
-- **macOS 14 (Sonoma) 以降**
-- **Swift 6 ツールチェーン** (Xcode 16 以降) — `Package.swift` が要求
-  (`swift-tools-version: 6.0`)
-
-## ビルド & テスト
-
-本プロジェクトは Swift Package です。リポジトリのルートから:
-
-```bash
-swift build             # アプリターゲットをコンパイル
-./scripts/test-gate.sh   # 全テストを実行し、ロジックコアのカバレッジを検証
-```
-
-CI もすべてのプルリクエストで同じコマンドを実行します。テストゲートは
-`swift test --enable-code-coverage` を実行し、デフォルトでロジックコアの行カバレッジ
-75% 以上を要求します。PR を提出する前に、ローカルで両方を実行してください。
-開発中に特定のテストだけを確認する場合は `swift test --filter <TestCase>` を使ってください。
-
-## 貢献ワークフロー
-
-1. `main` から feature ブランチを作成します（書き込み権限がなければリポジトリを fork）。
-2. テストとともに変更します。変更は focused に保ってください。
-3. `main` に対してプルリクエストを開きます。
-4. CI が通りレビューが完了したら、**squash merge** でマージされます。
-
-### 言語: 英語優先
-
-本リポジトリでは、共同作業で残るもの（Issue・PR・公開コメント）は **英語を第一言語**とします:
-
-- **プルリクエストのタイトルと本文は英語である必要があります。**
-- **コミットメッセージは英語で書いてください。**
-
-リポジトリは squash-merge するため、PR タイトルが `main` のコミット件名になります —
-英語の PR が公開履歴を一貫させます。
-
-### コミット & PR の規約
-
-- [Conventional Commits](https://www.conventionalcommits.org/) スタイルを使用:
-  `feat:`, `fix:`, `docs:`, `chore:`, `refactor:`, `test:` など。
-- 英語の PR タイトル（例: `fix(home): retain idle usage history`）を使い、テンプレートの
-  該当するセクションとチェックリストを記入してください。
-- **画面が変わるすべての PR** は `UI changes` に画像を埋め込む必要があります。
-  UI ディレクトリ外に起因する変更も対象です。実際のスクリーンショット、本番 UI の
-  ローカルレンダリング、変更した UI のイラストを使用できます。サンプルデータの
-  レンダリングとイラストはその旨を明記してください。既存画面には変更前後の画像、
-  新規画面には画像と以前の画面がない旨の説明が必要です。テキストだけでは代用できません。
-  画像がない場合、コーディングエージェントは許可された PR 作業の一環として生成・添付します。
-  適切な生成・添付の代替手段を試し、それでも具体的な障害で完了できない場合に限り公開を
-  保留してください。正式な `assets/` スクリーンショットは PR ごとではなくリリース時に
-  再生成されます。
-- コーディングエージェントは `.agents/skills/prepare-pr/` の共通 skill を使用します。
-  `.claude/skills/prepare-pr` も同じ skill を参照します。公開前のローカルチェック:
-  `python3 scripts/check-pr.py --base origin/main --title 'docs: clarify PR requirements' --body-file /tmp/pr-body.md`。
-  UI ディレクトリ外の画面変更には `--ui-changes` を追加してください。
-
-## コード規約
-
-本アプリは設計上プロバイダー非依存（provider-agnostic）です。拡張する際は次のルールに
-従ってください（テストでも強制されます）:
-
-- **使用量ソースの追加**（新しい AI CLI）= `UsageProvider` プロトコル
-  (`Sources/PokeTokenBar/Core/UsageProvider.swift`) を新しい型ひとつで実装し、
-  `UsageStore.init` のデフォルト `providers:` 配列
-  (`Sources/PokeTokenBar/Core/UsageStore.swift`) に登録します。この2箇所は基本の追加先であり、
-  変更が2ファイルに限定されるわけではありません。ソースに応じて、リーダー、共有キャッシュとの連携、
-  カスタムスキャンパス、テストも追加・更新してください。
-  [プロバイダー拡張ガイド](docs/reference/provider-extension.md)と
-  [プロバイダー貢献チェックリスト](https://github.com/chattymin/PokeTokenBar/issues/115)に従ってください。
-- **汎用的な動作はすべてのプロバイダーにわたって集計する必要があります**（今日/週/月の
-  合計、消費ペースの段階、コンパニオンのリズム）。汎用的な計算を特定のプロバイダーに結び付けたり、
-  汎用パスに `providerID == "..."` のリテラル分岐を追加したりしないでください。
-  プロバイダー固有の動作（例: 公式の上限）だけが `providerID` で分岐できます。
-- **バージョンマネージャー / インストールパスの追加** =
-  `BinaryLocator.commonToolDirectories()` に追加します — 探索と子プロセスの `PATH` が
-  共有する単一のソースです。
-- **追記専用 SQLite 使用量ストアの追加**（Cursor・Copilot のように rowid/`id` ウォーターマーク）=
-  `LocalAdditionalUsageReader.scanIncrementalStores` に URL / `MAX` SQL / row query /
-  parse だけ渡す。ウォーターマーク・ループをコピーしない。
-
-## 法務 / 知的財産
-
-PokeTokenBar は**非公式・非商用のファンプロジェクト**であり、任天堂、ゲームフリーク、
-クリーチャーズ、株式会社ポケモンとは提携していません
-（[README](README.ja.md#ライセンス--免責) の免責を参照）。プロジェクトを安全に維持・
-配布するため、貢献は**必ず**次のルールに従う必要があります:
-
-- **ポケモン（またはその他の第三者）の著作物をコミット・バンドルしないでください** —
-  スプライト、アートワーク、音声、フォント、名前/データの一括ファイル。ポケモンの種族
-  データおよびスプライトは、公開されている [PokéAPI](https://pokeapi.co) から
-  **実行時に**取得され、ユーザーの端末にローカルキャッシュされます。そのまま維持して
-  ください。
-- **商用利用を意図した機能**や、著作物を再配布・エクスポートする機能を追加しないで
-  ください。
-- **シークレット、認証情報、非公開/内部ツールへの参照をコミットしないでください。**
-  リポジトリ内のものはすべて、特定の環境に依存せず公開しても安全な状態に保ってください。
-- 貢献を提出することにより、それが**あなた自身のオリジナルな成果物**であることを確認し、
-  本プロジェクトの [MIT License](LICENSE) の下でライセンスされることに同意したものと
-  します。MIT ライセンスは本プロジェクトのソースコードのみを対象とし — 第三者の商標・
-  アートワーク・データに関する権利は付与しません。
-
-## バグ報告 & 機能リクエスト
-
-Issue テンプレートを使用してください。バグの場合は、macOS のバージョン、アプリの
-バージョン、使用している AI CLI、再現手順を含めてください。
-
-権利者の方で本プロジェクトに懸念がある場合は、Issue を作成するかメンテナーまで
-ご連絡ください。速やかに対応いたします。
+To report a problem, use this repository's Issues and describe the OS, app version,
+expected behavior and actual behavior. Remove secrets, prompts and private paths
+from any diagnostic text before posting it.

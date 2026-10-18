@@ -36,6 +36,7 @@ final class IndividualPickerRenderingTests: XCTestCase {
             let species = try XCTUnwrap(store.dexSpecies.first { $0.id == 47 })
             let view = PokemonDetailView(store: store, species: species, onBack: {},
                 spriteStore: SpriteStore(directory: dir))
+                .environment(PopoverNavigation())
                 .frame(width: PopoverMetrics.contentWidth, height: 520)
                 .background(Color.white).environment(\.colorScheme, .light)
             let host = NSHostingView(rootView: view)

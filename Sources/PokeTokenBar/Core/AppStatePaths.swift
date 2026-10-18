@@ -11,7 +11,7 @@ enum AppStatePaths {
             dir = URL(fileURLWithPath: override, isDirectory: true)
         } else {
             dir = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
-                .appendingPathComponent("PokeTokenBar")
+                .appendingPathComponent("DigiTokenBar")
         }
         try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         return dir

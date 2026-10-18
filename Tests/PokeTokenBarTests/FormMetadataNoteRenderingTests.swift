@@ -121,7 +121,7 @@ final class FormMetadataNoteRenderingTests: XCTestCase {
             (nil, 492, true, false, false),
         ] {
             let store = try await store(form: form, speciesID: speciesID, egg: egg, detailsAvailable: loaded)
-            let host = mount(CompanionHeader(store: store), height: 260)
+            let host = mount(CompanionHeader(store: store).environment(PopoverNavigation()), height: 260)
             try await assertNote(note, in: host, loaded: loaded)
         }
     }
@@ -131,7 +131,7 @@ final class FormMetadataNoteRenderingTests: XCTestCase {
             let store = try await store(form: form)
             // Pass the aggregate/default species, as CollectionView does; the representative is Sky.
             let species = try XCTUnwrap(store.dexSpecies.first { $0.id == 492 })
-            let host = mount(PokemonDetailView(store: store, species: species, onBack: {}), height: 520)
+            let host = mount(PokemonDetailView(store: store, species: species, onBack: {}).environment(PopoverNavigation()), height: 520)
             try await assertNote(form == PokemonForm("sky"), in: host)
         }
     }

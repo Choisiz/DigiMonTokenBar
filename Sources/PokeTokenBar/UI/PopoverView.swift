@@ -6,7 +6,7 @@ enum PopoverTab { case home, shop, bag, collection }
 /// 팝오버 치수의 단일 소스. 자식이 쓸 수 있는 폭을 알아야 할 때 이 값을 쓴다 — 넘치는 자식이
 /// 부모 폭을 부풀리므로 GeometryReader 로 재면 순환한다.
 enum PopoverMetrics {
-    static let width: CGFloat = 360
+    static let width: CGFloat = 420
     static let padding: CGFloat = 14
     /// 이 폭을 넘는 자식은 팝오버 창에 좌우로 잘린다.
     static let contentWidth: CGFloat = width - padding * 2
@@ -32,14 +32,16 @@ extension View {
 @MainActor
 @Observable
 final class PopoverNavigation {
-    var showSettings = false { didSet { if showSettings { dexDetailCollectionID = nil } } }
-    var tab: PopoverTab = .home { didSet { if tab != .collection { dexDetailCollectionID = nil } } }
+    var showSettings = false { didSet { if showSettings { dexDetailCollectionID = nil; showingEvolutionPicker = false; showingSpecialEvolutionPicker = false } } }
+    var showingEvolutionPicker = false
+    var showingSpecialEvolutionPicker = false
+    var tab: PopoverTab = .home { didSet { if tab != .collection { dexDetailCollectionID = nil }; if tab != .home { showingEvolutionPicker = false; showingSpecialEvolutionPicker = false } } }
     /// 일반적인 컬렉션 재진입에는 마지막 세그먼트를 유지하되, 대표 포켓몬 선택 진입점은 도감으로 강제한다.
     var showingCollectionLog = false {
         didSet { if showingCollectionLog != oldValue { dexDetailCollectionID = nil } }
     }
     /// The usage recap takes over the popover like Settings does; closing the popover drops it.
-    var showingRecap = false { didSet { if showingRecap { dexDetailCollectionID = nil } } }
+    var showingRecap = false { didSet { if showingRecap { dexDetailCollectionID = nil; showingEvolutionPicker = false; showingSpecialEvolutionPicker = false } } }
     /// The Collection tab's open Pokédex detail page (`DexSpecies.collectionID`); nil = grid or log.
     /// It lives here so Home sprites can open it, but it only lasts while the collection content is
     /// on screen: leaving the tab, switching segment, or covering it with Settings/Recap drops it —
@@ -54,6 +56,8 @@ final class PopoverNavigation {
     var expandAdvancedOnOpen = false
 
     func reset() {
+        showingSpecialEvolutionPicker = false
+        showingEvolutionPicker = false
         showSettings = false
         expandAdvancedOnOpen = false
         showingRecap = false
@@ -98,7 +102,13 @@ struct PopoverView: View {
         // 이후 팝오버의 모든 버튼 클릭을 차단할 수 있음 — 팝오버 내부 화면 전환으로 처리
         @Bindable var nav = nav
         Group {
-            if nav.showSettings {
+            if let scene = companion.evolutionScene {
+                DigimonEvolutionSceneView(store: companion, scene: scene).id(scene.id)
+            } else if nav.showingSpecialEvolutionPicker {
+                DigimonSpecialEvolutionPicker(store: companion) { nav.showingSpecialEvolutionPicker = false }
+            } else if nav.showingEvolutionPicker {
+                DigimonEvolutionPicker(store: companion) { nav.showingEvolutionPicker = false }
+            } else if nav.showSettings {
                 SettingsView(
                     onClose: {
                         nav.showSettings = false
@@ -118,6 +128,8 @@ struct PopoverView: View {
         }
         .frame(width: PopoverMetrics.width)
         .environment(\.locale, companion.language.displayLocale)
+        .cyberSurface()
+        .overlay(alignment: .top) { Rectangle().fill(CyberPalette.cyan).frame(height: 2).allowsHitTesting(false) }
     }
 
     @ViewBuilder
@@ -130,11 +142,11 @@ struct PopoverView: View {
                 HStack(spacing: 8) {
                     Spacer()
                     if updater.isUpdating {
-                        Text(l.updating).font(.caption2).foregroundStyle(.secondary)
+                        Text(l.updating).font(.caption2).foregroundStyle(CyberPalette.muted)
                         ProgressView().controlSize(.small)
                     } else {
                         Button(l.skipThisVersion) { updater.skipCurrent() }
-                            .buttonStyle(.borderless).controlSize(.small).foregroundStyle(.secondary)
+                            .buttonStyle(.borderless).controlSize(.small).foregroundStyle(CyberPalette.muted)
                         Button(l.updateButton) { updater.applyUpdate() }
                             .buttonStyle(.borderedProminent).controlSize(.small)
                     }
@@ -150,14 +162,8 @@ struct PopoverView: View {
         @Bindable var nav = nav
         return VStack(alignment: .leading, spacing: 12) {
             updateBanner
-            Picker("", selection: $nav.tab) {
-                Text(l.home).tag(PopoverTab.home)
-                Text(l.shop).tag(PopoverTab.shop)
-                Text(l.bag).tag(PopoverTab.bag)
-                Text(l.collection).tag(PopoverTab.collection)
-            }
-            .pickerStyle(.segmented)
-            .labelsHidden()
+            CyberTerminalHeader()
+            CyberNavigation(navigation: nav, l: l)
 
             if nav.tab == .collection {
                 CollectionView(store: companion, navigation: nav)
@@ -169,14 +175,17 @@ struct PopoverView: View {
                 // 고정 높이 — 상점/가방/컬렉션과 동일(팝오버가 화면을 넘어가는 것을 방지).
                 ScrollView {
                     VStack(alignment: .leading, spacing: 12) {
-                        CompanionHeader(store: companion) { nav.openDexEntry(collectionID: $0) }
-                        Divider()
-                        header
-                        Divider()
+                        VStack(alignment: .leading, spacing: 12) {
+                            CyberSectionHeading(number: "01", title: "PARTNER LINK", detail: companion.isEgg ? "INCUBATION" : "CONNECTED")
+                            CompanionHeader(store: companion) { nav.openDexEntry(collectionID: $0) }
+                        }.padding(12).cyberPanel(binary: true, patternOffset: CGPoint(x: 0, y: -8))
+                        VStack(alignment: .leading, spacing: 10) {
+                            CyberSectionHeading(number: "02", title: "DATA TRAFFIC")
+                            header
+                        }.padding(12).cyberPanel()
                         providerStatusBanner   // 인시던트 있을 때만 — 한도 가용 여부와 무관(API 다운=한도 nil 케이스에도)
                         if selectedProviderHasLimits {
-                            limitsSection
-                            Divider()
+                            limitsSection.padding(12).cyberPanel()
                         }
                     }
                     .reservesScrollerLane()
@@ -184,6 +193,8 @@ struct PopoverView: View {
                 .frame(height: 520)
             }
             footer
+                .padding(.top, 8)
+                .overlay(alignment: .top) { Rectangle().fill(CyberPalette.line).frame(height: 1) }
         }
         .padding(PopoverMetrics.padding)
     }
@@ -191,64 +202,31 @@ struct PopoverView: View {
     // MARK: 헤더 — 오늘 합계 + provider/토큰타입 분해
 
     private var header: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Text(l.todayTokens)
-                .font(.caption)
-                .foregroundStyle(.secondary)
-            HStack(alignment: .firstTextBaseline) {
-                Text(TokenFormatter.compact(store.todayTotalTokens))
-                    .font(.system(size: 28, weight: .bold))
-                    .monospacedDigit()
-                if store.todayTotalTokens >= 1_000 {
-                    Text(TokenFormatter.grouped(store.todayTotalTokens))
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                        .monospacedDigit()
-                }
-                Spacer()
-                if store.showsCost {
-                    UsageCostText(cost: store.todayUsageCost, l: l)
-                        .font(.callout)
-                        .foregroundStyle(.secondary)
-                }
-            }
-
-            // Keep period totals and saved-history navigation visible on quiet days too.
-            HStack(spacing: 14) {
-                periodLabel(l.thisWeek, tokens: store.weekTotalTokens, cost: store.showsCost ? store.weekUsageCost : nil)
-                periodLabel(l.thisMonth, tokens: store.monthTotalTokens, cost: store.showsCost ? store.monthUsageCost : nil)
-                Spacer()
-                Button { nav.showingRecap = true } label: {
-                    Image(systemName: "chart.bar.xaxis")
-                }
-                .buttonStyle(.borderless)
-                .help(l.recapOpen)
-                .accessibilityLabel(l.recapOpen)
-            }
-            .padding(.top, 2)
-
-            MonthDailyTrend(series: store.monthDailyTotals,
-                            providers: store.snapshots.compactMap { snap in
-                                snap.monthDaily.map {
-                                    DailyTrendStack.ProviderSeries(
-                                        id: snap.providerID, name: snap.displayName,
-                                        days: $0, reportsCost: snap.reportsCost)
-                                }
-                            },
-                            providerOrder: store.registeredProviderIDs,
-                            showsCost: store.showsCost,
-                            today: LocalUsageReader.todayKey(),
-                            l: l)
-
-            // 연결된 서비스가 2개 이상이면 작은 탭으로 서비스별 상세를 넘나든다
-            // (합계는 위에 유지 — 상세·한도만 탭 스코프).
-            if store.snapshots.count > 1 {
-                providerTabBar
-                    .padding(.top, 6)
-            }
-            if let snap = selectedSnapshot, let today = snap.today {
-                providerRow(snapshot: snap, today: today)
-            }
+        VStack(alignment: .leading, spacing: 8) {
+            if !store.snapshots.isEmpty { providerTabBar }
+            TerminalTrafficConsole(snapshot: selectedSnapshot, l: l, showsCost: store.showsCost,
+                                   onRecap: { nav.showingRecap = true })
+            DisclosureGroup(l.lang == .ko ? l.digimonUI("ALL SERVICES · DETAILS") : "ALL SERVICES · DETAILS") {
+                VStack(alignment: .leading, spacing: 8) {
+                    HStack {
+                        Text(l.todayTokens)
+                        Spacer()
+                        Text(TokenFormatter.grouped(store.todayTotalTokens)).monospacedDigit()
+                        if store.showsCost { UsageCostText(cost: store.todayUsageCost, l: l) }
+                    }
+                    HStack {
+                        periodLabel(l.thisWeek, tokens: store.weekTotalTokens, cost: store.showsCost ? store.weekUsageCost : nil)
+                        periodLabel(l.thisMonth, tokens: store.monthTotalTokens, cost: store.showsCost ? store.monthUsageCost : nil)
+                    }
+                    MonthDailyTrend(series: store.monthDailyTotals,
+                        providers: store.snapshots.compactMap { snap in
+                            snap.monthDaily.map { DailyTrendStack.ProviderSeries(id: snap.providerID,
+                                name: snap.displayName, days: $0, reportsCost: snap.reportsCost) }
+                        }, providerOrder: store.registeredProviderIDs, showsCost: store.showsCost,
+                        today: LocalUsageReader.todayKey(), l: l)
+                    if let snap = selectedSnapshot, let today = snap.today { providerRow(snapshot: snap, today: today) }
+                }.padding(.top, 6)
+            }.font(.system(size: 9)).foregroundStyle(CyberPalette.muted)
         }
     }
 
@@ -268,14 +246,14 @@ struct PopoverView: View {
         HStack(spacing: 4) {
             Text(name)
                 .font(.caption)
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(CyberPalette.muted.opacity(0.85))
             Text(TokenFormatter.compact(tokens))
                 .font(.caption.weight(.semibold))
                 .monospacedDigit()
             if let cost {
                 UsageCostText(cost: cost, l: l)
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(CyberPalette.muted)
             }
         }
     }
@@ -292,7 +270,7 @@ struct PopoverView: View {
                 if snapshot.reportsCost {
                     UsageCostText(cost: today.usageCost, l: l)
                         .font(.caption)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(CyberPalette.muted)
                 }
             }
             VStack(alignment: .leading, spacing: 3) {
@@ -310,13 +288,13 @@ struct PopoverView: View {
                     HStack(spacing: 6) {
                         Text(model.split(separator: "/").last.map(String.init) ?? model)
                             .font(.caption2)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(CyberPalette.muted)
                             .lineLimit(1)
                             .truncationMode(.middle)
                         Spacer()
                         Text(TokenFormatter.compact(tokens))
                             .font(.caption2)
-                            .foregroundStyle(.tertiary)
+                            .foregroundStyle(CyberPalette.muted.opacity(0.85))
                             .monospacedDigit()
                     }
                 }
@@ -329,10 +307,10 @@ struct PopoverView: View {
         HStack(spacing: 3) {
             Text(name)
                 .font(.caption2)
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(CyberPalette.muted.opacity(0.85))
             Text(TokenFormatter.compact(value))
                 .font(.caption2)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(CyberPalette.muted)
                 .monospacedDigit()
         }
     }
@@ -369,7 +347,7 @@ struct PopoverView: View {
                     .font(.caption).fontWeight(.medium)
                 if !status.description.isEmpty {
                     Text(status.description)
-                        .font(.caption).foregroundStyle(.secondary).lineLimit(1)
+                        .font(.caption).foregroundStyle(CyberPalette.muted).lineLimit(1)
                 }
                 Spacer()
             }
@@ -392,7 +370,7 @@ struct PopoverView: View {
             HStack(spacing: 4) {
                 Text(l.limitsOfficial)
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(CyberPalette.muted)
                 if selectedSnapshot?.providerID == "claude_code", !store.sessionKeyConfigured {
                     claudeKeychainHelpButton
                 }
@@ -423,7 +401,7 @@ struct PopoverView: View {
                     if buckets.count > 1 {
                         Text(bucket.bucketDisplayName)
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(CyberPalette.muted)
                             .padding(.top, 2)
                     }
                     codexLimitRow(name: l.codexWindow(bucket.primary?.windowDurationMins), window: bucket.primary)
@@ -452,7 +430,7 @@ struct PopoverView: View {
             if let message = status.displayMessage, !message.isEmpty {
                 Text(message)
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(CyberPalette.muted)
             }
             VStack(alignment: .leading, spacing: 8) {
                 if let usage = status.planUsage, let used = usage.usedPercent {
@@ -460,7 +438,7 @@ struct PopoverView: View {
                     if let remaining = usage.remainingDollars {
                         Text(l.cursorRemainingSpend(TokenFormatter.cost(remaining)))
                             .font(.caption)
-                            .foregroundStyle(.tertiary)
+                            .foregroundStyle(CyberPalette.muted.opacity(0.85))
                     }
                 }
                 if let auto = status.planUsage?.autoPercentUsed {
@@ -491,7 +469,7 @@ struct PopoverView: View {
             }
             Text(l.cursorAuthExpiredHint)
                 .font(.caption2)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(CyberPalette.muted)
         }
         .padding(8)
         .background(Color.orange.opacity(0.1))
@@ -511,7 +489,7 @@ struct PopoverView: View {
                     VStack(alignment: .leading, spacing: 4) {
                         Text(l.antigravityGroupTitle(group.displayName))
                             .font(.caption.weight(.semibold))
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(CyberPalette.muted)
 
                         ForEach(group.buckets, id: \.bucketId) { bucket in
                             antigravityBucketRow(bucket)
@@ -534,7 +512,7 @@ struct PopoverView: View {
         HStack(spacing: 6) {
             if store.antigravityLimits == nil {
                 Text(l.limitsTapToLoad)
-                    .font(.caption).foregroundStyle(.secondary)
+                    .font(.caption).foregroundStyle(CyberPalette.muted)
             } else {
                 (Text(l.staleLimits) + Text(" · ") + Text(store.antigravityLimitsUpdatedAt ?? Date(), style: .relative))
                     .font(.caption).foregroundStyle(.orange)
@@ -565,7 +543,7 @@ struct PopoverView: View {
             }
             Text(l.antigravityAuthExpiredHint)
                 .font(.caption2)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(CyberPalette.muted)
             Button(l.retry) {
                 Task { await store.refreshAntigravityLimitsFromKeychain() }
             }
@@ -659,16 +637,16 @@ struct PopoverView: View {
                     Text(detail)
                         .font(.caption)
                         .monospacedDigit()
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(CyberPalette.muted)
                 }
                 if let reset {
                     resetLabel(reset)
                         .font(.caption)
-                        .foregroundStyle(.tertiary)
+                        .foregroundStyle(CyberPalette.muted.opacity(0.85))
                 } else if let idleHint {
                     Text(idleHint)
                         .font(.caption)
-                        .foregroundStyle(.tertiary)
+                        .foregroundStyle(CyberPalette.muted.opacity(0.85))
                 }
                 Text(limitPercentText(utilization))
                     .font(.callout)
@@ -690,7 +668,7 @@ struct PopoverView: View {
                 if let plan = planType {
                     Text(l.plan(plan))
                         .font(.caption)
-                        .foregroundStyle(.tertiary)
+                        .foregroundStyle(CyberPalette.muted.opacity(0.85))
                 }
                 if reached {
                     Text(l.limitReached)
@@ -722,7 +700,7 @@ struct PopoverView: View {
                     .controlSize(.small)
             }
             Text(l.sessionKeyExpiredNoticeHint)
-                .font(.caption2).foregroundStyle(.secondary)
+                .font(.caption2).foregroundStyle(CyberPalette.muted)
                 .fixedSize(horizontal: false, vertical: true)
         }
         .padding(8)
@@ -756,7 +734,7 @@ struct PopoverView: View {
                 .disabled(store.isRefreshingLimitToken)
             }
             Text(hint)
-                .font(.caption2).foregroundStyle(.secondary)
+                .font(.caption2).foregroundStyle(CyberPalette.muted)
                 .fixedSize(horizontal: false, vertical: true)
         }
         .padding(8)
@@ -771,7 +749,7 @@ struct PopoverView: View {
         } label: {
             Image(systemName: "questionmark.circle")
                 .font(.caption)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(CyberPalette.muted)
         }
         .buttonStyle(.plain)
         .help(l.claudeKeychainHelpTooltip)
@@ -780,7 +758,7 @@ struct PopoverView: View {
                 Text(l.claudeKeychainHelpTitle)
                     .font(.caption).fontWeight(.semibold)
                 Text(l.claudeKeychainHelpBody)
-                    .font(.caption2).foregroundStyle(.secondary)
+                    .font(.caption2).foregroundStyle(CyberPalette.muted)
                     .fixedSize(horizontal: false, vertical: true)
                 HStack {
                     Spacer()
@@ -817,7 +795,7 @@ struct PopoverView: View {
         if accounts.count > 1, store.unattributedClaudeUsage.monthTokens > 0 {
             Text(l.unattributedClaudeUsage(TokenFormatter.compact(store.unattributedClaudeUsage.monthTokens)))
                 .font(.caption2)
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(CyberPalette.muted.opacity(0.85))
         }
     }
 
@@ -843,14 +821,14 @@ struct PopoverView: View {
         if let plan = limits.planDisplay {
             Text(l.plan(plan))
                 .font(.caption)
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(CyberPalette.muted.opacity(0.85))
         }
         // 계정 라벨 — 두 계정이 한 Keychain 항목을 번갈아 쓰는 기기에서 이 한도가
         // 어느 계정 것인지 알려준다 (없으면 라벨 없이 종전과 동일).
         if let accountLabel = limits.accountDisplay {
             Text(l.limitsAccount(accountLabel))
                 .font(.caption)
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(CyberPalette.muted.opacity(0.85))
         }
         // This account's share of the local usage (the header keeps the machine-wide totals).
         if showsUsage, let usage = store.claudeAccountUsage[account.id], !usage.isEmpty {
@@ -884,14 +862,14 @@ struct PopoverView: View {
                 HStack {
                     Text(l.claudeCurrentBlock)
                         .font(.caption)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(CyberPalette.muted)
                     Text(TokenFormatter.compact(block.totalTokens))
                         .font(.caption)
                         .monospacedDigit()
                     Spacer()
                     (Text("\(l.reset) ") + Text(end, style: .relative) + resetClockSuffix(end))
                         .font(.caption)
-                        .foregroundStyle(.tertiary)
+                        .foregroundStyle(CyberPalette.muted.opacity(0.85))
                 }
             }
         }
@@ -910,7 +888,7 @@ struct PopoverView: View {
                         .font(.caption).foregroundStyle(.orange)
                 } else {
                     Text(l.limitsTapToLoad)
-                        .font(.caption).foregroundStyle(.secondary)
+                        .font(.caption).foregroundStyle(CyberPalette.muted)
                 }
                 Spacer()
                 Button {
@@ -974,7 +952,7 @@ struct PopoverView: View {
                     : l.forecastNoReach)
                     .font(.caption)
             }
-            .foregroundStyle(forecast.beforeReset ? AnyShapeStyle(.orange) : AnyShapeStyle(.tertiary))
+            .foregroundStyle(forecast.beforeReset ? AnyShapeStyle(.orange) : AnyShapeStyle(CyberPalette.muted.opacity(0.85)))
             .padding(.leading, 2)
         }
     }
@@ -1005,7 +983,7 @@ struct PopoverView: View {
                 if let updated = store.lastUpdated {
                     (Text("\(l.updated) ") + Text(updated, style: .relative))
                         .font(.caption)
-                        .foregroundStyle(.tertiary)
+                        .foregroundStyle(CyberPalette.muted.opacity(0.85))
                 }
                 if store.lastErrorDescription != nil {
                     Image(systemName: "exclamationmark.triangle")
@@ -1124,19 +1102,19 @@ struct MonthDailyTrend: View {
         HStack(spacing: 5) {
             Text(l.dailyTrend)
                 .font(.caption)
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(CyberPalette.muted.opacity(0.85))
             Text(Self.readout(series: series, today: today, showsCost: showsCost, l: l))
                 .font(.caption.weight(.medium))
-                .foregroundStyle(.secondary)
+                .foregroundStyle(CyberPalette.muted)
                 .monospacedDigit()
             Spacer()
             if showsPeak {
                 Text(l.peakDay)
                     .font(.caption2)
-                    .foregroundStyle(.tertiary)
+                    .foregroundStyle(CyberPalette.muted.opacity(0.85))
                 Text(TokenFormatter.compact(peak))
                     .font(.caption2.weight(.semibold))
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(CyberPalette.muted)
                     .monospacedDigit()
             }
         }
@@ -1159,7 +1137,7 @@ struct MonthDailyTrend: View {
             ForEach(stack, id: \.id) { provider in
                 HStack(spacing: 3) {
                     swatch(provider.id, colors)
-                    Text(provider.name).font(.caption2).foregroundStyle(.tertiary)
+                    Text(provider.name).font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                 }
                 .lineLimit(1)
                 .fixedSize()
@@ -1198,16 +1176,16 @@ struct MonthDailyTrend: View {
             HStack(spacing: 5) {
                 Text(info.stamp).fontWeight(.semibold)
                 Text(info.tokens)
-                if let cost = info.cost { Text(cost).foregroundStyle(.secondary) }
+                if let cost = info.cost { Text(cost).foregroundStyle(CyberPalette.muted) }
             }
             .font(.caption)
             ForEach(info.providers, id: \.id) { row in
                 HStack(spacing: 4) {
                     swatch(row.id, colors)
-                    Text(row.name).foregroundStyle(.secondary)
+                    Text(row.name).foregroundStyle(CyberPalette.muted)
                     Spacer(minLength: 8)
                     Text(row.tokens)
-                    if let cost = row.cost { Text(cost).foregroundStyle(.secondary) }
+                    if let cost = row.cost { Text(cost).foregroundStyle(CyberPalette.muted) }
                 }
                 .font(.caption2)
             }
@@ -1306,8 +1284,8 @@ struct MonthDailyTrend: View {
                             .font(.caption2)
                             .monospacedDigit()
                             .foregroundStyle(column.date == today ? AnyShapeStyle(Color.accentColor)
-                                             : column.isFuture ? AnyShapeStyle(.tertiary)
-                                             : AnyShapeStyle(.secondary))
+                                             : column.isFuture ? AnyShapeStyle(CyberPalette.muted.opacity(0.85))
+                                             : AnyShapeStyle(CyberPalette.muted))
                             .fixedSize(horizontal: true, vertical: false)
                     } else {
                         Color.clear.frame(height: 1)
@@ -1645,7 +1623,7 @@ struct CapsuleTabBar: View {
                         .padding(.vertical, 4)
                         .background(isSelected ? Color.accentColor.opacity(0.18) : Color.secondary.opacity(0.08))
                         .foregroundStyle(isSelected ? Color.accentColor : Color.secondary)
-                        .clipShape(Capsule())
+                        .overlay(Rectangle().stroke(isSelected ? CyberPalette.cyan.opacity(0.6) : CyberPalette.line, lineWidth: 0.6))
                     }
                     .buttonStyle(.plain)
                     .help(item.help ?? "")

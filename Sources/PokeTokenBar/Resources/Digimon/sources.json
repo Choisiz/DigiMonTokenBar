@@ -1,0 +1,74 @@
+[
+  {
+    "id": 2001,
+    "name": "Botamon",
+    "img": "https://digimon.shadowsmith.com/img/botamon.jpg",
+    "level": "Fresh"
+  },
+  {
+    "id": 2002,
+    "name": "Koromon",
+    "img": "https://digimon.shadowsmith.com/img/koromon.jpg",
+    "level": "In Training"
+  },
+  {
+    "id": 2003,
+    "name": "Agumon",
+    "img": "https://digimon.shadowsmith.com/img/agumon.jpg",
+    "level": "Rookie"
+  },
+  {
+    "id": 2004,
+    "name": "Greymon",
+    "img": "https://digimon.shadowsmith.com/img/greymon.jpg",
+    "level": "Champion"
+  },
+  {
+    "id": 2005,
+    "name": "MetalGreymon",
+    "img": "https://digimon.shadowsmith.com/img/metalgreymon.jpg",
+    "level": "Ultimate"
+  },
+  {
+    "id": 2006,
+    "name": "WarGreymon",
+    "img": "https://digimon.shadowsmith.com/img/wargreymon.jpg",
+    "level": "Mega"
+  },
+  {
+    "id": 2007,
+    "name": "Punimon",
+    "img": "https://digimon.shadowsmith.com/img/punimon.jpg",
+    "level": "Fresh"
+  },
+  {
+    "id": 2008,
+    "name": "Tsunomon",
+    "img": "https://digimon.shadowsmith.com/img/tsunomon.jpg",
+    "level": "In Training"
+  },
+  {
+    "id": 2009,
+    "name": "Gabumon",
+    "img": "https://digimon.shadowsmith.com/img/gabumon.jpg",
+    "level": "Rookie"
+  },
+  {
+    "id": 2010,
+    "name": "Garurumon",
+    "img": "https://digimon.shadowsmith.com/img/garurumon.jpg",
+    "level": "Champion"
+  },
+  {
+    "id": 2011,
+    "name": "WereGarurumon",
+    "img": "https://digimon.shadowsmith.com/img/weregarurumon.jpg",
+    "level": "Ultimate"
+  },
+  {
+    "id": 2012,
+    "name": "MetalGarurumon",
+    "img": "https://digimon.shadowsmith.com/img/metalgarurumon.jpg",
+    "level": "Mega"
+  }
+]

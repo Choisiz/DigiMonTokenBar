@@ -7,6 +7,9 @@ import UserNotifications
 @MainActor
 @Observable
 final class CompanionStore {
+    private var dailyActualTokens = 0
+    private var dailyActualDate = ""
+    var todayEvolutionTokens: Int { dailyActualDate == LocalUsageReader.localDayFormatter().string(from: clock()) ? dailyActualTokens : 0 }
     private(set) var state = CompanionState()
     private(set) var displayState: CompanionStateKind = .egg
     private(set) var currentLine: EvoLine?
@@ -14,6 +17,7 @@ final class CompanionStore {
     private(set) var isHatching = false
     private var isRevealingDitto = false   // 메타몽 리빌 비동기 중복 방지(isHatching 자매)
     private(set) var justEvolvedTo: String?     // 이름(연출/문구)
+    var evolutionScene: DigimonEvolutionScene?
     private(set) var justGraduated: String?
     private var eventUntil: Date?
 
@@ -49,7 +53,7 @@ final class CompanionStore {
     private(set) var failedPokemonDetailIDs: Set<Int> = []
     private let defaults: UserDefaults
     /// 세션 내 활성 개체 교체 감지용. await 뒤 이전 개체의 결과가 새 개체를 덮지 않게 한다.
-    private var activeGeneration = 0
+    private var activeGeneration = 0 { didSet { evolutionScene = nil } }
     private var lastAutoSnapshotDate: Date?
     private(set) var availableSnapshots: [SaveSnapshot] = []
 
@@ -65,12 +69,12 @@ final class CompanionStore {
     /// 상점 배율 — 아이템·알 가격에 곱한다. 낮을수록 싸다.
     private(set) var shopDifficulty: Double
 
-    init(provider: any PokeProviding = PokeAPIClient.shared,
+    init(provider: any PokeProviding = DigimonProvider.shared,
          detailProvider: (any PokemonDetailProviding)? = nil,
          clock: @escaping () -> Date = Date.init,
          fileURL: URL? = nil,
          rng: any RandomNumberGenerator = SystemRandomNumberGenerator(),
-         dittoDisguiseRollingEnabled: Bool = AppEnv.isBundledApp,
+         dittoDisguiseRollingEnabled: Bool = false,
          defaults: UserDefaults = .standard) {
         self.provider = provider
         self.detailProvider = detailProvider ?? (provider as? any PokemonDetailProviding)
@@ -98,6 +102,7 @@ final class CompanionStore {
         refreshSnapshots()
         if state.active != nil { displayState = .idle }
     }
+
 
     static func defaultURL() -> URL {
         // 상태 파일 위치. 기본은 Application Support/PokeTokenBar. `PTB_STATE_DIR` 환경변수가 있으면
@@ -141,6 +146,12 @@ final class CompanionStore {
         } else {
             state.eggUsage = rescaled(state.eggUsage, base: PokemonBalance.eggHatchThreshold)
         }
+        for index in state.storedTraining.indices {
+            if var mon = state.storedTraining[index].mon {
+                mon.usedAtStage = rescaled(mon.usedAtStage, base: mon.phaseThreshold)
+                state.storedTraining[index].mon = mon
+            }
+        }
     }
 
     /// 상점 배율 변경 — 가격은 순수 읽기(파생값)라 재평가할 상태가 없다.
@@ -164,12 +175,16 @@ final class CompanionStore {
 
     /// 상점 표시·결제에 쓰는 실제 가격 — 기본가 × 상점 난이도. 미판매면 nil.
     func price(of kind: ItemKind) -> Int? {
-        kind.shopPrice.map { PokemonBalance.scaled($0, by: shopDifficulty) }
+        if provider is DigimonProvider && kind == .mint { return PokemonBalance.scaled(200_000_000, by: shopDifficulty) }
+        return kind.shopPrice.map { PokemonBalance.scaled($0, by: shopDifficulty) }
     }
 
     /// 알을 포함한 상점 한 줄의 실제 가격.
     func price(of entry: ShopEntry) -> Int {
-        PokemonBalance.scaled(entry.price, by: shopDifficulty)
+        switch entry {
+        case .item(let kind): return price(of: kind) ?? 0
+        case .egg: return PokemonBalance.scaled(entry.price, by: shopDifficulty)
+        }
     }
     /// 앱 전체 UI 문자열 — language 변경 시 자동 재렌더.
     var l: L { L(language) }
@@ -258,10 +273,16 @@ final class CompanionStore {
     }
     var isFinalStage: Bool {
         guard let a = state.active, let line = currentLine else { return false }
+        if DigimonCatalog.find(a.baseID) != nil { return trainingEvolutionChoices.allSatisfy { evolutionRule(to: $0.id).kind != .normal } }
         return line.tree.node(withID: a.currentID)?.children.isEmpty ?? true
     }
     var stageText: String {
         guard let a = state.active else { return "" }
+        if let species = DigimonCatalog.find(a.currentID) {
+            if species.generation == "Armor" { return l.digimonArmorStage }
+            if species.generation == "Hybrid" { return l.digimonHybridStage }
+            return l.digimonStage(species.stage)
+        }
         return isFinalStage ? l.finalForm : l.stage(a.stageIndex + 1, a.totalForms)
     }
     var threshold: Int {
@@ -280,6 +301,11 @@ final class CompanionStore {
     var lineNodes: [EvoLineItem] {
         guard let a = state.active, let line = currentLine else { return [] }
         var out = Self.realizedLineItems(pathIDs: a.pathIDs, stageIndex: a.stageIndex)
+        if DigimonCatalog.find(a.baseID) != nil {
+            if let target = a.selectedEvolutionID { out.append(EvoLineItem(.species(target), .future)) }
+            else if !evolutionChoices.isEmpty { out.append(EvoLineItem(.mystery, .future)) }
+            return out
+        }
         if let current = line.tree.node(withID: a.currentID) {
             var node = current
             var guaranteedPrefix: [EvoNode] = []
@@ -356,9 +382,19 @@ final class CompanionStore {
             releasedAt: now, form: a.form)
     }
 
+    private var storedDexEntries: [DexEntry] {
+        state.storedTraining.compactMap { slot in
+            guard let mon = slot.mon else { return nil }
+            let reached = Array(mon.pathIDs.prefix(mon.stageIndex + 1))
+            return DexEntry(id: "stored-" + slot.id, baseID: mon.baseID, finalID: mon.currentID,
+                chainOrder: reached, rarity: mon.rarity, caughtAt: nil, isShiny: mon.displaysShiny,
+                nature: mon.nature, profile: mon.profile,
+                names: Dictionary(uniqueKeysWithValues: reached.compactMap { id in DigimonCatalog.find(id).map { (id, $0.names) } }), form: mon.form)
+        }
+    }
+
     var dexEntries: [DexEntry] {
-        guard let activeDexEntry else { return state.dex }
-        return state.dex + [activeDexEntry]
+        state.dex + storedDexEntries + [activeDexEntry].compactMap { $0 }
     }
 
     /// 합성된 현재 포켓몬 항목인지 판별한다. caughtAt 이 없는 구버전 졸업 항목과 혼동하지 않는다.
@@ -374,7 +410,7 @@ final class CompanionStore {
     ///
     /// caughtAt 이 없는 구버전 항목은 .distantPast 로 묶여 맨 뒤에 온다(그들끼리의 순서는 미정).
     var dexEntriesSorted: [DexEntry] {
-        let graduated = state.dex.sorted {
+        let graduated = (state.dex + storedDexEntries).sorted {
             ($0.caughtAt ?? .distantPast) > ($1.caughtAt ?? .distantPast)
         }
         guard let activeDexEntry else { return graduated }
@@ -473,7 +509,7 @@ final class CompanionStore {
     private func collectedDexSpecies(groupForms: Bool) -> [DexSpecies] {
         // 종별 누적을 한 번에 훑는다(뷰가 body 에서 1회 소비 — 메모이즈 없이 충분).
         var acc: [DexKey: DexAccumulator] = [:]
-        for entry in state.dex {
+        for entry in state.dex + storedDexEntries {
             for id in entry.chainOrder {
                 let key = DexKey(id, form: entry.form, groupForms: groupForms)
                 var a = acc[key] ?? DexAccumulator(rarity: entry.rarity)
@@ -494,10 +530,11 @@ final class CompanionStore {
             }
         }
         return acc.sorted {
-            ($0.key.speciesID, PokemonForm.sortOrder($0.key.form, speciesID: $0.key.speciesID))
-                < ($1.key.speciesID, PokemonForm.sortOrder($1.key.form, speciesID: $1.key.speciesID))
+            (DigimonCatalog.displayNumber(for: $0.key.speciesID), PokemonForm.sortOrder($0.key.form, speciesID: $0.key.speciesID))
+                < (DigimonCatalog.displayNumber(for: $1.key.speciesID), PokemonForm.sortOrder($1.key.form, speciesID: $1.key.speciesID))
         }.map { key, a in
-            let name = a.names.flatMap { state.language.resolveName($0) } ?? "#\(key.speciesID)"
+            let currentNames = DigimonCatalog.find(key.speciesID)?.names ?? a.names
+            let name = currentNames.flatMap { state.language.resolveName($0) } ?? "#\(key.speciesID)"
             return DexSpecies(
                 id: key.speciesID,
                 name: groupForms ? formDisplayName(name, speciesID: key.speciesID, form: key.form) : name,
@@ -505,7 +542,7 @@ final class CompanionStore {
                 isShiny: a.isShiny,
                 isRaising: key.speciesID == state.active?.currentID && (!groupForms || key.form == currentForm),
                 form: key.form,
-                names: a.names,
+                names: currentNames,
                 hasNormal: a.hasNormal)
         }
     }
@@ -513,6 +550,9 @@ final class CompanionStore {
     /// Resolves the primary localized name of an individual final species for sorting and display.
     func dexEntryName(_ entry: DexEntry) -> String {
         let targetID = entry.finalID
+        if let species = DigimonCatalog.find(targetID) {
+            return state.language.resolveName(species.names) ?? species.english
+        }
         if let stored = entry.names?[targetID], let localized = state.language.resolveName(stored) {
             return localized
         }
@@ -546,21 +586,30 @@ final class CompanionStore {
         /// An individual matches through any species of its chain, like its evolution line in the log row.
         func matches(_ entry: DexEntry) -> Bool {
             matches(ids: [entry.baseID, entry.finalID] + entry.chainOrder,
-                    names: entry.names?.values.flatMap(\.values) ?? [])
+                    names: (entry.names?.values.flatMap(\.values) ?? [])
+                        + entry.chainOrder.compactMap { DigimonCatalog.find($0) }.flatMap { Array($0.names.values) })
         }
 
         private func matches(ids: [Int], names: [String]) -> Bool {
-            if let number, ids.contains(number) { return true }
-            // Partial numbers keep working: "25" also finds #125, "#25" finds #25 and #250.
-            if ids.contains(where: { "#\($0)".contains(query) }) { return true }
+            let numbers = ids.map { DigimonCatalog.displayNumber(for: $0) }
+            if let number, numbers.contains(number) { return true }
+            // Search the displayed, padded game numbers, never the internal save IDs.
+            if ids.contains(where: { DigimonCatalog.numberLabel(for: $0).contains(query) }) { return true }
+            if numbers.contains(where: { String($0).contains(query) }) { return true }
             return names.contains { $0.range(of: query, options: [.caseInsensitive, .diacriticInsensitive]) != nil }
         }
+    }
+
+    func evolutionStage(speciesID: Int) -> Int? { DigimonCatalog.find(speciesID)?.stage }
+    func evolutionStageLabel(speciesID: Int) -> String {
+        evolutionStage(speciesID: speciesID).map { l.digimonStage($0) } ?? "—"
     }
 
     /// Filters and sorts DexSpecies for the Pokédex grid.
     func filteredDexSpecies(
         query: String = "",
         rarity: Rarity? = nil,
+        stage: Int? = nil,
         shinyOnly: Bool = false,
         sort: DexSortOption = .numberAsc
     ) -> [DexSpecies] {
@@ -568,6 +617,7 @@ final class CompanionStore {
         if let rarity {
             result = result.filter { $0.rarity == rarity }
         }
+        if let stage { result = result.filter { evolutionStage(speciesID: $0.id) == stage } }
         if shinyOnly {
             result = result.filter { $0.isShiny }
         }
@@ -581,25 +631,25 @@ final class CompanionStore {
     func sortDexSpecies(_ species: [DexSpecies], by sort: DexSortOption) -> [DexSpecies] {
         switch sort {
         case .numberAsc:
-            return species.sorted { $0.id < $1.id }
+            return species.sorted { DigimonCatalog.displayNumber(for: $0.id) < DigimonCatalog.displayNumber(for: $1.id) }
         case .numberDesc:
-            return species.sorted { $0.id > $1.id }
+            return species.sorted { DigimonCatalog.displayNumber(for: $0.id) > DigimonCatalog.displayNumber(for: $1.id) }
         case .nameAsc:
             return species.sorted {
                 let cmp = $0.name.localizedCompare($1.name)
-                return cmp == .orderedAscending ? true : (cmp == .orderedSame ? $0.id < $1.id : false)
+                return cmp == .orderedAscending ? true : (cmp == .orderedSame ? DigimonCatalog.displayNumber(for: $0.id) < DigimonCatalog.displayNumber(for: $1.id) : false)
             }
         case .nameDesc:
             return species.sorted {
                 let cmp = $0.name.localizedCompare($1.name)
-                return cmp == .orderedDescending ? true : (cmp == .orderedSame ? $0.id < $1.id : false)
+                return cmp == .orderedDescending ? true : (cmp == .orderedSame ? DigimonCatalog.displayNumber(for: $0.id) < DigimonCatalog.displayNumber(for: $1.id) : false)
             }
         case .rarityDesc:
             return species.sorted {
-                if $0.rarity.sortRank != $1.rarity.sortRank {
-                    return $0.rarity.sortRank > $1.rarity.sortRank
-                }
-                return $0.id < $1.id
+                let rank0 = evolutionStage(speciesID: $0.id) ?? $0.rarity.sortRank
+                let rank1 = evolutionStage(speciesID: $1.id) ?? $1.rarity.sortRank
+                if rank0 != rank1 { return rank0 > rank1 }
+                return DigimonCatalog.displayNumber(for: $0.id) < DigimonCatalog.displayNumber(for: $1.id)
             }
         }
     }
@@ -608,6 +658,7 @@ final class CompanionStore {
     func filteredDexEntries(
         query: String = "",
         rarity: Rarity? = nil,
+        stage: Int? = nil,
         shinyOnly: Bool = false,
         sort: CatchLogSortOption = .recentFirst
     ) -> [DexEntry] {
@@ -615,6 +666,7 @@ final class CompanionStore {
         if let rarity {
             result = result.filter { $0.rarity == rarity }
         }
+        if let stage { result = result.filter { evolutionStage(speciesID: $0.finalID) == stage } }
         if shinyOnly {
             result = result.filter { $0.isShiny }
         }
@@ -648,7 +700,7 @@ final class CompanionStore {
         case .numberAsc:
             return entries.sorted {
                 if $0.finalID != $1.finalID {
-                    return $0.finalID < $1.finalID
+                    return DigimonCatalog.displayNumber(for: $0.finalID) < DigimonCatalog.displayNumber(for: $1.finalID)
                 }
                 let d0 = $0.caughtAt ?? .distantPast
                 let d1 = $1.caughtAt ?? .distantPast
@@ -658,7 +710,7 @@ final class CompanionStore {
         case .numberDesc:
             return entries.sorted {
                 if $0.finalID != $1.finalID {
-                    return $0.finalID > $1.finalID
+                    return DigimonCatalog.displayNumber(for: $0.finalID) > DigimonCatalog.displayNumber(for: $1.finalID)
                 }
                 let d0 = $0.caughtAt ?? .distantPast
                 let d1 = $1.caughtAt ?? .distantPast
@@ -693,9 +745,9 @@ final class CompanionStore {
             }
         case .rarityDesc:
             return entries.sorted {
-                if $0.rarity.sortRank != $1.rarity.sortRank {
-                    return $0.rarity.sortRank > $1.rarity.sortRank
-                }
+                let rank0 = evolutionStage(speciesID: $0.finalID) ?? $0.rarity.sortRank
+                let rank1 = evolutionStage(speciesID: $1.finalID) ?? $1.rarity.sortRank
+                if rank0 != rank1 { return rank0 > rank1 }
                 let d0 = $0.caughtAt ?? .distantPast
                 let d1 = $1.caughtAt ?? .distantPast
                 if d0 != d1 { return d0 > d1 }
@@ -719,6 +771,13 @@ final class CompanionStore {
     /// 도감 항목 진화 체인 각 종의 이름(speciesID → 현재 언어 이름). 저장돼 있으면 즉시(네트워크 0),
     /// 없으면 nil(뷰가 async 조회로 폴백).
     func dexStoredChainNames(_ entry: DexEntry) -> [Int: String]? {
+        let catalogNames = entry.chainOrder.compactMap { id -> (Int, String)? in
+            guard let species = DigimonCatalog.find(id) else { return nil }
+            return (id, state.language.resolveName(species.names) ?? species.english)
+        }
+        if catalogNames.count == entry.chainOrder.count, !catalogNames.isEmpty {
+            return Dictionary(uniqueKeysWithValues: catalogNames)
+        }
         guard let names = entry.names, !names.isEmpty else { return nil }
         return names.compactMapValues { state.language.resolveName($0) }
     }
@@ -776,6 +835,8 @@ final class CompanionStore {
     func update(todayTokensByProvider: [String: Int], todayDate: String, monthTotal: Int,
                 burnTier: BurnTier, limitWarning: Bool, hasUsageData: Bool) {
         let todayTokens = todayTokensByProvider.values.reduce(0, +)
+        dailyActualDate = todayDate
+        dailyActualTokens = max(0, todayTokens)
         // `hasUsageData`는 표시용 snapshot 존재 여부이고, 이 map은 오늘 날짜가 확인된
         // provider 데이터만 담는다. stale snapshot이나 today == nil carrier만 있는 refresh는
         // ledger의 기준점을 움직일 수 있는 관측으로 취급하지 않는다.
@@ -900,10 +961,291 @@ final class CompanionStore {
         autoSnapshotIfNeeded()
     }
 
+    // MARK: Digimon branch selection
+
+    var usesDigimonEvolution: Bool { state.active.map { DigimonCatalog.find($0.baseID) != nil } ?? false }
+    var evolutionChoices: [DigimonCatalog.Species] {
+        guard let active = state.active, usesDigimonEvolution else { return [] }
+        return DigimonCatalog.choices(from: active.currentID, visited: active.pathIDs)
+    }
+    var collectedDigimonCount: Int {
+        Set(dexSpecies.map(\.id)).intersection(Set(DigimonCatalog.species.map(\.id))).count
+    }
+    func evolutionRule(to id: Int) -> DigimonEvolutionRule {
+        DigimonEvolutionRules.rule(from: currentSpeciesID ?? 0, to: id)
+    }
+    func evolutionRequirement(from source: Int, to target: Int) -> String {
+        let rule = DigimonEvolutionRules.rule(from: source, to: target)
+        switch rule.kind {
+        case .fusion:
+            return (rule.method ?? "조그레스") + " · " + rule.ingredients.compactMap { DigimonCatalog.find($0)?.korean }.joined(separator: " + ") + " 도감 등록 필요"
+        case .item:
+            guard let item = rule.item else { return "아이템 정보 미제공" }
+            return l.itemName(item) + " 1개 필요 · 보유 \(itemCount(item))개 · 진화 시 1개 소모"
+        case .buff:
+            return (rule.method ?? "해방 진화") + " · 당일 합산 " + TokenFormatter.compact(rule.dailyTokens ?? 0) + " 이상 필요 · 현재 " + TokenFormatter.compact(todayEvolutionTokens)
+        case .unverified: return "분류 검토 중 · 진화 보류"
+        case .normal: return rule.method ?? "일반 성장 · 게임 진화 경로"
+        }
+    }
+
+    /// Collection-driven special evolution never depends on the currently trained partner.
+    func specialEvolutionReady(_ rule: DigimonEvolutionRule) -> Bool {
+        guard provider is DigimonProvider, state.ownsSpecies(rule.source),
+              !state.ownsSpecies(rule.target),
+              DigimonEvolutionRules.nextIDs(from: rule.source).contains(rule.target) else { return false }
+        switch rule.kind {
+        case .fusion: return !rule.ingredients.isEmpty && rule.ingredients.allSatisfy { state.ownsSpecies($0) }
+        case .item: return rule.item.map { itemCount($0) > 0 } ?? false
+        case .buff: return todayEvolutionTokens >= (rule.dailyTokens ?? Int.max)
+        case .unverified, .normal: return false
+        }
+    }
+    func specialEvolutionReady(_ id: Int) -> Bool {
+        DigimonEvolutionRules.rules.contains { $0.target == id && specialEvolutionReady($0) }
+    }
+    /// Deduplicate recipes sharing a result (e.g. either member of a fusion pair).
+    var readySpecialEvolutionRules: [DigimonEvolutionRule] {
+        var seen = Set<Int>()
+        return DigimonEvolutionRules.rules.filter { specialEvolutionReady($0) }
+            .sorted { ($0.target, $0.source) < ($1.target, $1.source) }
+            .filter { seen.insert($0.target).inserted }
+    }
+    var readySpecialEvolutions: [DigimonCatalog.Species] {
+        readySpecialEvolutionRules.compactMap { DigimonCatalog.find($0.target) }
+    }
+    var canCompleteManualTraining: Bool {
+        usesDigimonEvolution && currentLine != nil && evolutionScene == nil
+            && state.active.map { $0.usedAtStage >= stageThreshold(for: $0) } == true
+            && (hasOnlyManualEvolutions || (isContinuingSpecialTraining && !evolutionChoices.isEmpty && trainingEvolutionChoices.isEmpty))
+    }
+    @discardableResult
+    func completeManualTraining() -> Bool {
+        guard canCompleteManualTraining else { return false }
+        graduate()
+        save()
+        return true
+    }
+    @discardableResult
+    func prepareSpecialEvolution(_ rule: DigimonEvolutionRule) -> Bool {
+        guard evolutionScene == nil, !isHatching, specialEvolutionReady(rule) else { return false }
+        evolutionScene = DigimonEvolutionScene(source: rule.source, target: rule.target, kind: rule.kind,
+                                               ingredients: rule.ingredients, committed: false)
+        return true
+    }
+    @discardableResult
+    func prepareSpecialEvolution(_ id: Int) -> Bool {
+        guard let rule = readySpecialEvolutionRules.first(where: { $0.target == id }) else { return false }
+        return prepareSpecialEvolution(rule)
+    }
+    @discardableResult
+    func commitEvolutionScene(_ sceneID: UUID) -> Bool {
+        guard var scene = evolutionScene, scene.id == sceneID else { return false }
+        if scene.committed { return true }
+        let rule = DigimonEvolutionRules.rule(from: scene.source, to: scene.target)
+        guard specialEvolutionReady(rule), let target = DigimonCatalog.find(scene.target) else { return false }
+        // Inventory and Notebook result are persisted together; the active partner is untouched.
+        if rule.kind == .item, let item = rule.item {
+            state.inventory[item.rawValue] = itemCount(item) - 1
+        }
+        state.dex.append(DexEntry(baseID: target.id, finalID: target.id, chainOrder: [target.id],
+            rarity: .common, caughtAt: clock(), names: [target.id: target.names]))
+        state.collectedFinals.insert("\(target.id):\(target.id)")
+        state.specialEvolutionSpecies.insert(target.id)
+        scene.committed = true
+        evolutionScene = scene
+        refreshRepresentativeSubject()
+        save()
+        return true
+    }
+    func dismissEvolutionScene() {
+        evolutionScene = nil
+        // A normal evolution scene can temporarily defer the automatic handoff to a new egg.
+        _ = completeManualTraining()
+    }
+
+    func hasOrdinaryEvolution(_ id: Int) -> Bool {
+        DigimonEvolutionRules.nextIDs(from: id).contains { DigimonEvolutionRules.rule(from: id, to: $0).kind == .normal }
+    }
+    func canContinueSpecialDigimon(_ id: Int) -> Bool {
+        provider is DigimonProvider && state.specialEvolutionSpecies.contains(id)
+            && state.ownsSpecies(id) && hasOrdinaryEvolution(id)
+    }
+    func missingOrdinaryTargets(_ source: Int, visited: [Int] = []) -> [DigimonCatalog.Species] {
+        DigimonEvolutionRules.missingOrdinaryDescendants(from: source, visited: visited, isCollected: { state.ownsSpecies($0) })
+            .compactMap(DigimonCatalog.find)
+    }
+    var isContinuingSpecialTraining: Bool {
+        state.active.map { state.specialEvolutionSpecies.contains($0.baseID) } ?? false
+    }
+    var trainingEvolutionChoices: [DigimonCatalog.Species] {
+        guard isContinuingSpecialTraining, let active = state.active else { return evolutionChoices }
+        return evolutionChoices.filter { species in
+            evolutionRule(to: species.id).kind == .normal && (!state.ownsSpecies(species.id)
+                || !missingOrdinaryTargets(species.id, visited: active.pathIDs).isEmpty)
+        }
+    }
+    func evolutionChoiceAction(_ id: Int) -> String {
+        if isContinuingSpecialTraining, isEvolutionRegistered(id) { return "무료 경유" }
+        return isEvolutionRegistered(id) ? l.instantDigivolution : l.startDigivolutionTraining
+    }
+    var continuableSpecialDigimon: [DigimonCatalog.Species] {
+        state.specialEvolutionSpecies.compactMap(DigimonCatalog.find).filter { species in
+            canContinueSpecialDigimon(species.id) && state.active?.baseID != species.id
+                && !state.storedTraining.contains { $0.mon?.baseID == species.id }
+                && !missingOrdinaryTargets(species.id).isEmpty
+        }.sorted { $0.gameID < $1.gameID }
+    }
+    var evolutionAlertCount: Int { readySpecialEvolutionRules.count + continuableSpecialDigimon.count }
+    private(set) var trainingSwitchError: String?
+    var canSwitchTraining: Bool { provider is DigimonProvider && !isHatching && evolutionScene == nil }
+    func continuationTitle(_ id: Int) -> String {
+        if state.active?.baseID == id { return "현재 육성 중" }
+        return state.storedTraining.contains { $0.mon?.baseID == id } ? "육성 재개" : "이어 키우기"
+    }
+    func continuationBlockReason(_ id: Int) -> String? {
+        if !canSwitchTraining { return "현재 전환할 수 없습니다." }
+        if state.active?.baseID == id { return "현재 육성 중입니다." }
+        if state.storedTraining.contains(where: { $0.mon?.baseID == id }) { return nil }
+        if state.active == nil { return "알 상태에서는 이어 키우기를 시작할 수 없습니다. 부화 후 시작해 주세요." }
+        if !state.storedTraining.isEmpty { return "보관 슬롯 사용 중 · 새 이어 키우기를 시작할 수 없습니다." }
+        if missingOrdinaryTargets(id).isEmpty { return "일반 후속 진화를 모두 수집했습니다." }
+        return nil
+    }
+    private var currentTrainingSnapshot: StoredDigimonTraining? {
+        state.active.map { StoredDigimonTraining(mon: $0) }
+    }
+    private func activateTraining(_ slot: StoredDigimonTraining, stored: [StoredDigimonTraining]) -> Bool {
+        guard slot.mon != nil, stored.count <= 1, stored.allSatisfy({ $0.mon != nil }) else { return false }
+        var next = state
+        next.storedTraining = stored
+        next.active = slot.mon; next.eggUsage = 0; next.eggTier = nil
+        next.pendingHatchID = nil; next.pendingForm = nil
+        // Persist both sides before exposing a switch, so a write failure cannot lose a partner.
+        do { try JSONEncoder().encode(next).write(to: fileURL, options: .atomic) }
+        catch {
+            trainingSwitchError = "육성 전환을 저장하지 못했습니다. 기존 육성은 유지됩니다."
+            AppLog.write("training switch save failed: \(error)")
+            return false
+        }
+        trainingSwitchError = nil
+        state = next
+        activeGeneration += 1
+        currentLine = nil; prefetchedLineID = nil
+        justGraduated = nil; justEvolvedTo = nil; eventUntil = nil; celebration = nil
+        candyFeedbackAmount = 0; mintFeedbackNature = nil; isHatchRetryDelayed = false
+        displayState = state.active == nil ? .egg : .idle
+        refreshRepresentativeSubject()
+        kickLineLoadIfNeeded()
+        return true
+    }
+    @discardableResult
+    func continueSpecialDigimon(_ id: Int) -> Bool {
+        guard canSwitchTraining, canContinueSpecialDigimon(id), state.active?.baseID != id else { return false }
+        if let slot = state.storedTraining.first(where: { $0.mon?.baseID == id }) { return resumeTraining(slot.id) }
+        guard continuationBlockReason(id) == nil else { return false }
+        let previous = currentTrainingSnapshot
+        let mon = MonState(baseID: id, pathIDs: [id], stageIndex: 0, usedAtStage: 0,
+            rarity: .common, totalForms: 7, profile: PokemonProfile.generate(seed: rng.next()))
+        return activateTraining(StoredDigimonTraining(mon: mon), stored: [previous].compactMap { $0 })
+    }
+    @discardableResult
+    func resumeTraining(_ id: String) -> Bool {
+        guard canSwitchTraining, let index = state.storedTraining.firstIndex(where: { $0.id == id && $0.mon != nil }) else { return false }
+        let previous = currentTrainingSnapshot
+        let next = state.storedTraining[index]
+        return activateTraining(StoredDigimonTraining(id: next.id, mon: next.mon), stored: [previous].compactMap { $0 })
+    }
+
+    var hasOnlyManualEvolutions: Bool {
+        !evolutionChoices.isEmpty && evolutionChoices.allSatisfy { evolutionRule(to: $0.id).kind != .normal }
+    }
+    var selectedEvolutionID: Int? { state.active?.selectedEvolutionID }
+    var needsEvolutionChoice: Bool { !evolutionChoices.isEmpty && selectedEvolutionID == nil }
+    func isEvolutionRegistered(_ id: Int) -> Bool { state.ownsSpecies(id) }
+
+    /// Known direct neighbours cost zero; a new target consumes only the current phase's credit.
+    /// Target changes within a phase preserve credit because every target has the same phase cost.
+    @discardableResult
+    func chooseEvolution(_ id: Int) -> Bool {
+        guard usesDigimonEvolution, currentLine != nil, !isHatching,
+              evolutionChoices.contains(where: { $0.id == id }) else { return false }
+        if evolutionRule(to: id).kind != .normal { return prepareSpecialEvolution(id) }
+        guard !isContinuingSpecialTraining || trainingEvolutionChoices.contains(where: { $0.id == id }) else { return false }
+        if isEvolutionRegistered(id) {
+            advanceDigimon(to: id, cost: 0)
+        } else {
+            state.active!.selectedEvolutionID = id
+            save()
+            applyUsage(0)
+        }
+        return true
+    }
+
+    private func advanceDigimon(to id: Int, cost: Int, presentsScene: Bool = true) {
+        guard var active = state.active else { return }
+        let source = active.currentID
+        active.pathIDs = Array(active.pathIDs.prefix(active.stageIndex + 1)) + [id]
+        active.stageIndex = active.pathIDs.count - 1
+        active.plannedPathIDs = active.pathIDs
+        active.totalForms = max(7, active.pathIDs.count)
+        active.usedAtStage = max(0, active.usedAtStage - cost)
+        active.selectedEvolutionID = nil
+        state.active = active
+        let name = currentLine?.localizedName(id, language) ?? DigimonCatalog.find(id)?.english ?? "#\(id)"
+        justEvolvedTo = name
+        if presentsScene, DigimonCatalog.find(id)?.stage == 6 {
+            evolutionScene = DigimonEvolutionScene(source: source, target: id, kind: .normal,
+                                                   ingredients: [], committed: true)
+        }
+        fireCelebration(.evolve)
+        displayState = .levelUp
+        eventUntil = clock().addingTimeInterval(4)
+        notifyCompanionEvent(l.notifEvolveTitle, l.notifEvolveBody(name))
+        refreshRepresentativeSubject()
+        save()
+        _ = completeManualTraining()
+    }
+
+    private func applyDigimonUsage(_ delta: Int) {
+        guard var active = state.active else { return }
+        let earned = max(0, min(delta, SaveTransfer.maxTokenValue - active.usedAtStage))
+        active.usedAtStage += earned
+        active.profile?.applyGrowth(earned, rarity: active.rarity)
+        state.active = active
+        // Bank usage even while the compatibility line is loading, without losing ledger deltas.
+        guard currentLine != nil else { save(); return }
+        // Each transition adds a previously unvisited species, so overflow processing is finite.
+        while let current = state.active {
+            if evolutionScene != nil { break }
+            if completeManualTraining() { break }
+            let cost = stageThreshold(for: current)
+            guard current.usedAtStage >= cost else { break }
+            let allChoices = evolutionChoices
+            guard !allChoices.isEmpty else { graduate(); break }
+            let choices = trainingEvolutionChoices.filter { evolutionRule(to: $0.id).kind == .normal }
+            // Manual-only endpoints complete only after funding their final training gauge.
+            guard !choices.isEmpty else { break }
+            let target: Int
+            if let selected = current.selectedEvolutionID, choices.contains(where: { $0.id == selected }) {
+                target = selected
+            } else {
+                let fresh = choices.filter { !isEvolutionRegistered($0.id) }
+                let pool = fresh.isEmpty ? choices : fresh
+                target = pool[Int(rng.next() % UInt64(pool.count))].id
+            }
+            let transitionCost = isContinuingSpecialTraining && state.ownsSpecies(target) ? 0 : cost
+            advanceDigimon(to: target, cost: transitionCost)
+            if evolutionScene != nil || currentLine == nil { break } // Never apply this partner's overflow to a restored partner.
+        }
+        save()
+    }
+
     /// 토큰 증분을 현재 포켓몬에 적용 — 임계 도달 시 진화/졸업.
     /// 라인 미로딩(재시작 직후·오프라인)이어도 사용량은 항상 적립한다 — 여기서 드롭하면
     /// 프로바이더별 ledger 는 이미 전진해 델타가 영구 유실된다. 진화 판정만 라인 로드 후로 미룬다.
     func applyUsage(_ delta: Int) {
+        if usesDigimonEvolution { applyDigimonUsage(delta); return }
         guard state.active != nil else { return }
         state.active!.usedAtStage += delta
         reconcileActiveProfileGrowth()
@@ -1003,6 +1345,16 @@ final class CompanionStore {
     /// 저장된 실제 경로와 계획을 현재 에셋 트리에 맞춘다. 완전한 계획만 재사용해 재시작 시 RNG를 소비하지 않는다.
     private func normalizedEvolutionState(_ saved: MonState, from root: EvoNode) -> MonState {
         var normalized = saved
+        if DigimonCatalog.find(saved.baseID) != nil {
+            // Keep legacy realised history, including a former fixed-route terminal. Future
+            // auto-plans are discarded; newly selected targets are accepted only as direct edges.
+            normalized.pathIDs = Array(saved.pathIDs.prefix(saved.stageIndex + 1))
+            normalized.plannedPathIDs = normalized.pathIDs
+            normalized.totalForms = max(7, normalized.pathIDs.count)
+            let choices = DigimonCatalog.choices(from: normalized.currentID, visited: normalized.pathIDs)
+            if !choices.contains(where: { $0.id == normalized.selectedEvolutionID }) || DigimonEvolutionRules.rule(from: normalized.currentID, to: normalized.selectedEvolutionID ?? 0).kind != .normal { normalized.selectedEvolutionID = nil }
+            return normalized
+        }
         let realized = longestValidPath(saved.pathIDs, from: root)
         let candidate = longestValidPath(saved.plannedPathIDs, from: root)
         let canReusePlan = candidate.path == saved.plannedPathIDs
@@ -1042,12 +1394,23 @@ final class CompanionStore {
         justGraduated = name
         notifyCompanionEvent(l.notifGraduateTitle, l.notifGraduateBody(name))
         eventUntil = clock().addingTimeInterval(6)
+        let returning = provider is DigimonProvider ? state.storedTraining.first(where: { $0.mon != nil }) : nil
         state.active = nil
         state.reconcileRepresentativeSelection()   // 졸업 체인이 dex 로 옮겨져 선택은 정상적으로 유지된다
         activeGeneration += 1
         currentLine = nil
         state.eggUsage = 0   // 새 알은 처음부터 인큐베이션
         isHatchRetryDelayed = false
+        if let returning {
+            state.active = returning.mon
+            state.storedTraining = []
+            state.pendingHatchID = nil; state.pendingForm = nil; state.eggTier = nil
+            prefetchedLineID = nil
+            displayState = .idle
+            refreshRepresentativeSubject()
+            kickLineLoadIfNeeded()
+            return
+        }
         // eggTier 는 손대지 않는다 — 여기 도달했다는 건 활성 포켓몬이 있었다는 뜻이라 보증은 이미 nil 이다
         // (부화가 소비, 디스크/불러오기는 sanitized 가 정규화). 소비 지점은 hatchCore 한 곳으로 유지한다.
         // "알을 받는 순간" 즉시 프리패칭 시작 — 다음 부화의 종·라인·스프라이트 예열.
@@ -1077,6 +1440,7 @@ final class CompanionStore {
     /// Preview the apparent evolution path so hidden identities cannot change the picker.
     private var rareCandyStageCosts: [Int] {
         guard var mon = state.active, currentLine != nil else { return [] }
+        if usesDigimonEvolution { return [stageThreshold(for: mon)] }
         if mon.dittoDisguise != nil && !mon.dittoRevealed && mon.usedAtStage >= stageThreshold(for: mon) {
             // The accepted batch is already saved. Wait for the reveal before accepting another.
             return []
@@ -1105,6 +1469,12 @@ final class CompanionStore {
     func planRareCandyUse(count requested: Int) -> RareCandyUsePlan? {
         let count = min(max(0, requested), maxRareCandyUseCount)
         guard count > 0, let mon = state.active else { return nil }
+        if usesDigimonEvolution {
+            let ready = mon.usedAtStage + count * RareCandy.xp >= stageThreshold(for: mon)
+            let overflow = max(0, mon.usedAtStage + count * RareCandy.xp - stageThreshold(for: mon))
+            return RareCandyUsePlan(count: count, evolves: ready && !isFinalStage, graduates: ready && isFinalStage,
+                                   carryoverXP: ready && !isFinalStage ? overflow : 0, discardedXP: ready && isFinalStage ? overflow : 0)
+        }
         let costs = rareCandyStageCosts
         var remaining = mon.usedAtStage + count * RareCandy.xp
         var evolves = false
@@ -1153,7 +1523,7 @@ final class CompanionStore {
 
     /// 민트 사용 가능 — 활성 포켓몬 + 재고>0. 성격은 MonState 에만 있어 진화 라인 로딩과 무관하다
     /// (사탕과 달리 currentLine 조건 없음 — 재시작 직후·오프라인에도 사용 가능).
-    var canUseMint: Bool { hasActive && itemCount(.mint) > 0 }
+    var canUseMint: Bool { !usesDigimonEvolution && hasActive && itemCount(.mint) > 0 }
 
     /// 민트 1개 사용 — 현재 포켓몬 성격을 '현재와 다른' 무작위 성격으로 교체(반드시 바뀐다). 성장·shiny·
     /// 종·usedAtStage·통계 전부 무관(순수 코스메틱). 사용 불가면 nil(무소모). 바뀐 성격을 반환(피드백용).
@@ -1177,10 +1547,17 @@ final class CompanionStore {
     /// 여기선 읽기만 — 구매는 spentTokens 만 올려 잔액을 깎는다(진화 진행·오늘/주/월 통계 무영향).
     var availableTokens: Int { max(0, state.usedSinceInstall - state.spentTokens) }
 
-    /// 상점 판매 아이템 — shopPrice 있는 것만. 가격 저렴한 순, 단 구매 완료한 보유형은 맨 아래로.
+    /// 디지몬 상점은 가격·보유량과 관계없이 아이템 종류 순서를 유지한다.
+    private var digimonShopItems: [ItemKind] {
+        [.rareCandy, .mint, .xAntibodyA, .xAntibodyS]
+            + ItemKind.allCases.filter { $0.capsuleKey != nil }
+    }
+
+    /// 포켓몬 상점은 가격순, 디지몬 상점은 지정된 종류 순서.
     var purchasableItems: [ItemKind] {
-        ItemKind.allCases
-            .filter { $0.shopPrice != nil }
+        if provider is DigimonProvider { return digimonShopItems }
+        return ItemKind.allCases
+            .filter { $0.shopPrice != nil && (provider is DigimonProvider ? $0 != .shinyCharm : !$0.digimonOnly) }
             .sorted { a, b in
                 // 구매 완료한 보유형(이로치 부적 등)은 맨 아래로 — 재구매 불가라 위에 있을 이유가 없다.
                 let aDone = a.isPassive && itemCount(a) > 0
@@ -1203,8 +1580,12 @@ final class CompanionStore {
     /// 고치며 들어온 규칙이라(ShopTests 참조), 그룹 배치는 그 회귀를 부분적으로 되살린다. 티어 관계는
     /// 카드의 등급 배지로 읽히게 한다.
     var shopEntries: [ShopEntry] {
+        if provider is DigimonProvider {
+            return [.egg(nil)] + digimonShopItems.map { .item($0) }
+        }
         var entries: [ShopEntry] = purchasableItems.map { ShopEntry.item($0) }
-        entries += FreshEgg.shopTiers.map { ShopEntry.egg($0) }
+        let tiers: [Rarity?] = provider is DigimonProvider ? [nil] : FreshEgg.shopTiers
+        entries += tiers.map { ShopEntry.egg($0) }
         return entries.sorted { a, b in
             let aDone = isPurchasedPassive(a)
             let bDone = isPurchasedPassive(b)
@@ -1221,16 +1602,21 @@ final class CompanionStore {
 
     /// 구매 가능 — 잔액이 그 아이템 가격 이상(상점 미판매면 false). 활성/알 무관(재고는 미리 쌓아둘 수 있음).
     func canBuy(_ kind: ItemKind) -> Bool {
+        if kind.digimonOnly && !(provider is DigimonProvider) { return false }
+        if provider is DigimonProvider && kind == .shinyCharm { return false }
         guard let price = price(of: kind) else { return false }
         if kind.isPassive && itemCount(kind) > 0 { return false }   // 보유형은 1회만(재구매 불가)
+        if price == 0 && !kind.isPassive && itemCount(kind) >= 99 { return false }
         return availableTokens >= price
     }
 
     /// 한 번에 살 수 있는 최대 개수 — 잔액 ÷ 가격. 보유형은 1회 구매라 최대 1, 이미 보유했거나
     /// 미판매·잔액 부족이면 0.
     func maxBuyCount(_ kind: ItemKind) -> Int {
-        guard canBuy(kind), let price = price(of: kind), price > 0 else { return 0 }
-        return kind.isPassive ? 1 : availableTokens / price
+        guard canBuy(kind), let price = price(of: kind) else { return 0 }
+        if kind.isPassive { return 1 }
+        if price == 0 { return 99 - min(99, max(0, itemCount(kind))) }
+        return availableTokens / price
     }
 
     /// 아이템 count 개 구매 — 지갑에서 price × count 차감, 인벤토리 +count. usedSinceInstall(성장·통계)·
@@ -1259,6 +1645,7 @@ final class CompanionStore {
     /// 동작을 새로 만들지 않고, 상점의 알은 언제나 "지금 개체를 놓아주고 다시 뽑는다"는 한 가지 의미만 갖는다.
     /// 항목 자체는 알 상태에서도 상점에 남는다(shopEntries) — 이 게이트는 구매만 막는다.
     func canBuyEgg(_ tier: Rarity?) -> Bool {
+        if provider is DigimonProvider && tier != nil { return false }
         // 파는 티어인지 먼저 확인한다 — 만족 불가능한 보증(전설: capture_rate 로 표현 불가)을 사면
         // 두 롤 경로 모두 후보가 0개라 알이 영영 안 깨지고, 부화가 없으니 보증도 안 풀리며,
         // 새 알 구매는 `hasActive` 에 막혀 되돌릴 수단이 없다. 가격만 계산되면 값이 빠져나가므로
@@ -1436,7 +1823,7 @@ final class CompanionStore {
     // MARK: 부화
 
     func hatchIfNeeded() async {
-        guard state.active == nil, !isHatching, state.eggUsage >= eggHatchThreshold else { return }
+        guard state.active == nil, !isHatching, evolutionScene == nil, state.eggUsage >= eggHatchThreshold else { return }
         // 프리패치가 "종 롤 중"(pending 미확정)일 때만 대기 — 이중 rng 소비 방지.
         // pending 확정 후의 예열(라인/스프라이트)과는 동시 진행해도 안전하다.
         guard state.pendingHatchID != nil || !prefetchInFlight else { return }
@@ -1656,7 +2043,8 @@ final class CompanionStore {
         // 개체 롤 — shiny(1/64, 부적 1/48)·성격(25종)은 부화 순간 확정, 진화해도 유지.
         // 알림 문구는 이 판정과 같은 분모를 보여준다.
         let shinyOdds = shinyDenominator
-        let isShiny = Self.rollsShiny(roll: rng.next(), charmOwned: ownsShinyCharm)
+        let shinyRoll = rng.next()
+        let isShiny = DigimonCatalog.find(line.baseID) == nil && Self.rollsShiny(roll: shinyRoll, charmOwned: ownsShinyCharm)
         let nature = PokemonNature.allCases[Int(rng.next() % UInt64(PokemonNature.allCases.count))]
         // 메타몽 위장 롤 — common·≥2형태에 한해 1/128. .app 게이트(&& 단락 → 비앱에선 rng 미소비로
         // 기존 테스트 RNG 시퀀스 무영향). 위장/리빌 로직은 상태 기반으로 별도 테스트한다.
@@ -1760,6 +2148,8 @@ final class CompanionStore {
             state.active = normalizedEvolutionState(latest, from: line.tree)
             state.reconcileRepresentativeSelection()   // 손상 경로 정규화로 사라진 단계가 대표로 남지 않게
             currentLine = line
+            if isContinuingSpecialTraining, let selected = state.active?.selectedEvolutionID,
+               (!trainingEvolutionChoices.contains(where: { $0.id == selected }) || state.ownsSpecies(selected)) { state.active?.selectedEvolutionID = nil }
             save()   // 마이그레이션 선택을 사용량 재평가 전에 영속화해 재시작마다 다시 롤리지 않는다.
             applyUsage(0)   // 라인 미로딩 동안 적립된 사용량이 임계를 넘었으면 지금 진화 판정
             // Path normalization can change currentID without entering the regular evolution branch.
@@ -1791,7 +2181,11 @@ final class CompanionStore {
                 return nil
             }
             let weights = index.map { e in
-                CollectionWeight.adjusted(e.captureRate, isCollected: state.hasCollectedFinal(forBaseID: e.id))
+                let complete: Bool
+                if DigimonCatalog.find(e.id) != nil {
+                    complete = DigimonCatalog.reachableIDs(from: e.id).allSatisfy { state.ownsSpecies($0) }
+                } else { complete = state.hasCollectedFinal(forBaseID: e.id) }
+                return CollectionWeight.adjusted(e.captureRate, isCollected: complete)
             }
             let total = weights.reduce(0, +)
             var r = Int(rng.next() % UInt64(total))
@@ -2091,6 +2485,7 @@ final class CompanionStore {
     /// Completed phases retain their earned credit. Only the current raw phase is repriced
     /// by difficulty/repeat boost; its profile high-water mark prevents level loss.
     private func reconcileActiveProfileGrowth() {
+        if usesDigimonEvolution { return } // Free registered transitions never mint profile XP.
         guard var active = state.active, var profile = active.profile else { return }
         let completed = Self.reconstructedGrowthTokens(
             rarity: active.rarity, totalForms: active.totalForms,
@@ -2141,9 +2536,31 @@ final class CompanionStore {
             }
             return
         }
+        if s.active.map({ DigimonCatalog.find($0.baseID) != nil }) == true || s.dex.contains(where: { DigimonCatalog.find($0.baseID) != nil }) {
+            // Retain the exact pre-feature bytes once, before sanitizing targets or future plans.
+            let backup = fileURL.appendingPathExtension("before-branching")
+            if !FileManager.default.fileExists(atPath: backup.path) {
+                do { try data.write(to: backup, options: .withoutOverwriting) }
+                catch { AppLog.write("branch migration backup failed: \(error)") }
+            }
+        }
         // 불러오기 경계와 같은 정규화를 디스크에서 읽을 때도 건다. 불러오기만 막으면 **이미 저장된**
         // 극단값은 그대로 남아, 앱이 매 기동마다 같은 값을 읽어 산술 트랩으로 죽는 상태를 못 벗어난다
         // (디코드는 *성공*하므로 위의 .corrupt 복구도 발동하지 않는다). 여기서 걸면 자가 복구된다.
+        if (try? JSONSerialization.jsonObject(with: data) as? [String: Any])?["storedTraining"] == nil {
+            let backup = fileURL.appendingPathExtension("before-training")
+            if !FileManager.default.fileExists(atPath: backup.path) {
+                do { try data.write(to: backup, options: .withoutOverwriting) }
+                catch { AppLog.write("training migration backup failed: \(error)") }
+            }
+        }
+        if s.storedTraining.count > 1 || s.storedTraining.contains(where: { $0.mon == nil }) {
+            let backup = fileURL.appendingPathExtension("before-training-limits")
+            if !FileManager.default.fileExists(atPath: backup.path) {
+                do { try data.write(to: backup, options: .withoutOverwriting) }
+                catch { AppLog.write("training limits backup failed: \(error)") }
+            }
+        }
         state = SaveTransfer.sanitized(s)
     }
     private func save() {

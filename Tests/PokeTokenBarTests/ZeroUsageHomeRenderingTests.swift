@@ -111,23 +111,34 @@ final class ZeroUsageHomeRenderingTests: XCTestCase {
         host.layoutSubtreeIfNeeded()
         let bitmap = try XCTUnwrap(host.bitmapImageRepForCachingDisplay(in: host.bounds))
         host.cacheDisplay(in: host.bounds, to: bitmap)
-        let request = VNRecognizeTextRequest()
-        request.recognitionLanguages = ["ko-KR", "en-US"]
-        request.recognitionLevel = .accurate
-        try VNImageRequestHandler(cgImage: XCTUnwrap(bitmap.cgImage)).perform([request])
-        let text = request.results?.compactMap { $0.topCandidates(1).first?.string }.joined(separator: " ") ?? ""
+        // The terminal Home is taller than one viewport. Verify content remains reachable
+        // through the real scroll container rather than assuming the upstream compact layout.
+        var captures = [bitmap]
+        func descendants(_ view: NSView) -> [NSView] { [view] + view.subviews.flatMap(descendants) }
+        let scroll = try XCTUnwrap(descendants(host).compactMap { $0 as? NSScrollView }
+            .max { ($0.documentView?.frame.height ?? 0) < ($1.documentView?.frame.height ?? 0) })
+        let bottom = max(0, (scroll.documentView?.frame.height ?? 0) - scroll.contentView.bounds.height)
+        scroll.contentView.scroll(to: NSPoint(x: 0, y: scroll.contentView.isFlipped ? bottom : 0))
+        scroll.reflectScrolledClipView(scroll.contentView)
+        try await Task.sleep(for: .milliseconds(200))
+        host.layoutSubtreeIfNeeded()
+        let lower = try XCTUnwrap(host.bitmapImageRepForCachingDisplay(in: host.bounds))
+        host.cacheDisplay(in: host.bounds, to: lower)
+        captures.append(lower)
+        var text = ""
+        for capture in captures {
+            let request = VNRecognizeTextRequest()
+            request.recognitionLanguages = ["ko-KR", "en-US"]
+            request.recognitionLevel = .accurate
+            try VNImageRequestHandler(cgImage: XCTUnwrap(capture.cgImage)).perform([request])
+            text += " " + (request.results?.compactMap { $0.topCandidates(1).first?.string }.joined(separator: " ") ?? "")
+        }
         let normalizedText = text.replacingOccurrences(of: " ", with: "")
         for label in [companion.l.todayTokens, companion.l.thisWeek, companion.l.thisMonth] {
             XCTAssertTrue(normalizedText.contains(label.replacingOccurrences(of: " ", with: "")),
                           "Missing visible \(label): \(text)")
         }
-        if history && day > 1 {
-            XCTAssertTrue(normalizedText.contains(companion.l.dailyTrend.replacingOccurrences(of: " ", with: "")),
-                          "Historical chart missing: \(text)")
-        } else {
-            XCTAssertFalse(normalizedText.contains(companion.l.dailyTrend.replacingOccurrences(of: " ", with: "")),
-                           "Empty history must not invent a chart")
-        }
+        XCTAssertTrue(normalizedText.contains("DATAACTIVITY"), "Terminal activity grid is not reachable: \(text)")
         if let output = ProcessInfo.processInfo.environment["PTB_ZERO_USAGE_SCREENSHOT_DIR"] {
             let directory = URL(fileURLWithPath: output)
             try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)

@@ -5,7 +5,7 @@ import Network
 /// periodic timer(1~5분) 대기 없이 Wi-Fi 재연결, 네트워크 복구, 슬립 후 라우트 확립 시 즉각 갱신.
 final class NetworkReachabilityMonitor: @unchecked Sendable {
     private var monitor: NWPathMonitor?
-    private let queue = DispatchQueue(label: "com.poketokenbar.network-monitor", qos: .utility)
+    private let queue = DispatchQueue(label: "com.digitokenbar.network-monitor", qos: .utility)
     private let lock = NSLock()
     private var lastStatus: NWPath.Status?
     private var lastTriggeredAt: Date?

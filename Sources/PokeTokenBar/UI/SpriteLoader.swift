@@ -11,11 +11,12 @@ actor SpriteStore {
     // 세션 중 종 변경으로 무한 누적되지 않게 한다. NSImage 캐시는 SpriteLoader 가 별도로 관리한다.
     private let memLimit = 64
     nonisolated let directory: URL
+    nonisolated let artworkCache: DigimonArtworkCache
 
-    init(directory: URL? = nil) {
-        let d = directory ?? FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
-            .appendingPathComponent("PokeTokenBar/sprites")
+    init(directory: URL? = nil, artworkCache: DigimonArtworkCache? = nil) {
+        let d = directory ?? AppStatePaths.directory().appendingPathComponent("sprites")
         self.directory = d
+        self.artworkCache = artworkCache ?? DigimonArtworkCache(directory: d.appendingPathComponent("external-artwork-v1"))
         try? FileManager.default.createDirectory(at: d, withIntermediateDirectories: true)
     }
 
@@ -27,6 +28,7 @@ actor SpriteStore {
     /// PokeAPI names form GIFs `201-b`/`492-sky`; static PNGs of separate varieties use the variety
     /// id (`10006.png`). Cache files keep the `<id>-<form>` name either way.
     static func spriteURL(speciesID: Int, animated: Bool, shiny: Bool, form: PokemonForm? = nil) -> URL {
+        if let digimon = DigimonCatalog.find(speciesID) { return digimon.imageURL }
         let name = animated ? PokemonForm.assetName(speciesID: speciesID, form: form)
                             : PokemonForm.staticAssetName(speciesID: speciesID, form: form)
         let path = animated ? "versions/generation-v/black-white/animated/" : ""
@@ -36,6 +38,7 @@ actor SpriteStore {
     }
 
     func data(speciesID: Int, animated: Bool, shiny: Bool = false, form: PokemonForm? = nil) async -> Data? {
+        if DigimonCatalog.find(speciesID) != nil { return await artworkCache.data(for: DigimonArtwork.speciesKey(speciesID)) }
         if animated, !PokemonAssets.hasAnimatedSprite(speciesID: speciesID) { return nil }
         let key = Self.cacheKey(speciesID: speciesID, animated: animated, shiny: shiny, form: form)
         if let d = mem[key] { touch(key); return d }
@@ -65,18 +68,9 @@ actor SpriteStore {
         return d
     }
 
-    /// 알 스프라이트(정적, pokemon/egg.png) — 애니메이션 알은 없음. 포켓몬/아이템과 같은 메모리·디스크 캐시(키 "egg").
+    /// Download the original transparent Digitama. Old Pokémon egg caches are never reused.
     func eggData() async -> Data? {
-        let key = "egg"
-        if let d = mem[key] { touch(key); return d }
-        let file = directory.appendingPathComponent("egg.png")
-        if let d = try? Data(contentsOf: file) { remember(key, d); return d }
-        guard let url = URL(string: "\(Self.base)/egg.png"),
-              let (d, resp) = try? await URLSession.shared.data(from: url),
-              (resp as? HTTPURLResponse)?.statusCode == 200, !d.isEmpty else { return nil }
-        try? d.write(to: file, options: .atomic)
-        remember(key, d)
-        return d
+        await artworkCache.data(for: "digitama-adventure")
     }
 
     /// in-memory 캐시에 넣고 LRU 상한 유지(#H1) — 세션 중 종이 여러 번 바뀌어도 무한 성장 방지.
@@ -98,8 +92,7 @@ actor SpriteStore {
 @MainActor
 enum SpriteLoader {
     static let cacheDir: URL = {
-        FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
-            .appendingPathComponent("PokeTokenBar/sprites")
+        AppStatePaths.directory().appendingPathComponent("sprites")
     }()
 
     /// 동기 시드와 async 로드가 NSImage 를 공유해 파일 읽기와 이미지 객체 생성을 반복하지 않는다.
@@ -114,6 +107,17 @@ enum SpriteLoader {
     /// shiny 캐시 미스는 일반 캐시로 폴백 — 오프라인에서 live mon 이 알 글리프로 보이는 것 방지.
     static func cachedImage(speciesID: Int, animated: Bool = false, shiny: Bool = false,
                             directory: URL = cacheDir, form: PokemonForm? = nil) -> NSImage? {
+        if DigimonCatalog.find(speciesID) != nil {
+            let assetKey = DigimonArtwork.speciesKey(speciesID)
+            guard let source = DigimonArtwork.source(for: assetKey) else { return nil }
+            let file = DigimonArtworkCache.fileURL(key: assetKey, source: source,
+                directory: directory.appendingPathComponent("external-artwork-v1"))
+            let key = file.path as NSString
+            if let image = imageCache.object(forKey: key) { return image }
+            guard let image = NSImage(contentsOf: file) else { return nil }
+            imageCache.setObject(image, forKey: key)
+            return image
+        }
         let ext = animated ? "gif" : "png"
         let key = SpriteStore.cacheKey(speciesID: speciesID, animated: animated, shiny: shiny, form: form)
         let f = directory.appendingPathComponent("\(key).\(ext)")
@@ -182,6 +186,12 @@ enum SpriteLoader {
         onUnavailable: () async -> Void
     ) async -> [(image: NSImage, delay: TimeInterval)] {
         guard !Task.isCancelled else { return [] }
+        // Digimon originals are static and use the existing static/bobbing fallback.
+        // They have no remote GIF to recover, so never enter the network retry loop.
+        if DigimonCatalog.find(speciesID) != nil {
+            await onUnavailable()
+            return []
+        }
         // Unsupported species have no GIF endpoint; a static fallback is their final state.
         guard PokemonAssets.hasAnimatedSprite(speciesID: speciesID) else {
             await onUnavailable()
@@ -225,6 +235,19 @@ enum SpriteLoader {
     /// shiny=true 는 색이 다른 스프라이트 — 미제공 종이면 일반으로 폴백.
     static func image(speciesID: Int, animated: Bool = false, shiny: Bool = false,
                       store: SpriteStore = .shared, form: PokemonForm? = nil) async -> NSImage? {
+        if DigimonCatalog.find(speciesID) != nil {
+            let assetKey = DigimonArtwork.speciesKey(speciesID)
+            guard let source = DigimonArtwork.source(for: assetKey) else { return nil }
+            let key = DigimonArtworkCache.fileURL(key: assetKey, source: source, directory: store.artworkCache.directory).path as NSString
+            if let image = imageCache.object(forKey: key) { return image }
+            if let cached = cachedImage(speciesID: speciesID, directory: store.directory) { return cached }
+            guard let data = await store.data(speciesID: speciesID, animated: false), !Task.isCancelled else { return nil }
+            // Another view may have decoded the shared download while this task awaited it.
+            if let image = imageCache.object(forKey: key) { return image }
+            guard let image = NSImage(data: data) else { return nil }
+            imageCache.setObject(image, forKey: key)
+            return image
+        }
         for moving in animated ? [true, false] : [false] {
             let key = SpriteStore.cacheKey(speciesID: speciesID, animated: moving, shiny: shiny, form: form)
             let ext = moving ? "gif" : "png"
@@ -269,7 +292,7 @@ enum SpriteLoader {
     /// 알 스프라이트는 96×96 캔버스에 실제 알이 28×30(≈29%)만 차지 — 그대로 쓰면 프레임에서 아주 작게
     /// 보인다(🥚 이모지는 여백이 없어 꽉 찼음). 콘텐츠 경계로 1회 크롭해 여백을 제거하고 캐시 →
     /// 상점·홈 등 모든 크기에서 이모지처럼 프레임을 꽉 채운다.
-    private static var croppedEgg: NSImage?
+    private static var croppedEgg: NSImage? = CyberAssets.image(name: "digitama-adventure", ext: "png").map { cropToContent($0) }
 
     /// 크롭 완료분만 동기 반환(미준비면 nil — 동기 크롭 안 함, 히치 방지). 첫 표시 때만 🥚 폴백 후 eggImage 로 교체.
     static func cachedEggImage() -> NSImage? { croppedEgg }

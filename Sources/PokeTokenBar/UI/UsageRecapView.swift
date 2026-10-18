@@ -29,7 +29,7 @@ struct RecapContent {
         companionShiny = companion.currentIsShiny
         companionForm = companion.currentForm
         graduates = recap.graduated.prefix(4).map { entry in
-            let name = companion.dexStoredChainNames(entry)?[entry.finalID] ?? "#\(entry.finalID)"
+            let name = companion.dexStoredChainNames(entry)?[entry.finalID] ?? DigimonCatalog.numberLabel(for: entry.finalID)
             // Four chips share a row: only Unown's letter fits, the sprite already shows other forms.
             return (entry, PokemonForm.displayName(name, speciesID: entry.finalID, form: entry.form, label: nil))
         }
@@ -406,7 +406,7 @@ struct RecapScreen: View {
                     Text(l.recapCompareSoFar(scope))
                 }
             }
-            .font(.caption).foregroundStyle(.secondary)
+            .font(.caption).foregroundStyle(CyberPalette.muted)
             Spacer(minLength: 0)
         }
         .padding(PopoverMetrics.padding)

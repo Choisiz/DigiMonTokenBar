@@ -933,7 +933,7 @@ final class UsageStore {
         clearStaleSuspension(reason: "refresh")
         // App Nap 방지 — 백그라운드 스로틀로 로그 파싱·codex 조회가 타임아웃되는 것을 막는다 (시스템 슬립은 허용)
         let activity = ProcessInfo.processInfo.beginActivity(
-            options: .userInitiatedAllowingIdleSystemSleep, reason: "PokeTokenBar usage refresh")
+            options: .userInitiatedAllowingIdleSystemSleep, reason: "DigiTokenBar usage refresh")
         defer {
             ProcessInfo.processInfo.endActivity(activity)
             isRefreshing = false
@@ -2018,7 +2018,7 @@ final class UsageStore {
         // .app 번들에서만 기록 — 테스트가 실제 사용자 데이터 디렉토리의 스냅샷을 덮어쓰지 않도록.
         guard AppEnv.isBundledApp else { return }
         let dir = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
-            .appendingPathComponent("PokeTokenBar")
+            .appendingPathComponent("DigiTokenBar")
         try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         var providerEntries: [[String: Any]] = []
         for snapshot in snapshots {

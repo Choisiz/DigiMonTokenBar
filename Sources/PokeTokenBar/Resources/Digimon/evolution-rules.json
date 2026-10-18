@@ -1,0 +1,737 @@
+{
+  "version": 2,
+  "policy": "Explicit app rules. Fusion ingredients are permanent Notebook ownership; item evolutions consume one designated item; daily buffs use unscaled aggregate actual usage. Other game graph edges retain growth pending further lore review.",
+  "removedEdges": [
+    [
+      10416,
+      10429
+    ]
+  ],
+  "addedEdges": [
+    [
+      10417,
+      10429
+    ]
+  ],
+  "rules": [
+    {
+      "source": 10084,
+      "target": 10300,
+      "kind": "fusion",
+      "ingredients": [
+        10084,
+        10174
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/shakkoumon"
+    },
+    {
+      "source": 10174,
+      "target": 10300,
+      "kind": "fusion",
+      "ingredients": [
+        10084,
+        10174
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/shakkoumon"
+    },
+    {
+      "source": 10097,
+      "target": 10301,
+      "kind": "fusion",
+      "ingredients": [
+        10097,
+        10173
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/silphymon"
+    },
+    {
+      "source": 10173,
+      "target": 10301,
+      "kind": "fusion",
+      "ingredients": [
+        10097,
+        10173
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/silphymon"
+    },
+    {
+      "source": 10175,
+      "target": 10302,
+      "kind": "fusion",
+      "ingredients": [
+        10175,
+        10177
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/dinobeemon"
+    },
+    {
+      "source": 10177,
+      "target": 10302,
+      "kind": "fusion",
+      "ingredients": [
+        10175,
+        10177
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/dinobeemon"
+    },
+    {
+      "source": 10175,
+      "target": 10303,
+      "kind": "fusion",
+      "ingredients": [
+        10175,
+        10177
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/paildramon"
+    },
+    {
+      "source": 10177,
+      "target": 10303,
+      "kind": "fusion",
+      "ingredients": [
+        10175,
+        10177
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/paildramon"
+    },
+    {
+      "source": 10203,
+      "target": 10337,
+      "kind": "fusion",
+      "ingredients": [
+        10203,
+        10297
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/mastemon"
+    },
+    {
+      "source": 10297,
+      "target": 10337,
+      "kind": "fusion",
+      "ingredients": [
+        10203,
+        10297
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/mastemon"
+    },
+    {
+      "source": 10308,
+      "target": 10427,
+      "kind": "fusion",
+      "ingredients": [
+        10308,
+        10313
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/alphamon-ouryuken"
+    },
+    {
+      "source": 10313,
+      "target": 10427,
+      "kind": "fusion",
+      "ingredients": [
+        10308,
+        10313
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/alphamon-ouryuken"
+    },
+    {
+      "source": 10316,
+      "target": 10428,
+      "kind": "fusion",
+      "ingredients": [
+        10316,
+        10231
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/craniamon-plus-enbarrmon"
+    },
+    {
+      "source": 10231,
+      "target": 10428,
+      "kind": "fusion",
+      "ingredients": [
+        10316,
+        10231
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/craniamon-plus-enbarrmon"
+    },
+    {
+      "source": 2006,
+      "target": 10430,
+      "kind": "fusion",
+      "ingredients": [
+        2006,
+        2012
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/omnimon"
+    },
+    {
+      "source": 2012,
+      "target": 10430,
+      "kind": "fusion",
+      "ingredients": [
+        2006,
+        2012
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/omnimon"
+    },
+    {
+      "source": 10474,
+      "target": 10431,
+      "kind": "fusion",
+      "ingredients": [
+        10474,
+        10475
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/omnimon-zwart"
+    },
+    {
+      "source": 10475,
+      "target": 10431,
+      "kind": "fusion",
+      "ingredients": [
+        10474,
+        10475
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/omnimon-zwart"
+    },
+    {
+      "source": 10333,
+      "target": 10432,
+      "kind": "fusion",
+      "ingredients": [
+        10333,
+        10383
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/chaosmon"
+    },
+    {
+      "source": 10383,
+      "target": 10432,
+      "kind": "fusion",
+      "ingredients": [
+        10333,
+        10383
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/chaosmon"
+    },
+    {
+      "source": 10333,
+      "target": 10433,
+      "kind": "fusion",
+      "ingredients": [
+        10333,
+        10310
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/chaosmon-valdur-arm"
+    },
+    {
+      "source": 10310,
+      "target": 10433,
+      "kind": "fusion",
+      "ingredients": [
+        10333,
+        10310
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/chaosmon-valdur-arm"
+    },
+    {
+      "source": 10307,
+      "target": 10434,
+      "kind": "fusion",
+      "ingredients": [
+        10307,
+        10354
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/gracenovamon"
+    },
+    {
+      "source": 10354,
+      "target": 10434,
+      "kind": "fusion",
+      "ingredients": [
+        10307,
+        10354
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/gracenovamon"
+    },
+    {
+      "source": 10424,
+      "target": 10436,
+      "kind": "fusion",
+      "ingredients": [
+        10424,
+        10425
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/susanomon"
+    },
+    {
+      "source": 10425,
+      "target": 10436,
+      "kind": "fusion",
+      "ingredients": [
+        10424,
+        10425
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/susanomon"
+    },
+    {
+      "source": 10327,
+      "target": 10439,
+      "kind": "fusion",
+      "ingredients": [
+        10327,
+        10398
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/examon"
+    },
+    {
+      "source": 10398,
+      "target": 10439,
+      "kind": "fusion",
+      "ingredients": [
+        10327,
+        10398
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/examon"
+    },
+    {
+      "source": 10385,
+      "target": 10442,
+      "kind": "fusion",
+      "ingredients": [
+        10385,
+        10239
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/titamon-plus-skullbaluchimon"
+    },
+    {
+      "source": 10239,
+      "target": 10442,
+      "kind": "fusion",
+      "ingredients": [
+        10385,
+        10239
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/titamon-plus-skullbaluchimon"
+    },
+    {
+      "source": 10454,
+      "target": 10456,
+      "kind": "fusion",
+      "ingredients": [
+        10454,
+        10452
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/omnimon-alter-s"
+    },
+    {
+      "source": 10452,
+      "target": 10456,
+      "kind": "fusion",
+      "ingredients": [
+        10454,
+        10452
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/omnimon-alter-s"
+    },
+    {
+      "source": 10022,
+      "target": 10188,
+      "kind": "item",
+      "ingredients": [],
+      "item": "mint",
+      "method": "아이템·스피릿",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=wolfmon"
+    },
+    {
+      "source": 10024,
+      "target": 10187,
+      "kind": "item",
+      "ingredients": [],
+      "item": "mint",
+      "method": "아이템·스피릿",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=agnimon"
+    },
+    {
+      "source": 10027,
+      "target": 10422,
+      "kind": "item",
+      "ingredients": [],
+      "item": "capsuleFate",
+      "method": "아이템·캡슐",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=rapidmon_gold"
+    },
+    {
+      "source": 10051,
+      "target": 10184,
+      "kind": "item",
+      "ingredients": [],
+      "item": "capsuleHope",
+      "method": "아이템·캡슐",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=pegasmon"
+    },
+    {
+      "source": 10063,
+      "target": 10189,
+      "kind": "item",
+      "ingredients": [],
+      "item": "mint",
+      "method": "아이템·스피릿",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=ranamon"
+    },
+    {
+      "source": 10076,
+      "target": 10181,
+      "kind": "item",
+      "ingredients": [],
+      "item": "capsuleKnowledge",
+      "method": "아이템·캡슐",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=digmon"
+    },
+    {
+      "source": 10076,
+      "target": 10179,
+      "kind": "item",
+      "ingredients": [],
+      "item": "capsuleSincerity",
+      "method": "아이템·캡슐",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=sabmarimon"
+    },
+    {
+      "source": 10077,
+      "target": 10186,
+      "kind": "item",
+      "ingredients": [],
+      "item": "capsuleFriendship",
+      "method": "아이템·캡슐",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=lighdramon"
+    },
+    {
+      "source": 10077,
+      "target": 10423,
+      "kind": "item",
+      "ingredients": [],
+      "item": "capsuleMiracles",
+      "method": "아이템·캡슐",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=magnamon"
+    },
+    {
+      "source": 10077,
+      "target": 10183,
+      "kind": "item",
+      "ingredients": [],
+      "item": "capsuleCourage",
+      "method": "아이템·캡슐",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=fladramon"
+    },
+    {
+      "source": 10078,
+      "target": 10185,
+      "kind": "item",
+      "ingredients": [],
+      "item": "capsuleLove",
+      "method": "아이템·캡슐",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=holsmon"
+    },
+    {
+      "source": 10078,
+      "target": 10180,
+      "kind": "item",
+      "ingredients": [],
+      "item": "capsulePurity",
+      "method": "아이템·캡슐",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=shurimon"
+    },
+    {
+      "source": 10097,
+      "target": 10182,
+      "kind": "item",
+      "ingredients": [],
+      "item": "capsuleLight",
+      "method": "아이템·캡슐",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=nefertimon"
+    },
+    {
+      "source": 10309,
+      "target": 10463,
+      "kind": "item",
+      "ingredients": [],
+      "item": "xAntibodyA",
+      "method": "아이템·X항체",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=ulforcevdramon_x"
+    },
+    {
+      "source": 10322,
+      "target": 10435,
+      "kind": "buff",
+      "ingredients": [],
+      "dailyTokens": 60000000,
+      "method": "일반·버스트",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=shinegreymonburstmode"
+    },
+    {
+      "source": 10341,
+      "target": 10438,
+      "kind": "buff",
+      "ingredients": [],
+      "dailyTokens": 60000000,
+      "method": "일반·버스트",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=ravmonburstmode"
+    },
+    {
+      "source": 10352,
+      "target": 10465,
+      "kind": "item",
+      "ingredients": [],
+      "item": "xAntibodyA",
+      "method": "아이템·X항체",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=jesmon_x"
+    },
+    {
+      "source": 10363,
+      "target": 10440,
+      "kind": "buff",
+      "ingredients": [],
+      "dailyTokens": 60000000,
+      "method": "일반·버스트",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=miragegaogamon:burstmode"
+    },
+    {
+      "source": 10367,
+      "target": 10441,
+      "kind": "buff",
+      "ingredients": [],
+      "dailyTokens": 60000000,
+      "method": "일반·버스트",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=rosemonburstmode"
+    },
+    {
+      "source": 10388,
+      "target": 10466,
+      "kind": "item",
+      "ingredients": [],
+      "item": "xAntibodyA",
+      "method": "아이템·X항체",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=dukemon_x"
+    },
+    {
+      "source": 10423,
+      "target": 10464,
+      "kind": "item",
+      "ingredients": [],
+      "item": "xAntibodyA",
+      "method": "아이템·X항체",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=magnamon_x"
+    },
+    {
+      "source": 10430,
+      "target": 10467,
+      "kind": "item",
+      "ingredients": [],
+      "item": "xAntibodyS",
+      "method": "아이템·X항체",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=omegamon-x"
+    },
+    {
+      "source": 10464,
+      "target": 10423,
+      "kind": "normal",
+      "ingredients": [],
+      "method": "일반·복귀",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=magnamon"
+    },
+    {
+      "source": 10187,
+      "target": 10305,
+      "kind": "fusion",
+      "ingredients": [
+        10187,
+        10190
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/aldamon"
+    },
+    {
+      "source": 10190,
+      "target": 10305,
+      "kind": "fusion",
+      "ingredients": [
+        10187,
+        10190
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/aldamon"
+    },
+    {
+      "source": 10188,
+      "target": 10306,
+      "kind": "fusion",
+      "ingredients": [
+        10188,
+        10192
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/beowolfmon"
+    },
+    {
+      "source": 10192,
+      "target": 10306,
+      "kind": "fusion",
+      "ingredients": [
+        10188,
+        10192
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/beowolfmon"
+    },
+    {
+      "source": 10235,
+      "target": 10405,
+      "kind": "fusion",
+      "ingredients": [
+        10235,
+        10406
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/millenniummon"
+    },
+    {
+      "source": 10406,
+      "target": 10405,
+      "kind": "fusion",
+      "ingredients": [
+        10235,
+        10406
+      ],
+      "reference": "https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon/millenniummon"
+    },
+    {
+      "source": 10340,
+      "target": 10437,
+      "kind": "buff",
+      "ingredients": [],
+      "dailyTokens": 60000000,
+      "method": "일반·해방",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=jupitermmon_wrath"
+    },
+    {
+      "source": 10388,
+      "target": 10443,
+      "kind": "buff",
+      "ingredients": [],
+      "dailyTokens": 60000000,
+      "method": "일반·해방",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=dukemoncrimsonmode"
+    },
+    {
+      "source": 10401,
+      "target": 10444,
+      "kind": "buff",
+      "ingredients": [],
+      "dailyTokens": 60000000,
+      "method": "일반·해방",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=beelzebumonblastmode"
+    },
+    {
+      "source": 10402,
+      "target": 10445,
+      "kind": "buff",
+      "ingredients": [],
+      "dailyTokens": 60000000,
+      "method": "일반·해방",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=belphemonragemode"
+    },
+    {
+      "source": 10431,
+      "target": 10457,
+      "kind": "item",
+      "ingredients": [],
+      "item": "mint",
+      "method": "아이템·데이터",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=omegamonzwart_d"
+    },
+    {
+      "source": 10455,
+      "target": 10456,
+      "kind": "normal",
+      "ingredients": [],
+      "method": "일반·복귀",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=omegamon-alter-s"
+    },
+    {
+      "source": 10456,
+      "target": 10455,
+      "kind": "item",
+      "ingredients": [],
+      "item": "mint",
+      "method": "아이템·데이터",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=omegamon_alter-b"
+    },
+    {
+      "source": 10457,
+      "target": 10455,
+      "kind": "item",
+      "ingredients": [],
+      "item": "mint",
+      "method": "아이템·데이터",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=omegamon_alter-b"
+    },
+    {
+      "source": 10467,
+      "target": 10430,
+      "kind": "normal",
+      "ingredients": [],
+      "method": "일반·복귀",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=omegamon"
+    },
+    {
+      "source": 2003,
+      "target": 10449,
+      "kind": "buff",
+      "ingredients": [],
+      "dailyTokens": 30000000,
+      "method": "일반·유대",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=agumon_kizuna"
+    },
+    {
+      "source": 2009,
+      "target": 10451,
+      "kind": "buff",
+      "ingredients": [],
+      "dailyTokens": 30000000,
+      "method": "일반·유대",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=gabumon_kizuna"
+    },
+    {
+      "source": 10430,
+      "target": 10462,
+      "kind": "buff",
+      "ingredients": [],
+      "dailyTokens": 60000000,
+      "method": "일반·해방",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=omegamon_merciful"
+    },
+    {
+      "source": 10421,
+      "target": 10448,
+      "kind": "normal",
+      "ingredients": [],
+      "method": "일반·성장",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=armagemon"
+    },
+    {
+      "source": 10417,
+      "target": 10429,
+      "kind": "fusion",
+      "ingredients": [
+        10417,
+        10430
+      ],
+      "method": "조그레스·힘 계승",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=imperialdramonpaladinmode"
+    },
+    {
+      "source": 10392,
+      "target": 10450,
+      "kind": "unverified",
+      "ingredients": [],
+      "method": "분류 검토 중",
+      "reference": "https://digimon.net/reference_ko/detail.php?directory_name=apoclymon"
+    }
+  ]
+}

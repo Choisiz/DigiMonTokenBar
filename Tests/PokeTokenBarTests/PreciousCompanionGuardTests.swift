@@ -94,7 +94,7 @@ final class PreciousCompanionGuardTests: XCTestCase {
         }
 
         // 한국어와 영어 문구 특정 검증
-        XCTAssertTrue(L(.ko).freshEggLegendaryWarning.contains("전설 포켓몬"))
+        XCTAssertTrue(L(.ko).freshEggLegendaryWarning.contains("전설 디지몬"))
         XCTAssertEqual(L(.ko).freshEggDiscardValuable, "놓아주기")
         XCTAssertTrue(L(.en).freshEggLegendaryWarning.contains("Legendary"))
         XCTAssertEqual(L(.en).freshEggDiscardValuable, "Send off")

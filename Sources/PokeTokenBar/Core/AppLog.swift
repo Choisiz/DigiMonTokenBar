@@ -9,7 +9,7 @@ enum AppLog {
         let dir = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask)[0]
             .appendingPathComponent("Logs")
         try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
-        return dir.appendingPathComponent("PokeTokenBar.log")
+        return dir.appendingPathComponent("DigiTokenBar.log")
     }()
 
     /// 로그 상한 — 초과 시 .old 로 1세대 회전(무한 증가 방지, 디스크 상한 ≈ 2×maxBytes = 4MB).
@@ -17,7 +17,7 @@ enum AppLog {
     /// 레퍼런스(size-capped 회전, 수 MB)에 맞춤 — 일자별 폴더는 무한 성장/정리 필요라 채택 안 함.
     private static let maxBytes = 2 * 1024 * 1024
 
-    private static let backend = AsyncLineLog(queue: DispatchQueue(label: "poketokenbar.log")) { line in
+    private static let backend = AsyncLineLog(queue: DispatchQueue(label: "digitokenbar.log")) { line in
         if let size = try? FileManager.default.attributesOfItem(atPath: url.path)[.size] as? Int,
            size > maxBytes {
             let old = url.deletingPathExtension().appendingPathExtension("old.log")

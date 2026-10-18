@@ -7,34 +7,28 @@ struct BagView: View {
     let nav: PopoverNavigation
 
     var body: some View {
-        if store.ownedItems.isEmpty {
-            emptyState
-        } else {
-            // 고정 높이 — 컬렉션과 동일(팝오버 재오픈 시 fitting size 축소 방지).
-            ScrollView {
-                VStack(alignment: .leading, spacing: 8) {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 12) {
+                CyberSectionHeading(number: "03", title: "ITEM STORAGE")
+                CyberGuidePanel(language: store.language, compact: !store.ownedItems.isEmpty)
+                if store.ownedItems.isEmpty {
+                    emptyState
+                } else {
                     ForEach(store.ownedItems, id: \.kind) { item in
                         ItemCard(store: store, nav: nav, kind: item.kind, count: item.count)
                     }
                 }
-                .reservesScrollerLane()
-            }
-            .frame(height: 520)
-        }
+            }.reservesScrollerLane()
+        }.frame(height: 520)
     }
 
-    /// 빈 가방 — 움직이는 잠만보(143) + 안내(특정 아이템명 미언급, 확장 대비).
     private var emptyState: some View {
-        VStack(spacing: 10) {
-            SpriteView(speciesID: 143, size: 96, animated: true)   // 잠만보(움직임)
-            Text(store.l.bagEmptyTitle)
-                .font(.callout.weight(.semibold))
+        VStack(spacing: 14) {
+            Text(store.l.bagEmptyTitle).font(.callout.weight(.semibold))
             Button(store.l.shop) { nav.tab = .shop }
-                .buttonStyle(.bordered)
+                .buttonStyle(TerminalCommandStyle(prominent: true)).tint(CyberPalette.cyan)
                 .controlSize(.small)
-        }
-        .frame(maxWidth: .infinity)
-        .padding(.vertical, 28)
+        }.frame(maxWidth: .infinity).padding(.vertical, 24).cyberPanel()
     }
 }
 
@@ -56,13 +50,13 @@ private struct ItemCard: View {
         let l = store.l
         VStack(alignment: .leading, spacing: 8) {
             HStack(alignment: .top, spacing: 10) {
-                ItemIconView(kind: kind, size: 30)
+                ItemIconView(kind: kind, size: 42)
                 VStack(alignment: .leading, spacing: 2) {
                     HStack(spacing: 6) {
                         Text(l.itemName(kind)).font(.callout.weight(.semibold))
                         if !kind.isPassive {   // 보유형은 개수 개념이 없음(1회 구매·영구)
                             Text("×\(count)").font(.caption.weight(.bold))
-                                .foregroundStyle(.secondary).monospacedDigit()
+                                .foregroundStyle(CyberPalette.muted).monospacedDigit()
                         }
                         Spacer(minLength: 4)
                         if kind == .rareCandy, store.canUseRareCandy {
@@ -75,27 +69,26 @@ private struct ItemCard: View {
                         }
                     }
                     Text(l.itemDescription(kind))
-                        .font(.caption).foregroundStyle(.secondary)
+                        .font(.caption).foregroundStyle(CyberPalette.muted)
                         .fixedSize(horizontal: false, vertical: true)
                 }
             }
             if kind == .rareCandy, let preview = store.planRareCandyUse(count: selectedCandyCount) {
                 if preview.graduates {
-                    Text(l.candyGraduates).font(.caption2).foregroundStyle(.secondary)
+                    Text(l.candyGraduates).font(.caption2).foregroundStyle(CyberPalette.muted)
                 }
                 if preview.discardedXP > 0 {
                     Text(l.candyDiscardedXP(TokenFormatter.compact(preview.discardedXP)))
                         .font(.caption2).foregroundStyle(.orange).fixedSize(horizontal: false, vertical: true)
                 } else if preview.evolves && !preview.graduates {
                     Text(l.candyCarryoverXP(TokenFormatter.compact(preview.carryoverXP)))
-                        .font(.caption2).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
+                        .font(.caption2).foregroundStyle(CyberPalette.muted).fixedSize(horizontal: false, vertical: true)
                 }
             }
             useControls(l)
         }
         .padding(10)
-        .background(Color.secondary.opacity(0.06))
-        .clipShape(RoundedRectangle(cornerRadius: 10))
+        .cyberPanel()
         .onChange(of: store.maxRareCandyUseCount) { _, _ in
             candyCount = selectedCandyCount
         }
@@ -106,7 +99,7 @@ private struct ItemCard: View {
         switch kind {
         case .rareCandy: return store.canUseRareCandy
         case .mint:      return store.canUseMint
-        case .shinyCharm: return false   // 보유형 — 사용 개념 없음(상시 효과)
+        default: return false   // 보유형 — 사용 개념 없음(상시 효과)
         }
     }
     /// 사용 컨트롤 효과 힌트 ("+XP" / "성격 랜덤 변경").
@@ -115,19 +108,23 @@ private struct ItemCard: View {
         case .rareCandy: return "+\(TokenFormatter.compact(selectedCandyCount * RareCandy.xp)) XP"
         case .mint:      return l.mintEffectHint
         case .shinyCharm: return l.shinyCharmEffectHint
+        default: return l.digimonUI("Used for evolution")
         }
     }
     private func performUse() {
         switch kind {
         case .rareCandy: _ = store.useRareCandy(count: selectedCandyCount)
         case .mint:      _ = store.useMint()
-        case .shinyCharm: break   // 보유형 — 사용 동작 없음
+        default: break   // 보유형 — 사용 동작 없음
         }
     }
 
     @ViewBuilder
     private func useControls(_ l: L) -> some View {
-        if kind.isPassive {
+        if kind.isEvolutionItem {
+            Text(l.digimonUI("Use from evolution selection · one consumed at confirmation"))
+                .font(.caption2).foregroundStyle(CyberPalette.cyan)
+        } else if kind.isPassive {
             // 보유형(이로치 부적) — 사용 버튼 대신 상시 효과 표시.
             HStack(spacing: 6) {
                 Image(systemName: "checkmark.seal.fill").font(.caption2).foregroundStyle(.green)
@@ -138,26 +135,26 @@ private struct ItemCard: View {
             if confirming {
                 HStack(spacing: 8) {
                     Text(l.useOnCurrent(store.displayName))
-                        .font(.caption2).foregroundStyle(.secondary).lineLimit(1)
+                        .font(.caption2).foregroundStyle(CyberPalette.muted).lineLimit(1)
                     Spacer()
                     Button(kind == .rareCandy ? "\(l.use) ×\(selectedCandyCount)" : l.use) { useNow() }
-                        .buttonStyle(.borderedProminent).controlSize(.small)
+                        .buttonStyle(TerminalCommandStyle(prominent: true)).controlSize(.small)
                     Button(l.cancel) { confirming = false }
                         .buttonStyle(.borderless).controlSize(.small)
                 }
             } else {
                 HStack {
                     Text(effectHint(l))
-                        .font(.caption2).foregroundStyle(.tertiary).monospacedDigit()
+                        .font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85)).monospacedDigit()
                     Spacer()
                     Button(l.useItem) { confirming = true }
-                        .buttonStyle(.bordered).controlSize(.small)
+                        .buttonStyle(TerminalCommandStyle()).controlSize(.small)
                 }
             }
         } else {
             // 알(부화 전)/활성 없음/(사탕만)라인 미로딩 — 비활성 + 사유
             Text(store.isEgg ? l.useAfterHatch : l.useNeedsPokemon)
-                .font(.caption2).foregroundStyle(.tertiary)
+                .font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
         }
     }
 

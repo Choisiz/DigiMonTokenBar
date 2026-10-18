@@ -39,12 +39,23 @@ LOGIC_CORE=(
   "Sources/PokeTokenBar/Core/UsageRecap.swift"
 )
 
+python3 scripts/check-digimon-artwork-distribution.py
+
 echo "▶ swift test (--enable-code-coverage)"
 swift test --enable-code-coverage
 
-PROF=$(find .build -name 'default.profdata' | head -1)
-# dSYM 안에도 같은 이름의 DWARF 바이너리가 있어 head -1 이 그걸 집으면 llvm-cov 가 실패한다 → 제외.
-BIN=$(find .build -name 'PokeTokenBarPackageTests' -type f ! -path '*.dSYM/*' | head -1)
+BIN_DIR=$(swift build --show-bin-path)
+PROF="$BIN_DIR/codecov/default.profdata"
+# SwiftPM's native backend uses PackageTests; Xcode's newer backend uses Tests.
+# Resolve only the current output directory, never an older toolchain's binary or dSYM.
+BIN=""
+for TEST_NAME in PokeTokenBarPackageTests PokeTokenBarTests; do
+  CANDIDATE="$BIN_DIR/$TEST_NAME.xctest/Contents/MacOS/$TEST_NAME"
+  if [[ -f "$CANDIDATE" ]]; then
+    BIN="$CANDIDATE"
+    break
+  fi
+done
 if [[ -z "$PROF" || -z "$BIN" ]]; then
   echo "✗ 커버리지 산출물(profdata/binary)을 찾지 못했습니다." >&2
   exit 1

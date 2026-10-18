@@ -134,6 +134,7 @@ final class DexColorRenderingTests: XCTestCase {
         let species = try XCTUnwrap(store.dexSpecies.first)
         let view = PokemonDetailView(store: store, species: species, onBack: {}, selectedShiny: false,
                                      spriteStore: SpriteStore(directory: directory))
+            .environment(PopoverNavigation())
             .frame(width: PopoverMetrics.contentWidth, height: 520)
             .background(Color.white)
             .environment(\.colorScheme, .light)

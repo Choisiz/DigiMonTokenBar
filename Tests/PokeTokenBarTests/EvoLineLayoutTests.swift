@@ -99,11 +99,11 @@ final class EvoLineLayoutTests: XCTestCase {
                        accuracy: 0.5)
     }
 
-    /// 홈 라인(썸네일 40)은 6칸까지 그대로, 7칸부터 스크롤.
+    /// The wider Digimon popover fits seven thumbnails; eight require scrolling.
     func testNeedsScrollBoundaryForHomeLine() {
         let w = PopoverMetrics.contentWidth
-        XCTAssertFalse(EvoLineView.needsScroll(count: 6, thumb: 40, hasNames: false, maxWidth: w))
-        XCTAssertTrue(EvoLineView.needsScroll(count: 7, thumb: 40, hasNames: false, maxWidth: w))
+        XCTAssertFalse(EvoLineView.needsScroll(count: 7, thumb: 40, hasNames: false, maxWidth: w))
+        XCTAssertTrue(EvoLineView.needsScroll(count: 8, thumb: 40, hasNames: false, maxWidth: w))
         XCTAssertTrue(EvoLineView.needsScroll(count: 9, thumb: 40, hasNames: false, maxWidth: w))
     }
 
@@ -148,8 +148,8 @@ final class EvoLineLayoutTests: XCTestCase {
             EvoLineView.pageTarget(forward: forward, scrollX: scrollX, count: 9,
                                    thumb: 40, hasNames: false, maxWidth: w)
         }
-        // 맨 왼쪽에서 앞으로 = 한 화면(332/54 = 6칸)만큼
-        XCTAssertEqual(target(true, at: 0), 6)
+        // 맨 왼쪽에서 앞으로 = 한 화면(392/54 = 7칸)만큼
+        XCTAssertEqual(target(true, at: 0), 7)
         // 이동한 뒤 또 누르면 더 앞으로 (제자리 금지)
         XCTAssertGreaterThan(target(true, at: 54), target(true, at: 0))
         // 마지막 칸을 안 넘음

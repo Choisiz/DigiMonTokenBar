@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <title>DigiTokenBar — Adventure Digivice front view</title>
+  <desc>A straight-on first-generation Adventure Digivice with a symmetric housing, circular screen, one left button and two right buttons.</desc>
+  <rect width="1024" height="1024" rx="216" fill="#000000"/>
+  <g transform="translate(176 230) scale(2.1)" fill="none" stroke="#7DD4FC" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M69 61V21Q69 13 77 13Q85 13 85 21V43" stroke-width="9"/>
+    <path d="M110 22H210Q225 22 233 36L246 55Q252 64 264 67L288 74Q301 78 303 94L314 180Q317 199 300 203L279 208Q266 211 260 225L254 240Q249 252 232 252H88Q71 252 66 240L60 225Q54 211 41 208L20 203Q3 199 6 180L17 94Q19 78 32 74L56 67Q68 64 74 55L87 36Q95 22 110 22Z" stroke-width="10"/>
+    <circle cx="160" cy="136" r="76" stroke-width="10"/>
+    <ellipse cx="42" cy="136" rx="17" ry="22" stroke-width="8"/>
+    <ellipse cx="278" cy="106" rx="21" ry="14" stroke-width="8"/>
+    <ellipse cx="278" cy="166" rx="21" ry="14" stroke-width="8"/>
+    <path d="M111 24V42M160 24V42M209 24V42M111 232V250M160 232V250M209 232V250" stroke-width="7"/>
+  </g>
+</svg>

@@ -1978,9 +1978,9 @@ final class CompanionIdentityTests: XCTestCase {
         XCTAssertEqual(PokemonNature.allCases.map { $0.name(.ru) }, expected)
     }
 
-    func testGermanItemNamesUseOfficialMainlineTerms() {
+    func testGermanItemNamesUsePendantAndLegacyCharmTerms() {
         let l = L(.de)
-        XCTAssertEqual(l.itemName(.rareCandy), "Sonderbonbon")
+        XCTAssertEqual(l.itemName(.rareCandy), "Anhänger")
         XCTAssertEqual(l.itemName(.shinyCharm), "Schillerpin")
     }
 

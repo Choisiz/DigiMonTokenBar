@@ -1,0 +1,6535 @@
+{
+  "capturedAt": "2026-10-18",
+  "policy": "Short attributed official excerpts; game stages remain separate. Missing content is explicit.",
+  "records": [
+    {
+      "id": 10001,
+      "level": "유아기Ⅰ",
+      "type": "종족불명",
+      "attribute": "",
+      "moves": [
+        "글레어 아이"
+      ],
+      "excerpt": "컴퓨터 네트워크상에 갑자기 출연한 정체불명의 디지몬. 컴퓨터 네트워크를 악용하는 인간의 악의나 네트워크상에서 펼쳐지는 싸움으로 발생하는 공격성이 구현되어 하나의 디지몬알이 탄생했다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kuramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10002,
+      "level": "유아기Ⅰ",
+      "type": "머신형",
+      "attribute": "",
+      "moves": [
+        "재밍 파우더"
+      ],
+      "excerpt": "광센서로 되어 있는 붉은 눈을 지닌 초소형 머신 디지몬. 쫄래쫄래 돌아다니는 모습은 굉장히 귀엽지만, 밝은 빛에 반응해 돌아다니는 단순한 프로그램만…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=choromon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10003,
+      "level": "유아기Ⅰ",
+      "type": "슬라임형",
+      "attribute": "",
+      "moves": [
+        "작은 쇳가루"
+      ],
+      "excerpt": "전신이 딱딱한 털 「미스릴 헤어」로 둘러싸인 슬라임형 디지몬. 태어나자마자 공격적인 성격이 발현되며, 아직 송곳니가 자라지 않았는데도 크게 입을 벌리고 물어버릴…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dodomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10004,
+      "level": "유아기Ⅰ",
+      "type": "슬라임형",
+      "attribute": "",
+      "moves": [
+        "점성 거품"
+      ],
+      "excerpt": "얼핏 보면 평범한 연두색 거품이지만, 자유롭게 행동하고 풍부한 표정을 보이는 거품형 디지몬. 표면이 아직 딱딱해지지 않아서 방어력은 없는 것이나 마찬가지이기에…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=bubbmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 2007,
+      "level": "유아기Ⅰ",
+      "type": "슬라임형",
+      "attribute": "",
+      "moves": [
+        "산성 거품"
+      ],
+      "excerpt": "갓 태어난 신종 디지몬. 젤 형태의 붉은 몸은 부드럽고 탄력 있으며, 머리 부분에는 3개의 촉수 같은 것이 나 있다. 싸울…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=punimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 2001,
+      "level": "유아기Ⅰ",
+      "type": "슬라임형",
+      "attribute": "",
+      "moves": [
+        "산성 거품"
+      ],
+      "excerpt": "갓 태어난 디지털 몬스터. 슬라임 형태의 몸 표면에는 검은색 솜털이 빽빽하게 나 있다. 태어난 지 얼마 안 됐기에 싸울 수는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=botamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10007,
+      "level": "유아기Ⅰ",
+      "type": "슬라임형",
+      "attribute": "",
+      "moves": [
+        "산성 거품"
+      ],
+      "excerpt": "반투명한 몸으로 「네트워크 바다」를 해파리처럼 떠도는 아기 디지몬. 지금까지 발견된 디지몬 중에서 가장 원시적인 구조로 되어 있으며, 디지몬의 기원을 연구하는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=poyomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10008,
+      "level": "유년기Ⅱ",
+      "type": "렛서형",
+      "attribute": "",
+      "moves": [
+        "하울링 헤르츠"
+      ],
+      "excerpt": "금속성의 헬멧을 쓴 소형 유년기 디지몬. 헬멧에 붙어 있는 2개의 뿔 안에 모든 전파와 소리를 수신할 수 있는 안테나를 지니고…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=capromon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 2002,
+      "level": "유년기Ⅱ",
+      "type": "렛서형",
+      "attribute": "",
+      "moves": [
+        "거품"
+      ],
+      "excerpt": "표면을 덮고 있던 솜털이 빠지고 몸도 한층 더 커진 소형 디지몬. 활발하게 돌아다닐 수 있게 되었지만 아직 싸울 수는 없다. 입에서…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=koromon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10010,
+      "level": "유년기Ⅱ",
+      "type": "알뿌리형",
+      "attribute": "",
+      "moves": [
+        "점성 거품"
+      ],
+      "excerpt": "머리에서 식물의 싹 같은 게 발아한 알뿌리형 디지몬. 가장 적합한 환경을 찾아 떠다니던 유라몬이 지상에 내려와 진화했다. 굉장히 겁이 많은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tanemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 2008,
+      "level": "유년기Ⅱ",
+      "type": "렛서형",
+      "attribute": "",
+      "moves": [
+        "산성 거품"
+      ],
+      "excerpt": "푸니몬 머리에 난 촉수 중 하나가 단단해진 소형 디지몬. 푸니몬에서 더 동물처럼 진화해 복슬복슬한 털로 뒤덮여 있다. 아직 한창 놀고…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tunomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10012,
+      "level": "유년기Ⅱ",
+      "type": "종족불명",
+      "attribute": "",
+      "moves": [
+        "네일 스크래치"
+      ],
+      "excerpt": "쿠라몬이 더 진화한 유년기 디지몬. 촉수 끝이 갈고리발톱처럼 돼서 더 포악해졌다. 무시무시한 속도로 데이터를 잠식하고 네트워크를 뒤엎는다. 또한 이동 속도도…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tsumemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10013,
+      "level": "유년기Ⅱ",
+      "type": "렛서형",
+      "attribute": "",
+      "moves": [
+        "물어뜯기"
+      ],
+      "excerpt": "몸(머리?) 아래에 손발 같은 것이 나 있는 소형 디지몬. 손발이 자란 유년기 디지몬 중에서는 매우 드물게 겉모습도 굉장히 귀엽다. 하지만 귀엽다고…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tokomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10014,
+      "level": "유년기Ⅱ",
+      "type": "렛서형",
+      "attribute": "",
+      "moves": [
+        "메탈 드롭"
+      ],
+      "excerpt": "직선으로는 굉장히 빠르게 달릴 수 있는 렛서형 디지몬. 길들여지는 것을 싫어해서 야생인 채로 있는 경우가 많으며, 가까이 가면 무작정 돌진해…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dorimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10015,
+      "level": "유년기Ⅱ",
+      "type": "렛서형",
+      "attribute": "",
+      "moves": [
+        "폭스 테일"
+      ],
+      "excerpt": "고양이와 같은 특성을 가진 소형 디지몬. 항상 변덕스럽고 행동이 「고양이」 같아서 야옹몬이라는 이름이 붙었다고 한다. 굉장히 호기심이 왕성해서 변덕스러운 면도…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=nyaromon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10016,
+      "level": "유년기Ⅱ",
+      "type": "렛서형",
+      "attribute": "",
+      "moves": [
+        "독성 거품"
+      ],
+      "excerpt": "머리에서 자란 귀 같은 것으로 낮게 날 수 있는 소형 디지몬. 이 귀를 능숙하게 움직여 손처럼 다룰 수 있어 「메롱」이나…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=pagumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10017,
+      "level": "유년기Ⅱ",
+      "type": "알뿌리형",
+      "attribute": "",
+      "moves": [
+        "샤본 플라워"
+      ],
+      "excerpt": "머리에 큰 꽃을 피운 알뿌리형 디지몬. 뿌리 같은 촉수를 능숙하게 움직여 이동할 수 있으며, 짧은 거리지만 하늘에 두둥실 뜰 수…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=pyocomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10018,
+      "level": "유년기Ⅱ",
+      "type": "렛서형",
+      "attribute": "",
+      "moves": [
+        "공기 거품"
+      ],
+      "excerpt": "수생 공룡의 어린 시절을 연상케 하는 외관을 지녔지만, 움직임은 마치 해마처럼 경쾌한 맛이 있으며 익살스러운 디지몬. 하지만 성격은 피치몬 시절의…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=pukamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10019,
+      "level": "유년기Ⅱ",
+      "type": "렛서형",
+      "attribute": "",
+      "moves": [
+        "신축성 거품"
+      ],
+      "excerpt": "신축성이 있는 외피를 얻어 몸통 아래쪽의 돌기를 이용해 아장아장 걷는 연체 디지몬. 흥분하면 몸을 부풀리는 모습이 떡(모티)처럼 보이기에 \"모티몬\"으로 불리게…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mochimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10020,
+      "level": "유년기Ⅱ",
+      "type": "렛서형",
+      "attribute": "",
+      "moves": [
+        "스마일 팡"
+      ],
+      "excerpt": "개, 고양이 등 작은 반려동물들의 데이터가 융합된 디지몬. 의외로 움직임이 빨라서 도망가지 못하게 주의해야 하지만, 반려동물처럼 귀여워하면 굉장히 잘 따른다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=wanyamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 2003,
+      "level": "성장기",
+      "type": "파충류형",
+      "attribute": "백신",
+      "moves": [
+        "베이비 플레임"
+      ],
+      "excerpt": "성장해서 이족보행을 할 수 있게 된 소형 공룡과 같은 모습을 한 파충류형 디지몬. 아직 성장 중이기에 힘은 약하지만 성격은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=agumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10022,
+      "level": "성장기",
+      "type": "성수형",
+      "attribute": "백신",
+      "moves": [
+        "탄환선풍",
+        "절광충"
+      ],
+      "excerpt": "성스러운 탄피를 항상 휘감은 채로 놓지 않는 성수형 디지몬. 왼쪽 귀의 귀걸이에 성스러운 힘을 매일 모아둔다고 알려져 있으며, 비축한…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kudamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10023,
+      "level": "성장기",
+      "type": "바다짐승형",
+      "attribute": "백신",
+      "moves": [
+        "물고기 행진"
+      ],
+      "excerpt": "육지에서 활동할 수 있게 되어 체온을 유지하기 위해 털로 몸이 덮인 바다짐승형 디지몬. 몸을 덮은 짧고 흰 털은 성장할수록…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gomamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10024,
+      "level": "성장기",
+      "type": "짐승형",
+      "attribute": "백신",
+      "moves": [
+        "코로너클",
+        "코로나 플레임",
+        "쁘띠 프로미넌스"
+      ],
+      "excerpt": "태양 관측 데이터와 융합해 탄생한 짐승형 디지몬. 정의감이 강하고 순진무구한 성격이다. 필살기는 불꽃의 힘으로 뜨거워진 주먹을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=coronamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10025,
+      "level": "성장기",
+      "type": "무기형",
+      "attribute": "백신",
+      "moves": [
+        "트웬티 다이브"
+      ],
+      "excerpt": "자신을 무기로 바꿀 수 있는 「Legend-Arms」 중 한 명이다. 「Legend-Arms」에는 「천사가 지니면 세계를 구하고 악마가 지니면 세계를 멸망시킨다」는 전설이…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=zubamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10026,
+      "level": "성장기",
+      "type": "머신형",
+      "attribute": "백신",
+      "moves": [
+        "샤이니링"
+      ],
+      "excerpt": "기계 계열 디지몬의 희귀종 같은 머신형 디지몬. 연구자들 사이에서는 돌연변이 톱니몬이 아닐까 추측되지만, 진상은 밝혀지지 않았다. 「전뇌핵」의 발열 때문에 화상을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=solarmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10027,
+      "level": "성장기",
+      "type": "짐승형",
+      "attribute": "백신",
+      "moves": [
+        "쁘띠 트위스터",
+        "불꽃발사",
+        "더블 타이푼"
+      ],
+      "excerpt": "머리에 뿔 1개를 지닌 수수께끼에 싸인 디지몬. 몸 구조를 보면 짐승 계열이라고는 분류할 수 있지만 어떠한…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=terriermon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10028,
+      "level": "성장기",
+      "type": "곤충형",
+      "attribute": "백신",
+      "moves": [
+        "쁘띠 썬더"
+      ],
+      "excerpt": "딱딱한 등껍질을 지녔지만 아직 공격성은 낮은 곤충형 디지몬의 원시 유형. 앞다리에 1개, 가운데 다리와 뒷다리에 4개의 단단한 발톱을 지니고…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tentomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10029,
+      "level": "성장기",
+      "type": "퍼펫형",
+      "attribute": "백신",
+      "moves": [
+        "토이 플레임"
+      ],
+      "excerpt": "전신이 특수 플라스틱 블록으로 되어 있는 특수한 디지몬. 인터넷을 즐기는 아이가 아구몬의 모습을 본떠서 만들었다고 알려져 있으며 굉장히 귀엽다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=toyagumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10030,
+      "level": "성장기",
+      "type": "성수형",
+      "attribute": "백신",
+      "moves": [
+        "나이트메어 신드롬"
+      ],
+      "excerpt": "꿈을 먹는 환수로 알려진 맥의 모습을 한 디지몬. 뇌파를 감지하는 의학용 컴퓨터에서 발생한 디지몬으로 보이며, 인간의 렘수면 상태 데이터를…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=bakumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10031,
+      "level": "성장기",
+      "type": "병아리형",
+      "attribute": "백신",
+      "moves": [
+        "대나무 가르기",
+        "비검 삐약삐약 베기"
+      ],
+      "excerpt": "사무라이에 관한 데이터를 통해 진화한 병아리형 디지몬. 검의 길에 통달하기 위해 밤낮없이 수행과 비장의 검술 개발에…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=hyokomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10032,
+      "level": "성장기",
+      "type": "병아리형",
+      "attribute": "백신",
+      "moves": [
+        "빙빙회오리"
+      ],
+      "excerpt": "날개 부분이 팔처럼 발달한 새형 디지몬. 날개를 능숙하게 움직여 물건을 잡을 수 있지만, 이 때문에 하늘은 잘 날지 못한다. 평소에는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=piyomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10033,
+      "level": "성장기",
+      "type": "새형",
+      "attribute": "백신",
+      "moves": [
+        "스크래치 스매시",
+        "팔코 러시"
+      ],
+      "excerpt": "3,000m급의 높은 산에 서식하는 새형 디지몬. 날개는 그다지 발달하지 않았기에 바람의 힘으로 나는 정도이지만, 그 대신 다리…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=falcomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10034,
+      "level": "성장기",
+      "type": "포유류형",
+      "attribute": "백신",
+      "moves": [
+        "플롯트의 외침"
+      ],
+      "excerpt": "늘어진 귀가 눈에 띄는 신성 계열 디지몬의 아이. 아직 어리기에 신성한 힘을 발휘하지 못하고 자신의 사명도 모른다. 이 때문에…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=plotmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10035,
+      "level": "성장기",
+      "type": "짐승형",
+      "attribute": "백신",
+      "moves": [
+        "아기곰돌격권"
+      ],
+      "excerpt": "거꾸로 쓴 모자가 트레이드 마크인 작은 곰의 모습을 한 짐승형 디지몬. 겁이 좀 많지만 다른 디지몬과 바로 친하게 지낸다. 하지만…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=bearmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10036,
+      "level": "성장기",
+      "type": "새형",
+      "attribute": "백신",
+      "moves": [
+        "무한 뺨 때리기"
+      ],
+      "excerpt": "남극 기지의 컴퓨터에서 발견된 펭귄과 닮은 새형 디지몬. 얼음으로 뒤덮인 지역에서 서식하기에 더위에 약한 것이 단점이지만, 사람을 잘…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=penmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10037,
+      "level": "성장기",
+      "type": "소룡형",
+      "attribute": "백신",
+      "moves": [
+        "크랙 바이트"
+      ],
+      "excerpt": "양손에는 박쥐처럼 날개가 있지만 날 수 없는 소룡형 디지몬. 백신종이면서 성격은 난폭하다기보다 상당히 포악한 것에 가깝다. 싸움을 즐기는 디지몬으로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=monodramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10038,
+      "level": "성장기",
+      "type": "짐승형",
+      "attribute": "백신",
+      "moves": [
+        "투구 회전",
+        "이합도"
+      ],
+      "excerpt": "이마에 구식 인터페이스를 지닌 것을 보아 디지몬이 발견되기 이전의 실험용인 \"프로토타입 디지몬\"이 아닐까 추측되는 짐승형 디지몬. 방어력이 높은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ryudamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10039,
+      "level": "성장기",
+      "type": "천사형",
+      "attribute": "백신",
+      "moves": [
+        "그랜드 크로스"
+      ],
+      "excerpt": "아득히 먼 옛날, 고대 디지털 월드에 강림했다고 알려진 아이의 모습을 한 천사 디지몬. 아직 디지털 월드가 혼돈을 겪던 시대에…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lucemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10040,
+      "level": "성장기",
+      "type": "포유류형",
+      "attribute": "데이터",
+      "moves": [
+        "날벼락치기"
+      ],
+      "excerpt": "뿔몬의 포유류 요소를 간직한 채 진화한 포유류형 디지몬. 호기심이 굉장히 왕성하고 장난치는 걸 좋아하는 성격은 뿔몬에게 이어받았다. 또한 에렉몬은 꼬리…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=elecmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10041,
+      "level": "성장기",
+      "type": "짐승형",
+      "attribute": "데이터",
+      "moves": [
+        "회전 주먹",
+        "더블 백핸드",
+        "폭풍주먹"
+      ],
+      "excerpt": "날카로운 발톱을 기른 가지몬 계열의 아종으로 여겨지는 짐승형 디지몬. 날렵한 움직임으로 공격하는 히트 앤드 어웨이가 특기다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gaomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10042,
+      "level": "성장기",
+      "type": "갑각류형",
+      "attribute": "데이터",
+      "moves": [
+        "시저즈 엑스큐션"
+      ],
+      "excerpt": "네트워크 바다에 녹아 있는 금속 데이터를 몸에 부착해서 비약적으로 전투 능력을 높인 갑각류형 디지몬. 공격은 거대한 칼날을 지닌 왼쪽…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ganimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 2009,
+      "level": "성장기",
+      "type": "파충류형",
+      "attribute": "데이터",
+      "moves": [
+        "쁘띠 파이어"
+      ],
+      "excerpt": "모피를 뒤집어썼지만 어엿한 파충류형 디지몬. 엄청난 겁쟁이에 부끄럼을 많이 타는 성격으로 항상 가루몬이 남기고 간 데이터를 긁어모아서 모피 모양으로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gabumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10044,
+      "level": "성장기",
+      "type": "사이보그형",
+      "attribute": "데이터",
+      "moves": [
+        "포인터 애로",
+        "멧 태클",
+        "등껍질 가드"
+      ],
+      "excerpt": "마우스처럼 생긴 등껍질을 짊어진 사이보그형 디지몬. 필살기는 적이 맞을 때까지 유도할 수 있는 화살표 모양의…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kamemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10045,
+      "level": "성장기",
+      "type": "머신형",
+      "attribute": "데이터",
+      "moves": [
+        "시저 암즈 미니"
+      ],
+      "excerpt": "새롭게 발견된 굉장히 희귀한 곤충형 메카 디지몬. 곤충형 메카 디지몬은 지금까지 발견되지 않았기에 그 존재 자체도 생각하지 못했다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kokuwamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10046,
+      "level": "성장기",
+      "type": "광석형",
+      "attribute": "데이터",
+      "moves": [
+        "돌주먹"
+      ],
+      "excerpt": "필드 내 광석 데이터를 몸에 둘러 강력한 방어력을 가진 광석형 디지몬. 개구쟁이에 밝은 성격으로 마치 골목대장처럼 낮은 세대의 디지몬을 거느리고…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gottsumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10047,
+      "level": "성장기",
+      "type": "파충류형",
+      "attribute": "데이터",
+      "moves": [
+        "썬더 코테",
+        "파이어맨"
+      ],
+      "excerpt": "디지몬 세계의 일류 검사가 목표인 파충류형 디지몬. 과묵하지만 보이지 않는 곳에서 수행에 힘쓰는 노력파다. 절대 방어 도구를 벗지…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kotemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10048,
+      "level": "성장기 (크로스워즈)",
+      "type": "소룡형",
+      "attribute": "데이터",
+      "moves": [
+        "록 정신",
+        "소울크러셔",
+        "라우디록커"
+      ],
+      "excerpt": "혈기 왕성하며 매우 공격성이 높은 포악한 디지몬. 하지만 동료에게는 우호적이며 샤우트몬에게 인정받으면 종족을 뛰어넘는 친분을 쌓을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=shoutmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10049,
+      "level": "성장기",
+      "type": "용형",
+      "attribute": "데이터",
+      "moves": [
+        "베이비 브레스",
+        "테일 스매시",
+        "디 ･ 슈르넨"
+      ],
+      "excerpt": "모든 드라몬 유형 디지몬의 「조상」으로 알려진 고대 순혈 용형 디지몬. 작은 체구에 상상할 수…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dracomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10050,
+      "level": "성장기",
+      "type": "짐승형",
+      "attribute": "데이터",
+      "moves": [
+        "대시 메탈",
+        "메탈 캐논"
+      ],
+      "excerpt": "이마에 구식 인터페이스를 지니고 있는 걸 보아 디지몬이 발견되기 이전의 실험용인 \"프로토타입 디지몬\"이 아닐까 추측되는 짐승형 디지몬.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dorumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10051,
+      "level": "성장기",
+      "type": "포유류형",
+      "attribute": "데이터",
+      "moves": [
+        "공기 팡",
+        "날개 따귀 때리기"
+      ],
+      "excerpt": "큰 귀가 눈에 띄는 포유류형 디지몬. 큰 날개를 사용해 하늘을 날 수 있지만 시속 1km의 속도밖에…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=patamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10052,
+      "level": "성장기",
+      "type": "소룡형",
+      "attribute": "데이터",
+      "moves": [
+        "피프스 러시",
+        "틴 램",
+        "베이비 플레임"
+      ],
+      "excerpt": "쿨화이트로 빛나는 소룡형 디지몬. 자유분방하고 속박을 싫어하며 모험을 좋아하는 삶의 방식은 간쿠몬의 DNA에 의한 것으로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=huckmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10053,
+      "level": "성장기",
+      "type": "식물형",
+      "attribute": "데이터",
+      "moves": [
+        "포이즌 아이비"
+      ],
+      "excerpt": "머리에 열대 지방 꽃을 피운 식물형 디지몬. 시드몬에서 파충류처럼 진화했지만, 겉모습이나 특성에 따라 식물형으로 분류되는 희귀한 유형이다. 낮에는 꽃과…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=palmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10054,
+      "level": "성장기",
+      "type": "식물형",
+      "attribute": "데이터",
+      "moves": [
+        "꽃가루 뿌리기"
+      ],
+      "excerpt": "팔몬과 마찬가지로 파충류처럼 진화했지만, 식물형으로 분류되는 희귀한 디지몬. 얼굴 전체가 꽃 모양이며 평소에는 꽃잎 형태의 외피를 헬멧처럼 쓰고 머리를…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=floramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10055,
+      "level": "성장기",
+      "type": "새형",
+      "attribute": "데이터",
+      "moves": [
+        "트로피컬 비크"
+      ],
+      "excerpt": "펭귄몬과 쏙 빼닮았고 마찬가지로 하늘을 날지 못하는 새형 디지몬. 열대 기후인 남쪽 나라에서 자란 디지몬으로, 항상 유쾌하게 살고 있다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=muchomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10056,
+      "level": "성장기",
+      "type": "식물형",
+      "attribute": "데이터",
+      "moves": [
+        "넛츠 슛",
+        "라라 소용돌이",
+        "자장가"
+      ],
+      "excerpt": "꽃봉오리의 모습을 한 식물형 디지몬. 머리의 잎을 회전시켜 두둥실 날아다니며, 무표정이지만 애교가 있다. 필살기는 입에서 딱딱한…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lalamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10057,
+      "level": "성장기",
+      "type": "포유류형",
+      "attribute": "데이터",
+      "moves": [
+        "루나 클로",
+        "티어 슛",
+        "롭이어 리플"
+      ],
+      "excerpt": "달의 관측 데이터와 융합해 탄생한 토끼처럼 생긴 포유류형 디지몬. 커다란 귀로 아무리 먼 곳에서 난…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lunamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10058,
+      "level": "성장기",
+      "type": "수인형",
+      "attribute": "데이터",
+      "moves": [
+        "호변허",
+        "호엽설"
+      ],
+      "excerpt": "금빛 여우의 모습을 한 수인형 디지몬. 레나몬은 인간과의 관계가 그대로 드러나는 디지몬으로, 유년기 시절 육성 방법에 따라 특히 지능이…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=renamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10059,
+      "level": "성장기",
+      "type": "짐승형",
+      "attribute": "데이터",
+      "moves": [
+        "쁘띠 트위스터",
+        "더블 타이푼",
+        "블레이징 아이스"
+      ],
+      "excerpt": "굉장히 귀중한 쌍둥이 디지몬의 성장기. 머리에 1개의 뿔을 기르고 있는 디지몬이 테리어몬, 3개를 기르는 디지몬은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lopmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10060,
+      "level": "성장기",
+      "type": "소악마형",
+      "attribute": "바이러스",
+      "moves": [
+        "서몬",
+        "나이트 ･ 오브 ･ 파이어"
+      ],
+      "excerpt": "악마의 아이와 같은 모습을 한 성장기 디지몬. 장난치는 걸 좋아하고 상대가 곤란해하는 모습을 보는 걸…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=impmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10061,
+      "level": "성장기",
+      "type": "양서류형",
+      "attribute": "바이러스",
+      "moves": [
+        "룰러바이 버블"
+      ],
+      "excerpt": "수중 생활을 선택했기에 아직 표피가 완전히 딱딱해지지 않은 유생 디지몬. 큰 꼬리로 네트워크 바다 상류의 늪과 하천을 헤엄치며 때로는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=otamamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10062,
+      "level": "성장기",
+      "type": "포유류형",
+      "attribute": "바이러스",
+      "moves": [
+        "패럴라이즈 브레스"
+      ],
+      "excerpt": "날카롭고 큰 발톱을 기른 포유류형 디지몬. 포유류형 중에서는 드물게 이족보행을 하는 유형으로 앞발을 팔처럼 사용하는 동안 앞발의 발톱이 진화해…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gazimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10063,
+      "level": "성장기",
+      "type": "수생포유류형",
+      "attribute": "바이러스",
+      "moves": [
+        "스파이럴 엣지"
+      ],
+      "excerpt": "물속에서 나아가기 위해 손발에 지느러미가 있는 수생포유류형 디지몬. 지상보다 수중 생활에 적합하기에 지느러미와 강력한 뒷발로 수중을 빠르게 헤엄쳐 다니지만,…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gizamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10064,
+      "level": "성장기",
+      "type": "파충류형",
+      "attribute": "바이러스",
+      "moves": [
+        "록 브레이커",
+        "파이어 볼"
+      ],
+      "excerpt": "아직 어린 모습이 남아 있는 공룡처럼 생긴 디지몬. 성장기지만 디지몬이 원래 지닌 \"전투 종족\"으로서의 잠재력은 매우 높으며…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=guilmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10065,
+      "level": "성장기",
+      "type": "귀인형",
+      "attribute": "바이러스",
+      "moves": [
+        "방망이때리기"
+      ],
+      "excerpt": "못된 장난을 너무나 좋아하는 작은 도깨비 모습의 골치 아픈 디지몬. 용기가 없고 약삭빠른 성격으로, 혼자서 행동하지 않고 항상 집단으로 숲속의…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=goburimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10066,
+      "level": "성장기",
+      "type": "귀인형",
+      "attribute": "바이러스",
+      "moves": [
+        "샤마 해머"
+      ],
+      "excerpt": "신의 뜻을 듣고 일족에게 전하는 역할을 담당한 고부리몬. 의식 중에는 신기한 춤을 계속 추며, 기분이 최고조에 이르면 신의 계시가…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=shamamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10067,
+      "level": "성장기",
+      "type": "갑각류형",
+      "attribute": "바이러스",
+      "moves": [
+        "블랙 펄",
+        "워터 스크류"
+      ],
+      "excerpt": "딱딱한 껍데기로 덮여 있는 조개 모양의 디지몬. 외피를 비약적으로 발달시켰기에 내부 구조는 유년기 때처럼 슬라임 형태로 되어…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=shakomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10068,
+      "level": "성장기",
+      "type": "귀인형",
+      "attribute": "바이러스",
+      "moves": [
+        "스노 고브 볼트"
+      ],
+      "excerpt": "추운 설국에서 자란 고부리몬. 따뜻한 모자와 조끼를 입고 있기에 추운 곳에서도 아무렇지 않다. 발바닥은 눈 위에서도 태연하게 걸을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=snowgoburimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10069,
+      "level": "성장기",
+      "type": "짐승형",
+      "attribute": "바이러스",
+      "moves": [
+        "치즈 폭탄"
+      ],
+      "excerpt": "언제나 스카몬에게 못된 꾀를 주입하는 쥐처럼 생긴 디지몬. 스카몬과는 굳건한 우정으로 맺어져 있으며(츄몬만의 생각일지도?), 예전에 네트워크상의 트랩 「카니보어(육식 동물)」에게…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tyumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10070,
+      "level": "성장기",
+      "type": "언데드형",
+      "attribute": "바이러스",
+      "moves": [
+        "아이 오브 나이트메어",
+        "죽지않는송곳니"
+      ],
+      "excerpt": "다크 에어리어에서 제일가는 장난꾸러기 디지몬. 장난을 치기 위해서라면 다소 위험이 따르더라도 포기하지 않고 도전한다. 4성수 네 마리…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dracumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10071,
+      "level": "성장기",
+      "type": "머신형",
+      "attribute": "바이러스",
+      "moves": [
+        "톱니바퀴포"
+      ],
+      "excerpt": "톱니바퀴 모양의 변종 머신형 디지몬. 체내에도 무수히 많은 톱니바퀴가 내장되어 있으며 항상 톱니바퀴가 돌고 있다. 이 때문에 톱니바퀴가 1개라도 빠지면…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=hagurumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10072,
+      "level": "성장기",
+      "type": "소악마형",
+      "attribute": "바이러스",
+      "moves": [
+        "피코 주사기"
+      ],
+      "excerpt": "박쥐의 모습을 한 소형 사역마 디지몬. 데블몬이나 묘티스몬과 같은 상급 디지몬의 사역마로 존재하지만, 천사 계열 디지몬이었던 데블몬을 꼬드겨 다크…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=picodevimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10073,
+      "level": "성장기",
+      "type": "곤충형",
+      "attribute": "바이러스",
+      "moves": [
+        "기어 스팅거",
+        "친구 부르기"
+      ],
+      "excerpt": "수수께끼의 \"공중 비밀 기지 「로얄 베이스」\"에 소속된 곤충형 디지몬. 다른 곤충형 디지몬과는 다른 생활을 하지만, 성격은 굉장히…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=funbeemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10074,
+      "level": "성장기",
+      "type": "양서류형",
+      "attribute": "바이러스",
+      "moves": [
+        "전기쇼크"
+      ],
+      "excerpt": "사족보행하는 양서류형 디지몬. 성격은 온화하며 얌전한 디지몬이지만, 한번 베타몬을 화나게 하면 몸에서 100만 볼트 이상의 전류를 발생시켜 적을 공격하는 『전기쇼크』를…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=betamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10075,
+      "level": "성장기",
+      "type": "식물형",
+      "attribute": "바이러스",
+      "moves": [
+        "꼬마 머슈탄"
+      ],
+      "excerpt": "독버섯 모양의 소형 식물 디지몬. 머슈몬의 신체에서는 온갖 증상을 일으키는 강한 독성의 소형 버섯 폭탄이 자란다. 이 버섯 폭탄에…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mushmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10076,
+      "level": "성장기",
+      "type": "포유류형",
+      "attribute": "프리",
+      "moves": [
+        "박박긁기",
+        "몸통 구르기"
+      ],
+      "excerpt": "딱딱한 등껍질로 몸을 덮은 포유류형 디지몬. 느긋하고 애교 있는 성격이지만, 촐랑거리는 점이 가끔 흠이다. 아르마몬은 브이몬 등과 마찬가지로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=armadimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10077,
+      "level": "성장기",
+      "type": "소룡형",
+      "attribute": "프리",
+      "moves": [
+        "붕붕 펀치",
+        "브이몬 헤딩"
+      ],
+      "excerpt": "새롭게 발견된 신종 디지몬. 디지털 월드 창세기에 번영한 종족의 생존자로, 캡슐을 통해 \"유사 진화\"인 「캡슐 진화」를 할…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=v-mon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10078,
+      "level": "성장기",
+      "type": "새형",
+      "attribute": "프리",
+      "moves": [
+        "부리 공격",
+        "깃털 날리기"
+      ],
+      "excerpt": "굉장히 예의 바르고 항상 차분하고 침착한 새형 디지몬. 브이몬과 마찬가지로 고대에 번성한 특수 종족의 후예로, \"캡슐\"의 힘을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=hawkmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10079,
+      "level": "성장기",
+      "type": "유충형",
+      "attribute": "프리",
+      "moves": [
+        "끈적 그물",
+        "실크 스레드"
+      ],
+      "excerpt": "심약하고 겁이 많은 유충형 디지몬. 브이몬 등과 같은 고대 종족의 후예로 특수한 캡슐 진화를 할 수 있지만,…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=wormmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10080,
+      "level": "성장기",
+      "type": "종족불명",
+      "attribute": "불명",
+      "moves": [
+        "찰싹 때리기"
+      ],
+      "excerpt": "츠메몬이 진화한 성장기 디지몬. 체격도 커져서 큰 입으로 츠메몬보다 많은 데이터양에 침식할 수 있다. 1초간 100MB 이상의 데이터에 침식하기…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=keramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10081,
+      "level": "성숙기",
+      "type": "신인형",
+      "attribute": "백신",
+      "moves": [
+        "어트랙트 에코",
+        "아이언 트러스트",
+        "스턴 비트 블로우"
+      ],
+      "excerpt": "인간의 상반신에 염소의 하반신이 융합된 모습을 지닌 신인형 디지몬. 평소에는 세이렌몬과 함께 연주단에 소속되어…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=aegiomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10082,
+      "level": "성숙기",
+      "type": "바다짐승형",
+      "attribute": "백신",
+      "moves": [
+        "뿔 날리기"
+      ],
+      "excerpt": "북극 탐사 기지의 컴퓨터에서 발견된 바다짐승형 디지몬. 두꺼운 가죽과 튼튼한 몸은 극한의 땅에서도 견딜 수 있을 법한 구조로 되어…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ikkakumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10083,
+      "level": "성숙기",
+      "type": "환수형",
+      "attribute": "백신",
+      "moves": [
+        "스피닝 니들"
+      ],
+      "excerpt": "거대한 날개를 기른 환수형 디지몬. 굉장히 귀중한 몬스터로 신에 가까운 존재라고 알려져 있다. 공중 공격이 특기이며, 포효로 폭풍우를 부르고…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=airdramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10084,
+      "level": "성숙기",
+      "type": "천사형",
+      "attribute": "백신",
+      "moves": [
+        "헤븐즈 너클"
+      ],
+      "excerpt": "눈부시게 빛나는 6장의 날개와 성스럽기까지 한 순백의 옷을 입은 천사 디지몬. 완전한 선의 존재로 행복을 가져오는 디지몬이라고 불리지만, 악을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=angemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10085,
+      "level": "성숙기",
+      "type": "곤충형",
+      "attribute": "백신",
+      "moves": [
+        "전기충격"
+      ],
+      "excerpt": "새롭게 발견된 디지몬 중에서도 상당히 특이한 곤충형 디지몬. 어떠한 경위를 거쳐 곤충 유형으로 진화했는지는 불명이지만, 개미와 같은 힘과 투구벌레가 지닌…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kabuterimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10086,
+      "level": "성숙기",
+      "type": "수인형",
+      "attribute": "백신",
+      "moves": [
+        "속사총",
+        "덤덤주먹날리기"
+      ],
+      "excerpt": "테리어몬이 진화한 수인형 디지몬으로, 사냥이 특기인 헌터 디지몬이기도 하다. 겉모습과 달리 재빠르게 움직여 확실하게 적을 처리하는 누구와도 비교할 수…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=galgomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 2010,
+      "level": "성숙기",
+      "type": "짐승형",
+      "attribute": "백신",
+      "moves": [
+        "푸른화염포"
+      ],
+      "excerpt": "청, 백, 은색 털로 몸이 덮인 늑대의 모습을 한 짐승형 디지몬. 털은 전설의 희귀 금속으로 알려진 「미스릴」처럼 단단하고 어깻죽지에서 자란…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=garurumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10088,
+      "level": "성숙기",
+      "type": "수룡형",
+      "attribute": "백신",
+      "moves": [
+        "봉진파",
+        "철갑인"
+      ],
+      "excerpt": "온몸에 견고한 일본풍 갑옷을 입은 수룡형 디지몬. 겉모습과 달리 몸은 가벼워서 공중을 우아하게 떠다니며, 굉장히 단단하고 매끄러운 갑옷으로 적의…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ginryumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10089,
+      "level": "성숙기",
+      "type": "짐승형",
+      "attribute": "백신",
+      "moves": [
+        "급소 반격"
+      ],
+      "excerpt": "명백하게 큰 몸, 살상 능력을 숨긴 송곳니와 발톱, 겉모습은 포악해 보이지만 정정당당한 격투가 정신을 지닌 짐승형 디지몬. 겉모습과 달리…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gryzmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 2004,
+      "level": "성숙기",
+      "type": "공룡형",
+      "attribute": "백신",
+      "moves": [
+        "메가파이어"
+      ],
+      "excerpt": "머리의 피부가 딱딱해져 투구벌레 같은 껍데기로 덮인 공룡형 디지몬. 날카로운 발톱, 거대한 뿔을 지니고 있어 온몸이 흉기 같으며, 매우 공격적인…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=greymon-first",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10091,
+      "level": "성숙기",
+      "type": "용형",
+      "attribute": "백신",
+      "moves": [
+        "블루 플레어 브레스",
+        "스트라이크 보머"
+      ],
+      "excerpt": "「드라몬」의 칭호가 붙은 디지몬은 디지코어에 반드시 용 인자 데이터를 지녔으며 그 용…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=coredramon_b",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10092,
+      "level": "성숙기",
+      "type": "공룡형",
+      "attribute": "백신",
+      "moves": [
+        "메가파이어",
+        "메가화염",
+        "화염볼"
+      ],
+      "excerpt": "그레이몬의 아종으로 추측되는 특수한 디지몬. 머리의 껍데기와 몸 전체가 흉기처럼 발달했으며, 더 공격적인 모습이 되었다. 필살기인 『메가파이어』는 입에서…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=geogreymon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10093,
+      "level": "성숙기",
+      "type": "용인형",
+      "attribute": "백신",
+      "moves": [
+        "스트라이크 팡"
+      ],
+      "excerpt": "바이러스 버스터를 목표로 하는 \"커맨드 드래곤\", 그것이 스트라이크드라몬이다. 원래는 엔젤몬과 같은 백신종이기에 마음씨 착한 디지몬이지만, 한번 바이러스종을 발견하면 제거…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=strikedramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10094,
+      "level": "성숙기",
+      "type": "곤충형",
+      "attribute": "백신",
+      "moves": [
+        "섀도 ･ 시클"
+      ],
+      "excerpt": "바이러스 헌터로서 연구소에서 만들어진 실험체 디지몬. 사마귀의 데이터로 만들어졌으며 정확한 기계처럼 목표물을 몰아붙인다. 차가운 성격으로 백신종도, 데이터종도 두려워하는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=snimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10095,
+      "level": "성숙기",
+      "type": "무기형",
+      "attribute": "백신",
+      "moves": [
+        "Road T(w)o Decade",
+        "밴시온"
+      ],
+      "excerpt": "「트웬티스트인 나는 멈추지 않아! 계속해서 달리겠어!」라고 다짐한 즈바몬이 달리는 스타일로 진화한 모습. 평지와 궂은 길도 전진, 기어서라도…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=zubaeagermon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10096,
+      "level": "성숙기",
+      "type": "마인형",
+      "attribute": "백신",
+      "moves": [
+        "크리스탈 클라우드"
+      ],
+      "excerpt": "다른 차원의 디지털 월드 \"윗체르니\"에서 온 위자몬의 동료. 빛과 얼음 마술(고급 프로그램 언어)을 구사해 기도를 드리면 신성한 힘으로 상처를…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=sorcerimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10097,
+      "level": "성숙기",
+      "type": "성수형",
+      "attribute": "백신",
+      "moves": [
+        "고양이 펀치",
+        "최면술"
+      ],
+      "excerpt": "호기심이 매우 왕성해 장난치는 것을 좋아한다. 몸집은 작지만 귀중한 신성 계열 디지몬이기에 겉모습과 어울리지 않는 실력을 지녔다. 신성…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tailmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10098,
+      "level": "성숙기",
+      "type": "마수형",
+      "attribute": "백신",
+      "moves": [
+        "그라우 레름",
+        "슈바르츠 ･ 슈트랄"
+      ],
+      "excerpt": "원래는 바이러스종 디지몬이지만 돌연변이로 백신종이 된 헌터 디지몬. 스나이몬과 마찬가지로, 백신종이라도 바이러스종 디지몬을 사냥하는 것만을 위해…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dobermon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10099,
+      "level": "성숙기",
+      "type": "거조형",
+      "attribute": "백신",
+      "moves": [
+        "메테오 윙"
+      ],
+      "excerpt": "활활 타는 불꽃을 휘감은 모습을 한 거조형 디지몬. 메라몬과 마찬가지로 인터넷 방어벽 「파이어 월」에서 발생한 디지몬이다. 거대한 날개를 움직여…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=birdramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10100,
+      "level": "성숙기",
+      "type": "짐승형",
+      "attribute": "백신",
+      "moves": [
+        "플레임 다이브",
+        "파이라 클로",
+        "파이라 봄"
+      ],
+      "excerpt": "\"하늘을 나는 사자\"라는 별명을 지닌 짐승형 디지몬. 디지털 월드의 어떤 유적을 보호하고 있으며, 남을 잘…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=firamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10101,
+      "level": "성숙기",
+      "type": "환룡형",
+      "attribute": "백신",
+      "moves": [
+        "브이 브레스 애로"
+      ],
+      "excerpt": "광활한 디지털 월드에서도 폴더 대륙에만 존재한다고 알려진 환상의 고대종 디지몬. 그 존재는 굉장히 귀중하며, 폴더 대륙에서도 좀처럼 만날…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=v-dramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10102,
+      "level": "성숙기",
+      "type": "조인형",
+      "attribute": "백신",
+      "moves": [
+        "제비 두 장 뒤집기"
+      ],
+      "excerpt": "쉬지 않고 검술 수행을 거듭하며 진화한 조인형 디지몬. 수행 끝에 두 자루의…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=buraimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10103,
+      "level": "성숙기",
+      "type": "새형",
+      "attribute": "백신",
+      "moves": [
+        "스파이럴 클로",
+        "수리검 날개",
+        "사우전드 비크"
+      ],
+      "excerpt": "하늘은 날 수 있지만 달리는 편이 빠른 강인한 다리 힘을 지닌 새형 디지몬. 필살기는 하늘…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=peckmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10104,
+      "level": "성숙기",
+      "type": "희귀짐승형",
+      "attribute": "백신",
+      "moves": [
+        "고드름 막대",
+        "뼈다귀 부메랑"
+      ],
+      "excerpt": "전신이 하얀 털로 덮인 털북숭이 희귀짐승형 디지몬. 눈 덮인 산의 오지에서 서식하며 좀처럼 만날 수 없다. 모털몬의…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mojyamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10105,
+      "level": "성숙기",
+      "type": "빙설형",
+      "attribute": "백신",
+      "moves": [
+        "절대 영도 펀치"
+      ],
+      "excerpt": "눈과 얼음의 결정이 몸을 덮은 빙설 디지몬. 차가워 보이는 겉모습과 달리 굉장히 온화하고 따뜻한 성격의 소유자다. 느긋한 움직임과…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=yukidarumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10106,
+      "level": "성숙기",
+      "type": "환수형",
+      "attribute": "백신",
+      "moves": [
+        "홀리 샷"
+      ],
+      "excerpt": "전설의 신성한 동물인 유니콘의 뿔과 페가수스의 날개를 지닌 합성 디지몬. 등에 난 큰 날개로 컴퓨터 네트워크의 세계를 순식간에 누비고…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=yunimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10107,
+      "level": "성숙기",
+      "type": "사이보그형",
+      "attribute": "백신",
+      "moves": [
+        "크래시 차지",
+        "앰부시 크런치"
+      ],
+      "excerpt": "먹잇감(타깃)을 확실하게 제거하기 위해 포식 본능을 지닌 야생의 디지몬을 베이스로 개조된 사이보그형 디지몬. 너무나 강한 생체와 감당할…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=raptordramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10108,
+      "level": "성숙기",
+      "type": "돌연변이형",
+      "attribute": "백신",
+      "moves": [
+        "저스티스 블릿"
+      ],
+      "excerpt": "몸이 총으로 되어 있는 변이형 디지몬. 어떠한 경위로 태어났는지는 전혀 밝혀지지 않았지만 정의감이 강하며 「바이러스 버스터즈」로도 활약하고 있다. 「바이러스…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=revolmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10109,
+      "level": "성숙기",
+      "type": "수인형",
+      "attribute": "백신",
+      "moves": [
+        "수왕권"
+      ],
+      "excerpt": "모든 짐승의 왕, 품격 있는 용사라고도 불리는 수인형 디지몬. 난폭한 디지몬들이 많은 가운데 강한 의지와 정의로운 마음을 지니고 있으며, 수많은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=leomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10110,
+      "level": "성숙기",
+      "type": "성수형",
+      "attribute": "백신",
+      "moves": [
+        "구구렬공참",
+        "수아란격",
+        "진공 카마이타치"
+      ],
+      "excerpt": "꼬리가 칼날로 되어 있는 낫족제비 같은 디지몬. 꼬리의 칼날에는 의사가 있어 뒤에서 허를 찌르는 공격에도 대처할 수…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=reppamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10111,
+      "level": "성숙기",
+      "type": "빙설형",
+      "attribute": "데이터",
+      "moves": [
+        "아이스 볼 봄"
+      ],
+      "excerpt": "몸이 얼음으로 된 디지몬. 울퉁몬에서 진화했는지, 아니면 변종인지 밝혀지지 않았으며 연구가 진행되고 있다. 필살기는 꽁꽁 언 얼음 폭탄을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=icemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10112,
+      "level": "성숙기",
+      "type": "마인형",
+      "attribute": "데이터",
+      "moves": [
+        "번쩍 구름"
+      ],
+      "excerpt": "다른 차원의 디지털 월드에서 온 상급 마인형 디지몬. 고향인 디지털 월드(윗체르니)에서 불꽃과 대지의 마술(고급 프로그램 언어)을 완벽하게 터득하고 대마도사가…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=wizarmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10113,
+      "level": "성숙기",
+      "type": "마인형",
+      "attribute": "데이터",
+      "moves": [
+        "바르루나 게일",
+        "아쿠아리 프레셔"
+      ],
+      "excerpt": "마녀의 모습을 한 디지몬으로 라이벌인 위자몬의 뒤를 쫓아 다른 차원의 디지털 월드 \"윗체르니\"에서 왔다. 고향인 윗체르니에서는 바람과…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=witchmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10114,
+      "level": "성숙기",
+      "type": "짐승형",
+      "attribute": "데이터",
+      "moves": [
+        "대시 더블 클로",
+        "가오가 하운드",
+        "스파이럴 블로"
+      ],
+      "excerpt": "가오몬의 체격이 커져 글러브로 보호하던 손톱이 단단하게 성장한 짐승형 디지몬. 네발이기는 하지만 다리 힘이…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gaogamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10115,
+      "level": "성숙기",
+      "type": "사이보그형",
+      "attribute": "데이터",
+      "moves": [
+        "디제이 슈터",
+        "가왓 펀치",
+        "가왓파 랩퍼"
+      ],
+      "excerpt": "음악 플레이어와 전설 속 생물 「갓파」의 데이터가 융합한 사이보그형 디지몬. 항상 밝고 신나게 좋아하는 음악을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gawappamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10116,
+      "level": "성숙기",
+      "type": "고대새형",
+      "attribute": "데이터",
+      "moves": [
+        "꼬마 키위탄"
+      ],
+      "excerpt": "인터넷의 보급으로 마구잡이로 포획하면서 멸종됐다고 알려졌던 환상의 고대 디지몬. 새형 디지몬이지만 날개는 완전히 퇴화해서 하늘을 날 수는 없다. 하지만…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kiwimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10117,
+      "level": "성숙기",
+      "type": "요수형",
+      "attribute": "데이터",
+      "moves": [
+        "도깨비 불",
+        "호염룡"
+      ],
+      "excerpt": "9개의 꼬리를 기른 거대한 여우의 모습을 한 요수형 디지몬. 파멸과 붕괴를 가져올 요수라며 두려워하지만, 고대에는 평화로운 세상에 나타나는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kyubimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10118,
+      "level": "성숙기",
+      "type": "머신형",
+      "attribute": "데이터",
+      "moves": [
+        "크로노 브레이커"
+      ],
+      "excerpt": "컴퓨터의 타이머를 관장하는 시간 수호자. 컴퓨터와 네트워크의 모든 \"시간\"과 \"공간\"을 관리하며, 1990~1999년 사이라면 자유자재로 시간을 가게 하거나 돌릴 수…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=clockmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10119,
+      "level": "성숙기",
+      "type": "수인형",
+      "attribute": "데이터",
+      "moves": [
+        "헌팅 캐논"
+      ],
+      "excerpt": "상반신이 인간형, 하반신이 짐승형인 반인반수 디지몬. 몸 내부에서 튀어나온 단단한 물질로 몸을 보호하며, 오른팔은 무기와 하나가 된 상태다. 여기에…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=centalmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10120,
+      "level": "성숙기",
+      "type": "식물형",
+      "attribute": "데이터",
+      "moves": [
+        "태양 광선",
+        "스마일리 슬랩",
+        "선인장 꼬리"
+      ],
+      "excerpt": "해바라기의 모습을 한 식물형 디지몬. 햇볕을 쬐면 굉장히 활기 넘치게 되며, 공격력도 올라간다. 날씨가 좋은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=sunflowmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10121,
+      "level": "성숙기",
+      "type": "수생형",
+      "attribute": "데이터",
+      "moves": [
+        "얼음 화살"
+      ],
+      "excerpt": "커다란 뱀처럼 긴 몸을 지닌 수생형 디지몬. 긴 몸을 활용해, 습격해 오는 적의 몸을 휘감아 숨통이 끊어질 때까지 조른다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=seadramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10122,
+      "level": "성숙기",
+      "type": "고대어형",
+      "attribute": "데이터",
+      "moves": [
+        "베리어블 다트"
+      ],
+      "excerpt": "단단한 외피와 거대한 갈고리발톱을 지닌 고대어 디지몬. 악질적인 해커로 인해 파괴된 컴퓨터 네트워크를 복원하던 중 네트워크 바다에서 발견된 디지몬으로,…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=coelamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10123,
+      "level": "성숙기",
+      "type": "연체형",
+      "attribute": "데이터",
+      "moves": [
+        "하이드로 프레셔"
+      ],
+      "excerpt": "「네트워크 바다」의 얕은 해저에 사는 소라게의 모습을 한 디지몬. 겉모습은 소라 껍데기 안에 사는 거북이처럼 생겼지만 사실 연체동물처럼 몸이…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=shellmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10124,
+      "level": "성숙기",
+      "type": "돌연변이형",
+      "attribute": "데이터",
+      "moves": [
+        "유성 폭풍"
+      ],
+      "excerpt": "우주 개발 센터의 행성 분석용 소프트웨어 안에서 우연히 발견된 행성형 디지몬. 별 모양의 아머 슈트와 별 문양 장갑, 부츠를…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=starmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10125,
+      "level": "성숙기",
+      "type": "사이보그형",
+      "attribute": "데이터",
+      "moves": [
+        "하이퍼 캐논"
+      ],
+      "excerpt": "전차의 모습을 한 사이보그형 디지몬. 탱크몬은 「용병 디지몬」이라는 별명이 있으며, 자신에게 이득이 되면 백신 소속이든, 바이러스 소속이든 어느 쪽이라도…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tankmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10126,
+      "level": "성숙기",
+      "type": "돌연변이형",
+      "attribute": "데이터",
+      "moves": [
+        "그레이트 웨이트"
+      ],
+      "excerpt": "몸 대부분이 흙 데이터로 된 디지몬. 프리지몬의 돌연변이로 태어난 변종이 아닐까 추측된다. 상냥한 성격으로 싸움은 싫어하지만, 위급한 상황에서는 평소에…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tuchidarumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10127,
+      "level": "성숙기",
+      "type": "용인형",
+      "attribute": "데이터",
+      "moves": [
+        "리자드 댄스"
+      ],
+      "excerpt": "도마뱀 인간의 모습을 한 용인형 디지몬. 아직 개척되지 않은 문명의 땅에 살며 부족 모두가 전사의 기질을 지닌 용맹한 전투…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dinohumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10128,
+      "level": "성숙기",
+      "type": "공룡형",
+      "attribute": "데이터",
+      "moves": [
+        "불 뿜기"
+      ],
+      "excerpt": "역사로 기록되기 이전의 세계에 존재한 고대 공룡으로 보이는 디지몬. 발달한 팔 2개와 거대한 꼬리로 모든 것을 굴복시킨다. 지성이 있고…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tyranomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10129,
+      "level": "성숙기",
+      "type": "수인형",
+      "attribute": "데이터",
+      "moves": [
+        "홍당무권법"
+      ],
+      "excerpt": "중국 심산성의 오지에서 발견된 격투가 디지몬. 메일을 이용해 나쁜 짓을 하는 바이러스를 숙적으로 여기고 쫓으며 세계를 방랑하고 있다. 보기 드물게…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=turuiemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10130,
+      "level": "성숙기",
+      "type": "식물형",
+      "attribute": "데이터",
+      "moves": [
+        "바늘 뿜기"
+      ],
+      "excerpt": "거대한 선인장의 모습을 한 식물형 디지몬. 체내에 영양소 데이터를 보관할 수 있어 아무것도 없는 사막 지대에서도 한동안 살아갈 수…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=togemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10131,
+      "level": "성숙기",
+      "type": "짐승형",
+      "attribute": "데이터",
+      "moves": [
+        "드릴 스핀",
+        "크러셔 본"
+      ],
+      "excerpt": "코끝에 달린 거대한 드릴로 흙 속을 고속으로 이동하는 디지몬. 항상 땅속 깊은 곳에 숨어 있어서 만나기 매우…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=drimogemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10132,
+      "level": "성숙기",
+      "type": "수룡형",
+      "attribute": "데이터",
+      "moves": [
+        "캐논 볼",
+        "파워 메탈"
+      ],
+      "excerpt": "짐승과 용, \"드래곤\"의 자질을 지녔으며 많은 디지몬이 그림자를 보기만 해도 도망칠 정도로 사나운 중량급의 수룡형 디지몬. 전투하게…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dorugamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10133,
+      "level": "성숙기",
+      "type": "공룡형",
+      "attribute": "데이터",
+      "moves": [
+        "피프 크로스",
+        "틴 블레이드",
+        "번 플레임"
+      ],
+      "excerpt": "헉몬이 혹독한 훈련을 거듭해 보기 드문 전투 감각을 얻어, 정신력, 기술, 체력 모두…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=baohuckmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10134,
+      "level": "성숙기",
+      "type": "머신형",
+      "attribute": "데이터",
+      "moves": [
+        "헬륨 봄",
+        "제플린 익스플로젼"
+      ],
+      "excerpt": "메카노몬과 같은 탑승이 가능한 디지몬으로, 넓은 하늘을 느긋하게 날 수 있다. 부드러운 기구 부분은 금속으로 코팅해 보호하고…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=blimpmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10135,
+      "level": "성숙기",
+      "type": "화염형",
+      "attribute": "데이터",
+      "moves": [
+        "불타는 주먹"
+      ],
+      "excerpt": "전신에 새빨간 불꽃을 휘감은 화염형 디지몬. 인터넷 등에서 무단 침입하는 것을 막기 위한 방어벽 「파이어 월」에서 발생한 디지몬으로, 몸을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=meramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10136,
+      "level": "성숙기",
+      "type": "갑룡형",
+      "attribute": "데이터",
+      "moves": [
+        "볼케이노 스트라이크"
+      ],
+      "excerpt": "코끝에 코뿔소처럼 뿔을 기른 갑룡형 디지몬. 거대한 뿔은 성장하면 몸의 절반을 차지할 정도의 크기가 된다. 뿔 부분과 몸의 절반을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=monochromon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10137,
+      "level": "성숙기",
+      "type": "수인형",
+      "attribute": "데이터",
+      "moves": [
+        "문 나이트 봄",
+        "티어 애로"
+      ],
+      "excerpt": "경이로운 점프력을 지니고 있으며 재빠른 움직임으로 적을 농락하는 수인형 디지몬. 달이 차고 기우는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lekismon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10138,
+      "level": "성숙기",
+      "type": "타천사형",
+      "attribute": "바이러스",
+      "moves": [
+        "프로스트 클로"
+      ],
+      "excerpt": "얼음처럼 차가운 마음을 지닌 타천사형 디지몬. 데블몬 중에서도 특히 잔인한 마음을 지닌 데블몬이 진화한 모습이라고 한다. 화술로 적을 속이는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=icedevimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10139,
+      "level": "성숙기",
+      "type": "수인형",
+      "attribute": "바이러스",
+      "moves": [
+        "공포의 포효",
+        "내려치기"
+      ],
+      "excerpt": "로프몬이 분노나 증오로 「암흑 진화」해 버린 포악한 수인형 디지몬. 완전한 \"악\"은 아니며 로프몬 시절 지니고 있던 상냥함을 마음속…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=wendimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10140,
+      "level": "성숙기",
+      "type": "식물형",
+      "attribute": "바이러스",
+      "moves": [
+        "브랜치 드레인"
+      ],
+      "excerpt": "말라 버린 거목의 모습을 한 식물형 디지몬. 평소에는 평범한 나무인 척하다가 옆을 지나가는 디지몬을 잡아서 에너지를 흡수해 살아간다. 또한…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=woodmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10141,
+      "level": "성숙기",
+      "type": "귀인형",
+      "attribute": "바이러스",
+      "moves": [
+        "패왕권"
+      ],
+      "excerpt": "동양의 전설에 등장하는 「오니」의 모습을 한 디지몬. 두려울 정도로 발달한 근육에서 나오는 공격은 무시무시한 파괴력을 지녔다. 지성은 높지만 천성이 사납고…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=orgemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10142,
+      "level": "성숙기",
+      "type": "연체형",
+      "attribute": "바이러스",
+      "moves": [
+        "카이메이 보쿠쥬"
+      ],
+      "excerpt": "흉악한 해커가 라이벌의 탐색 컴퓨터를 파괴하기 위해 사용한 바이러스에서 발견된 연체형 디지몬. 수집하는 버릇이 있어 촉수의 끝에는 데블드라몬의 데이터에서…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=octmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10143,
+      "level": "성숙기",
+      "type": "머신형",
+      "attribute": "바이러스",
+      "moves": [
+        "디스트럭션 그레네이드"
+      ],
+      "excerpt": "컴퓨터 네트워크의 방어벽을 지키는 머신형 디지몬. 원래는 「네트 키퍼」인 째리몬과 함께, 네트워크 방어벽에 불법 침입해 오는 것들을 격퇴하던 디지몬이다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=guardromon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10144,
+      "level": "성숙기",
+      "type": "갑각류형",
+      "attribute": "바이러스",
+      "moves": [
+        "셸즈 어택"
+      ],
+      "excerpt": "워매몬이 몸을 보호하기 위해 지혜를 짜내 찾아낸 껍데기를 뒤집어쓴 갑각류형 디지몬. 이 때문에 워매몬보다 조금 영리하지만, 작은 일에도 놀라서…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=karatukinumemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10145,
+      "level": "성숙기",
+      "type": "마룡형",
+      "attribute": "바이러스",
+      "moves": [
+        "번개검",
+        "이그저스트 플레임"
+      ],
+      "excerpt": "「진홍의 마룡」이라고 불리는 마룡형 디지몬. 길몬 시절의 어린 모습은 사라지고 더 야성적이고 포악한 디지몬으로 진화했다. 또한 바이러스종 디지몬이지만…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=growmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10146,
+      "level": "성숙기",
+      "type": "곤충형",
+      "attribute": "바이러스",
+      "moves": [
+        "시저 암즈"
+      ],
+      "excerpt": "머리에 거대한 집게를 지닌 곤충형 디지몬. 캅테리몬과 마찬가지로 파일섬에 서식하는 같은 종보다 훨씬 뛰어난 전투 능력을 지니고 있다. 강인한…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kuwagamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10147,
+      "level": "성숙기",
+      "type": "양서류형",
+      "attribute": "바이러스",
+      "moves": [
+        "크래시 심포니"
+      ],
+      "excerpt": "기괴한 겉모습에서는 상상할 수 없을 정도로 기분 좋은 울음소리로 주위를 매료하는 양서류형 디지몬. 혀끝에 있는 3개의 구멍에서 내는 화음과…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gekomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10148,
+      "level": "성숙기",
+      "type": "연체형",
+      "attribute": "바이러스",
+      "moves": [
+        "하이퍼 스멜"
+      ],
+      "excerpt": "워매몬과 같은 종인 연체형 디지몬. 공격력은 낮지만 생각보다 흉악하며 상대가 누구라도 덤벼든다. 당연하게도 복수하려다가 도리어 당하지만, 곧바로 잊어버리기에 그때마다…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=geremon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10149,
+      "level": "성숙기",
+      "type": "용형",
+      "attribute": "바이러스",
+      "moves": [
+        "그린 플레어 브레스",
+        "스트라이크 보머"
+      ],
+      "excerpt": "「드라몬」의 칭호가 붙은 디지몬은 디지코어에 반드시 용 인자 데이터를 지녔으며 그 용…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=coredramon_g",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10150,
+      "level": "성숙기",
+      "type": "돌연변이형",
+      "attribute": "바이러스",
+      "moves": [
+        "골드리언 러쉬",
+        "골드 엑스크리먼트"
+      ],
+      "excerpt": "전신이 금색으로 빛나는 워매몬의 아종으로, 날개를 얻어 공중 공격에도 자신이 있다. 디지털 월드에 있는 광산에서 금 데이터를…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=goldnumemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10151,
+      "level": "성숙기",
+      "type": "광물형",
+      "attribute": "바이러스",
+      "moves": [
+        "커스 ･ 크림슨",
+        "골렘 펀치"
+      ],
+      "excerpt": "초고대의 저주를 디지털 분석했을 때 발견된 암석, 광물형 디지몬. 등에는 \"역(疫)\", \"주(呪)\", \"흉(凶)\"이라는 고대 금단의 주문이…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=golemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10152,
+      "level": "성숙기",
+      "type": "용인형",
+      "attribute": "바이러스",
+      "moves": [
+        "하이퍼 히트"
+      ],
+      "excerpt": "비정상적으로 발달한 오른팔을 지닌 애꾸눈 용인형 디지몬. 원래는 굉장히 힘이 센 용 전사였지만, 오른눈을 전사 「레오몬」에게 잃게 되어 복수의…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=cyclomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10153,
+      "level": "성숙기",
+      "type": "마수형",
+      "attribute": "바이러스",
+      "moves": [
+        "스티커 블레이드",
+        "검은 마음"
+      ],
+      "excerpt": "숭고한 흡혈 늑대 디지몬. 디지몬으로서는 상당히 오래된 종으로, 디지털 월드의 창세기 무렵부터 살았다고 한다. 상굴몬이 피를 흡수한…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=sangloupmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10154,
+      "level": "성숙기",
+      "type": "뮤턴트형",
+      "attribute": "바이러스",
+      "moves": [
+        "응가"
+      ],
+      "excerpt": "금색으로 빛나는 응가 모양의 꺼림직한 디지몬. 컴퓨터 화면상에 있는 휴지통에 버려진 데이터 찌꺼기가 모이면서 돌연변이를 일으켜 탄생했다. 어두운 곳을 좋아하며…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=scumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10155,
+      "level": "성숙기",
+      "type": "공룡형",
+      "attribute": "바이러스",
+      "moves": [
+        "팬저 너클"
+      ],
+      "excerpt": "양어깨에 거대한 뿔을 기른 초중량급 공룡형 디지몬. 맹렬한 기세로 돌진하는 성격으로 눈앞에 어떠한 장애물이 있어도 모두 파괴하고 돌진하는 점…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tuskmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10156,
+      "level": "성숙기",
+      "type": "타천사형",
+      "attribute": "바이러스",
+      "moves": [
+        "데스 크로우"
+      ],
+      "excerpt": "칠흑색의 옷을 갖춰 입은 타천사형 디지몬. 원래는 눈부시게 빛나는 엔젤몬 계열 디지몬이었지만, 디지털 월드의 공간이 뒤틀리는 곳에 존재하는 다크…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=devimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10157,
+      "level": "성숙기",
+      "type": "합성형",
+      "attribute": "바이러스",
+      "moves": [
+        "트리플렉스 포스",
+        "스컬 팡"
+      ],
+      "excerpt": "디지몬 3마리가 융합한 합성형 디지몬. 각각 별개의 디지몬으로 존재했지만, 강력한 전자파 폭풍우를 맞은 컴퓨터가 폭주하면서 버그가 발생해…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=deltamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10158,
+      "level": "성숙기",
+      "type": "곤충형",
+      "attribute": "바이러스",
+      "moves": [
+        "스팅거 포레이션"
+      ],
+      "excerpt": "전신에 컴퓨터 바이러스가 기생하는 거미 모습의 저주받은 디지몬. 원래도 거미형이었지만 곤충 계열의 평범하고 얌전한 디지몬에 불과했다. 하지만 어느 날…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dokugumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10159,
+      "level": "성숙기",
+      "type": "인베이드형",
+      "attribute": "바이러스",
+      "moves": [
+        "응가",
+        "응가 덩크"
+      ],
+      "excerpt": "다른 차원의 디지털 월드에서 침입해 온 정체불명의 디지몬. 다른 차원에서는 통칭 \"OYAJI\"라고 불리며 디지털 반려동물로 길러졌다. 술을 좋아하고…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=nanimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10160,
+      "level": "성숙기",
+      "type": "연체형",
+      "attribute": "바이러스",
+      "moves": [
+        "응가 투척"
+      ],
+      "excerpt": "민달팽이 같은 몸을 지닌 연체형 디지몬. 어둡고 습기 찬 환경을 좋아하며 공격력과 지성 모든 것이 없다. 어떠한 디지몬이라도 육성…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=numemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10161,
+      "level": "성숙기",
+      "type": "고스트형",
+      "attribute": "바이러스",
+      "moves": [
+        "헬즈 핸드",
+        "데스 참"
+      ],
+      "excerpt": "몸을 가릴 정도로 큰 천을 푹 뒤집어쓴 유령 디지몬. 어둠에서 태어난 사악한 존재로, 고스몬이 붙은 컴퓨터는 순식간에…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=bakemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10162,
+      "level": "성숙기",
+      "type": "빙설형",
+      "attribute": "바이러스",
+      "moves": [
+        "스노 펀치"
+      ],
+      "excerpt": "추운 곳에 사는 우가몬의 일종이다. 자기 영역을 굉장히 의식해 한 발짝이라도 발을 들여놓으면 화를 내며 달려든다(모털몬과 세력권 다툼을 할…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=hyougamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10163,
+      "level": "성숙기",
+      "type": "귀인형",
+      "attribute": "바이러스",
+      "moves": [
+        "이빌 허리케인"
+      ],
+      "excerpt": "동양의 전설에 나오는 오니의 모습을 한 디지몬. 우가몬과 같은 종족으로 싸움을 좋아하는 난폭한 성격도 똑같다. 발달한 근육에서 나오는 공격은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=fugamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10164,
+      "level": "성숙기",
+      "type": "곤충형",
+      "attribute": "바이러스",
+      "moves": [
+        "독침 발사"
+      ],
+      "excerpt": "꺼림직하고 거대한 날개를 지닌 곤충형 디지몬. 거대한 날개를 이용해 초고속으로 날아다닐 수 있으며, 비행 중에 윙윙거리는 큰 소음을 발생시켜…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=flymon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10165,
+      "level": "성숙기",
+      "type": "돌연변이형",
+      "attribute": "바이러스",
+      "moves": [
+        "레어 메탈 똥"
+      ],
+      "excerpt": "백금처럼 빛나는 응가 모습을 한 디지몬. 희귀 금속 데이터를 흡수한 스카몬종으로 언뜻 보기에 화려하지만 능력은 스카몬과 같은 수준이다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=platinasukamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10166,
+      "level": "성숙기",
+      "type": "마수형",
+      "attribute": "바이러스",
+      "moves": [
+        "고양이 펀치"
+      ],
+      "excerpt": "새까만 털이 인상적인 바이러스종 가트몬. 완전한 악에서 탄생한 디지몬으로 기분 나쁜 어둠을 전전하면서 살아간다. 가트몬의 변종인 블랙가트몬이 생겨나는 것은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=blacktailmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10167,
+      "level": "성숙기",
+      "type": "식충식물형",
+      "attribute": "바이러스",
+      "moves": [
+        "응가 투척"
+      ],
+      "excerpt": "길게 자란 담쟁이덩굴과 큰 입을 지닌 식충식물형 디지몬. 입에서 토해내는 달콤한 향기에 이끌려 오는 소형 디지몬을 촉수같이 긴 담쟁이덩굴로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=vegimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10168,
+      "level": "성숙기",
+      "type": "수인형",
+      "attribute": "바이러스",
+      "moves": [
+        "다크사이드 퀘이크"
+      ],
+      "excerpt": "강력한 다크 사이드의 힘을 지닌 암흑 디지몬. 움직임은 빠르지 않지만 굉장히 튼튼한 피부를 지녔기에 평범한 공격으로는 꿈쩍도 하지 않는다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=minotaurmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10169,
+      "level": "성숙기",
+      "type": "마인형",
+      "attribute": "바이러스",
+      "moves": [
+        "장군검"
+      ],
+      "excerpt": "원래 해외 게임 소프트웨어에 등장하는 사무라이 마스터의 데이터였지만, 컴퓨터 바이러스에 감염되어 진화한 갑옷 무사 디지몬. 수많은 디지몬과의 싸움 때문에 지금은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=musyamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10170,
+      "level": "성숙기",
+      "type": "머신형",
+      "attribute": "바이러스",
+      "moves": [
+        "자이로 브레이크",
+        "트윙클 빔"
+      ],
+      "excerpt": "소형 디지몬 전용 파워드 슈트 디지몬으로, 디지털 월드 최초로 탑승이 가능한 디지몬이기도 하다. 스스로 행동할 수 없으며…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mechanorimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10171,
+      "level": "성숙기",
+      "type": "언데드형",
+      "attribute": "바이러스",
+      "moves": [
+        "오물"
+      ],
+      "excerpt": "전신의 근육이 썩어 빠진 언데드 디지몬. 몸을 기계화해서 장수하려고 했지만 몸이 안정되지 않아 몸을 구성하는 데이터가 붕괴하기 시작했다. 하지만 기계를…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=raremon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10172,
+      "level": "성숙기",
+      "type": "사이보그형",
+      "attribute": "바이러스",
+      "moves": [
+        "터보 스팅거",
+        "베어 버스터"
+      ],
+      "excerpt": "수수께끼의 \"공중 비밀 기지 「로얄 베이스」\"를 지키는 사이보그형 디지몬. 머리의 더듬이 부분은 적을 찾아내는 색적 능력이 뛰어나…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=waspmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10173,
+      "level": "성숙기",
+      "type": "거조형",
+      "attribute": "프리",
+      "moves": [
+        "대뿔 공격",
+        "팡팡레이저"
+      ],
+      "excerpt": "머리에서 거대한 뿔 2개가 난 거조형 디지몬. \"사막의 거대한 독수리\"로 불리며 마하의 속도로 넓은 하늘을 날아 아득히 멀리…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=aquilamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10174,
+      "level": "성숙기",
+      "type": "갑룡형",
+      "attribute": "프리",
+      "moves": [
+        "들이받기",
+        "꼬리 망치"
+      ],
+      "excerpt": "딱딱해진 표피로 온몸을 덮은 갑룡형 디지몬. 표피는 딱딱해졌을 뿐만 아니라, 모든 곳에 딱딱한 돌기가 나 있어 돌진 공격…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ankylomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10175,
+      "level": "성숙기",
+      "type": "환룡형",
+      "attribute": "프리",
+      "moves": [
+        "스트롱 크런치",
+        "X레이저"
+      ],
+      "excerpt": "브이몬이 본래의 힘을 얻어 진화한 성숙기 환룡형 디지몬. 엑스브이몬은 브이드라몬의 원종이며, 파생 계열의 한 종류가 브이드라몬이라고 알려져 있다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=xv-mon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10176,
+      "level": "성숙기",
+      "type": "머신형",
+      "attribute": "프리",
+      "moves": [
+        "디스트럭션 그레네이드"
+      ],
+      "excerpt": "크롬 디지조이트 광산을 경호하는 가드로몬이 거듭되는 위법 채굴자의 잦은 습격에도 견딜 수 있도록 변화한 모습. 가드로몬의 갑옷이 공기 중에…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gardromon_gold",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10177,
+      "level": "성숙기",
+      "type": "곤충형",
+      "attribute": "프리",
+      "moves": [
+        "송곳돌진"
+      ],
+      "excerpt": "인간의 형태를 지닌 굉장히 희귀한 곤충형 디지몬. 곤충형 디지몬 특유의 단단한 외골격을 가지고 있으며 재빠르게 움직일 수 있다. 암살자로서의 능력이…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=stingmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10178,
+      "level": "성숙기",
+      "type": "종족불명",
+      "attribute": "불명",
+      "moves": [
+        "데이터 파괴"
+      ],
+      "excerpt": "번데기의 모습을 한 성숙기 디지몬. 성장기인 케라몬이 더 강한 디지몬으로 진화하기 위해, 일단 번데기와 같은 상태가 되어 에너지를 보존한다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=chrysalimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10179,
+      "level": "아머체",
+      "type": "수생형",
+      "attribute": "프리",
+      "moves": [
+        "산소 어뢰",
+        "수중 발칸포"
+      ],
+      "excerpt": "\"성실의 캡슐\"의 힘으로 진화한 아머체 수생형 디지몬. \"성실의 캡슐\"은 \"물\" 속성을 지니고 있어 이 캡슐을 지닌 자는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=sabmarimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10180,
+      "level": "아머체",
+      "type": "돌연변이형",
+      "attribute": "프리",
+      "moves": [
+        "모미지오로시",
+        "회전수리검"
+      ],
+      "excerpt": "\"순수의 캡슐\"의 힘으로 진화한 아머체 돌연변이형 디지몬. \"순수의 캡슐\"은 \"초목\" 속성을 지니고 있어 이 캡슐을 지닌 자는 자연에 동화하는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=shurimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10181,
+      "level": "아머체",
+      "type": "곤충형",
+      "attribute": "프리",
+      "moves": [
+        "빅 크랙",
+        "골드 러시"
+      ],
+      "excerpt": "\"지식의 캡슐\"의 힘으로 진화한 아머체 곤충형 디지몬. \"지식의 캡슐\"은 \"흙\" 속성을 지니고 있어 이 캡슐을 지닌 자는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=digmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10182,
+      "level": "아머체",
+      "type": "성수형",
+      "attribute": "프리",
+      "moves": [
+        "여왕의 저주",
+        "왕가의 비석"
+      ],
+      "excerpt": "\"빛의 캡슐\"의 힘으로 진화한 아머체 성수형 디지몬. \"빛의 캡슐\"은 \"빛\"의 속성을 지니고 있어 이 캡슐을 지닌 자는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=nefertimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10183,
+      "level": "아머체",
+      "type": "용인형",
+      "attribute": "프리",
+      "moves": [
+        "너클 파이어",
+        "파이어 로켓"
+      ],
+      "excerpt": "\"용기의 캡슐\"의 힘으로 진화한 아머체 용인형 디지몬. \"용기의 캡슐\"은 \"불꽃\" 속성을 지니고 있어 이 캡슐을 지닌 자는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=fladramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10184,
+      "level": "아머체",
+      "type": "성수형",
+      "attribute": "프리",
+      "moves": [
+        "로데오 갤럽",
+        "실버 광선",
+        "슈팅 스타"
+      ],
+      "excerpt": "\"희망의 캡슐\"의 힘으로 진화한 아머체 성수형 디지몬. \"희망의 캡슐\"은 \"신성\" 속성을 지니고 있어 이 캡슐을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=pegasmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10185,
+      "level": "아머체",
+      "type": "짐승형",
+      "attribute": "프리",
+      "moves": [
+        "마하 임펄스",
+        "템페스트 윙",
+        "우자트 게이즈"
+      ],
+      "excerpt": "\"사랑의 캡슐\"의 힘으로 진화한 아머체 짐승형 디지몬. \"사랑의 캡슐\"은 \"바람\" 속성을 지니고 있어 이 캡슐을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=holsmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10186,
+      "level": "아머체",
+      "type": "짐승형",
+      "attribute": "프리",
+      "moves": [
+        "라이트닝 블레이드",
+        "블루 썬더"
+      ],
+      "excerpt": "\"우정의 캡슐\"의 힘으로 진화한 아머체 짐승형 디지몬. \"우정의 캡슐\"은 \"천둥\" 속성을 지니고 있기에 이 캡슐을 지닌 자는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lighdramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10187,
+      "level": "하이브리드체",
+      "type": "마인형",
+      "attribute": "배리어블",
+      "moves": [
+        "버닝 샐러맨더",
+        "샐러맨더 브레이크"
+      ],
+      "excerpt": "전설 10투사의 힘이 깃든 불의 능력을 지닌 디지몬. 「디지코어(전뇌핵)」가 성스러운 불꽃이라고 불리는 스피리추얼 파이어로 싸여 있기에 불꽃을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=agnimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10188,
+      "level": "하이브리드체",
+      "type": "전사형",
+      "attribute": "배리어블",
+      "moves": [
+        "리히트 ･ 지거",
+        "츠바이 ･ 지거"
+      ],
+      "excerpt": "전설 10투사의 힘이 깃든 빛의 능력을 지닌 디지몬. 신체 각 부위에 있는 연보랏빛 부품은 성스러운…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=wolfmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10189,
+      "level": "하이브리드체",
+      "type": "요정형",
+      "attribute": "배리어블",
+      "moves": [
+        "레인 스트림",
+        "젤러시 레인"
+      ],
+      "excerpt": "전설 10투사의 힘이 깃든 물의 능력을 지닌 디지몬. 기상 예보 시스템 내 해양 부분을 주요 활동 지역으로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ranamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10190,
+      "level": "하이브리드체",
+      "type": "마룡형",
+      "attribute": "배리어블",
+      "moves": [
+        "코로나 블래스터",
+        "플레임 스톰"
+      ],
+      "excerpt": "전설 10투사의 힘이 깃든 불의 능력을 지닌 디지몬. 고열에 견디는 표피를 지녔기에 용암 안에서도 행동할 수 있으며,…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=vritramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10191,
+      "level": "하이브리드체",
+      "type": "수생형",
+      "attribute": "배리어블",
+      "moves": [
+        "네로 코로소",
+        "타이타닉 차지"
+      ],
+      "excerpt": "전설 10투사의 힘이 깃든 물의 능력을 지닌 디지몬. 반인반수의 모습을 하고 있으며 촉수는 고속으로 회전시켜 적을 공격하거나…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=calamaramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10192,
+      "level": "하이브리드체",
+      "type": "사이보그형",
+      "attribute": "배리어블",
+      "moves": [
+        "스피드 스타",
+        "솔라 레이저"
+      ],
+      "excerpt": "전설 10투사의 힘이 깃든 빛의 능력을 지닌 디지몬. 광통신 네트워크에서 발견되었기 때문인지 초고속으로 이동할 수 있으며 총알을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=garummon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10193,
+      "level": "완전체",
+      "type": "신인형",
+      "attribute": "백신",
+      "moves": [
+        "볼트 라이트닝 녹다운",
+        "라이트닝 파일",
+        "차징 스트라이크"
+      ],
+      "excerpt": "인간의 신체에 다양한 종족의 능력을 합성시킨 신인형 디지몬. 종족 합성은 전지전능하다는 궁극을 추구한 결과로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=aegiochusmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10194,
+      "level": "완전체",
+      "type": "신인형",
+      "attribute": "백신",
+      "moves": [
+        "브램블 바이트",
+        "플랜트 존 크레이들",
+        "차징 스트라이크"
+      ],
+      "excerpt": "인간의 신체에 다양한 종족의 능력을 합성시킨 신인형 디지몬. 종족 합성은 전지전능하다는 궁극을 추구한 결과로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=aegiochusmon:green",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10195,
+      "level": "완전체",
+      "type": "신인형",
+      "attribute": "백신",
+      "moves": [
+        "트라이앵글러",
+        "플라즈마 매드니스",
+        "데스 디너"
+      ],
+      "excerpt": "인간의 신체에 다양한 종족의 능력을 합성시킨 신인형 디지몬. 종족 합성은 전지전능하다는 궁극을 추구한 결과로 알려져 있다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=aegiochusmon:dark",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10196,
+      "level": "완전체",
+      "type": "신인형",
+      "attribute": "백신",
+      "moves": [
+        "페네토 레이저",
+        "윙 커터",
+        "파워드 이그니션"
+      ],
+      "excerpt": "인간의 신체에 다양한 종족의 능력을 합성시킨 신인형 디지몬. 종족 합성은 전지전능하다는 궁극을 추구한 결과로 알려져…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=aegiochusmon:blue",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10197,
+      "level": "완전체",
+      "type": "신인형",
+      "attribute": "백신",
+      "moves": [
+        "라이트닝 샤워",
+        "썬더 슬래시",
+        "서클렛 디펜스"
+      ],
+      "excerpt": "인간의 신체에 다양한 종족의 능력을 합성시킨 신인형 디지몬. 종족 합성은 전지전능하다는 궁극을 추구한 결과로 알려져…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=aegiochusmon_holly",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10198,
+      "level": "완전체",
+      "type": "곤충형",
+      "attribute": "백신",
+      "moves": [
+        "호른 버스터"
+      ],
+      "excerpt": "열대 지역의 네트워크 에어리어 내에서 발견된 캅테리몬의 진화형종. 크기는 약 1.5배로 곤충형 중에서도 꽤 크다. 푸른 아트라캅테리몬과 같은 종이며…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=atlurkabuterimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10199,
+      "level": "완전체",
+      "type": "사이보그형",
+      "attribute": "백신",
+      "moves": [
+        "개틀링 미사일",
+        "안드로검"
+      ],
+      "excerpt": "인간형 사이보그 디지몬. 완전체가 되지 못한 디지몬 등은 한 방에 쓰러뜨리는 전투력을 지니고 있다. 안드로몬은 사이보그 디지몬의 시범작으로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=andromon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10200,
+      "level": "완전체",
+      "type": "천룡형",
+      "attribute": "백신",
+      "moves": [
+        "블레이즈 소닉 브레스",
+        "익스플로드 소닉 랜스"
+      ],
+      "excerpt": "크게 발달한 날개를 지녔으며 자유자재로 하늘을 날 수 있는 천룡형 디지몬. 날개의 비늘은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=wingdramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10201,
+      "level": "완전체",
+      "type": "성룡형",
+      "attribute": "백신",
+      "moves": [
+        "V윙 블레이드",
+        "드래곤 임펄스"
+      ],
+      "excerpt": "브이드라몬이 더욱 진화해 공중 이동을 할 수 있게 된 것이 에어로브이드라몬이다. 희귀종인 브이드라몬 중에서도 수많은 싸움을 헤쳐온…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=earov-dramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10202,
+      "level": "완전체",
+      "type": "퍼펫형",
+      "attribute": "백신",
+      "moves": [
+        "프리티 어택",
+        "블랙 매터"
+      ],
+      "excerpt": "티라노몬 모양의 인형에 몰래 들어가 있는 퍼펫 디지몬. 왜 티라노몬의 인형인지는 밝혀지지 않았지만, 아마 안에 숨어 있는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ex-tyranomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10203,
+      "level": "완전체",
+      "type": "대천사형",
+      "attribute": "백신",
+      "moves": [
+        "천국의 화살",
+        "천국의 미소"
+      ],
+      "excerpt": "아름다운 여성의 모습을 한 대천사형 디지몬. 이전에는 천사형으로 분류되었지만, 높은 능력을 지녔기에 대천사형으로 판명되었다. 특징은 성숙기 천사는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=angewomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10204,
+      "level": "완전체",
+      "type": "조인형",
+      "attribute": "백신",
+      "moves": [
+        "섀도 윙"
+      ],
+      "excerpt": "넓은 하늘을 자유롭게 날 수 있는 날개와 거대한 갈고리발톱을 지닌 조인형 디지몬. 가루다몬은 정의와 질서를 존중하고 자연을 사랑하는 대지와…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=garudamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10205,
+      "level": "완전체",
+      "type": "수인형",
+      "attribute": "백신",
+      "moves": [
+        "사자수파참",
+        "야수선풍각"
+      ],
+      "excerpt": "다양한 격투 게임 데이터를 흡수해 지니게 된 독창적인 오의로 적을 쳐부수는 격투 계열 수인형 디지몬. 양팔, 양발에 있는 터빈을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=grappuleomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10206,
+      "level": "완전체",
+      "type": "전사형",
+      "attribute": "백신",
+      "moves": [
+        "크로스 블레이드",
+        "그레이드 슬래시"
+      ],
+      "excerpt": "용맹하고 과감하게 앞장서는 모습에서 \"금빛 유성\"이라고 불리는 쌍검의 전사형 디지몬. 「쌍검 그레이달파」를 이도류로 사용할 때 그 검술은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=grademon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10207,
+      "level": "완전체",
+      "type": "수인형",
+      "attribute": "백신",
+      "moves": [
+        "투혼조",
+        "폭무",
+        "GGS"
+      ],
+      "excerpt": "자칭 디지털 월드 최강의 격투가이자, 싸울 때는 무엇보다도 구경하는 자를 즐겁게 만들 것을 모토로 삼는 디지몬. 전투 중에…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=greatgryzmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10208,
+      "level": "완전체",
+      "type": "마수형",
+      "attribute": "백신",
+      "moves": [
+        "인페르노 게이트",
+        "헬 파이어"
+      ],
+      "excerpt": "\"지옥의 파수견\"이라고 불리는 마수형 디지몬. 네 발에 있는 갈고리발톱은 순도가 낮은 크롬 디지조이드는 쉽게 찢을 만큼 단단하다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=cerberumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10209,
+      "level": "완전체",
+      "type": "마인형",
+      "attribute": "백신",
+      "moves": [
+        "인페르노 디바이드",
+        "서버러스 이레이즈",
+        "헬 파이어"
+      ],
+      "excerpt": "다크 에어리어에 사는 \"지옥의 파수견\"이라고 불리는 케르베로스몬의 돌연변이체. 인터넷상에 글자와 사진으로 범람하고 있는 「인간의 악의」에서…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=cerberumon_werewolfmode",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10210,
+      "level": "완전체",
+      "type": "사이보그형",
+      "attribute": "백신",
+      "moves": [
+        "이레이즈 클로"
+      ],
+      "excerpt": "어떠한 공격도 견딜 수 있는 특수 고무 갑옷을 입은 용인 계열 사이보그형 디지몬. 컴퓨터 네트워크에 바이러스종 디지몬이 발생하면 어디선가…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=cyberdramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10211,
+      "level": "완전체",
+      "type": "곤충형",
+      "attribute": "백신",
+      "moves": [
+        "스파이크 버스터"
+      ],
+      "excerpt": "비단벌레처럼 무지개색 빛을 내는 곤충형 디지몬. 보는 각도에 따라 색이 바뀌는 프리즘과 같은 갑옷은 튼튼할 뿐만 아니라 적의 눈을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=jewelbeemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10212,
+      "level": "완전체",
+      "type": "바다짐승형",
+      "attribute": "백신",
+      "moves": [
+        "해머 스파크"
+      ],
+      "excerpt": "원뿔몬이 더 진화해 이족보행을 할 수 있게 된 힘이 넘치는 바다짐승형 디지몬. 대전 상대에게서 빼앗은 가죽과 등껍질로 직접 방어…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=zudomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10213,
+      "level": "완전체",
+      "type": "성수형",
+      "attribute": "백신",
+      "moves": [
+        "질풍천상검",
+        "신속의 깨달음",
+        "개심의 파동"
+      ],
+      "excerpt": "디지털 월드가 시작됐을 때쯤 탄생한 고대 디지몬으로 알려져 있으며 완전체지만 궁극체와 호각을 다툴 정도의 강한 힘을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tyilinmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10214,
+      "level": "완전체",
+      "type": "무기형",
+      "attribute": "백신",
+      "moves": [
+        "글래스러시",
+        "블린데드"
+      ],
+      "excerpt": "계속 달린 끝에 보인 저 너머의 세계로 한 걸음씩 걷기 시작한 완전체 디지몬. 어떠한 미래가 기다리고 있을지 알 수…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=duramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10215,
+      "level": "완전체",
+      "type": "거조형",
+      "attribute": "백신",
+      "moves": [
+        "소닉 디스트로이어",
+        "묠니르 썬더"
+      ],
+      "excerpt": "앵무새의 모습을 한 거조형 디지몬. 시공이 갈라진 곳을 지나 다른 디지털 월드에서 헤매다가 들어온 수수께끼의 괴조로, 발톱에는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=parrotmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10216,
+      "level": "완전체",
+      "type": "수인형",
+      "attribute": "백신",
+      "moves": [
+        "빙수권"
+      ],
+      "excerpt": "긍지가 높은 정의로운 수인형 디지몬. 정의를 지키기 위해 매일 훈련을 거듭하는 일부 레오몬이 디지털 월드 빙설 지역의 극한의 땅에서 냉기의…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=panjyamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10217,
+      "level": "완전체",
+      "type": "수룡형",
+      "attribute": "백신",
+      "moves": [
+        "성룡인",
+        "종횡차"
+      ],
+      "excerpt": "디지코어(전뇌핵)의 가장 깊은 곳에 잠들어 있던 일본 신화의 \"용\"과 \"무장\"의 용맹한 전투 데이터가 이마의 인터페이스를 통해 해방된 모습이며, 중후하게…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=hisyaryumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10218,
+      "level": "완전체",
+      "type": "신인형",
+      "attribute": "백신",
+      "moves": [
+        "일륜의 춤",
+        "효광일섬"
+      ],
+      "excerpt": "싸움을 거듭해 검술 실력을 연마한 디지몬이 진화하여, 붉은 갑옷을 두르고 대검을 들게 된 신인형 디지몬. 완전체임에도 이미 검의…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=butenmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10219,
+      "level": "완전체",
+      "type": "수인형",
+      "attribute": "백신",
+      "moves": [
+        "홍련수왕파",
+        "홍 ･ 사자지무",
+        "우렁찬 포효"
+      ],
+      "excerpt": "위풍당당한 갈기와 존재감 때문에 언뜻 보면 무서워 보이지만, 동료를 위해선 어떠한 시련과도 맞서는 강한 마음을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=flaremon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10220,
+      "level": "완전체",
+      "type": "수생포유류형",
+      "attribute": "백신",
+      "moves": [
+        "타이달 웨이브"
+      ],
+      "excerpt": "네트워크의 심해에 사는 거대 디지몬. 디지털 월드에서 손에 꼽힐 정도로 거대하다. 거대하기 때문에 일반 컴퓨터에서는 처리할 수 없을 정도로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=whamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10221,
+      "level": "완전체",
+      "type": "대천사형",
+      "attribute": "백신",
+      "moves": [
+        "천국의 문"
+      ],
+      "excerpt": "빛나는 8개의 은빛 날개를 지닌 대천사형 디지몬. 디지털 월드에서 홀리엔젤몬의 사명은 법의 집행관으로, 많은 천사형 디지몬을 감독, 감시하는 역할을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=holyangemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10222,
+      "level": "완전체",
+      "type": "고대짐승형",
+      "attribute": "백신",
+      "moves": [
+        "상아날리기",
+        "얼리기"
+      ],
+      "excerpt": "수많은 흔적을 통해 아득히 먼 옛날이 존재했다는 사실이 밝혀진 고대 디지몬. 디지털 월드의 온난화로 초압축되어 있던 데이터가 해동되었고, 얼음으로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mammon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 2005,
+      "level": "완전체",
+      "type": "사이보그형",
+      "attribute": "백신",
+      "moves": [
+        "트라이던트 암",
+        "기가 디스트로이어",
+        "지가 스톰"
+      ],
+      "excerpt": "몸의 절반 이상을 기계화한 사이보그형 디지몬. 파일섬의 메탈그레이몬을 개조하여 생명 활동을 대폭 증가시켰지만, 육체 부분이…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=metalgreymon-v",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10224,
+      "level": "완전체",
+      "type": "퍼펫형",
+      "attribute": "백신",
+      "moves": [
+        "러블리 어택"
+      ],
+      "excerpt": "모든 것이 수수께끼에 싸인 디지몬. 겉모습은 곰 인형과 똑 닮았으며 등 부분에 지퍼가 붙어 있는 것을 보아, 안에 누군가…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=monzaemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10225,
+      "level": "완전체",
+      "type": "요조형",
+      "attribute": "백신",
+      "moves": [
+        "미카후츠노카미",
+        "하구로"
+      ],
+      "excerpt": "다리 3개를 지닌 괴이한 모습을 한 요조형 디지몬. 칠흑색의 몸은 사악하다는 인상을 주지만, 디지털 월드의 동쪽에 존재하는 「황금향」으로 선택받은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=yatagaramon_axcel",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10226,
+      "level": "완전체",
+      "type": "사이보그형",
+      "attribute": "백신",
+      "moves": [
+        "삼연발 레이저포",
+        "다연발 광선",
+        "솔리드 스트라이크"
+      ],
+      "excerpt": "몸의 절반 이상을 기계화한 사이보그형 디지몬. 거구임에도 넓은 하늘을 비상해 적을 베어 죽인다. 왼팔에 있는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=rizegreymon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10227,
+      "level": "완전체",
+      "type": "사이보그형",
+      "attribute": "백신",
+      "moves": [
+        "래비드 파이어",
+        "골든 트라이앵글"
+      ],
+      "excerpt": "가르고몬이 진화한 사이보그형 디지몬. 「민첩한 사냥개」라는 별명을 지녔으며 광속에 가까운 움직임으로 적을 확실하게 제거한다. 또한, 거대한 귀…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=rapidmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10228,
+      "level": "완전체",
+      "type": "머신형",
+      "attribute": "백신",
+      "moves": [
+        "보링 스톰",
+        "로더 모닝스타"
+      ],
+      "excerpt": "건설 기계의 CAD 데이터가 서버상에 유출되어 짐승형 디지몬의 구성 데이터와 융합해 탄생한 머신형 디지몬. 목덜미의 털이 착암기로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=loaderleomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 2011,
+      "level": "완전체",
+      "type": "수인형",
+      "attribute": "백신",
+      "moves": [
+        "카이저 네일"
+      ],
+      "excerpt": "가루몬이 진화해 이족보행할 수 있게 된 수인형 디지몬. 이족보행이 되어 속도는 느려졌지만 더 강한 공격력과 방어력, 전술 능력을 습득한…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=weregarrumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10230,
+      "level": "완전체",
+      "type": "고대갑각류형",
+      "attribute": "데이터",
+      "moves": [
+        "스팅거 서프라이즈"
+      ],
+      "excerpt": "고대 생물의 조사와 발굴을 진행하고 있는 연구소의 데이터 뱅크가 컴퓨터 바이러스에 감염된 후 고대 생물 데이터를 수집해 진화했다. 고대에…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=anomalocarimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10231,
+      "level": "완전체",
+      "type": "언데드형",
+      "attribute": "데이터",
+      "moves": [
+        "디스렌지 혼",
+        "베인 앤서"
+      ],
+      "excerpt": "바다와 하늘 등 어떤 곳이든 육지와 똑같이 달릴 수 있는 언데드형 디지몬. 천성이 사납고 매우 호전적이며, 무리를…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=enbarrmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10232,
+      "level": "완전체",
+      "type": "성수형",
+      "attribute": "바이러스",
+      "moves": [
+        "데이터흡수",
+        "데이터흡수"
+      ],
+      "excerpt": "동양의 전설에 등장하는 12마리의 성스러운 짐승 중 토끼의 모습을 한 완전체 디지몬. 체내에 흐르는 \"기\"를 자유자재로 조종할 수 있으며,…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=andiramon_2",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10233,
+      "level": "완전체",
+      "type": "광석형",
+      "attribute": "데이터",
+      "moves": [
+        "우주 광선"
+      ],
+      "excerpt": "울퉁몬이 지닌 광석 데이터 안에 있는 운석 데이터가 어떠한 원인으로 표면에 드러난 모습. 우주에만 존재하는 단단한 물질로 되어 있으며…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=insekimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10234,
+      "level": "완전체 (크로스워즈)",
+      "type": "용인형",
+      "attribute": "데이터",
+      "moves": [
+        "헤비 메탈 발칸",
+        "빅토라이즈 ･ 뱅킹"
+      ],
+      "excerpt": "오메가샤우트몬은 용솟음치는 뜨거운 영혼을 해방한 샤우트몬에게 오메가몬이 전설의…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=omegashoutmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10235,
+      "level": "완전체",
+      "type": "합성형",
+      "attribute": "데이터",
+      "moves": [
+        "히트 ･ 바이퍼"
+      ],
+      "excerpt": "손, 발, 몸, 털 등 전체를 구성하는 각 부위가 여러 디지몬의 합성으로 조합되어 만들어진 합성형 디지몬. 왜 이렇게…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=chimairamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10236,
+      "level": "완전체",
+      "type": "돌연변이형",
+      "attribute": "데이터",
+      "moves": [
+        "매직 암",
+        "미러클 봄"
+      ],
+      "excerpt": "콩알몬이 파일 관리 소프트의 데이터와 융합해 진화한 돌연변이형 디지몬. 성실한 성격에 융통성이 없고 디지몬알을 관리하는 일을 사명이라고…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=catchmamemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10237,
+      "level": "완전체",
+      "type": "마인형",
+      "attribute": "데이터",
+      "moves": [
+        "루나틱 댄스",
+        "아이스 아처리"
+      ],
+      "excerpt": "몸이 유연해서 탄력 있는 움직임으로 적을 공격하는 마인형 디지몬. 유려한 전투에 능하며 달빛을 받으면 그 힘은 배로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=crescemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10238,
+      "level": "완전체",
+      "type": "돌연변이형",
+      "attribute": "데이터",
+      "moves": [
+        "헬리 스콜"
+      ],
+      "excerpt": "우주 전사인 스타몬이 완전체가 된 뮤턴트 디지몬. 자기 만족도를 높이는 데 힘써 화려한 의상을 입고 스타가 되어 데뷔했다. 슈퍼스타이기에…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=superstarmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10239,
+      "level": "완전체",
+      "type": "언데드형",
+      "attribute": "데이터",
+      "moves": [
+        "그레이브 본",
+        "데들리 피어"
+      ],
+      "excerpt": "지상 최대의 포유류로 여겨지는 화석 데이터와 몇 개의 화석 데이터가 위조되어 다시 가공된 거대한 언데드형 디지몬. 감정과…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=skullbaluchimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10240,
+      "level": "완전체",
+      "type": "용인형",
+      "attribute": "데이터",
+      "moves": [
+        "레이지 스트레이드",
+        "메테오 플레임",
+        "트라이던트 세이버"
+      ],
+      "excerpt": "긴 세월에 걸친 여정 동안 디지몬과의 만남과 이별을 반복하며 수많은 아수라장을 헤쳐 나와 진화한 모습.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=saviorhuckmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10241,
+      "level": "완전체",
+      "type": "신인형",
+      "attribute": "데이터",
+      "moves": [
+        "제1곡《폴리포니》",
+        "제 2곡 《아리아》",
+        "제 3곡 《캐논》"
+      ],
+      "excerpt": "새와 물고기가 융합한 듯한 겉모습을 지닌 신인형 디지몬. 성격은 쾌활하며 항상 하늘이나 바다에서 흥겨운…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=sirenmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10242,
+      "level": "완전체",
+      "type": "마인형",
+      "attribute": "데이터",
+      "moves": [
+        "범필섬"
+      ],
+      "excerpt": "음양도에 정통해 모든 기술을 구사하며 싸우는 음양사 디지몬. 특히 주술 능력이 높아 부적과 주문 공격에 자신이 있다. 또한 암기의 달인이기도…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=taomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10243,
+      "level": "완전체",
+      "type": "퍼펙트형",
+      "attribute": "데이터",
+      "moves": [
+        "에니그마",
+        "나이트메어 신드롬"
+      ],
+      "excerpt": "모든 디지몬의 시작이자 끝인 \"디지몬알\"의 모습을 한 궁극의 디지몬. 진화의 정점에 있는 이 디지타몬은 평범한 디지몬이 진화하는 게…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=digitamamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10244,
+      "level": "완전체",
+      "type": "화염형",
+      "attribute": "데이터",
+      "moves": [
+        "메탈화염",
+        "화염 사슬"
+      ],
+      "excerpt": "뜨거운 푸른 불꽃을 몸에 휘감은 메라몬의 진화 계열 디지몬. 메라몬보다 불꽃이 뜨겁기에 몸에서 내뿜는 불꽃은 푸르게 타오른다. 공격력,…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=deathmeramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10245,
+      "level": "완전체",
+      "type": "새형",
+      "attribute": "데이터",
+      "moves": [
+        "로열 너츠"
+      ],
+      "excerpt": "언뜻 새형 디지몬으로 보이지만 등에는 푸르게 우거진 식물을 기르는 기묘한 디지몬. 키위몬과 마찬가지로 식물의 특성을 지니고 있어 하늘은 날…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=delumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10246,
+      "level": "완전체",
+      "type": "각룡형",
+      "attribute": "데이터",
+      "moves": [
+        "트라이호른 어택"
+      ],
+      "excerpt": "초식 공룡형 중에서는 1, 2위를 다투는 공격력을 지닌 트리케라톱스의 모습을 한 이족보행의 각룡형 디지몬. 생물 계열 디지몬 중에서도 최상급에…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=triceramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10247,
+      "level": "완전체",
+      "type": "수룡형",
+      "attribute": "데이터",
+      "moves": [
+        "메탈 메테오",
+        "블러디 파워"
+      ],
+      "excerpt": "디지코어(전뇌핵)의 가장 깊은 곳에 잠들어 있던 전설의 생물 \"드래곤\"의 강한 생명력이 담긴 데이터가 이마의 인터페이스로 해방된 모습이며,…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=doruguremon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10248,
+      "level": "완전체",
+      "type": "전사형",
+      "attribute": "데이터",
+      "moves": [
+        "검내려치기"
+      ],
+      "excerpt": "크롬 디지조이드로 만든 중량급 갑옷과 투구를 입은 거대한 체구의 전사형 디지몬. 이러한 갑옷과 투구를 입은 채로도 애용하는 대검을 손쉽게 다룰…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=knightmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10249,
+      "level": "완전체",
+      "type": "수생수인형",
+      "attribute": "데이터",
+      "moves": [
+        "스트라이크 피싱"
+      ],
+      "excerpt": "잠수복을 입은 수생수인형 디지몬. 쾌활한 성격으로 항상 「네트워크 바다」를 헤엄치고 다닌다. 물속에서 능숙하게 활동하며 전투할 때는 등에 있는 수중…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=hangyomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10250,
+      "level": "완전체",
+      "type": "퍼펫형",
+      "attribute": "데이터",
+      "moves": [
+        "애니멀 네일"
+      ],
+      "excerpt": "팬더 모습을 한 퍼펫형 디지몬. 무표정, 무관심, 무뚝뚝한 성격으로 전혀 귀염성이 없다. 자신을 고독한 존재라고 생각하지만 같은 모습이면서 인기가…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=pandamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10251,
+      "level": "완전체",
+      "type": "퍼펫형",
+      "attribute": "데이터",
+      "moves": [
+        "트릭 오어 트릿"
+      ],
+      "excerpt": "호박 머리를 지닌 인형 디지몬. 서양의 축제인 「핼러윈」 시기가 되면 발생하던 컴퓨터 바이러스가 돌연변이를 일으켜 펌프몬이 되었다는 괴담이…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=pumpmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10252,
+      "level": "완전체",
+      "type": "돌연변이형",
+      "attribute": "데이터",
+      "moves": [
+        "빅 스마일리 보머"
+      ],
+      "excerpt": "「스마일리 보머」라는 애칭을 지닌 콩알몬의 우두머리 격 존재인 변이형 디지몬. 사실 콩알몬의 집합체인 것 같다는 추측도 있다. 일반적인…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=bigmamemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10253,
+      "level": "완전체",
+      "type": "요정형",
+      "attribute": "데이터",
+      "moves": [
+        "비트 봄"
+      ],
+      "excerpt": "마법을 쓰는 요정 디지몬. 다른 차원 내 고도의 프로그램 언어를 읊어 마법 같은 기적을 일으킬 수 있다. 이 신비로운…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=picklemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10254,
+      "level": "완전체",
+      "type": "환수형",
+      "attribute": "데이터",
+      "moves": [
+        "히트 웨이브"
+      ],
+      "excerpt": "합성 동물의 모습을 한 환수 디지몬. 진화하면 그리포몬이 된다고 알려져 있지만 자세한 사항은 밝혀지지 않았다. 그리포몬만큼 지성이 높지는 않고…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=hippogriffomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10255,
+      "level": "완전체",
+      "type": "수장룡형",
+      "attribute": "데이터",
+      "moves": [
+        "브라키오 버블"
+      ],
+      "excerpt": "먼 옛날 존재한 브라키오사우루스처럼 생긴 수장룡형 디지몬. 공룡 디지몬 중에서는 꽤 중량급이기에 이 거구에게 밟히면 반드시 대미지를 입게 된다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=brachiomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10256,
+      "level": "완전체",
+      "type": "사이보그형",
+      "attribute": "데이터",
+      "moves": [
+        "빅뱅 ･ 보이스",
+        "빅뱅 ･ 태클"
+      ],
+      "excerpt": "큰 몸에 힘이 넘치는 사이보그형 디지몬. 분노가 정점에 달하거나 흥분 지수가 최고치를 넘으면 등의 화산이…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=volcamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10257,
+      "level": "완전체",
+      "type": "머신형",
+      "attribute": "데이터",
+      "moves": [
+        "체펠린 서커스",
+        "데어데블 브레이크"
+      ],
+      "excerpt": "넓은 하늘을 질주하는 비행선형 디지몬. 미완성이던 브링프몬에 개조를 거듭해 진화했다. 완성형이기에 노출돼 있던 기구 부분은 완전히 갑옷으로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=masterblimpmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10258,
+      "level": "완전체",
+      "type": "사이보그형",
+      "attribute": "데이터",
+      "moves": [
+        "가오가 토네이도",
+        "주먹 강타",
+        "하울링 캐논"
+      ],
+      "excerpt": "막대한 추진력을 지녔으며 로켓 엔진을 짊어진 사이보그형 디지몬. 체공 시간은 짧지만 순간 최대 추진력을 살린…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=machgaogamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10259,
+      "level": "완전체",
+      "type": "돌연변이형",
+      "attribute": "데이터",
+      "moves": [
+        "스마일리 봄"
+      ],
+      "excerpt": "가혹한 환경에서 진화한 돌연변이형 디지몬. 귀여운 겉모습과는 달리 무서울 정도의 파괴력을 지니고 있다. 단 1종의 디지몬을 제외하면 아마 최강의…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mamemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10260,
+      "level": "완전체",
+      "type": "수생형",
+      "attribute": "데이터",
+      "moves": [
+        "번개창 날리기"
+      ],
+      "excerpt": "폴더 대륙 주변의 가혹한 환경에서 살아남은 시드라몬종이 약육강식의 디지털 월드에서 살아가기 위해 진화한 형태. 몸도 한층 더 커졌고 머리를…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=megaseadramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10261,
+      "level": "완전체",
+      "type": "사이보그형",
+      "attribute": "데이터",
+      "moves": [
+        "에너지 봄"
+      ],
+      "excerpt": "\"스마일리 보머\"라는 별명을 지닌 콩알몬이 더욱 강력하게 진화한 사이보그형 디지몬. 여전히 귀여운 겉모습에 속으면 큰코다친다. 몸의 90%가 기계화되었고, 왼팔에…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=metalmamemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10262,
+      "level": "완전체",
+      "type": "요정형",
+      "attribute": "데이터",
+      "moves": [
+        "라일라 샤워",
+        "뷰티 슬랩"
+      ],
+      "excerpt": "사람들에게 사랑받는 꽃인 라일락의 모습을 한 요정형 디지몬. 순수하고 천진난만한 성격에 아름다운 용모를…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lilamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10263,
+      "level": "완전체",
+      "type": "요정형",
+      "attribute": "데이터",
+      "moves": [
+        "꽃잎 포"
+      ],
+      "excerpt": "아름답게 핀 꽃잎에서 태어난 요정형 디지몬. 겉모습은 인간의 아이 같은 모습을 하고 있지만, 헤아릴 수 없을 정도로 엄청난 힘을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lilimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10264,
+      "level": "완전체",
+      "type": "머신형",
+      "attribute": "데이터",
+      "moves": [
+        "스팀 봄",
+        "휠 그라인더"
+      ],
+      "excerpt": "계속 달리는 것이 삶의 보람인 증기 기관차의 모습의 머신형 디지몬. 디지털 월드에서는 네트워크 내 데이터를 운반하는 존재다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=locomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10265,
+      "level": "완전체",
+      "type": "마인형",
+      "attribute": "바이러스",
+      "moves": [
+        "헬 파이어",
+        "매버릭"
+      ],
+      "excerpt": "완전체이면서 궁극체를 능가하는 힘을 지닌, 악마 디지몬 군단을 다스리는 다크 에어리어의 귀공자다. 적에 대한 잔학성과 동시에 같은 편에…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=astamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10266,
+      "level": "완전체",
+      "type": "마수형",
+      "attribute": "바이러스",
+      "moves": [
+        "스파이더 스레드",
+        "독 뿜기"
+      ],
+      "excerpt": "그리스 신화에 등장하는 「거미의 여왕」의 모습을 한 마수형 디지몬. 모든 스파이더몬을 통솔하는 여왕이며 지성이 높고 매우 교활한…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=archnemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10267,
+      "level": "완전체",
+      "type": "언데드형",
+      "attribute": "바이러스",
+      "moves": [
+        "나이트 레이드"
+      ],
+      "excerpt": "어둠의 술법으로 되살아나 강력한 힘을 손에 얻은 언데드 디지몬의 왕. 원래 컴퓨터 데이터를 흡수한 뒤 파괴하는 흉악한 컴퓨터 바이러스로,…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=vamdemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10268,
+      "level": "완전체",
+      "type": "퍼펫형",
+      "attribute": "바이러스",
+      "moves": [
+        "러브 세레나데",
+        "다크 스피릿츠"
+      ],
+      "excerpt": "갑자기 디지털 월드에 나타난 정체불명의 디지몬. 자칭 \"킹 오브 디지몬\"으로 전투력은 상상을 초월한다. 수수께끼의 디지몬 「퍼펫몬」을 배후에서…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=etemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10269,
+      "level": "완전체",
+      "type": "곤충형",
+      "attribute": "바이러스",
+      "moves": [
+        "시저암즈Ω"
+      ],
+      "excerpt": "쿠가몬의 진화형으로 캅테리몬 계열 디지몬보다 꺼림직한 모습으로 진화했다. 쿠가몬의 뒤떨어진 방어력이 특히 중점적으로 강화되었다. 더듬이로 적을 찾아내는 색적 능력이 향상되었고…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=okuwamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10270,
+      "level": "완전체",
+      "type": "마룡형",
+      "attribute": "바이러스",
+      "moves": [
+        "술 브레스",
+        "아메노무라쿠모"
+      ],
+      "excerpt": "8개의 머리를 지닌 거대한 마룡형 디지몬. 하지만 8개 중 7개는 가짜이고 중앙의 검은 머리가 본체다. 오로치몬의 탄생 기원은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=orochimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10271,
+      "level": "완전체",
+      "type": "돌연변이형",
+      "attribute": "바이러스",
+      "moves": [
+        "응가 바주카"
+      ],
+      "excerpt": "데스크톱상에 있는 휴지통 자체가 생명을 얻어 진화한 돌연변이 디지몬. 데이터 찌꺼기가 돌연변이를 일으킨 스카몬과는 달리 휴지통 자체가 이 디지몬이다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gerbemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10272,
+      "level": "완전체",
+      "type": "사이보그형",
+      "attribute": "바이러스",
+      "moves": [
+        "제노사이드 기어",
+        "길티 클로"
+      ],
+      "excerpt": "메가드라몬과 같은 시기에 개발된 암흑룡 디지몬. 한층 더 개조되어 완전 무장한 전투 용으로, 그 존재는 흉악한 컴퓨터…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gigadramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10273,
+      "level": "완전체",
+      "type": "사이보그형",
+      "attribute": "바이러스",
+      "moves": [
+        "니트로 스팅거",
+        "무한 스카이 로켓"
+      ],
+      "excerpt": "수수께끼에 싸인 \"공중 비밀 기지 「로얄 베이스」\"를 지키는 초대형 디지몬. 공중 기지는 360° 위험에 노출되어 있지만,…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=cannonbeemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10274,
+      "level": "완전체",
+      "type": "지룡형",
+      "attribute": "바이러스",
+      "moves": [
+        "스크랩리스 클로",
+        "메가톤 해머 크러시",
+        "기가 크랙"
+      ],
+      "excerpt": "등에 큰 팔을 지닌 지룡형 디지몬. 등에 있는 팔은 날개가 변화한 것으로 알려져 있으며…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=groundramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10275,
+      "level": "완전체",
+      "type": "사이보그형",
+      "attribute": "바이러스",
+      "moves": [
+        "일제포격",
+        "플루토다몬",
+        "펑크차지"
+      ],
+      "excerpt": "사냥감을 포식하려는 집념이 강해진 수서형 디지몬이 진화해서 생긴 거대한 상어 디지몬. 전함의 데이터를 도입해 몸의 반 이상이 기계화되어…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=sharkmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10276,
+      "level": "완전체",
+      "type": "마인형",
+      "attribute": "바이러스",
+      "moves": [
+        "강요장 파문의 진",
+        "강요장 폭포의 진",
+        "월아참"
+      ],
+      "excerpt": "디지털 월드의 천계에서 추방된 마인형 디지몬. 차분하고 침착한 디지몬이지만, 어떤 디지코어가 봉인된 목걸이 9개…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=shawujinmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10277,
+      "level": "완전체",
+      "type": "식물형",
+      "attribute": "바이러스",
+      "moves": [
+        "체리 봄"
+      ],
+      "excerpt": "우드몬이 더 진화해 굉장히 높은 지성과 힘을 얻은 디지몬이 쥬레이몬이다. 밀림의 주인이라고 불리며 깊고 어두운 숲을 헤매는 디지몬을 더욱…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=jyureimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10278,
+      "level": "완전체",
+      "type": "언데드형",
+      "attribute": "바이러스",
+      "moves": [
+        "오블리비언 버드"
+      ],
+      "excerpt": "전신에 뼈만 남아버린 해골 디지몬. 싸움에만 집착해온 디지몬이 육체가 사라졌음에도 불구하고 투쟁 본능만으로 살아온 결과, 스컬그레이몬이 되어 버렸다. 투쟁…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=skullgreymon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10279,
+      "level": "완전체",
+      "type": "언데드형",
+      "attribute": "바이러스",
+      "moves": [
+        "어둠의 저주"
+      ],
+      "excerpt": "강한 힘과 파괴를 추구해 다크 에어리어에 떨어진 타천사형 디지몬의 비참한 말로. 하지만 그만큼 더욱 악한 디지몬이 되었고 그 암흑의…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=skullsatamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10280,
+      "level": "완전체",
+      "type": "언데드형",
+      "attribute": "바이러스",
+      "moves": [
+        "번개창 날리기",
+        "데드롤"
+      ],
+      "excerpt": "먹이로 삼을 디지몬을 찾아 넷의 바다를 헤엄치며 육체가 없어져도 본능만으로 살아가는 언데드형 시드라몬. 뼈만 남음으로 인해 저항성이 줄어들어…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=skullseadramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10281,
+      "level": "완전체",
+      "type": "돌연변이형",
+      "attribute": "바이러스",
+      "moves": [
+        "다크 익스플로젼",
+        "슈발츠 네벨",
+        "다크 홀"
+      ],
+      "excerpt": "블랙홀의 관측 데이터로 탄생한 어둠에 물든 디지몬. 꿈과 희망 모두 잊어버리고 선글라스로 빛마저 차단해버릴 정도로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=darksuperstarmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10282,
+      "level": "완전체",
+      "type": "수생수인형",
+      "attribute": "바이러스",
+      "moves": [
+        "포비든 트라이던트"
+      ],
+      "excerpt": "「바다 밑의 파계승」이라고 불리는 사신 디지몬. 선박 등의 컴퓨터에서 방위와 항로를 혼란시키는 컴퓨터 바이러스가 진화했다고 여겨진다. 무수히 늘어나는 촉수를…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dagomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10283,
+      "level": "완전체",
+      "type": "머신형",
+      "attribute": "바이러스",
+      "moves": [
+        "스트라이버 캐논",
+        "블래스트 개틀링"
+      ],
+      "excerpt": "기계화 여단 「D-브리가드」의 폭도 진압, 습격 격퇴의 임무를 수행하는 머신형 디지몬. 여러 「목표물」을 격퇴하는 데 특화되어 있으며…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tankdramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10284,
+      "level": "완전체",
+      "type": "양서류형",
+      "attribute": "바이러스",
+      "moves": [
+        "사무라이 톤"
+      ],
+      "excerpt": "영주의 상투처럼 생긴 더듬이를 지닌 개굴몬의 업그레이드 버전. 노래방의 채점 시스템에서 처음 발생했다고 한다. 양어깨에 뻗어 있는 2개의 호른이…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tonosamagekomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10285,
+      "level": "완전체",
+      "type": "머신형",
+      "attribute": "바이러스",
+      "moves": [
+        "플러그 봄"
+      ],
+      "excerpt": "초소형 치료용 머신 디지몬. 원래는 크래시가 발생한 컴퓨터를 복원하기 위한 백신과 같은 디지몬이었지만, 강력한 바이러스형 디지몬의 공격을 받았을 때…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=nanomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10286,
+      "level": "완전체",
+      "type": "고스트형",
+      "attribute": "바이러스",
+      "moves": [
+        "영혼가르기"
+      ],
+      "excerpt": "거대한 사슬낫을 지닌 사신처럼 생긴 디지몬. 고스몬과는 달리 상급 고스트 디지몬으로, 팬텀몬에 씌면 결국 완전한 죽음이 찾아올 것이다. 목에 매단…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=fantomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10287,
+      "level": "완전체",
+      "type": "연체형",
+      "attribute": "바이러스",
+      "moves": [
+        "다크 퓨필",
+        "포이즌 무커스"
+      ],
+      "excerpt": "어둠의 트래시 데이터계의 왕으로 지위를 구축해 완전체가 된 칠흑색의 워매몬. 주운 왕관을 껍질처럼 짊어졌고 수염도 자랐다. 관록이…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=blackkingnumemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10288,
+      "level": "완전체",
+      "type": "화염형",
+      "attribute": "바이러스",
+      "moves": [
+        "아이스 팬텀",
+        "콜드 플레임"
+      ],
+      "excerpt": "성숙기 메라몬보다 더 뜨거운 불꽃이 타오르고 있는 화염형 디지몬. 필살기는 매우 차가운 냉기로 상대에게 화상을 입히는 『아이스…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=bluemeramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10289,
+      "level": "완전체",
+      "type": "우주인형",
+      "attribute": "바이러스",
+      "moves": [
+        "악마의 키스 날리기"
+      ],
+      "excerpt": "먼 우주 끝에서 찾아온 듯한 모습의 우주인형 디지몬. 하지만 식물의 열매에서 태어났다는 소문이 있다. 거대하게 발달한 머리와 문어…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=vademon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10290,
+      "level": "완전체",
+      "type": "언데드형",
+      "attribute": "바이러스",
+      "moves": [
+        "사우전드 애로",
+        "무무독조",
+        "나팔차기"
+      ],
+      "excerpt": "화려한 춤을 추는 흡혈 격투가 디지몬. 어떤 박물관의 민속 무용 데이터베이스에서 생겨났다고 알려져 있으며 춤 동작을 독자적으로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=matadrmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10291,
+      "level": "완전체",
+      "type": "언데드형",
+      "attribute": "바이러스",
+      "moves": [
+        "스네이크 밴디지",
+        "네크로포비아"
+      ],
+      "excerpt": "이집트 미라처럼 전신에 붕대를 감은 언데드형 디지몬. 뜻을 이루지 못하고 소멸한 디지몬의 영혼(잔류 데이터)을 소환해 조종하기에 일명 「사령…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mummymon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10292,
+      "level": "완전체",
+      "type": "마법전사형",
+      "attribute": "바이러스",
+      "moves": [
+        "코어 다트",
+        "블래스트 화이어"
+      ],
+      "excerpt": "다른 차원의 디지털 월드 「윗체르니」에서 온 마법전사형 디지몬. 수많은 마술(고급 프로그램 언어)을 능숙하게 구사하는 동시에 검술사이기도 해…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mistymon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10293,
+      "level": "완전체",
+      "type": "사이보그형",
+      "attribute": "바이러스",
+      "moves": [
+        "제노사이드 어택",
+        "얼티메이트 슬라이서"
+      ],
+      "excerpt": "완전체인 용형 사이보그 디지몬 중에서 가장 강하고 가장 사악한 힘을 자랑한다고 알려진 암흑룡. 누군가가 인위적으로 개조한 디지몬으로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=megadramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10294,
+      "level": "완전체",
+      "type": "사이보그형",
+      "attribute": "바이러스",
+      "moves": [
+        "양날검",
+        "아토믹 블래스터"
+      ],
+      "excerpt": "「거대한 그라우몬」이라는 이름을 지닌 사이보그형 완전체 디지몬. 그 이름대로 몸은 거대해졌으며 상반신은 초금속인 \"크롬 디지조이드\"로 되어 있다. 양어깨에…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=megalogrowmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10295,
+      "level": "완전체",
+      "type": "사이보그형",
+      "attribute": "바이러스",
+      "moves": [
+        "기가 디스트로이어 II",
+        "뉴클리어 레이저"
+      ],
+      "excerpt": "강력한 힘을 지니기 위해 몸을 개조한 사이보그 디지몬. 하늘의 적을 공격할 수 있도록 개조된 「메가드라몬」에 이어…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=metaltyranomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10296,
+      "level": "완전체",
+      "type": "마왕형",
+      "attribute": "바이러스",
+      "moves": [
+        "파라다이스 로스트",
+        "데드 ･ 오어 ･ 얼라이브"
+      ],
+      "excerpt": "성(聖)과 마(魔)를 함께 지닌 궁극의 마왕형 디지몬으로 \"7대 마왕 디지몬\" 최강의 존재다. 초고대에 반역…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=rucemonfalldownmode",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10297,
+      "level": "완전체",
+      "type": "타천사형",
+      "attribute": "바이러스",
+      "moves": [
+        "암흑파",
+        "포이즌"
+      ],
+      "excerpt": "고귀한 존재인 여성형 타천사 디지몬. 누구와도 비교할 수 없을 정도로 고순도인 다크 사이드의 힘을 지니고 있기에 강하며, 개인이 단말기로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ladydevimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10298,
+      "level": "완전체",
+      "type": "마인형",
+      "attribute": "바이러스",
+      "moves": [
+        "판도라 ･ 다이얼로그",
+        "이터널 ･ 니르바나"
+      ],
+      "excerpt": "모든 것이 수수께끼인 디지몬으로, \"책\"을 통해 모든 시간과 공간에 출현할 수 있다. \"책\"을 매개체로 \"책\"이…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=wisemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10299,
+      "level": "완전체",
+      "type": "수생형",
+      "attribute": "바이러스",
+      "moves": [
+        "다크 스톰",
+        "이블 아이시클",
+        "스트레인지 미스트"
+      ],
+      "excerpt": "사악하게 진화한 시드라몬종의 디지몬. 머리에 있는 칼날 같은 뿔로 어둠의 힘을 조절할 수 있다. 더…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=waruseadramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10300,
+      "level": "완전체",
+      "type": "돌연변이형",
+      "attribute": "프리",
+      "moves": [
+        "니기미타마",
+        "아라미타마"
+      ],
+      "excerpt": "황금아르마몬과 엔젤몬이 조그레스 진화한 돌연변이형 디지몬. 은색으로 빛나는 몸에 흰색 날개를 지니고 있어 고대 디지털 월드에 강림한 천사형 디지몬이라는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=shakkoumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10301,
+      "level": "완전체",
+      "type": "수인형",
+      "attribute": "프리",
+      "moves": [
+        "파동포",
+        "더블초음파공격"
+      ],
+      "excerpt": "아큐라몬과 가트몬이 조그레스 진화한 수인형 디지몬. 강력한 다리 힘을 지녔으며 아득히 높은 상공까지 도약할 수 있다고 한다. 또한 높은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=silphymon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10302,
+      "level": "완전체",
+      "type": "돌연변이형",
+      "attribute": "프리",
+      "moves": [
+        "헬 마스커레이드"
+      ],
+      "excerpt": "스팅몬과 엑스브이몬이 조그레스 진화한 돌연변이형 디지몬. 용과 곤충의 키메라(합성 동물)이며 \"무서운 벌\"이라는 이름을 지닌 디지몬이다. 용형인지, 곤충형인지 구별하기 힘든…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dinobeemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10303,
+      "level": "완전체",
+      "type": "용인형",
+      "attribute": "프리",
+      "moves": [
+        "에스그리마",
+        "무법천지"
+      ],
+      "excerpt": "엑스브이몬과 스팅몬이 조그레스해 진화한 용인형 디지몬. 용형을 토대로 관련 요소를 많이 남겨두었기에 용이 지닌 힘과 곤충의 외피를 이용한 철벽…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=paildramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10304,
+      "level": "완전체",
+      "type": "종족불명",
+      "attribute": "불명",
+      "moves": [
+        "네트워크수류탄",
+        "거미줄 쏘기"
+      ],
+      "excerpt": "손발이 긴 거미의 모습을 한 완전체 디지몬. 머리와 손발을 늘린 상태인 일반 형태와 손발을 본체에 집어넣은 누에고치 형태를…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=infermon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10305,
+      "level": "하이브리드체",
+      "type": "마인형",
+      "attribute": "배리어블",
+      "moves": [
+        "브라흐마 실",
+        "브라흐마 스트라"
+      ],
+      "excerpt": "전설 10투사의 모든 힘을 이어받아, 미지의 능력을 얻어 전설을 뛰어넘는 불의 능력을 지니게 된 디지몬. 난폭한 행실로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=aldamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10306,
+      "level": "하이브리드체",
+      "type": "전사형",
+      "attribute": "배리어블",
+      "moves": [
+        "리히트 앙그리프",
+        "츠바이헨더"
+      ],
+      "excerpt": "전설 10투사의 모든 힘을 이어받아, 미지의 능력을 얻어 전설을 뛰어넘은 빛의 능력을 지니게 된 디지몬. 짐승의 야성과 인간의…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=beowolfmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10307,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "백신",
+      "moves": [
+        "솔 블래스터",
+        "포이보스 ･ 블로"
+      ],
+      "excerpt": "올림포스 12신 중 하나로 태양 수준의 불꽃 에너지를 지닌 신인형 디지몬. 그 힘은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=apollomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10308,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "백신",
+      "moves": [
+        "성검 그레이 달파"
+      ],
+      "excerpt": "13마리 존재한다고 알려진 네트워크 보안의 최고위 디지몬이자 성기사 \"로얄 나이츠\" 중 한 명이다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=alphamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10309,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "백신",
+      "moves": [
+        "샤이닝 V 포스"
+      ],
+      "excerpt": "고대 디지털 월드에서 전해지는 한 \"예언\"에서만 등장하는 전설의 기사 디지몬. 그 \"예언\"에는 네트워크의 수호신 \"로얄 나이츠\"의 출현이 나와…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ulforcevdramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10310,
+      "level": "궁극체",
+      "type": "성조형",
+      "attribute": "백신",
+      "moves": [
+        "퍼지 샤인",
+        "오로라 언듈레이션"
+      ],
+      "excerpt": "상공 40,000m의 성층권에 서식하는 환상의 성조형 디지몬. 거대한 6개의 날개를 지녔으며 가장 큰 날개를 펼쳤을 때의 길이는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=valdurmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10311,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "백신",
+      "moves": [
+        "힐링 테라피",
+        "LOVE YOU",
+        "피스 판타지아"
+      ],
+      "excerpt": "올림포스 12신 중 하나로 자애로움이 가득한 사랑을 관장하는 디지몬. 베누스몬이 있는 곳은 어떠한 황폐한 토지라도…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=venusmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 2006,
+      "level": "궁극체",
+      "type": "용인형",
+      "attribute": "백신",
+      "moves": [
+        "가이아 포스",
+        "브레이브 토네이도"
+      ],
+      "excerpt": "초금속 「크롬 디지조이드」의 갑옷을 입은 최강의 용 전사이며, 그레이몬 계열 디지몬의 궁극적인 형태다. 그레이몬 계열 디지몬에게서 보이는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=wargreymon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10313,
+      "level": "궁극체",
+      "type": "수룡형",
+      "attribute": "백신",
+      "moves": [
+        "영세용왕인",
+        "황금 갑옷"
+      ],
+      "excerpt": "오류우몬이란 \"디지코어(전뇌핵)의 공상\"이 만들어낸 가공의 디지몬이다. 이마의 인터페이스로 디지코어 자신의 창조력까지 기적적으로 방출되어 진화한 모습이다. 원래 디지코어 안에…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ouryumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10314,
+      "level": "궁극체",
+      "type": "좌천사형",
+      "attribute": "백신",
+      "moves": [
+        "에덴즈 재블린",
+        "크리스탈검"
+      ],
+      "excerpt": "여성형 천사 디지몬의 최종 형태인 좌천사형 디지몬. 세라피몬, 케루비몬과 함께 디지털 월드의 중심부 \"커널(신의 영역)\"을 수호하는 3대 천사형…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ofanimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10315,
+      "level": "궁극체",
+      "type": "역천사형",
+      "attribute": "백신",
+      "moves": [
+        "더 ･ 키"
+      ],
+      "excerpt": "디지털 월드와 바깥 세계를 사이에 가로막는 「제니스 게이트」를 보호하는 천사형 디지몬. 「제니스 게이트」는 360개에 걸친 문으로 봉인되어 있으며…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=clavisangemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10316,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "백신",
+      "moves": [
+        "엔드 ･ 왈츠",
+        "갓 브레스"
+      ],
+      "excerpt": "로얄 나이츠 중에서도 가장 예의 바른 디지몬. 완벽주의자이며 위그드라실의 지령에 따른 임무 달성률은 로얄 나이츠 디지몬…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=craniummon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10317,
+      "level": "궁극체",
+      "type": "거조형",
+      "attribute": "백신",
+      "moves": [
+        "카이저 피닉스",
+        "미스틱 브레이크"
+      ],
+      "excerpt": "황금 갑옷으로 몸을 감싼 거조형 디지몬. 온몸을 덮은 갑옷은 크롬 디지조이드로 만든 것으로, 모든 공격을 튕겨낸다. 또한…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=crossmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10318,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "백신",
+      "moves": [
+        "홀리 플레어",
+        "크로노스 크롭"
+      ],
+      "excerpt": "시간을 관장하는 시스템이 실체화한 존재라는 설이 있는 신인형 디지몬. 디지털 월드에서는 시간의 흐름이 무척 애매하기 때문에, 강력한…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=chronomon_holy",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10319,
+      "level": "궁극체",
+      "type": "지천사형",
+      "attribute": "백신",
+      "moves": [
+        "빛나는 창",
+        "헤븐즈저지먼트"
+      ],
+      "excerpt": "짐승의 모습을 한 천사형 디지몬. 치천사형 디지몬인 세라피몬처럼 최고위에 있는 3대 천사 디지몬 중 하나다. 원래 역할은 디지털…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=cherubimon-vice",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10320,
+      "level": "궁극체",
+      "type": "지천사형",
+      "attribute": "백신",
+      "moves": [
+        "빛나는 창",
+        "헤븐즈저지먼트"
+      ],
+      "excerpt": "짐승의 모습을 한 천사형 디지몬. 치천사형 디지몬인 세라피몬처럼 최고위에 있는 3대 천사 디지몬 중 하나다. 원래 역할은 디지털…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=cherubimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10321,
+      "level": "궁극체",
+      "type": "성룡형",
+      "attribute": "백신",
+      "moves": [
+        "갓 플레임"
+      ],
+      "excerpt": "6개의 단단해진 날개를 지녔으며 몸은 황금색으로 빛나는 성룡형 디지몬. 팔에 신성한 디지몬을 나타내는 증표인 성스러운 고리를 차고 있는 것으로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=goddramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10322,
+      "level": "궁극체",
+      "type": "광룡형",
+      "attribute": "백신",
+      "moves": [
+        "글로리어스 버스트",
+        "샤이닝 블래스트",
+        "지오 그레이 소드"
+      ],
+      "excerpt": "뜨겁게 타오르는 태양 에너지를 축적해 싸우는 광룡형 디지몬. 필살기는 거대한 날개를 펼쳐 빛 에너지를…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=shinegreymon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10323,
+      "level": "궁극체",
+      "type": "사이보그형",
+      "attribute": "백신",
+      "moves": [
+        "트리니티 암",
+        "저스티스 킥"
+      ],
+      "excerpt": "길게 뻗친 붉은 머플러를 한 정의로운 히어로 유형 디지몬. 정의감에 불타며 부정한 행위와 악행은 절대 놓치지 않는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=justimon_blitzarm",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10324,
+      "level": "궁극체",
+      "type": "언데드형",
+      "attribute": "백신",
+      "moves": [
+        "스파이럴 본"
+      ],
+      "excerpt": "태곳적 존재하던 맘몬이 되살아나 바이러스종 디지몬으로 계속 싸워, 전신이 바이러스 때문에 잠식된 결과 뼈만 남게 된 언데드 디지몬. 죽은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=skullmammon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10325,
+      "level": "궁극체",
+      "type": "능천사형",
+      "attribute": "백신",
+      "moves": [
+        "홀리 에스파다",
+        "헤븐즈 리퍼"
+      ],
+      "excerpt": "천사 군단(파워스)을 인솔하며 전쟁에서 가장 앞장서는 능천사형 디지몬. 정의를 관철하기 위해서라면 죽음도 무서워하지 않는다. 금속으로 만든 날개와…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=slashangemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10326,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "백신",
+      "moves": [
+        "비프로스트",
+        "오딘즈 브레스"
+      ],
+      "excerpt": "디지털 월드의 수호자 「로얄 나이츠」의 일원인 성기사형 디지몬. 인간형 디지몬이 많은 「로얄 나이츠」 중에서도 특이하다고 할 수 있을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=sleipmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10327,
+      "level": "궁극체",
+      "type": "용인형",
+      "attribute": "백신",
+      "moves": [
+        "천룡참파",
+        "승룡참파",
+        "교룡참인"
+      ],
+      "excerpt": "크롬 디지조이드 갑옷의 비늘로 몸을 감싼 용인형 디지몬. 용형 디지몬만이 도전할 수 있는 일명 「사대 드래곤의 시련」의 수행을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=slayerdramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10328,
+      "level": "궁극체",
+      "type": "치천사형",
+      "attribute": "백신",
+      "moves": [
+        "세븐 헤븐즈",
+        "황금날개"
+      ],
+      "excerpt": "은백색으로 빛나는 성스러운 갑옷을 입고 10개의 황금빛 날개를 지닌 치천사형 디지몬. 천사형 디지몬 중에서는 가장 지위가 높은 존재로,…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=seraphimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10329,
+      "level": "궁극체",
+      "type": "머신형",
+      "attribute": "백신",
+      "moves": [
+        "화력발사",
+        "자이언트 미사일"
+      ],
+      "excerpt": "전신이 무기고로 되어 있는 매우 거대한 머신형 디지몬. 무기 탑재량은 메탈가루몬에 필적한다. (참고로 메탈가루몬은 냉기 계열이지만, 세인트가르고몬은 열…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=saintgalgomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10330,
+      "level": "궁극체",
+      "type": "성검형",
+      "attribute": "백신",
+      "moves": [
+        "츠바이 그렌체",
+        "트론 메서"
+      ],
+      "excerpt": "자신의 검을 극한에 이르기까지 연마하고, 신화와 게임으로 이루어진 『전설의 검』의 데이터를 얻어 진화한 궁극의 성검을 지닌 디지몬.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=durandamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10331,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "백신",
+      "moves": [
+        "볼텍스 페네트레이트",
+        "웨이브 오브 데프스"
+      ],
+      "excerpt": "올림포스 12신 중 하나로 모든 해양 디지몬을 다스리는 바다의 신 디지몬. 넵튠몬의 몸을 덮은 스케일 메일(비늘…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=neptunemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10332,
+      "level": "궁극체",
+      "type": "사이보그형",
+      "attribute": "백신",
+      "moves": [
+        "아토믹 ･ 레이"
+      ],
+      "excerpt": "불완전했던 안드로몬을 개량해 완성한 궁극체 사이보그형 디지몬. 몸을 구성하는 크롬 디지조이드 부품의 비율이 높아졌으며, 이를 봤을 때 안드로몬과는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=hiandromon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10333,
+      "level": "궁극체",
+      "type": "수인형",
+      "attribute": "백신",
+      "moves": [
+        "사자라왕점",
+        "플래시 반쵸 펀치"
+      ],
+      "excerpt": "자신이 믿는 「정의」를 위해서만 충실하게 살아가는 수인형 디지몬. 치열한 강자와의 싸움에서 마음이 「꺾이지」 않고 승리를 거듭해온 디지몬만이…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=bancholeomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10334,
+      "level": "궁극체",
+      "type": "곤충형",
+      "attribute": "백신",
+      "moves": [
+        "기가 블래스터"
+      ],
+      "excerpt": "캅테리몬종과 쿠가몬종의 데이터를 함께 지니고 진화한 궁극의 곤충형 디지몬. 거대한 뿔과 집게를 지녔으며 정반대 성질이었던 디지몬 2종의 약점을 완전히…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=heraklekabuterimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10335,
+      "level": "궁극체",
+      "type": "성수형",
+      "attribute": "백신",
+      "moves": [
+        "스타라이트 익스플로전"
+      ],
+      "excerpt": "황금색으로 빛나는 4개의 날개를 지닌 성스러운 디지몬. 모든 새형 디지몬의 우두머리로 신성 계열 디지몬을 통솔하는 존재라고 한다. 홀리드라몬이 짐승형…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=hououmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10336,
+      "level": "궁극체",
+      "type": "성룡형",
+      "attribute": "백신",
+      "moves": [
+        "홀리 플레임"
+      ],
+      "excerpt": "신수 디지몬의 궁극적인 형태다. 웅장한 모습은 하늘의 왕자를 연상시킨다. 그 모습을 본 자는 적으며 평소에는 어디에 있는지조차 전혀 알려지지…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=holydramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10337,
+      "level": "궁극체",
+      "type": "천사형",
+      "attribute": "백신",
+      "moves": [
+        "홀리 디자이어",
+        "다크 디스페어",
+        "카오스 디그레이드"
+      ],
+      "excerpt": "디지털 월드에 전대미문의 위기가 닥쳤을 때 상반된 입장을 지닌 천사형 디지몬과 타천사형 디지몬이 손을 잡고…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mastemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10338,
+      "level": "궁극체",
+      "type": "요정형",
+      "attribute": "백신",
+      "moves": [
+        "오션 러브"
+      ],
+      "excerpt": "좀처럼 모습을 보기 힘든 네트워크 바다에 사는 요정형 디지몬. 이름은 엔젤몬이지만 생태계 내 엔젤몬 계열과는 전혀 다른 종족이다. 마린엔젤몬의…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=marinangemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10339,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "백신",
+      "moves": [
+        "코로나 샌션즈"
+      ],
+      "excerpt": "수수께끼의 집단 \"올림포스 12신\" 중 하나로 표범 인간의 모습을 한 군신 디지몬. 올림포스 12신들은 네트워크의 보호신 \"로얄 나이츠\"에 필적하는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=marsmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10340,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "백신",
+      "moves": [
+        "마볼트",
+        "퍼니시 저지",
+        "와이드 프라즈먼트"
+      ],
+      "excerpt": "하늘을 다스리는 올림포스 12신 중 하나로 천둥과 기상을 관장하는 디지몬이다. 전쟁터에서는 항상 선악을 판단하고 악한 자에게…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=jupitermon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10341,
+      "level": "궁극체",
+      "type": "사이보그형",
+      "attribute": "백신",
+      "moves": [
+        "스파이럴 레이븐 클로",
+        "블래스트 윙",
+        "쵸우오우마루"
+      ],
+      "excerpt": "크롬 디지조이드로 만든 한쪽 날개를 지닌 사이보그형 디지몬. 디지털 월드 창세기, 한 신인형 디지몬을 섬기던…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ravmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10342,
+      "level": "궁극체",
+      "type": "사이보그형",
+      "attribute": "데이터",
+      "moves": [
+        "얼티메이트 블래스트",
+        "얼티메이트 퀘이크"
+      ],
+      "excerpt": "육지 최대, 최고의 중량을 자랑하는 사이보그형 디지몬. 등에 장착된 부스터는 아래로 분사되며, 매우 거대한 몸집의 중량을 지탱하고…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ultimatebrakimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10343,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "데이터",
+      "moves": [
+        "핀포인트 웨폰 워크스",
+        "어프로프리에이트 워크스",
+        "봄버 아트"
+      ],
+      "excerpt": "올림포스 12신 중 하나로 대장장이 신 디지몬. 유명한 무기 대부분은 불카누스몬이 만들었으며 그 유명한…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=vulcanusmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10344,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "데이터",
+      "moves": [
+        "철권제재",
+        "지진! 천둥! 화재! 아버지!",
+        "밥상 뒤집기"
+      ],
+      "excerpt": "성기사형 디지몬으로 「로열 나이츠」를 이어받은 디지몬. 디지털 월드 남서부 끝자락에서 살고 있다고 알려졌지만 같은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gankoomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10345,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "데이터",
+      "moves": [
+        "역반강술법",
+        "태장계만다라"
+      ],
+      "excerpt": "여우 계열 디지몬이 오래 살아서 인간의 모습으로 변화했다고 알려진 신인형 디지몬. 샤크라몬은 그중에서도 높은 등급의 디지몬만이 진화할 수 있다고…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kuzuhamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10346,
+      "level": "궁극체",
+      "type": "머신형",
+      "attribute": "데이터",
+      "moves": [
+        "디스트로이드 크래시"
+      ],
+      "excerpt": "로코몬이 진화한 탈 것 계열 디지몬의 궁극체. 속도를 추구한 로코몬이 한계를 돌파해 네트워크 내부를 초스피드로 돌아다닌다. 경쟁심이 매우 강하고…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=grandlocomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10347,
+      "level": "궁극체",
+      "type": "환수형",
+      "attribute": "데이터",
+      "moves": [
+        "슈퍼 소닉 보이스"
+      ],
+      "excerpt": "새형 디지몬의 머리와 날개, 앞발을 지니고 있으며 몸통은 짐승형, 꼬리는 뱀 같은 것이 붙어 있는 합체 디지몬이다. 날개로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=griffomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10348,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "데이터",
+      "moves": [
+        "아일랜드 프리폴",
+        "버닝 블러드 셸",
+        "푸르츠 플레셰트"
+      ],
+      "excerpt": "올림포스 12신 중 하나로 디지털 월드에서 가장 맛있고 유명한 과일이 열리는 숲 『카르포스 휴레』를…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ceresmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10349,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "데이터",
+      "moves": [
+        "아일랜드 프리폴",
+        "버닝 블러드 셸",
+        "푸르츠 플레셰트"
+      ],
+      "excerpt": "올림포스 12신 중 하나로 디지털 월드에서 가장 맛있고 유명한 과일이 열리는 숲 『카르포스 휴레』를…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ceresmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10350,
+      "level": "궁극체",
+      "type": "고대짐승형",
+      "attribute": "데이터",
+      "moves": [
+        "네일 크러셔"
+      ],
+      "excerpt": "마하의 속도에 해당하는 순발력을 지녔다고 알려진 고대종 디지몬. 하지만 자세한 사항은 수수께끼에 싸여 있으며 레오몬이 짐승의 모습이 된 것이라는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=saberleomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10351,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "데이터",
+      "moves": [
+        "반강술법",
+        "금강계만다라"
+      ],
+      "excerpt": "신의 뜻을 대신 행하는 무녀의 역할을 하는 디지몬. 도사몬과 마찬가지로 음양도의 기술을 구사해 싸우며, 신수 계열 디지몬을 사역하는 능력을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=sakuyamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10352,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "데이터",
+      "moves": [
+        "철검성패",
+        "슈베르트 가이스트",
+        "아우스 제네릭스"
+      ],
+      "excerpt": "세이버헉몬의 가슴에 있는 크리스탈이 빛나며 완전을 뛰어넘은 궁극의 모습이 되었다. 네트워크 보안의 최고위 디지몬인 「로얄 나이츠」…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=jesmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10353,
+      "level": "궁극체",
+      "type": "사이보그형",
+      "attribute": "데이터",
+      "moves": [
+        "메가톤 하이드로 레이저",
+        "점보 크레이터",
+        "점보 제터"
+      ],
+      "excerpt": "금속으로 된 등껍질의 단단함을 희생해서까지 전신에 빔 발사구를 장착한 거대한 사이보그형 디지몬. 필살기는 입의…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=jumbogamemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10354,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "데이터",
+      "moves": [
+        "크레센트 하켄",
+        "애로 ･ 오브 ･ 아르테미스"
+      ],
+      "excerpt": "올림포스 12신 중 하나로 물과 얼음을 관장하며, 절대 영도의 상황에서도 전투할…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dianamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10355,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "데이터",
+      "moves": [
+        "드래곤즈 로어",
+        "브레스 ･ 오브 ･ 와이번"
+      ],
+      "excerpt": "성기사 \"로얄 나이츠\"의 일원으로 비룡의 능력을 지녔다. 로얄 나이츠 중에서도 특이한 존재로, 충성심이 강하고…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dynasmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10356,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "데이터",
+      "moves": [
+        "아우스 스타벤",
+        "에른스트 웰"
+      ],
+      "excerpt": "다른 로얄 나이츠조차 한 수 접고 들어간다는 굴지의 전략가이자 성기사형 디지몬. 각자 믿는 길을 가는 로얄 나이츠를…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=duftmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10357,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "데이터",
+      "moves": [
+        "볼켄크라쳐",
+        "블록카데",
+        "에아오베룽"
+      ],
+      "excerpt": "\"레오파드 모드\"에서는 대지에서 초고층의 암반을 나오게 해 적을 위로 쳐올리는 필살기 『볼켄크라쳐』와 지상에서 달린 후 하늘로 비상해 모든…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=duftmonleopardmode",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10358,
+      "level": "궁극체",
+      "type": "수룡형",
+      "attribute": "데이터",
+      "moves": [
+        "브레이브 메탈",
+        "도루딘"
+      ],
+      "excerpt": "도루고라몬이란 \"디지코어(전뇌핵)의 공상\"이 만들어낸 가공의 디지몬이다. 이마의 인터페이스에 의해 기적적으로 디지코어 자신의 창조력까지 방출되어 진화한 모습이다. 원래 디지코어…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dorugoramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10359,
+      "level": "궁극체",
+      "type": "사이보그형",
+      "attribute": "데이터",
+      "moves": [
+        "볼케닉 드라이버",
+        "다이아몬드 피스트"
+      ],
+      "excerpt": "7가지가 있다고 알려진 볼케몬의 진화 계열 중 하나. 무시무시한 힘과 파괴력을 지녔으며 프로레슬링을 비롯해 모든 격투기에 정통하다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=pilevolcamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10360,
+      "level": "궁극체",
+      "type": "돌연변이형",
+      "attribute": "데이터",
+      "moves": [
+        "스마일리 워헤드"
+      ],
+      "excerpt": "네트워크상의 왕가에 관한 데이터를 흡수한 콩알몬계의 왕자. 킹에테몬과 힘을 합쳐 디지털 월드의 가짜 왕가를 연기하고 있으며 이 때문에 굉장히…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=princemamemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10361,
+      "level": "궁극체",
+      "type": "수장룡형",
+      "attribute": "데이터",
+      "moves": [
+        "소로 블루"
+      ],
+      "excerpt": "영국 미확인 생물 연구소의 컴퓨터 내에서 발견된 공상에서나 존재하던 디지몬. 이미 연구자들 사이에서는 소문이 돌던 디지몬이었다. 좀처럼 모습을 드러내지…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=plesiomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10362,
+      "level": "궁극체",
+      "type": "사이보그형",
+      "attribute": "데이터",
+      "moves": [
+        "토마호크 공격"
+      ],
+      "excerpt": "안드로몬과 같은 시기에 만들어진 시범형 사이보그 디지몬. 기계 기반으로 만들어진 안드로몬과는 달리 육체 기반으로 만들어진 볼트몬은 감정을 지녔으며, 힘도…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=boltmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10363,
+      "level": "궁극체",
+      "type": "수기사형",
+      "attribute": "데이터",
+      "moves": [
+        "초승달 미라쥬",
+        "보름달 블래스터",
+        "게일 클로"
+      ],
+      "excerpt": "전신이 크롬 디지조이드 갑옷으로 덮인 수기사형 디지몬. 차원이 다른 속도로 이동하기에 적은 마치 신기루와 같은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=miragegaogamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 2012,
+      "level": "궁극체",
+      "type": "사이보그형",
+      "attribute": "데이터",
+      "moves": [
+        "코큐토스 브레스",
+        "가루 토마호크",
+        "그레이스 크로스 프리저"
+      ],
+      "excerpt": "거의 전신이 금속화 되면서 힘이 세진 가루몬의 최종 형태다. 금속화 후에도 예전의 민첩성은 잃지…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=metalgarurumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10365,
+      "level": "궁극체",
+      "type": "사이보그형",
+      "attribute": "데이터",
+      "moves": [
+        "얼티메이트 스트림"
+      ],
+      "excerpt": "전신이 초금속 크롬 디지조이드로 덮인 시드라몬종의 최종 형태. 이 금속으로 된 신체는 모든 공격을 튕겨낸다. 게다가 수생 디지몬 중에서는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=metalseadramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10366,
+      "level": "궁극체",
+      "type": "전사형",
+      "attribute": "데이터",
+      "moves": [
+        "레이지 ･ 오브 ･ 와이번"
+      ],
+      "excerpt": "다른 차원의 디지털 월드 \"윗체르니\"에서 \"전설의 영웅\"으로 칭송받는 전사형 디지몬. 마술(고급 프로그램 언어)이…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=medievaldukemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10367,
+      "level": "궁극체",
+      "type": "요정형",
+      "attribute": "데이터",
+      "moves": [
+        "쏜 위프",
+        "로제스 레이피어",
+        "숨겨진 유혹"
+      ],
+      "excerpt": "화초의 여왕이라고 불리는 장미의 모습을 한 요정형 디지몬. 아름다운 성인 여성의 모습으로 항상 아름다움을 유지하려…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=rosemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10368,
+      "level": "궁극체",
+      "type": "요정형",
+      "attribute": "데이터",
+      "moves": [
+        "서펜트 큐어",
+        "서펜트 루인",
+        "세븐즈 판타지아"
+      ],
+      "excerpt": "천계에 피는 꽃이라고 불리는 연꽃의 모습을 한 요정형 디지몬. 성격은 조용하고 기품 있는 아가씨 같으며,…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lotusmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10369,
+      "level": "궁극체",
+      "type": "용인형",
+      "attribute": "바이러스",
+      "moves": [
+        "미저리 불릿 레인",
+        "디스트럭션 트리거"
+      ],
+      "excerpt": "매그너키드몬에게 패한 디지몬의 복수심이 폭주해 부정적인 마음의 데이터가 디지코어에 과부하를 일으켜, 패배한 디지몬이 돌연변이로 변화를 이룬…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=avengekidmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10370,
+      "level": "궁극체",
+      "type": "사이보그형",
+      "attribute": "바이러스",
+      "moves": [
+        "브레인 럽처",
+        "플래닛 디스트로이어"
+      ],
+      "excerpt": "베이더몬을 포획한 후 몸을 구성하는 데이터를 분석, 개량해 인공적으로 만들어 낸 사이보그형 디지몬. 모 국가의 「에어리어 51」이라는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ebemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10371,
+      "level": "궁극체",
+      "type": "마수형",
+      "attribute": "바이러스",
+      "moves": [
+        "베놈 인퓨즈"
+      ],
+      "excerpt": "짐승의 하반신과 투구벌레 같은 외피로 된 상반신을 지닌 마수이며 어둠의 왕 묘티스몬이 진화한 진정한 모습이다. 숨겨둔 힘을 해방한 베놈묘티스몬은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=venomvamdemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10372,
+      "level": "궁극체",
+      "type": "고대돌연변이형",
+      "attribute": "바이러스",
+      "moves": [
+        "라플라스의 악마",
+        "엘더 사인"
+      ],
+      "excerpt": "고대 디지털 월드를 구한, \"강철\" 속성을 지닌 전설의 10투사 디지몬. 아득한 고대에 존재한 최초의 궁극체로, 디지털 월드에서…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ancientwisetmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10373,
+      "level": "궁극체",
+      "type": "용인형",
+      "attribute": "바이러스",
+      "moves": [
+        "인화참",
+        "가이아 리액터",
+        "인화격"
+      ],
+      "excerpt": "싸움에서 승리해 자신의 힘을 늘려가는 전투 종족 디지몬으로서 굉장히 우수한 그레이몬 계열의 아종인 용인형 디지몬. 동양의 어떤…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gaioumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10374,
+      "level": "궁극체",
+      "type": "암흑기사형",
+      "attribute": "바이러스",
+      "moves": [
+        "데몬즈 디제스터",
+        "쥬데카 프리즌"
+      ],
+      "excerpt": "바이러스종이라는 본능에 눈뜬 듀크몬의 또 다른 모습. 정신, 사고는 완전히 다크 사이드이며 디지털 월드에 재앙을 초래하는 \"디지털…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=chaosdukemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10375,
+      "level": "궁극체",
+      "type": "머신형",
+      "attribute": "바이러스",
+      "moves": [
+        "하이퍼 무한 캐논"
+      ],
+      "excerpt": "수많은 사이보그 계열 디지몬의 부품을 조합해 만들어진 파워드라몬은 상상 이상의 능력을 발휘해서 실험은 성공했다고 알려져 있다. 이러한 파워드라몬을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=chaosdramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10376,
+      "level": "궁극체",
+      "type": "마수형",
+      "attribute": "바이러스",
+      "moves": [
+        "딥 포레스트",
+        "로데오 불릿"
+      ],
+      "excerpt": "곰을 닮은 마수형 디지몬. 그리즈몬 계통이 진화하는 디지몬으로 주목받고 있지만, 예외 없이 데이터 이상을 일으킨 개체가 진화하는,…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=callismon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10377,
+      "level": "궁극체",
+      "type": "머신형",
+      "attribute": "바이러스",
+      "moves": [
+        "데어 블리츠",
+        "플라첸 크로이츠",
+        "게발트 슈베르머"
+      ],
+      "excerpt": "대량의 총기와 화기를 지닌 대형 디지몬. 눈에 띄는 사격 능력을 지녔으며 많은 디지몬들은 건드라몬, 매그너키드몬,…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gundramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10378,
+      "level": "궁극체",
+      "type": "퍼펫형",
+      "attribute": "바이러스",
+      "moves": [
+        "잔꾀 부리기"
+      ],
+      "excerpt": "자칭 「킹 오브 디지몬」인 에테몬 중에서도 더욱 정점에 있는 존재라고 알려진 궁극의 형태. 우쭐해져서 「킹 오보 킹스」라고 자신을 소개한다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kingetemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10379,
+      "level": "궁극체",
+      "type": "마수형",
+      "attribute": "바이러스",
+      "moves": [
+        "크리스탈 레볼루션",
+        "아이 오브 고르곤"
+      ],
+      "excerpt": "흡혈귀 디지몬의 왕으로 알려진 마수 디지몬. 옛날부터 다크 에어리어에 성을 지니고 있으며, 7대 마왕도 손을 대지…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=granddracumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10380,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "바이러스",
+      "moves": [
+        "핑거 봄",
+        "홀리 플레어",
+        "크로노 데볼루션"
+      ],
+      "excerpt": "크로노몬이 폭주한 모습. 시공의 평안을 유지하는 역할을 버리고, 시간을 관장하는 시스템에 반기를 들었다고 전해지는 전설…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=chronomon_destroy",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10381,
+      "level": "궁극체",
+      "type": "마인형",
+      "attribute": "바이러스",
+      "moves": [
+        "타수옥문",
+        "십자 베기"
+      ],
+      "excerpt": "말 탄 무사의 모습을 한 마인형 디지몬. 무사몬 군단의 장군으로 군림한 용맹한 장수다. 장군이면서 스스로 군단의 선두에 서서…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=zanbamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10382,
+      "level": "궁극체",
+      "type": "언데드형",
+      "attribute": "바이러스",
+      "moves": [
+        "해저드 홀드",
+        "헬스 슬라이스",
+        "추악한 꼭두각시"
+      ],
+      "excerpt": "수명을 다했을 플루토몬의 디지코어가 활동을 중단했음에도 몸만 움직이는 기묘한 상태. 이미 좀비플루토몬은 자유의사가 없으며 악을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=zombieplutomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10383,
+      "level": "궁극체",
+      "type": "사이보그형",
+      "attribute": "바이러스",
+      "moves": [
+        "다크 로어",
+        "기가 스틱랜스"
+      ],
+      "excerpt": "기계화 여단 「D-브리가드」의 최종 결전 병기로 추측되는 사이보그형 디지몬. 어디까지나 소문에 불과한 정보지만, 코드 네임 「BAN-TYO」라고 불리는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=darkdramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10384,
+      "level": "궁극체",
+      "type": "사이보그형",
+      "attribute": "바이러스",
+      "moves": [
+        "마하스팅거V"
+      ],
+      "excerpt": "수수께끼에 싸인 \"공중 비밀 기지 「로얄 베이스」\"를 지키는 사이보그형 디지몬. 베스파몬은 겉보기에 가늘고 날카로운 실루엣에서는 상상할 수 없을 정도의 경이로운…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tigervespamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10385,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "바이러스",
+      "moves": [
+        "혼백심격",
+        "환인무흔",
+        "호응명군"
+      ],
+      "excerpt": "디지털 월드의 지배권을 둘러싼 전쟁에서 올림포스 12신에게 패한 디지몬들의 원념으로부터 생겨난 역습의 거신 타이타몬. 1인 사단이라는 별명을 지녔으며…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=titamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10386,
+      "level": "궁극체",
+      "type": "곤충형",
+      "attribute": "바이러스",
+      "moves": [
+        "샤인 오브 비",
+        "비 사이클론"
+      ],
+      "excerpt": "모든 곤충형 디지몬을 지배하는 「벌레의 왕」이다. 어두운 숲의 땅속 깊은 곳에 있는 「언더 포레스트」를 근거지로 삼고…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tyrantkabuterimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10387,
+      "level": "궁극체",
+      "type": "마왕형",
+      "attribute": "바이러스",
+      "moves": [
+        "플레임 인페르노"
+      ],
+      "excerpt": "많은 악마형 디지몬과 타천사형 디지몬을 통솔하는 마왕형 디지몬. 마왕몬은 원래 데블몬 등과 마찬가지로 천사형 디지몬이었고 그중에서도 특히 등급이 높은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=demon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10388,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "바이러스",
+      "moves": [
+        "로얄 세이버",
+        "파이널 ･ 엘리시온"
+      ],
+      "excerpt": "오메가몬, 매그너몬과 함께 성기사형 디지몬은 \"로얄 나이츠\"라고 불린다. \"로얄 나이츠\"란 네트워크 보안의 최고위 디지몬으로, 이 디지몬들을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dukemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10389,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "바이러스",
+      "moves": [
+        "쿡 ･ 오브 ･ 더 ･ 헬"
+      ],
+      "excerpt": "올림포스 12신 중 하나로 디지털 월드에서 자칭 제일가는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=bacchusmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10390,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "바이러스",
+      "moves": [
+        "쿡 ･ 오브 ･ 더 ･ 헬"
+      ],
+      "excerpt": "올림포스 12신 중 하나로 디지털 월드에서 자칭 제일가는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=bacchusmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10391,
+      "level": "궁극체",
+      "type": "마왕형",
+      "attribute": "바이러스",
+      "moves": [
+        "데스 루어",
+        "팬더모디엄 로스트"
+      ],
+      "excerpt": "긴 수염을 기른 노인의 모습을 한 마왕형 디지몬으로 \"7대 마왕 디지몬\" 중 하나다. 악마의 소굴인 다크 에어리어의…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=barbamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10392,
+      "level": "궁극체",
+      "type": "마인형",
+      "attribute": "바이러스",
+      "moves": [
+        "트럼프검"
+      ],
+      "excerpt": "괴기스러운 모습으로 신출귀몰하며, 모든 것이 수수께끼에 싸여 있는 마인형 디지몬. 마인형 디지몬은 수수께끼에 싸인 부분이 많으며, 악마 계열과 언데드 계열과는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=piemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10393,
+      "level": "궁극체",
+      "type": "퍼펫형",
+      "attribute": "바이러스",
+      "moves": [
+        "피노키해머"
+      ],
+      "excerpt": "저주받은 쥬레이몬의 신체에서 만들어진 궁극의 퍼펫 디지몬. 아마 흉악한 해커 1명이 쥬레이몬의 데이터에서 이 피노키몬을 만들어 낸 것으로 보인다. 꼭두각시…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=pinochimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10394,
+      "level": "궁극체",
+      "type": "마인형",
+      "attribute": "바이러스",
+      "moves": [
+        "네크로미스트"
+      ],
+      "excerpt": "꺼림직할 만큼 황금으로 빛나는 궁극체의 마인형 디지몬. 미이라형 디지몬에서 진화한다고 알려져 있으며, 고대 디지털 월드에서 절대적인 권력을 자랑하며 많은 지역을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=pharaohmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10395,
+      "level": "궁극체",
+      "type": "돌연변이형",
+      "attribute": "바이러스",
+      "moves": [
+        "니들 스콜"
+      ],
+      "excerpt": "영국에서 제일가는 최강 해커가 자신이 지닌 지식을 모두 쏟아부은 컴퓨터 바이러스가 돌연변이를 일으켜 탄생한 영국산 펑크스 디지몬. 크기는 작지만…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=pukumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10396,
+      "level": "궁극체",
+      "type": "돌연변이형",
+      "attribute": "바이러스",
+      "moves": [
+        "엑스크리먼트",
+        "플래티넘 엑스크리먼트",
+        "플래티넘 버프"
+      ],
+      "excerpt": "디지털 월드에서 최초로 \"플래티넘 광산\"을 발견해 그 성분을 흡수하고 진화한 지극히 희귀한 워매몬. 이후 성격이 완전히…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=platinumnumemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10397,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "바이러스",
+      "moves": [
+        "해가드 클러스터",
+        "헬즈 게이트",
+        "케이오스 라이츠"
+      ],
+      "excerpt": "공포와 폭력으로 악을 토벌하고 저승을 다스리는 디지몬. 저승에 떨어질 만한 죄인과 악한 자를 찾아 세계를…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=plutomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10398,
+      "level": "궁극체",
+      "type": "기룡형",
+      "attribute": "바이러스",
+      "moves": [
+        "디스트로이드 러시",
+        "인피니티 보링",
+        "그래비티 프레스"
+      ],
+      "excerpt": "지상의 모든 것을 파괴하기 위해 존재한다고 알려진 거대한 기룡형 디지몬. 진화할 때 다양한 건설 중장비의…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=breakdramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10399,
+      "level": "궁극체",
+      "type": "마왕형",
+      "attribute": "바이러스",
+      "moves": [
+        "팬더모디엄 플레임"
+      ],
+      "excerpt": "묘티스몬의 최종 형태로 알려진 마왕형 디지몬. 힘을 추구한 나머지 짐승처럼 지성을 잃어버리게 된 베놈묘티스몬과 달리, 지성도 겸비해 모든 면에서…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=belialvamdemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10400,
+      "level": "궁극체",
+      "type": "마인형",
+      "attribute": "바이러스",
+      "moves": [
+        "플라이 불릿",
+        "더블 크로우",
+        "허리케인 스크류 샷"
+      ],
+      "excerpt": "권총 2개를 화려하게 조종하는 모습에서 「베르제브몬 레이디」라고도 불리는 디지몬. 애용하는 2개의 권총 『리조마 데…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=beelstarmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10401,
+      "level": "궁극체",
+      "type": "마왕형",
+      "attribute": "바이러스",
+      "moves": [
+        "다크니스 크로우",
+        "더블 임팩트"
+      ],
+      "excerpt": "많은 악마형 디지몬을 통솔하는 능력을 지니고도 고고한 존재를 지키는 마왕형 디지몬. \"7대 마왕 디지몬\" 중 하나로, 마음만…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=beelzebumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10402,
+      "level": "궁극체",
+      "type": "마왕형",
+      "attribute": "바이러스",
+      "moves": [
+        "이터널 나이트메어",
+        "람프란투스"
+      ],
+      "excerpt": "다크 에어리어의 가장 깊은 곳에 봉인됐다고 알려진 마왕 디지몬. 너무 강한 힘을 지녔기에 디지털 월드의 시스템에 의해 데이터가…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=belphemonsleepmode",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10403,
+      "level": "궁극체",
+      "type": "용인형",
+      "attribute": "바이러스",
+      "moves": [
+        "바인드 레드 트리거",
+        "해피 불릿 샤워링"
+      ],
+      "excerpt": "전신에 총기 장치를 갖춘 용인형 디지몬. 뿔뿔이 흩어진 동료들을 찾아 디지털 월드를…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=magnakidmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10404,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "바이러스",
+      "moves": [
+        "스트라이크 롤",
+        "매드니스 메리 고 라운드"
+      ],
+      "excerpt": "올림포스 12신에 속하는 소녀의 모습을 한 신인형 디지몬. 몸집은 매우 작지만 자신의 키만큼 큰 대검을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=minervamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10405,
+      "level": "궁극체",
+      "type": "합성형",
+      "attribute": "바이러스",
+      "moves": [
+        "타임 언리미티드"
+      ],
+      "excerpt": "압도적인 힘을 지닌 파워드라몬과 여러 강력한 디지몬의 데이터를 지닌 키메라몬이 융합한 궁극의 합성형 디지몬. 쓰러뜨리는 건 불가능하다고 알려져 있지만…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=millenniumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10406,
+      "level": "궁극체",
+      "type": "머신형",
+      "attribute": "바이러스",
+      "moves": [
+        "∞캐논"
+      ],
+      "excerpt": "전신이 100% 풀 메탈인 디지털 월드 최강의 디지몬. 수많은 사이보그 계열 디지몬의 부품을 조합해 만들어졌으며 지금까지 제조된 사이보그 계열 디지몬은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mugendramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10407,
+      "level": "궁극체",
+      "type": "사룡형",
+      "attribute": "바이러스",
+      "moves": [
+        "헬 ･ 하울링",
+        "메기도 플레임"
+      ],
+      "excerpt": "용형 디지몬 중에서 가장 흉악하고 사악한 디지몬. 청룡몬, 갓드라몬, 홀리드라몬과 같은 사대 드래곤 디지몬 중 하나이지만,…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=megidramon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10408,
+      "level": "궁극체",
+      "type": "사이보그형",
+      "attribute": "바이러스",
+      "moves": [
+        "바나나 슬립"
+      ],
+      "excerpt": "옛날에 \"킹 오브 디지몬\".이라고 불리던 최강의 디지몬이 있었다. 강자를 찾아 가혹한 전투의 여정을 거쳐 귀중한 전투 데이터를 얻었지만, 계속된…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=metaletemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10409,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "바이러스",
+      "moves": [
+        "사우전드 피스트",
+        "스피리츄얼 인챈트"
+      ],
+      "excerpt": "올림포스 12신 중 하나로 디지털 월드에서 가장 빠른 속도를 자랑하는 준신 디지몬. 굉장히 빠른 발을 지녔기에 육안으로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mercurymon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10410,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "바이러스",
+      "moves": [
+        "니들 하이브",
+        "그레이스 랜스",
+        "러브 바스켓"
+      ],
+      "excerpt": "유피테르몬의 파트너이자 올림포스 12신 중 하나다. 유피테르몬을 사랑하기에 지키는 자로서 전쟁터에 나서며, 유피테르몬의 뜻을 거역하는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=junomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10411,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "바이러스",
+      "moves": [
+        "월컴 로스트",
+        "링러지",
+        "라이어 배니시먼트"
+      ],
+      "excerpt": "마음 깊은 곳에 잠들어 있던 악의 인격이 깨어난 유노몬의 다른 모습. 사랑하는 유피테르몬을 향한 저항 세력이…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=junomon_hysteric",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10412,
+      "level": "궁극체",
+      "type": "사이보그형",
+      "attribute": "바이러스",
+      "moves": [
+        "테러즈 클러스터",
+        "러스트 브레스"
+      ],
+      "excerpt": "디지털 월드가 창조됐을 때부터 오랜 기간에 걸친 격전을 진화와 함께 헤쳐온 티라노몬의 궁극체. 메탈티라노몬 때부터 매우 가혹한…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=rusttyranomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10413,
+      "level": "궁극체",
+      "type": "마왕형",
+      "attribute": "바이러스",
+      "moves": [
+        "로스트룸",
+        "카우다"
+      ],
+      "excerpt": "그 괴물이 지닌 너무나 강대한 힘에 대한 공포로 \"악마수\"라고 불리며, \"7대 마왕 디지몬\" 중 하나로 꼽히는 디지털 월드 최강의…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=leviamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10414,
+      "level": "궁극체",
+      "type": "마왕형",
+      "attribute": "바이러스",
+      "moves": [
+        "팬텀 페인"
+      ],
+      "excerpt": "여성의 모습을 한 마왕형 디지몬으로 \"7대 마왕\" 디지몬 중 하나이기도 하다. 원래는 오파니몬과 같은 종족이었던 것으로 보이며, 타락해 \"암흑의…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lilithmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10415,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "바이러스",
+      "moves": [
+        "스파이럴 마스커레이드",
+        "아젠트 피어"
+      ],
+      "excerpt": "모든 나이트몬을 통솔하는 왕이며 \"로얄 나이츠\"의 일원이기도 한 성기사형 디지몬. 로드나이트몬은 선악의 기준보다 자신이 생각하는 \"정의\"에 충실하며,…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lordknightmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10416,
+      "level": "궁극체",
+      "type": "고대용형",
+      "attribute": "프리",
+      "moves": [
+        "메가 데스"
+      ],
+      "excerpt": "고대에 존재한 궁극의 고대용형 디지몬. 다른 디지몬과는 존재나 능력 면에서 확실히 구별된다. 또한 황제드라몬은 용 형태(드래곤 모드)라고 불리지만, 모든…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=imperialdramondragonmode",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10417,
+      "level": "궁극체",
+      "type": "고대용인형",
+      "attribute": "프리",
+      "moves": [
+        "포지트론 레이저",
+        "기가 데스"
+      ],
+      "excerpt": "고대용형 디지몬의 황제드라몬: 드래곤 모드가 모두 힘을 해방하고 전설의 용전사(파이터 모드)로 형태를 변화시킨 모습. 제어하기 어려웠던 드래곤…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=imperialdramonfightermode",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10418,
+      "level": "궁극체",
+      "type": "수인형",
+      "attribute": "프리",
+      "moves": [
+        "아크틱 블리자드",
+        "묠니르"
+      ],
+      "excerpt": "절대 녹지 않는 영구 동토의 극한의 땅을 다스리는 수인형 궁극체 디지몬. 털은 얼음의 결정처럼 바뀌었으며 크롬 디지조이드와 같은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=vikemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10419,
+      "level": "궁극체",
+      "type": "전사형",
+      "attribute": "프리",
+      "moves": [
+        "펜릴 소드",
+        "아우르반딜의 화살"
+      ],
+      "excerpt": "북유럽 신화에도 등장하는 전사형 디지몬. 황금의 새 「프레이아」를 데리고 있어 몸에 위험이 닥치면 알려준다. 또한, 입고 있는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=valkyrimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10420,
+      "level": "궁극체",
+      "type": "곤충형",
+      "attribute": "프리",
+      "moves": [
+        "디멘션 시저"
+      ],
+      "excerpt": "쿠가몬 계열 디지몬의 궁극 형태. 곤충형 디지몬 중에서도 특히 사악한 존재로 디지털 월드에서 그랜쿠가몬을 만났다면 자신을 저주하는 수밖에 없다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=grankuwagamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10421,
+      "level": "궁극체",
+      "type": "종족불명",
+      "attribute": "불명",
+      "moves": [
+        "캐논발사"
+      ],
+      "excerpt": "네트워크상의 모든 데이터를 흡수하고 진화와 거대화를 반복해, 전뇌 세계(디지털 월드)에서 극단적으로 파괴를 일삼고 있다. 많은 데이터와 지식을 흡수한 디아블로몬은 자신을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=diablomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10422,
+      "level": "아머체",
+      "type": "성기사형",
+      "attribute": "백신",
+      "moves": [
+        "래비드 파이어",
+        "골든 트라이앵글"
+      ],
+      "excerpt": "가르고몬이 진화한 사이보그형 디지몬. 「민첩한 사냥개」라는 별명을 지녔으며 광속에 가까운 움직임으로 적을 확실하게 제거한다. 또한, 거대한 귀…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=rapidmon_gold",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10423,
+      "level": "아머체",
+      "type": "성기사형",
+      "attribute": "프리",
+      "moves": [
+        "플라즈마 슛",
+        "샤이닝 골드 솔라 스톰"
+      ],
+      "excerpt": "\"기적의 캡슐\"의 힘으로 진화한 아머체 성기사형 디지몬. \"기적의 캡슐\"은 \"금속\" 속성을 지녔으며 초금속 「크롬 디지조이드」로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=magnamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10424,
+      "level": "하이브리드체",
+      "type": "용전사형",
+      "attribute": "배리어블",
+      "moves": [
+        "염룡격",
+        "구두룡진"
+      ],
+      "excerpt": "전설 10투사의 힘을 뛰어넘는다고 전해지는 불꽃의 능력을 지닌 초월종 디지몬. 대지(가이아)를 흐르는 9개의 용맥의 힘을 체내에 지녔다고 알려져 있으며,…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kaisergreymon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10425,
+      "level": "하이브리드체",
+      "type": "사이보그형",
+      "attribute": "배리어블",
+      "moves": [
+        "머신건 디스트로이",
+        "스타라이트 벨로시티"
+      ],
+      "excerpt": "전설 10투사의 힘을 뛰어넘는다고 전해지는 빛의 능력을 지닌 초월종 디지몬. 특기는 광속 이동이며 비행 유닛을 장착했을 때는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=magnagarurumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10426,
+      "level": "하이브리드체",
+      "type": "사이보그형",
+      "attribute": "배리어블",
+      "moves": [
+        "머신건 디스트로이",
+        "스타라이트 벨로시티"
+      ],
+      "excerpt": "전설 10투사의 힘을 뛰어넘는다고 전해지는 빛의 능력을 지닌 초월종 디지몬. 특기는 광속 이동이며 비행 유닛을 장착했을 때는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=magnagarurumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10427,
+      "level": "궁극체",
+      "type": "NO DATA",
+      "attribute": "백신",
+      "moves": [
+        "궁극전인 왕룡검"
+      ],
+      "excerpt": "알파몬이 펼친 디지털 문자 마법진의 작용으로 오류우몬이 기적적인 진화를 이뤄내 검이 된 모습. 오류우몬은 한층 더 높은 전투력을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=alphamon:ouryuken",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10428,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "백신",
+      "moves": [
+        "루스리스 차지"
+      ],
+      "excerpt": "극히 드물기는 하지만 일부 로얄 나이츠는 주어진 임무를 수행하기 위해 파견된 장소에 있는 디지몬을 협력자로 징용하기도 한다. 협력자를 구하는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=craniummon_enbarrmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10429,
+      "level": "궁극체",
+      "type": "고대성기사형",
+      "attribute": "백신",
+      "moves": [
+        "오메가 블레이드"
+      ],
+      "excerpt": "용전사 디지몬의 황제드라몬: 파이터 모드가 성기사 오메가몬의 힘을 얻어 강화한 후 전설의 성기사(팔라딘 모드)로 형태를 바꾼 모습. 이것이 옛날부터…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=imperialdramonpaladinmode",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10430,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "백신",
+      "moves": [
+        "가루루 캐논",
+        "그레이 소드"
+      ],
+      "excerpt": "바이러스 버스터인 워그레이몬, 메탈가루몬이 선을 바라는 사람들의 강한 의지에 의해 융합해 탄생한 \"로얄 나이츠\"의 일원인 성기사형 디지몬.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=omegamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10431,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "백신",
+      "moves": [
+        "가루루 캐논",
+        "그레이 소드"
+      ],
+      "excerpt": "바이러스 버스터인 워그레이몬, 메탈가루몬이 선을 바라는 사람들의 강한 의지에 의해 융합해 탄생한 \"로얄 나이츠\"의 일원인 성기사형 디지몬.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=omegamon_zwart",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10432,
+      "level": "궁극체",
+      "type": "특이형",
+      "attribute": "백신",
+      "moves": [
+        "패왕양단검",
+        "다크 프로미넌스"
+      ],
+      "excerpt": "평소 조그레스할 때는 디지몬 2마리의 디지코어가 완전히 융합해 새로운 디지몬으로 다시 태어나지만, 카오스몬은 조그레스 전 디지몬의 디지코어를 각각…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=chaosmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10433,
+      "level": "궁극체",
+      "type": "특이형",
+      "attribute": "백신",
+      "moves": [
+        "패왕양단검",
+        "오로라 블래스터"
+      ],
+      "excerpt": "평소 조그레스할 때는 디지몬 2마리의 디지코어가 완전히 융합해 새로운 디지몬으로 다시 태어나지만, 카오스몬은 조그레스 전 디지몬의 디지코어를 각각…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=chaosmonvaldurarm",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10434,
+      "level": "궁극체",
+      "type": "은하형",
+      "attribute": "백신",
+      "moves": [
+        "이클립스 핑거",
+        "칼리돈 아르쿠스"
+      ],
+      "excerpt": "과거 디지털 월드 일리아스에 전대미문의 위기가 닥쳤을 때 올림포스 12신인 아폴로몬과 디아나몬이 합체해 탄생했다고 알려진 환상의 은하형…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gracenovamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10435,
+      "level": "궁극체",
+      "type": "광룡형",
+      "attribute": "백신",
+      "moves": [
+        "코로나 블레이즈 소드",
+        "최후의일격",
+        "토리드 바이스"
+      ],
+      "excerpt": "샤인그레이몬이 버스트 진화를 통해 일시적으로 한계 능력을 발동하여, 태양급의 강한 에너지를 지닌 불꽃과 오라를 휘감은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=shinegreymonburstmode",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10436,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "백신",
+      "moves": [
+        "천우우참",
+        "팔뢰신"
+      ],
+      "excerpt": "동방의 전승으로 전해지는 최강의 파괴 신이자 재생을 관장하는 신. 네트워크 시스템에 이상이 발생했을 때 강림하며, 기존의 시스템을 무로 만들고…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=susanoomon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10437,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "백신",
+      "moves": [
+        "케라우노스디바이드",
+        "라이트닝 비",
+        "디오스 썬더"
+      ],
+      "excerpt": "평소 감정을 섞지 않고 단죄를 내리는 유피테르몬이지만 분노가 사그라들지 않는 죄를 저지른 상대와 대치했을 때는 완전히…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=jupitermmon_wrath",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10438,
+      "level": "궁극체",
+      "type": "사이보그형",
+      "attribute": "백신",
+      "moves": [
+        "무쌍천상익지진",
+        "노도암공상지무",
+        "뇌광 일섬 찌르기"
+      ],
+      "excerpt": "레이브몬이 버스트 진화를 통해 일시적으로 한계 능력을 발동하여, 대기 중의 모든 에너지를 오라로 휘감은 특수한 모습이다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ravmonburstmode",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10439,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "데이터",
+      "moves": [
+        "아발론즈 게이트",
+        "팬드래곤즈 글로리",
+        "드래고닉 임팩트"
+      ],
+      "excerpt": "디지털 월드의 성스러운 수호자 「로얄 나이츠」 중 하나인 성기사형 디지몬. 터무니없게 많은 데이터를 지닌 디지몬으로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=examon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10440,
+      "level": "궁극체",
+      "type": "수기사형",
+      "attribute": "데이터",
+      "moves": [
+        "보름달 유성 충격",
+        "최후의신기루",
+        "루나 하켄 슬래셔"
+      ],
+      "excerpt": "미라쥬가오가몬이 버스트 진화를 통해 일시적으로 한계 능력을 발동하여, 행성급의 강한 에너지를 지닌 무기와 오라를…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=miragegaogamon:burstmode",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10441,
+      "level": "궁극체",
+      "type": "요정형",
+      "attribute": "데이터",
+      "moves": [
+        "샤리테",
+        "생명의키스"
+      ],
+      "excerpt": "로제몬이 버스트 진화를 통해 일시적으로 한계 능력을 발동하여, 사랑과 아름다움의 오라를 휘감은 특수한 모습이다. 필살기는 오라의 망토를 늘려 상냥하게…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=rosemonburstmode",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10442,
+      "level": "궁극체",
+      "type": "신인형",
+      "attribute": "바이러스",
+      "moves": [
+        "천진귀신참"
+      ],
+      "excerpt": "감정이 없다고 여겨지는 스컬벌키몬을 타이타몬이 힘으로 굴복시켜 길들였다. 타이타몬의 유일한 약점이었던 기동력도 보완되어 전쟁터를 종횡무진 뛰어다니는 모습은 그야말로 귀신 그…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=titamon_skullbaluchimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10443,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "바이러스",
+      "moves": [
+        "인빈시블 소드",
+        "쿼 ･ 바디스"
+      ],
+      "excerpt": "진홍색으로 빛나는 갑옷을 입은 듀크몬의 숨겨진 모습. 힘을 모두 드러냈기에 갑옷 부분이 열을 지닌 붉은색으로 물들어…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dukemoncrimsonmode",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10444,
+      "level": "궁극체",
+      "type": "마왕형",
+      "attribute": "바이러스",
+      "moves": [
+        "데스 슬링거",
+        "카오스 플레어"
+      ],
+      "excerpt": "힘과 정신을 극한까지 높인 궁극의 마왕. 사악하게 진화한 것과 달리 더 안정적인 정신 상태를 지니고 있으며 꺼림직하던…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=beelzebumonblastmode",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10445,
+      "level": "궁극체",
+      "type": "마왕형",
+      "attribute": "바이러스",
+      "moves": [
+        "람프란투스",
+        "기프트 오브 다크네스"
+      ],
+      "excerpt": "벨페몬은 천 년에 한 번 주기로 긴 잠에서 깨어나 본래의 모습을 되찾는다고 한다. 잠에서 깬 벨페몬은 분노의…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=belphemonragemode",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10446,
+      "level": "궁극체 (크로스워즈)",
+      "type": "신인형",
+      "attribute": "바이러스",
+      "moves": [
+        "나이트 스토커",
+        "러브 포이즌"
+      ],
+      "excerpt": "올림포스 12신에 속하는 여성의 모습을 한 신인형 디지몬. 미네르바몬이…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mervamon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10447,
+      "level": "궁극체",
+      "type": "마신형",
+      "attribute": "바이러스",
+      "moves": [
+        "퍼가토리얼 플레임",
+        "디바인 어톤먼트"
+      ],
+      "excerpt": "묵시록에 등장하는 용의 모습을 한 루체몬의 최종 형태. 묵시록에서 전해지듯이 머리 위에는 7개의 대죄의 관을 쓰고 모든…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lucemonsatanmode",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10448,
+      "level": "궁극체",
+      "type": "종족불명",
+      "attribute": "불명",
+      "moves": [
+        "블랙 레인",
+        "얼티메이트 플레어"
+      ],
+      "excerpt": "디아블로몬의 유년기가 대량으로 융합해 돌연변이를 일으켜 탄생한 초궁극체 디지몬. 디아블로몬은 자신을 대량으로 복사하는 능력을 지니고 있지만 복사하면…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=armagemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10449,
+      "level": "궁극체",
+      "type": "불명",
+      "attribute": "불명",
+      "moves": [
+        "레드 리머",
+        "﻿스트래시 샐러맨더",
+        "가이아 브레이브"
+      ],
+      "excerpt": "아구몬과 파트너 사이에 맺어진 깊은 유대 관계, 무한의 가능성의 끝에 실현된 전설이자 최후의 진화. 파트너가…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=agumon_kizuna",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10450,
+      "level": "궁극체",
+      "type": "종족불명",
+      "attribute": "불명",
+      "moves": [
+        "다크니스 존"
+      ],
+      "excerpt": "부패한 사념이 어둠의 힘으로 모여 출현한 수수께끼의 디지몬. 정체를 아는 자는 아무도 없으며 이 물체가 디지몬인지도 분석할 수 없다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=apoclymon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10451,
+      "level": "궁극체",
+      "type": "불명",
+      "attribute": "불명",
+      "moves": [
+        "풀 메탈 머신건",
+        "쿨 엣지",
+        "문 텐스"
+      ],
+      "excerpt": "파피몬과 파트너 사이에 맺어진 깊은 유대 관계, 무한의 가능성의 끝에 실현된 전설이자…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gabumon_kizuna",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10452,
+      "level": "궁극체",
+      "type": "수기사형",
+      "attribute": "데이터",
+      "moves": [
+        "황수언월도",
+        "수랑대회전",
+        "격 ･ 빙월아"
+      ],
+      "excerpt": "가루몬의 최종 형태로, 같은 최종 형태인 지드가루몬과는 달리 인간형이 된 메탈가루몬의 아종이다. 공격을 받아치는 골드 디지조이드…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=cresgarurumon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10453,
+      "level": "궁극체",
+      "type": "돌연변이형",
+      "attribute": "바이러스",
+      "moves": [
+        "앱소번트 뱅",
+        "엔드리스 트랜스"
+      ],
+      "excerpt": "다른 차원의 디지몬 월드를 자유롭게 오갈 수 있는 돌연변이형 디지몬. 건너간 세계에서 디지몬의 데이터를 먹어 치우는 흉악한…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=parallelmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10454,
+      "level": "궁극체",
+      "type": "사이보그형",
+      "attribute": "바이러스",
+      "moves": [
+        "플라즈마 스테이크",
+        "썬더 버니어",
+        "일렉 가드"
+      ],
+      "excerpt": "그레이몬 계열 디지몬의 궁국 형태로 전류와 총포를 갖춘 워그레이몬의 아종. 묵직한 격투전에 전기 충격을 더해…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=blitzgreymon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10455,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "바이러스",
+      "moves": [
+        "가루 소드",
+        "그레이 캐논"
+      ],
+      "excerpt": "누군가가 오메가몬 Alter-S에게 모습을 검게 바꿔버리는 분비물 \"블랙 디지트론\"을 어떠한 의도로 주입해 일시적으로 검은 모습이 되었다. 이…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=omegamon_alter-b",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10456,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "바이러스",
+      "moves": [
+        "가루 소드",
+        "그레이 캐논"
+      ],
+      "excerpt": "워그레이몬의 아종 \"블리츠그레이몬\"과 메탈가루몬의 아종 \"크레스가루몬\"이 융합해 탄생한 오메가몬의 새로운 일면이다. \"로얄 나이츠\"에 소속된 오메가몬과는 별개의 개체지만…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=omegamon-alter-s",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10457,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "바이러스",
+      "moves": [
+        "가루루 캐논",
+        "그레이 소드"
+      ],
+      "excerpt": "누군가 오메가몬 즈왈트에게 바이러스 프로그램을 주입해 광전사가 된 모습. 시야에 비치는 디지몬은 모두 불길한 적으로 보이기에 접근하는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=omegamonzwart_d",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10458,
+      "level": "궁극체",
+      "type": "돌연변이형",
+      "attribute": "데이터",
+      "moves": [
+        "골든 러시",
+        "천본폭쇄",
+        "특공 사나이탄"
+      ],
+      "excerpt": "몸집은 작지만 싸움에 강하고 의협심이 넘치며 정이 많은 성격으로, 「반쵸」라는 칭호를 지닌 디지몬 중 하나. 디지털…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=banchomamemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10459,
+      "level": "궁극체",
+      "type": "요정형",
+      "attribute": "데이터",
+      "moves": [
+        "앱솔루트 테러토리",
+        "나이트메어 어셈블",
+        "트윈 페탈"
+      ],
+      "excerpt": "진홍색의 특공복을 입은 요정형 디지몬. 릴리몬 시절 화려했던 꽃잎은 어두운색으로 물들었으며 예전의 가련한 인상은 없다.…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=bancholilimon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10460,
+      "level": "궁극체",
+      "type": "광물형",
+      "attribute": "바이러스",
+      "moves": [
+        "텐파가에시",
+        "칸샤쿠 더스트",
+        "요보리 클로 드릴"
+      ],
+      "excerpt": "감정이 없는 일반적인 록몬과 달리 자신의 의지로 행동하는 광물형 디지몬으로, 「반쵸」라는 칭호를 지닌 디지몬 중…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=banchogolemon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10461,
+      "level": "궁극체",
+      "type": "곤충형",
+      "attribute": "프리",
+      "moves": [
+        "블러디 피니시",
+        "폭뢰천",
+        "레드 버트"
+      ],
+      "excerpt": "자존심이 매우 세서 항상 주위를 억압하며 살아가는 곤충형 디지몬. 모든 것 중 자신의 자존심을 우선시하며 높은…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=banchostingmon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10462,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "백신",
+      "moves": [
+        "아류류포",
+        "우령도"
+      ],
+      "excerpt": "머플러처럼 나부끼는 흰 날개를 지닌 마치 천사와 같은 모습의 오메가몬. 싸우고 쓰러뜨려야만 구할 수 있는 자가 있음을 깨달은 오메가몬이…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=omegamon_merciful",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10463,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "백신",
+      "moves": [
+        "샤이닝 V 포스"
+      ],
+      "excerpt": "고대 디지털 월드에서 전해지는 한 \"예언\"에서만 등장하는 전설의 기사 디지몬. 그 \"예언\"에는 네트워크의 수호신 \"로얄 나이츠\"의 출현이 나와…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ulforcevdramon_x",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10464,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "백신",
+      "moves": [
+        "플라즈마 슛",
+        "샤이닝 골드 솔라 스톰"
+      ],
+      "excerpt": "\"기적의 캡슐\"의 힘으로 진화한 아머체 성기사형 디지몬. \"기적의 캡슐\"은 \"금속\" 속성을 지녔으며 초금속 「크롬 디지조이드」로…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=magnamon_x",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10465,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "데이터",
+      "moves": [
+        "철권단죄",
+        "슈베르트 플뤼겔",
+        "궁극전인 성패검"
+      ],
+      "excerpt": "세이버헉몬의 가슴에 있는 크리스탈이 빛나며 완전을 뛰어넘은 궁극의 모습이 되었다. 네트워크 보안의 최고위 디지몬인 「로얄 나이츠」…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=jesmon_x",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10466,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "바이러스",
+      "moves": [
+        "지크 세이버",
+        "파이널 ･ 엘리시온"
+      ],
+      "excerpt": "오메가몬, 매그너몬과 함께 성기사형 디지몬은 \"로얄 나이츠\"라고 불린다. \"로얄 나이츠\"란 네트워크 보안의 최고위 디지몬으로, 이 디지몬들을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dukemon_x",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10467,
+      "level": "궁극체",
+      "type": "성기사형",
+      "attribute": "백신",
+      "moves": [
+        "가루루 캐논",
+        "그레이 소드",
+        "올 딜리트"
+      ],
+      "excerpt": "바이러스 버스터인 워그레이몬, 메탈가루몬이 선을 바라는 사람들의 강한 의지에 의해 융합해 탄생했다. 2개의 특성을 겸비한…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=omegamon-x",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10468,
+      "level": "성장기",
+      "type": "파충류형",
+      "attribute": "바이러스",
+      "moves": [
+        "베이비 플레임"
+      ],
+      "excerpt": "바이러스종으로 진화해 야생 본능에 눈떠 버린 아구몬. 두려움을 모르는 정도가 아니라 포악한 성격이 돼서, 사냥감을 노릴 때의 예리함은 백신종…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=agumon-black",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10469,
+      "level": "성장기",
+      "type": "파충류형",
+      "attribute": "바이러스",
+      "moves": [
+        "쁘띠 파이어"
+      ],
+      "excerpt": "바이러스종으로 진화한 파피몬. 쓰고 있는 털가죽은 바이러스종인 가루몬의 데이터를 모아서 만든 듯하다. 난폭한 성격이지만 털가죽을 벗으면 내성적이고 겁이 많아지는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gabumon_black",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10470,
+      "level": "성숙기",
+      "type": "짐승형",
+      "attribute": "바이러스",
+      "moves": [
+        "푸른화염포"
+      ],
+      "excerpt": "바이러스종인 가루몬. 어깨에 뻗어 있는 칼날은 닿는 모든 것을 난도질해버릴 정도로 강렬하다. 뼈를 모으는 것을 좋아해 땅속에 묻어 놓지만, 장난을…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=garurumon_black",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10471,
+      "level": "성숙기",
+      "type": "공룡형",
+      "attribute": "바이러스",
+      "moves": [
+        "메가파이어"
+      ],
+      "excerpt": "검푸른 체색을 지닌 바이러스종 그레이몬. 난폭성이 늘어 확실히 야생 그레이몬이라고 부를 수는 있지만, 결코 혼자 행동하지 않고 동료와 팀플레이를 할…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=greymon_blue",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10472,
+      "level": "완전체",
+      "type": "사이보그형",
+      "attribute": "바이러스",
+      "moves": [
+        "기가 디스트로이어"
+      ],
+      "excerpt": "몸의 절반 이상을 기계화한 사이보그형 최강 디지몬. 수많은 싸움을 거치고 그 몸을 기계화해 오래 살고 있다. 메탈그레이몬으로 진화하기 위해서는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=metalgreymon-web",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10473,
+      "level": "완전체",
+      "type": "수인형",
+      "attribute": "바이러스",
+      "moves": [
+        "카이저 네일"
+      ],
+      "excerpt": "바이러스종인 가루몬에서 진화한 디지몬. 다리가 2개가 되어 속도는 떨어졌지만 그만큼 강한 공격력으로 양팔을 사용하는 기술을 습득했다. 필살기는 양팔에 있는…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=weregarurumon_black",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10474,
+      "level": "궁극체",
+      "type": "용인형",
+      "attribute": "바이러스",
+      "moves": [
+        "다크 가이아 포스"
+      ],
+      "excerpt": "\"칠흑의 용 전사\"라고 불리는 두려운 존재인 바이러스종 워그레이몬. 바이러스 버스터즈인 워그레이몬과는 신조도, 주의도 모두 정반대이지만, 블랙워그레이몬 나름대로 \"정의\"를…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=blackwargreymon",
+      "language": "ko",
+      "isExcerpt": true
+    },
+    {
+      "id": 10475,
+      "level": "궁극체",
+      "type": "사이보그형",
+      "attribute": "바이러스",
+      "moves": [
+        "코큐토스 브레스",
+        "가루 토마호크",
+        "그레이스 크로스 프리저"
+      ],
+      "excerpt": "온몸에 냉기 계열의 무기를 장착한 바이러스종 메탈가루몬. 코끝에 있는 「레이저 사이트」에서 목표물을 포착하면 적,…",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=metalgarurumon_black",
+      "language": "ko",
+      "isExcerpt": true
+    }
+  ]
+}

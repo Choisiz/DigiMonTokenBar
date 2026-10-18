@@ -7,6 +7,19 @@ import XCTest
 /// have read Korean. Scan the UI sources instead and require Hangul to live in `Localization.swift`.
 /// (Korean *comments* are the house style and stay allowed — only string literals are offenders.)
 final class LocalizedUILiteralTests: XCTestCase {
+    func testDigimonInterfaceCountsAndEnglishFallback() {
+        let key = "Evolution / continuation ready · {0}"
+        XCTAssertEqual(L(.ko).digimonUI(key, ["42"]), "진화·이어 키우기 가능 · 42")
+        XCTAssertEqual(L(.en).digimonUI(key, ["42"]), "Evolution / continuation ready · 42")
+        for language in AppLanguage.allCases {
+            for key in L.digimonInterfaceCopy.keys {
+                let value = L(language).digimonUI(key, ["42"])
+                XCTAssertFalse(value.isEmpty)
+                XCTAssertFalse(value.contains("{0}"))
+                if language != .ko { XCTAssertNil(value.range(of: "[가-힣]", options: .regularExpression)) }
+            }
+        }
+    }
     func testNoHangulStringLiteralsInUISources() throws {
         let ui = URL(fileURLWithPath: #filePath)
             .deletingLastPathComponent()    // PokeTokenBarTests

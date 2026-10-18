@@ -915,7 +915,7 @@ final class CandyNotificationCopyTests: XCTestCase {
         let l = L(.ko)
         let one = l.notifCandyTitle(item: l.itemName(.rareCandy), count: 1)
         let five = l.notifCandyTitle(item: l.itemName(.rareCandy), count: 5)
-        XCTAssertTrue(one.contains("이상한 사탕"))
+        XCTAssertTrue(one.contains("펜던트"))
         XCTAssertTrue(one.contains("1개"), one)
         XCTAssertTrue(five.contains("5개"), five)
     }

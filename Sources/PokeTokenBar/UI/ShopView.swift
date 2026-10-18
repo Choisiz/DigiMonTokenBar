@@ -13,6 +13,7 @@ struct ShopView: View {
         // 고정 높이 — 컬렉션/가방과 동일(팝오버 재오픈 시 fitting size 축소 방지).
         ScrollView {
             VStack(alignment: .leading, spacing: 10) {
+                CyberSectionHeading(number: "02", title: "DATA EXCHANGE")
                 walletHeader(l)
                 // shopEntries = 판매 아이템 + 알 3종(보증 없음·고급 이상·희귀 이상)을 가격 오름차순으로
                 // 병합한 단일 목록. 알은 항상 포함되고(즉시 액션이라 ItemKind 가 아님), 알 상태에선
@@ -34,16 +35,15 @@ struct ShopView: View {
     private func walletHeader(_ l: L) -> some View {
         VStack(alignment: .leading, spacing: 2) {
             Text(l.spendableTokens)
-                .font(.caption).foregroundStyle(.secondary)
+                .font(.caption).foregroundStyle(CyberPalette.muted)
             Text(TokenFormatter.compact(store.availableTokens))
-                .font(.system(size: 24, weight: .bold)).monospacedDigit()
+                .font(.system(size: 24, weight: .medium, design: .monospaced)).monospacedDigit()
             Text(l.shopHint)
-                .font(.caption2).foregroundStyle(.tertiary)
+                .font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(10)
-        .background(Color.secondary.opacity(0.06))
-        .clipShape(RoundedRectangle(cornerRadius: 10))
+        .cyberPanel(accent: CyberPalette.yellow)
     }
 }
 
@@ -68,14 +68,14 @@ private struct ShopItemCard: View {
         let l = store.l
         VStack(alignment: .leading, spacing: 8) {
             HStack(alignment: .top, spacing: 10) {
-                ItemIconView(kind: kind, size: 30)
+                ItemIconView(kind: kind, size: 42)
                 VStack(alignment: .leading, spacing: 2) {
                     HStack(spacing: 6) {
                         Text(l.itemName(kind)).font(.callout.weight(.semibold))
                         let owned = store.itemCount(kind)
                         if owned > 0 && !kind.isPassive {
                             Text(l.ownedCount(owned)).font(.caption2.weight(.bold))
-                                .foregroundStyle(.secondary).monospacedDigit()
+                                .foregroundStyle(CyberPalette.muted).monospacedDigit()
                         }
                         Spacer(minLength: 4)
                         if showsQuantity {
@@ -88,7 +88,7 @@ private struct ShopItemCard: View {
                         }
                     }
                     Text(l.itemDescription(kind))
-                        .font(.caption).foregroundStyle(.secondary)
+                        .font(.caption).foregroundStyle(CyberPalette.muted)
                         .fixedSize(horizontal: false, vertical: true)
                 }
                 // 바깥 Spacer 없음 — 이름 줄의 Spacer 가 남는 폭을 전부 받아 Stepper 를 카드 오른쪽 끝에
@@ -97,8 +97,7 @@ private struct ShopItemCard: View {
             buyControls(l)
         }
         .padding(10)
-        .background(Color.secondary.opacity(0.06))
-        .clipShape(RoundedRectangle(cornerRadius: 10))
+        .cyberPanel(accent: CyberPalette.yellow)
         .onChange(of: store.maxBuyCount(kind)) { _, _ in
             quantity = selectedQuantity
         }
@@ -121,10 +120,10 @@ private struct ShopItemCard: View {
         } else if confirming {
             HStack(spacing: 8) {
                 Text(l.buyConfirm(quantityName(l)))
-                    .font(.caption2).foregroundStyle(.secondary).lineLimit(1)
+                    .font(.caption2).foregroundStyle(CyberPalette.muted).lineLimit(1)
                 Spacer()
                 Button(selectedQuantity > 1 ? "\(l.buy) ×\(selectedQuantity)" : l.buy) { buyNow() }
-                    .buttonStyle(.borderedProminent).controlSize(.small)
+                    .buttonStyle(TerminalCommandStyle(prominent: true)).controlSize(.small)
                 Button(l.cancel) { confirming = false }
                     .buttonStyle(.borderless).controlSize(.small)
             }
@@ -132,14 +131,14 @@ private struct ShopItemCard: View {
             HStack {
                 // 가격은 선택 수량의 합계 — 확인 전에 총 지출을 보여준다.
                 Text("\(l.shopPriceLabel) \(TokenFormatter.compact(price * selectedQuantity))")
-                    .font(.caption2).foregroundStyle(.tertiary).monospacedDigit()
+                    .font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85)).monospacedDigit()
                 Spacer()
                 if store.canBuy(kind) {
                     Button(l.buy) { confirming = true }
-                        .buttonStyle(.bordered).controlSize(.small)
+                        .buttonStyle(TerminalCommandStyle()).controlSize(.small)
                 } else {
                     Text(l.notEnoughTokens)
-                        .font(.caption2).foregroundStyle(.tertiary)
+                        .font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                 }
             }
         }
@@ -184,7 +183,7 @@ private struct EggCard: View {
                         }
                     }
                     Text(l.eggDescription(tier))
-                        .font(.caption).foregroundStyle(.secondary)
+                        .font(.caption).foregroundStyle(CyberPalette.muted)
                         .fixedSize(horizontal: false, vertical: true)
                     // "놓아준다" 바로 아래 — 무엇을 잃는지 읽은 자리에서 무엇이 남는지 이어 읽게 한다.
                     // 가격 줄이 아니라 여기인 이유: 이건 가격·구매 가능 여부와 무관한 상품 설명이고,
@@ -192,7 +191,7 @@ private struct EggCard: View {
                     // 놓아줄 대상이 있을 때만 — 알 상태에선 할 말이 아니다.
                     if store.hasActive {
                         Text(l.eggReleaseNote)
-                            .font(.caption2).foregroundStyle(.tertiary)
+                            .font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                             .fixedSize(horizontal: false, vertical: true)
                     }
                 }
@@ -201,8 +200,7 @@ private struct EggCard: View {
             controls(l)
         }
         .padding(10)
-        .background(Color.secondary.opacity(0.06))
-        .clipShape(RoundedRectangle(cornerRadius: 10))
+        .cyberPanel(accent: CyberPalette.yellow)
     }
 
     @ViewBuilder
@@ -212,36 +210,36 @@ private struct EggCard: View {
             VStack(alignment: .leading, spacing: 4) {
                 HStack {
                     Text("\(l.shopPriceLabel) \(TokenFormatter.compact(price))")
-                        .font(.caption2).foregroundStyle(.tertiary).monospacedDigit()
+                        .font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85)).monospacedDigit()
                     Spacer()
                     if !store.hasActive {
                         // 알 상태 — 리롤 대상이 없어 구매만 막는다(canBuyEgg 게이트). 항목을 숨기는 대신
                         // 비활성 버튼으로 "상점에 있긴 하다"를 보이고, 사유는 아래 한 줄로.
                         Button(l.buy) {}
-                            .buttonStyle(.bordered).controlSize(.small).disabled(true)
+                            .buttonStyle(TerminalCommandStyle()).controlSize(.small).disabled(true)
                     } else if store.canBuyEgg(tier) {
                         Button(l.buy) { stage = .confirm }
-                            .buttonStyle(.bordered).controlSize(.small)
+                            .buttonStyle(TerminalCommandStyle()).controlSize(.small)
                     } else {
-                        Text(l.notEnoughTokens).font(.caption2).foregroundStyle(.tertiary)
+                        Text(l.notEnoughTokens).font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                     }
                 }
                 if !store.hasActive {
                     Text(l.eggShopLockedHint)
-                        .font(.caption2).foregroundStyle(.tertiary)
+                        .font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                         .fixedSize(horizontal: false, vertical: true)
                 }
             }
         case .confirm:
             HStack(spacing: 8) {
                 Text(l.eggConfirm(store.displayName, l.eggName(tier)))
-                    .font(.caption2).foregroundStyle(.secondary).lineLimit(2)
+                    .font(.caption2).foregroundStyle(CyberPalette.muted).lineLimit(2)
                 Spacer()
                 // 이로치나 전설 등 고가치 포켓몬이면 한 번 더 경고, 아니면 즉시 실행.
                 Button(l.buy) {
                     if store.isHighValueCompanion { stage = .preciousConfirm } else { commit() }
                 }
-                .buttonStyle(.borderedProminent).controlSize(.small)
+                .buttonStyle(TerminalCommandStyle(prominent: true)).controlSize(.small)
                 Button(l.cancel) { stage = .idle }
                     .buttonStyle(.borderless).controlSize(.small)
             }
@@ -251,7 +249,7 @@ private struct EggCard: View {
                     .font(.caption2.weight(.semibold)).foregroundStyle(.orange).lineLimit(2)
                 Spacer()
                 Button(store.currentIsShiny && store.rarity != .legendary ? l.freshEggDiscardShiny : l.freshEggDiscardValuable) { commit() }
-                    .buttonStyle(.borderedProminent).controlSize(.small).tint(.orange)
+                    .buttonStyle(TerminalCommandStyle(prominent: true)).controlSize(.small).tint(.orange)
                 Button(l.cancel) { stage = .idle }
                     .buttonStyle(.borderless).controlSize(.small)
             }

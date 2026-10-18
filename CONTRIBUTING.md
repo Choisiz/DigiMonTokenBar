@@ -1,126 +1,23 @@
-# Contributing to PokeTokenBar
+# Contributing to DigiTokenBar
 
-**English** · [한국어](CONTRIBUTING.ko.md) · [日本語](CONTRIBUTING.ja.md)
+DigiTokenBar is an independent fan adaptation of
+[chattymin/PokeTokenBar](https://github.com/chattymin/PokeTokenBar). Retain the
+original MIT copyright and permission notices. See [NOTICE](NOTICE.md) and
+[third-party notices](THIRD_PARTY_NOTICES.md) before changing artwork or data.
 
-Thanks for your interest in contributing! PokeTokenBar is a small, non-commercial
-fan project, and contributions of all sizes are welcome — bug reports, fixes,
-new usage providers, translations, and documentation.
+- Use macOS 14+, Swift 6 and Apple developer tools.
+- Build with `./scripts/build-digimon-app.sh`.
+- Validate with `./scripts/test-gate.sh`; focused tests use `swift test --filter <TestCase>`.
+- Package with `./scripts/package-digimon-app.sh`. This creates a local ZIP only.
+- Use English Conventional Commit titles and describe behavior and validation.
+- Keep maintained regression tests; do not commit personal saves, credentials,
+  private paths, agent instructions, local QA fixtures, previews or instrumentation.
+- Do not add downloaded artwork to resources. The distribution allowlist must pass.
+- Runtime downloads do not establish copyright permission; include provenance and
+  verify applicable terms. No official endorsement or rights clearance is claimed.
+- Follow the pull request template. Provide only images you may share when
+  explaining a visible UI change; never include private data.
 
-Please read the short sections below before opening a pull request.
-
-## Prerequisites
-
-- **macOS 14 (Sonoma) or newer**
-- **Swift 6 toolchain** (Xcode 16 or newer) — required by `Package.swift`
-  (`swift-tools-version: 6.0`)
-
-## Build & test
-
-The project is a Swift Package. From the repository root:
-
-```bash
-swift build             # compile the app target
-./scripts/test-gate.sh   # run all tests and enforce logic-core coverage
-```
-
-CI runs these same commands on every pull request. The test gate runs
-`swift test --enable-code-coverage` and requires at least 75% logic-core line
-coverage by default. Run both commands locally before submitting a PR.
-Use `swift test --filter <TestCase>` for focused checks during development.
-
-## Contribution workflow
-
-1. Create a feature branch off `main` (fork the repo if you don't have write
-   access).
-2. Make your change with tests. Keep the change focused.
-3. Open a pull request against `main`.
-4. Once CI passes and the change is reviewed, it is merged via **squash merge**.
-
-### Language: English first
-
-This repository uses **English as its first language** for collaboration
-artifacts:
-
-- **Pull request titles and bodies must be in English.**
-- **Commit messages should be in English.**
-
-Because the repository squash-merges, the PR title becomes the commit subject on
-`main`, so English PRs keep the public history consistent.
-
-### Commit & PR conventions
-
-- Use [Conventional Commits](https://www.conventionalcommits.org/) style:
-  `feat:`, `fix:`, `docs:`, `chore:`, `refactor:`, `test:`, etc.
-- Use an English PR title such as `fix(home): retain idle usage history` and fill
-  out every applicable section and checklist in the pull request template.
-- **Every visible UI change** requires embedded images in `UI changes`, including
-  changes caused outside `Sources/PokeTokenBar/UI/`. Actual screenshots, local
-  renders of the production UI, and clearly labeled illustrations are accepted.
-  Label sample-data renders explicitly. Existing screens need before/after
-  images; a new screen needs its image and an explanation that no previous screen
-  exists. Text alone is insufficient. If images are missing, coding agents
-  generate and attach them as part of the authorized PR work. Try suitable
-  generation and attachment alternatives; keep publication pending only if a
-  concrete failure still prevents completion. Canonical `assets/` screenshots
-  are regenerated at release, not per PR.
-- Coding agents use the shared `prepare-pr` skill in `.agents/skills/prepare-pr/`;
-  `.claude/skills/prepare-pr` points to the same skill for Claude Code. Before
-  publishing, run its local check with the chosen base ref and PR body file:
-  `python3 scripts/check-pr.py --base origin/main --title 'docs: clarify PR requirements' --body-file /tmp/pr-body.md`.
-  Add `--ui-changes` when visible behavior changes outside the UI directory.
-
-## Code conventions
-
-The app is provider-agnostic by design. When extending it, follow these rules
-(they are also enforced by tests):
-
-- **Adding a usage source** (a new AI CLI) = implement the `UsageProvider`
-  protocol (`Sources/PokeTokenBar/Core/UsageProvider.swift`) in one new type and
-  register it in the default `providers:` array of `UsageStore.init`
-  (`Sources/PokeTokenBar/Core/UsageStore.swift`). These are the core entry points,
-  not a two-file limit. Depending on the source, also add or update its reader,
-  shared cache integration, custom scan roots, and tests. Follow the
-  [provider extension guide](docs/reference/provider-extension.md) and the
-  [provider contribution checklist](https://github.com/chattymin/PokeTokenBar/issues/115).
-- **Generic behavior must aggregate across all providers** (today/week/month
-  totals, burn tier, companion rhythm). Do not attach a generic calculation to a
-  single provider, and do not add `providerID == "..."` literal branches on
-  generic paths. Provider-specific behavior (e.g. official limits) is the only
-  thing that may branch on `providerID`.
-- **Adding a version manager / install path** = add it to
-  `BinaryLocator.commonToolDirectories()` — the single source that discovery and
-  child-process `PATH` both share.
-- **Adding an append-only SQLite usage store** (rowid/`id` high-water, like Cursor
-  or Copilot) = call `LocalAdditionalUsageReader.scanIncrementalStores` with the
-  format-specific URL / `MAX` SQL / row query / parse. Do not copy the watermark
-  loop.
-
-## Legal / intellectual property
-
-PokeTokenBar is an **unofficial, non-commercial fan project** and is not
-affiliated with Nintendo, Game Freak, Creatures Inc., or The Pokémon Company
-(see the disclaimer in the [README](README.md#license--disclaimer)). To keep the
-project safe to maintain and distribute, contributions **must** follow these
-rules:
-
-- **Do not commit or bundle any Pokémon (or other third-party) copyrighted
-  assets** — sprites, artwork, audio, fonts, or bulk name/data files. Pokémon
-  species data and sprites are fetched **at runtime** from the public
-  [PokéAPI](https://pokeapi.co) and cached locally on the user's device; keep it
-  that way.
-- **Do not add features intended for commercial use**, or features that
-  redistribute or export copyrighted assets.
-- **Do not commit secrets, credentials, or references to private/internal
-  tooling.** Keep everything in the repository generic and public-safe.
-- By submitting a contribution, you confirm it is your **own original work** and
-  agree that it is licensed under this project's [MIT License](LICENSE). The MIT
-  license covers this project's source code only — it does not grant any rights
-  to third-party trademarks, artwork, or data.
-
-## Reporting bugs & requesting features
-
-Please use the issue templates. For bugs, include your macOS version, the app
-version, which AI CLI(s) you use, and steps to reproduce.
-
-If you are a rights holder with a concern about this project, please open an
-issue or contact the maintainer, and we will respond promptly.
+To report a problem, use this repository's Issues and describe the OS, app version,
+expected behavior and actual behavior. Remove secrets, prompts and private paths
+from any diagnostic text before posting it.

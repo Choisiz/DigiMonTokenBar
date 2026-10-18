@@ -72,6 +72,13 @@ final class UnownSpriteTests: XCTestCase {
 /// A correct filename helper alone cannot prove the production loaders forward the selected form.
 @MainActor
 final class UnownSpriteCacheTests: XCTestCase {
+    override func setUp() {
+        super.setUp()
+        // These tests assert warm-cache identity below its 64-entry bound, not eviction behavior.
+        // Earlier rendering suites must not fill the shared cache before this test starts.
+        SpriteLoader.imageCache.removeAllObjects()
+    }
+
     private let forms: [(PokemonForm, String)] = [
         (.a, "201"), (.b, "201-b"), (.exclamation, "201-exclamation"), (.question, "201-question"),
     ]

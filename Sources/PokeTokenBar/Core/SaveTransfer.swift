@@ -8,9 +8,9 @@ import Foundation
 /// 성공한 뒤 도감이 빈 상태가 되어, 사용자에겐 "앱이 내 진행을 지웠다"로 보인다.
 /// 봉투의 `format`/`schema` 는 관대 디코딩 대상이 아니라(기본값 없음) 이 오인을 먼저 차단한다.
 struct SaveEnvelope: Codable, Sendable {
-    static let formatID = "poketokenbar.save"
-    /// v2 adds persistent generated Pokémon profiles (IVs, gender, ability, level and moves).
-    static let schemaVersion = 2
+    static let formatID = "digitokenbar.save"
+    /// v3 adds parked Digimon training and special-evolution origins; v1/v2 remain readable.
+    static let schemaVersion = 3
 
     var format: String
     var schema: Int
@@ -75,7 +75,7 @@ enum SaveTransfer {
 
     /// 내보내기 파일명 — 날짜가 들어가야 여러 번 내보내도 덮어쓰지 않는다.
     static func suggestedFileName(date: Date) -> String {
-        "PokeTokenBar-Save-\(dayStamp(date)).json"
+        "DigiTokenBar-Save-\(dayStamp(date)).json"
     }
 
     /// 백업 파일명 — 불러올 때마다 새 슬롯. 하나만 유지하면 두 번째 불러오기가 **원본**을 덮어써,
@@ -167,7 +167,8 @@ enum SaveTransfer {
             var seen = Set<Int>()
             return ids.filter { seen.insert($0).inserted }
         }
-        if var active = s.active {
+        func sanitizedMon(_ input: MonState) -> MonState {
+            var active = input
             active.usedAtStage = clampToken(active.usedAtStage)
             // totalForms 는 `kk * (kk + 1)` 형태로 쓰여(PokemonBalance.phaseThreshold) 큰 값이 그 자체로 트랩이다.
             active.totalForms = min(max(1, active.totalForms), 12)
@@ -177,12 +178,44 @@ enum SaveTransfer {
             active.plannedPathIDs = deduped(active.plannedPathIDs)
             active.stageIndex = active.pathIDs.firstIndex(of: currentID) ?? active.stageIndex
             active.stageIndex = min(active.stageIndex, max(0, active.pathIDs.count - 1))
+            if DigimonCatalog.find(active.baseID) != nil,
+               (DigimonEvolutionRules.rule(from: active.currentID, to: active.selectedEvolutionID ?? 0).kind != .normal || !DigimonCatalog.choices(from: active.currentID, visited: active.pathIDs).contains(where: { $0.id == active.selectedEvolutionID })) {
+                active.selectedEvolutionID = nil
+            }
             active.profile?.sanitize()
-            s.active = active
+            return active
+        }
+        s.active = s.active.map(sanitizedMon)
+        var storedIDs = Set<String>()
+        let previousSlots = s.storedTraining.filter { $0.mon != nil && storedIDs.insert($0.id).inserted }
+        // Keep only one parked Digimon. Old overflow retains Notebook discoveries; raw source is backed up on load.
+        for slot in previousSlots.dropFirst() {
+            guard let mon = slot.mon else { continue }
+            let entryID = "legacy-stored-" + slot.id
+            if !s.dex.contains(where: { $0.id == entryID }) {
+                let reached = deduped(Array(mon.pathIDs.prefix(mon.stageIndex + 1)))
+                s.dex.append(DexEntry(id: entryID, baseID: mon.baseID, finalID: mon.currentID,
+                    chainOrder: reached, rarity: mon.rarity, caughtAt: nil, isShiny: mon.displaysShiny,
+                    nature: mon.nature, profile: mon.profile,
+                    names: Dictionary(uniqueKeysWithValues: reached.compactMap { id in DigimonCatalog.find(id).map { (id, $0.names) } }), form: mon.form))
+            }
+        }
+        s.storedTraining = previousSlots.prefix(1).map { slot in
+            var slot = slot
+            slot.mon = slot.mon.map(sanitizedMon)
+            slot.eggUsage = 0; slot.eggTier = nil; slot.pendingHatchID = nil; slot.pendingForm = nil
+            return slot
         }
         for index in s.dex.indices {
             s.dex[index].chainOrder = deduped(s.dex[index].chainOrder)
             s.dex[index].profile?.sanitize()
+        }
+        let specialTargets = Set(DigimonEvolutionRules.rules.filter { [.fusion, .item, .buff].contains($0.kind) }.map(\.target))
+        s.specialEvolutionSpecies = s.specialEvolutionSpecies.intersection(specialTargets).filter { s.ownsSpecies($0) }
+        if var active = s.active, s.specialEvolutionSpecies.contains(active.baseID),
+           let selected = active.selectedEvolutionID, s.ownsSpecies(selected) {
+            active.selectedEvolutionID = nil
+            s.active = active
         }
         s.reconcileRepresentativeSelection()
         return s

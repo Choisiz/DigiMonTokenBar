@@ -5,6 +5,19 @@ import XCTest
 // 항상 Home 으로 돌아가게 한다(설정 화면 잔류 방지).
 @MainActor
 final class PopoverNavigationTests: XCTestCase {
+    func testEvolutionPickerHasPopoverNavigationLifetime() {
+        let nav = PopoverNavigation()
+        nav.showingEvolutionPicker = true
+        nav.reset()
+        XCTAssertFalse(nav.showingEvolutionPicker)
+        nav.showingEvolutionPicker = true
+        nav.tab = .collection
+        XCTAssertFalse(nav.showingEvolutionPicker)
+        nav.showingEvolutionPicker = true
+        nav.showSettings = true
+        XCTAssertFalse(nav.showingEvolutionPicker)
+    }
+
     func testDefaultsToHome() {
         let nav = PopoverNavigation()
         XCTAssertFalse(nav.showSettings)
@@ -32,10 +45,10 @@ final class PopoverNavigationTests: XCTestCase {
 
         XCTAssertFalse(nav.showSettings)
         XCTAssertEqual(nav.tab, .collection)
-        XCTAssertFalse(nav.showingCollectionLog, "포획 로그에서 설정을 열었어도 대표 선택은 도감으로 이동")
+        XCTAssertFalse(nav.showingCollectionLog, "포획 로그에서 설정을 열었어도 대표 선택은 노트북으로 이동")
     }
 
-    /// Clicking a sprite on Home opens that species' Pokédex page, even from Settings. The segment
+    /// Clicking a sprite on Home opens that species' Notebook page, even from Settings. The segment
     /// is kept so Back lands where the Collection tab would normally reopen.
     func testOpenDexEntryShowsDetailInCollection() {
         let nav = PopoverNavigation()
@@ -124,23 +137,23 @@ final class RepresentativeLocalizationTests: XCTestCase {
         XCTAssertEqual(l.animationSmooth, "Flüssig")
     }
 
-    /// 대표 포켓몬은 메뉴바와 플로팅 펫에 함께 쓰이는 독립 개념이다. 모든 언어가 pet 전용 표현으로
+    /// 대표 디지몬은 메뉴바와 플로팅 펫에 함께 쓰이는 독립 개념이다. 모든 언어가 pet 전용 표현으로
     /// 되돌아가거나 스페인어 추가 뒤 한 언어만 빠지지 않도록 사용자가 보는 핵심 액션을 고정한다.
     func testRepresentativeActionsAreLocalizedInEverySupportedLanguage() {
         let expected: [(AppLanguage, label: String, follow: String, choose: String, set: String)] = [
-            (.ko, "대표 포켓몬", "현재 포켓몬 따라가기", "도감에서 선택…", "대표로 설정"),
-            (.en, "Representative Pokémon", "Follow current companion", "Choose in Pokédex…",
+            (.ko, "대표 디지몬", "현재 디지몬 따라가기", "노트북에서 선택…", "대표로 설정"),
+            (.en, "Representative Digimon", "Follow current companion", "Choose in Notebook…",
              "Set as representative"),
-            (.ja, "代表ポケモン", "現在のポケモンに合わせる", "図鑑で選ぶ…", "代表ポケモンに設定"),
-            (.es, "Pokémon representativo", "Seguir al compañero actual", "Elegir en la Pokédex…",
+            (.ja, "代表デジモン", "現在のデジモンに合わせる", "図鑑で選ぶ…", "代表デジモンに設定"),
+            (.es, "Digimon representativo", "Seguir al compañero actual", "Elegir en la Notebook…",
              "Establecer como representante"),
-            (.fr, "Pokémon représentatif", "Suivre le compagnon actuel", "Choisir dans le Pokédex…",
+            (.fr, "Digimon représentatif", "Suivre le compagnon actuel", "Choisir dans le Notebook…",
              "Définir comme représentatif"),
-            (.pt, "Pokémon representativo", "Seguir o companheiro atual", "Escolher na Pokédex…",
+            (.pt, "Digimon representativo", "Seguir o companheiro atual", "Escolher na Notebook…",
              "Definir como representante"),
-            (.de, "Repräsentatives Pokémon", "Aktuellem Begleiter folgen", "Im Pokédex auswählen…",
+            (.de, "Repräsentatives Digimon", "Aktuellem Begleiter folgen", "Im Notebook auswählen…",
              "Als repräsentativ festlegen"),
-            (.ru, "Основной покемон", "Текущий компаньон", "Выбрать в Покедексе…", "Сделать основным"),
+            (.ru, "Основной дигимон", "Текущий компаньон", "Выбрать в Покедексе…", "Сделать основным"),
         ]
 
         XCTAssertEqual(expected.map(\.0), AppLanguage.allCases)

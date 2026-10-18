@@ -1,298 +1,129 @@
 <div align="center">
+<img src="Sources/PokeTokenBar/Resources/Digimon/AppIcon.png" width="128" alt="디지바이스 팬 아이콘">
 
-<img src="assets/icon.png" width="128" alt="PokeTokenBar 아이콘">
+# DigiTokenBar
 
-# PokeTokenBar
-
-**당신의 AI 코딩 토큰을 포켓몬으로 — 메뉴바에서.**
-
-[![Release](https://img.shields.io/github/v/release/chattymin/PokeTokenBar?color=444d56&label=release)](https://github.com/chattymin/PokeTokenBar/releases)
-[![macOS](https://img.shields.io/badge/macOS-14%2B-0969da)](https://www.apple.com/macos/)
-[![Swift](https://img.shields.io/badge/Swift-6-f05138)](https://swift.org)
-[![Homebrew](https://img.shields.io/badge/Homebrew-cask-8957e5)](#homebrew)
-[![License](https://img.shields.io/badge/license-MIT-3fb950)](LICENSE)
-[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%99%A5-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/chattymin)
-
-<a href="https://trendshift.io/repositories/84522?utm_source=repository-badge&amp;utm_medium=badge&amp;utm_campaign=badge-repository-84522" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/repositories/84522" alt="chattymin%2FPokeTokenBar | Trendshift" width="250" height="55"/></a>
-<a href="https://trendshift.io/repositories/84522?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-84522" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/84522/daily?language=Swift" alt="chattymin%2FPokeTokenBar | Trendshift" width="250" height="55"/></a>
-
+**AI 코딩에 사용한 토큰으로, macOS 메뉴바에서 디지몬을 키우세요.**
 
 [English](README.md) · **한국어** · [日本語](README.ja.md)
-
 </div>
 
-PokeTokenBar는 당신이 이미 태우고 있는 AI 코딩 토큰(Claude Code · Codex · Gemini CLI · Antigravity · OpenCode · Hermes Agent · Cursor · Grok CLI · Copilot CLI · Kiro CLI · Pi Agent · omp · Aside · Kimi Code)을 macOS 메뉴바 속 자라나는 **포켓몬 companion**으로 바꿔줍니다. 토큰을 쓰면 알이 부화하고, 실제 진화 라인을 따라 진화하며, 최종 진화 후 도감에 졸업하고, 다시 새 알이 시작됩니다. companion 아래에는 정확한 사용량 트래커가 있습니다 — 오늘의 사용량·비용, 공식 5시간/주간 한도를 로컬 로그에서 직접 읽습니다.
+[chattymin/PokeTokenBar](https://github.com/chattymin/PokeTokenBar)를 기반으로 만든
+비공식·비상업 목적의 디지몬 팬 프로젝트입니다. Claude Code·Codex 등 지원 도구의
+로컬 사용 기록을 읽어 부화·분기 진화·융합·노트북 수집으로 연결합니다.
 
-> 토큰 사용량은 로컬 Claude Code·Codex·Gemini CLI·Antigravity·OpenCode·Hermes Agent·Cursor·Grok CLI·Copilot CLI·Kiro CLI·Pi Agent·omp·Aside·Kimi Code 데이터에서 직접 읽습니다(`totalTokens` = input + output + cache, 로컬 날짜) — 외부 CLI 불필요. 비공식·비상업 포켓몬 팬 프로젝트 — [라이선스 & 면책](#라이선스--면책) 참고.
+> **소스 코드는 MIT입니다. 디지몬 이미지·문구·상표·데이터의 권리는 별도입니다.**
+> 외부 이미지는 앱에 포함하지 않고 실행 시 내려받아 사용자 Mac에 캐시합니다.
+> 도감 데이터·프로필 발췌는 포함됩니다. 출처 표시는 이용 허가가 아니며,
+> 공개 바이너리 배포의 권리 확인은 완료되지 않았습니다.
+> [프로젝트 고지](NOTICE.md) · [자산별 출처·권리 상태](THIRD_PARTY_NOTICES.md) · [검증 보고서](docs/reference/distribution-validation.md)
 
-## 왜
+## 화면
 
-- **열어보는 게 즐거운 사용량 트래커.** 사용량이 포켓몬을 키웁니다 — 부화하고, 진화하고, 졸업해 도감을 채우죠. 이로치 한 마리가 다시 열어볼 이유가 됩니다.
-- 오늘의 토큰 사용량과 비용을 한눈에 — 대시보드도, 브라우저 탭도 필요 없이.
-- 공식 **5시간 / 주간** 한도를 리셋 카운트다운과 함께 추적하고, 현재 burn rate로 언제 도달할지 예측합니다.
+외부 이미지가 포함된 스크린샷과 로컬 검토 시안은 소스 공개 대상에서 제외합니다.
 
-<div align="center">
-<img src="assets/screenshot-home.png" width="420" alt="팝오버 홈 — 포켓몬, 오늘 토큰, 일별 차트">
-</div>
+## 주요 기능
 
-## 어떻게 자라나요
+- **475종 노트북:** 타임 스트레인저 번호·성장 단계·한글/영문 검색·수집 카운터·공식 프로필 발췌·필살기.
+- **일반 진화:** 직접 선택하거나, 게이지를 채우면 미수집 일반 후보를 우선해 무작위 진화.
+- **특수 진화:** 수집한 재료를 사용하는 융합, 전용 캡슐·디지바이스·X항체, 당일 토큰 조건.
+- **진화 알림:** 주황·노랑 전구에서 준비된 결과를 목록으로 확인하고 연출 후 노트북에 등록.
+- **이어 키우기:** 특수 진화 결과에 미수집 일반 후속 루트가 있으면 기존 개체를 보관하고 육성.
+- **상점·가방:** 알·펜던트·디지바이스·X항체 A/S·전용 캡슐. 실제 결제 없는 가상 토큰 재화입니다.
+- **사용량 대시보드:** 오늘 사용량·입출력/캐시 구성·비용·기존 공급자별 한도 기능.
+- **검은색·하늘색 테마:** 회로·0/1 데이터 배경과 디지바이스 팬 아이콘.
 
-1. 🥚 **평소처럼 코딩하세요.** Claude Code·Codex·Gemini CLI·Antigravity·OpenCode·Hermes Agent·Cursor·Grok CLI·Copilot CLI·Kiro CLI·Pi Agent·omp·Aside·Kimi Code에서 태우는 토큰이 알을 품습니다 — 따로 돌릴 건 없어요.
-2. 🐣 **부화.** [PokéAPI](https://pokeapi.co/)의 **1~5세대 모든 진화 계보(시작점 329종)**에서 공식 capture rate 가중으로 태어납니다 — 흔한 포켓몬은 자주, 전설은 부화 129번에 1번. 부화한 포켓몬은 키우는 동안에도 **도감**에 바로 나타납니다. 부화마다 25종 성격 중 하나가 정해지고 — **아주 특별한 우연으론 ✨ 이로치가 태어납니다**.
-3. ⚡ **진화.** 계속 코딩하면 실제 진화 트리(1/2/3단, 분기)를 따라 자라고, 단계마다 작은 연출이 반겨줍니다.
-4. 🎓 **졸업 & 수집.** 최종 진화 + 임계 도달 시 **도감**에 영구 보존됩니다 — 희귀할수록 오래 걸리고(헤비 유저 기준 common ≈3일 → legendary ≈24일) — 새 알이 도착합니다.
-5. 🍬 **한도 채우고 사탕 받기.** 5시간 또는 주간 사용량 한도를 다 채우면 **이상한 사탕**을 받아요 — 새 **가방** 탭에서 써서 현재 포켓몬을 키우세요.
-6. 🛒 **상점에서 쓰기.** 그동안 사용한 토큰이 곧 재화입니다 — 새 **상점** 탭에서 **이상한 사탕**, 포켓몬 성격을 랜덤으로 다시 굴리는 **민트**, 이로치 확률을 영구히 올리는 **이로치 부적**, 또는 지금 포켓몬을 놓아주고 다시 시작하는 알을 살 수 있어요. 알은 세 종류입니다 — 일반 **포켓몬 알**, 고급 이상이 확정으로 나오는 **고급 알**, 희귀 이상이 확정으로 나오는 **희귀 알**.
+## 육성 규칙
 
-## 둘러보기
+1. 7종의 유년기 시작 개체 중 하나가 부화합니다. 미수집 유년기를 확정 우선하는 방식은 아닙니다.
+2. 일반 육성의 등록된 직접 후보는 즉시 진화할 수 있고, 미등록 후보는 필요한 게이지를 채웁니다.
+3. 일반 진화가 더 없는 최종 형태도 게이지 100%를 채워야 육성이 완료됩니다.
+4. 보관 개체가 있으면 그 개체로 자동 복귀하며, 없으면 새 알을 받습니다.
+5. 새 `이어 키우기`는 알 상태에서 시작할 수 없습니다. 현재 1개 + 보관 1개만 가능합니다.
+6. 보관 개체의 경험치는 오르지 않습니다. 교환할 때 형태·선택·게이지·프로필을 유지합니다.
+7. 이어 키우기에서는 수집 완료 분기를 숨기고, 미수집 후속 형태로 연결되는 등록 형태는 무료 경유합니다.
+8. 융합은 육성과 별개로 노트북에 등록합니다. 재료 디지몬을 없애지 않고 현재/보관 개체를 교체하지 않습니다.
+9. 진화 아이템은 확정 시 1개 소모합니다. 당일 조건은 실제 토큰 합산이며 펜던트 경험치나 난이도 배율을 적용하지 않습니다.
 
-<table>
-<tr>
-<td width="45%" align="center"><img src="assets/floating-pet.gif" width="340" alt="바탕화면 플로팅 펫 — 호버 콜아웃과 우클릭 메뉴"></td>
-<td width="55%" valign="middle">
-<h3>🐾 바탕화면에 두기</h3>
-파트너를 메뉴바 밖 바탕화면으로 꺼내 48~384px 원하는 크기로 둘 수 있어요. 호버하면 오늘 사용량, 클릭하면 팝오버, 우클릭하면 메뉴, 드래그로 위치 이동 — 한도 알림은 펫 위 말풍선으로도 떠요.
-</td>
-</tr>
-<tr>
-<td width="55%" valign="middle">
-<h3>메뉴바 속 파트너</h3>
-움직이는 Gen-V 스프라이트가 오늘 토큰 합계(compact, 예: <code>200.7M</code>) 옆에 삽니다. 오늘 비용(<code>$</code>)이나 공식 한도 <code>%</code> 를 더하거나 — 전부 꺼서 캐릭터만 남길 수도 있어요.
-</td>
-<td width="45%" align="center"><img src="assets/menubar.gif" width="240" alt="메뉴바"></td>
-</tr>
-<tr>
-<td width="45%" align="center"><img src="assets/shiny-banner.gif" width="340" alt="일반 vs 이로치"></td>
-<td width="55%" valign="middle">
-<h3>✨ 아주 드문 우연, 이로치</h3>
-이로치는 메뉴바·홈 카드·진화 라인에서 전용 색으로 표시되고 진화를 거쳐도 유지됩니다. 도감 격자에서도 이로치로 보유한 종을 이로치 색과 ✨로 표시하며, 상세에서 보유한 일반·이로치 모습을 전환합니다. 안농의 격자 아이콘은 A를 유지하고 상세에서 문자와 색을 고릅니다. 전용 알림으로 부화 순간을 알려 줍니다.
-</td>
-</tr>
-<tr>
-<td width="55%" valign="middle">
-<h3>채우고 싶어지는 도감</h3>
-<b>도감</b>은 보유한 종을 한 칸으로 접어 4×4 배치로 한 페이지 16칸씩 보여 줍니다. 이름·번호 검색, 희귀도·이로치 필터와 정렬을 지원합니다. 마우스 휠·트랙패드 또는 클릭 영역을 넓힌 화살표로 페이지를 넘기세요. 홈·진화 라인·<b>포획 로그</b>의 수집한 포켓몬을 누르면 상세로 이동하고, 뒤로가기는 보던 도감 페이지나 열었던 로그 행으로 돌아옵니다. 로그에는 개체별 전체 진화 라인·희귀도·성격·획득일이 남습니다.
-</td>
-<td width="45%" align="center"><img src="assets/screenshot-collection-pokedex-ko.png" width="300" alt="도감 — 종 하나가 한 칸"><br><br><img src="assets/screenshot-collection-catchlog-ko.png" width="300" alt="포획 로그 — 키운 개체 하나가 한 행"></td>
-</tr>
-<tr>
-<td width="45%" align="center"><img src="assets/screenshot-pokemon-forms-ko.png" width="300" alt="로토무 폼 선택기와 폼별 개체"><br><small>샘플 포켓몬으로 실제 UI를 로컬 렌더링한 이미지입니다.</small></td>
-<td width="55%" valign="middle">
-<h3>같은 종의 다른 모습까지 수집</h3>
-로토무 가전, 쉐이미 랜드·스카이폼, 사철록 계절 모습, 안농 문자 등 지원하는 1~5세대 폼을 수집합니다. 도감에서 수집한 폼 수와 폼별 개체를 보고, 보유한 폼을 메뉴바·플로팅 펫의 대표로 고르세요. 동쪽 깝질무는 동쪽 트리토돈으로 진화하며, 모습은 저장·내보내기에도 유지됩니다. 타입·능력치·특성·기술은 기본형 데이터를 표시합니다.
-</td>
-</tr>
-<tr>
-<td width="45%" align="center"><img src="assets/settings-ko.png" width="300" alt="설정"></td>
-<td width="55%" valign="middle">
-<h3>설정에서 취향대로</h3>
-메뉴바 표시 항목, 새로고침 간격(1–15분/수동), 로그인 시 자동 시작, 한도 섹션만 숨기는 Keychain 끄기, 경고/임박 임계값 한도 알림과 포켓몬 이벤트 알림을 설정합니다. <b>한국어/영어/일본어/스페인어/프랑스어/포르투갈어/독일어/러시아어</b> UI를 지원하며 포켓몬·타입·특성·기술 이름은 선택 언어의 번역이 없으면 영어를 사용합니다.
-</td>
-</tr>
-<tr>
-<td width="55%" valign="middle">
-<h3>🍬 한도를 채우면 이상한 사탕</h3>
-5시간 또는 주간 사용량 한도를 다 채우면 <b>이상한 사탕</b>을 받습니다 — 5시간 한도당 1개, 주간 한도당 5개. 새 <b>가방</b> 탭에서 현재 포켓몬에게 써서 키우세요: 막히는 순간이 곧 성장하는 순간이 됩니다.
-</td>
-<td width="45%" align="center"><img src="assets/screenshot-bag-ko.png" width="300" alt="가방 속 이상한 사탕과 민트"></td>
-</tr>
-<tr>
-<td width="45%" align="center"><img src="assets/screenshot-shop-ko.png" width="300" alt="토큰 상점 — 민트·이상한 사탕·포켓몬 알·고급 알·이로치 부적·희귀 알"></td>
-<td width="55%" valign="middle">
-<h3>🛒 사용량으로 돌아가는 상점</h3>
-그동안 쓴 토큰이 곧 재화입니다. 수량과 총가격을 보고 소모품 여러 개를 한 번에 구매하세요. <b>이상한 사탕</b>은 현재 포켓몬을 키우고, <b>민트</b>는 성격을 다시 굴립니다. <b>이로치 부적</b>은 이로치 확률을 영구히 올립니다. 알을 사면 현재 포켓몬을 놓아주고 다시 시작합니다 — 일반 <b>포켓몬 알</b>, 고급 이상 확정 <b>고급 알</b>, 희귀 이상 확정 <b>희귀 알</b>을 고를 수 있고 등급 알에도 전설은 섞여 있습니다. 빈 가방에서는 버튼으로 바로 상점에 갈 수 있습니다.
-</td>
-</tr>
-<tr>
-<td width="55%" valign="middle">
-<h3>📊 공식 한도, 이제 Antigravity 도</h3>
-Antigravity 2.0 과 IDE 가 추정치가 아닌 실제 할당량을 보고합니다. Gemini 모델군과 Claude &amp; GPT 모델군이 각각 <b>5시간</b>·<b>주간</b> 버킷과 리셋 카운트다운을 갖고, Claude Code·Codex 와 나란히 표시됩니다. 백그라운드에서는 토큰 파일을 읽고 OAuth 자격증명을 자동 갱신할 수 있습니다. 수동 갱신은 Keychain에 접근할 수 있습니다.
-</td>
-<td width="45%" align="center"><img src="assets/screenshot-antigravity-limits-ko.png" width="300" alt="Antigravity 공식 한도 — 모델군별 5시간·주간 버킷"></td>
-</tr>
-<tr>
-<td width="45%" align="center"><img src="assets/screenshot-scan-folders-ko.png" width="300" alt="설정 → 고급의 추가 스캔 폴더"></td>
-<td width="55%" valign="middle">
-<h3>📁 로그가 엉뚱한 데 있다면 직접 지정</h3>
-어떤 도구가 세션을 기본 경로 밖에 둔다면 <b>설정 → 고급</b>에서 직접 루트를 추가하세요 — 콤마·줄바꿈 구분, <code>*</code> 와일드카드, 지금 몇 개 폴더가 걸리는지 실시간 표시. 프로바이더마다 목록이 따로라 한 도구의 폴더가 다른 도구의 파서로 넘어가지 않고, 추가한 경로는 기본 경로를 대체하는 게 아니라 더해집니다.
-</td>
-</tr>
-<tr>
-<td width="55%" valign="middle">
-<h3>🔑 Keychain 없이 공식 한도</h3>
-캐시된 한도 토큰이 만료되면 공식 Claude 한도가 갱신을 누를 때까지 멈추고, 그 갱신이 Keychain 암호 팝업을 띄울 수 있었습니다. 대신 <b>설정 → 고급</b>에 <b>claude.ai 세션 키</b>를 붙여넣으세요 — 한도를 claude.ai 에서 바로 읽어 Keychain 을 아예 건드리지 않고, 자동 폴링이 최신 상태를 유지하며, 저장하는 순간 키를 검증합니다.
-</td>
-<td width="45%" align="center"><img src="assets/screenshot-session-key-ko.png" width="300" alt="설정 → 고급의 claude.ai 세션 키"></td>
-</tr>
-<tr>
-<td width="45%" align="center"><img src="assets/screenshot-model-breakdown-ko.png" width="300" alt="Pi 의 모델별 토큰 내역"></td>
-<td width="55%" valign="middle">
-<h3>🧮 세션 로그 하나, 모델 여럿</h3>
-Pi는 모델 여러 개를 세션 로그 하나로 흘려보낼 수 있습니다. 이제 사용량이 일률적인 "pi" 가 아니라 <b>실제 모델 id</b> 로 귀속되고, 하루에 여러 모델을 썼다면 팝오버가 오늘 토큰을 모델별로 큰 순서대로 풀어 보여줍니다.
-</td>
-</tr>
-<tr>
-<td width="45%" align="center"><img src="assets/screenshot-pokemon-profile-ko.png" width="300" alt="포켓몬마다 고유한 프로필"></td>
-<td width="55%" valign="middle">
-<h3>포켓몬마다 고유한 프로필</h3>
-<b>도감</b>에서 종을 열면 개체별 레벨·성별·성격·특성·개체값·계산된 능력치·배운 기술을 확인할 수 있습니다. 종 설명과 특성·기술은 선택 언어로 표시하고, PokéAPI에 번역이 없으면 영어를 사용합니다.
-</td>
-</tr>
-<tr>
-<td width="45%" align="center"><img src="assets/screenshot-difficulty-ko.png" width="300" alt="내 페이스에 맞춰 키우기"></td>
-<td width="55%" valign="middle">
-<h3>내 페이스에 맞춰 키우기</h3>
-성장 임계값과 상점 가격을 각각 <b>10%~200%</b>로 조절하며, 슬라이더 양끝의 쉬움/어려움·저렴/비쌈 표시로 방향을 확인합니다. 슬라이더는 임시 변경이며 <b>저장</b>을 눌러야 적용됩니다. 성장 난이도를 바꿔도 현재 단계의 진행률을 유지해 즉시 진화하지 않습니다. 이미 졸업시킨 진화 계보에서 다시 부화하면 <b>2배 빠르게</b> 자랍니다. 홈의 부화·성장 막대에 마우스를 올리면 사용량·목표와 진행률을 볼 수 있습니다.
-</td>
-</tr>
-<tr>
-<td width="45%" align="center"><img src="assets/screenshot-daily-trend-ko.png" width="300" alt="이번 달 사용량을 하루씩"></td>
-<td width="55%" valign="middle">
-<h3>이번 달 사용량을 하루씩</h3>
-이번 달의 모든 날짜를 고정된 위치에 놓고 미래 날짜는 빈칸으로 둡니다. 이번 달 두 개 이상 도구를 썼다면 일별 막대를 도구별 색으로 쌓고 범례를 표시합니다. 마우스를 올려 해당 날의 합계와 도구별 토큰·비용(비용 표시를 켠 경우)을 확인하세요. 오늘 사용량이 0이어도 주·월 사용 이력과 합계, 돌아보기 버튼은 계속 보입니다.
-</td>
-</tr>
-<tr>
-<td width="45%" align="center"><img src="assets/screenshot-quota-alignment-ko.png" width="300" alt="한눈에 읽는 한도"></td>
-<td width="55%" valign="middle">
-<h3>한눈에 읽는 한도</h3>
-리셋 카운트다운에 실제 시각을 함께 표시하고, 모든 한도 행의 강조색 퍼센트를 오른쪽 끝에 정렬합니다. 설정에서 사용량·남은량을 고르면 숫자와 그래프가 모두 같은 기준으로 바뀝니다.
-</td>
-</tr>
-</table>
+진화 관계는 수집한 게임 데이터와 앱에서 정한 명시적 규칙의 조합입니다.
+전체 작품의 공식 설정을 완전히 검증한 데이터베이스는 아닙니다.
+일러스트는 정적 이미지이며, 디지몬 이로치·성격·공식 전투 능력치를 보장하지 않습니다.
 
-## 이 밖에도
+## 다운로드·설치
 
-- **메뉴바 바로가기** — 우클릭·Control 클릭으로 오늘 요약, 새로고침, 도감, 설정, 플로팅 펫 표시·숨김, 종료 메뉴를 엽니다.
-- **저전력 모드** — 메뉴바 애니메이션을 배터리 절약 품질로 계속 표시합니다.
-- **재연결 시 새로고침** — 네트워크가 복구되면 사용량과 한도를 새로고침합니다.
-- **대표 포켓몬** — 도감에서 보유한 종을 골라 현재 키우는 포켓몬과 별개로 메뉴바와 선택적 플로팅 펫에 고정. 고정 중에는 메뉴바가 알·부화·진화를 따라가지 않지만, 육성 과정은 Home에서 계속 확인할 수 있습니다.
-- **애니메이션 품질** — 메뉴바 스프라이트와 플로팅 펫이 얼마나 부드럽게 움직일지 고릅니다(배터리 절약 / 기본 / 부드럽게). 상시 표시되는 두 표면이 같은 설정을 씁니다. 기본값 "배터리 절약"은 이 설정이 생기기 전과 같은 프레임 레이트이고, "기본"·"부드럽게"는 배터리를 더 씁니다(실측 유휴 CPU 약 1.8% / 약 5.1%).
-- **인터랙티브 플로팅 펫** — 호버로 오늘 사용량, 클릭으로 메인 창, 우클릭 메뉴, 한도 알림은 말풍선으로 표시.
-- **서비스별 탭** — Claude Code·Codex·Gemini CLI·Antigravity·OpenCode·Hermes Agent·Cursor·Grok CLI·Copilot CLI·Kiro CLI·Pi Agent·omp·Aside·Kimi Code 중 2개 이상 감지되면 작은 탭으로 상세를 서비스별 전환(오늘 합계는 통합 유지).
-- **공식 한도** — Claude·Codex·Antigravity 5시간/주간 사용률 + 리셋 카운트다운을 오늘 숫자 바로 아래에.
-- **추가 스캔 폴더** — 기본 경로 밖에 있는 로그를 위해 프로바이더별로 스캔 루트를 더 지정 (설정 → 고급).
-- **여러 Claude 계정** — 설정 폴더(`CLAUDE_CONFIG_DIR`)마다 따로 로그인한 Claude Code 계정은 공식 한도 아래에 각자의 탭이 생기고, 게이지·이상한 사탕·알림·오늘/이번 달 토큰을 따로 보여 줍니다. `~/.claude-*` 폴더와 export 된 `CLAUDE_CONFIG_DIR` 은 자동으로 찾고, 다른 위치는 설정 → 고급에서 추가합니다. 메뉴바 한도 %·컴패니언 기분·예측은 마지막으로 사용한 계정을 따릅니다(설정 → 일반 → 추적할 Claude 계정). 계정마다 claude.ai 세션 키를 따로 넣을 수 있어(설정 → 고급), Keychain 없이도 그 계정의 한도가 계속 갱신됩니다.
-- **소진 예측** — 현재 5시간 창이 100%에 도달할 시각 예측.
-- **인앱 업데이트** — 원클릭 업데이트 확인, 설정에 현재 버전 표시.
-- **사용량 돌아보기** — 주·월·연 단위의 포켓몬 도감 스타일 요약(합계·게이지·이전 기간 비교·최고의 날·최장 연속·졸업). 게이지에 마우스를 올리면 날짜와 축약하지 않은 토큰 수를 보고, 이번 주/이번 달/올해 버튼으로 현재 기간에 바로 돌아옵니다. 기록은 올해와 작년분을 로컬에 보관합니다.
+완성된 앱은 **macOS 14 이상, Apple Silicon Mac(M1 이상)**용입니다.
+ZIP을 받아 사용하는 사람은 Xcode나 유료 개발자 계정이 필요하지 않습니다.
+Intel용 배포 파일은 아직 검증하지 않았습니다.
 
-- **로컬 저장 백업** — 자동 스냅샷과 손상 복구를 지원하며 설정에서 이전 저장 상태를 복원할 수 있습니다. 백업 기록은 접힌 상태로 시작하며 펼쳐서 확인합니다. **스냅샷 만들기**는 목록 밖에서 바로 사용할 수 있습니다.
-- **포켓몬 폼 수집** — 1~5세대의 다른 폼을 수집하고 폼별 개체를 확인하며, 보유한 폼을 메뉴바·플로팅 펫의 대표로 고릅니다. 모습은 진화와 저장·내보내기에도 이어지고 기존 안농 문자 저장도 읽습니다. [폼 목록](docs/reference/pokemon-forms.md)을 참고하세요.
-- **이상한 사탕 일괄 사용** — 여러 사탕을 한 번에 사용하고, 사용 전 성장 결과를 미리 볼 수 있습니다.
-- **한도 사용 페이스** — 게이지의 경과 시간 표식과 6단계 색상으로 사용 속도를 확인합니다. 메뉴바 한도 비율도 같은 색상을 사용합니다.
+1. [Releases](https://github.com/Choisiz/DigiTokenBar/releases)에서
+   `DigiTokenBar-0.1.0-macos-arm64.zip`과 `.sha256` 파일을 받습니다.
+2. 압축을 풀고 **DigiTokenBar.app**을 **응용 프로그램** 폴더로 이동합니다.
+3. 실행이 차단되면 신뢰하는 다운로드인지 확인한 뒤 **시스템 설정 → 개인정보 보호 및 보안 → 확인 없이 열기**를 사용합니다.
+   [Apple 안내](https://support.apple.com/ko-kr/102445)를 참고하세요. 관리되는 Mac에서는 허용되지 않을 수 있습니다.
+4. 메뉴바 아이콘에서 앱을 엽니다. 최초 이미지 로딩은 인터넷이 필요하며 이후에는 로컬 캐시를 재사용합니다.
 
-<img src="assets/screenshot-usage-recap-ko.png" width="360" alt="선택한 기간의 사용량 돌아보기">
+현재 앱은 **ad-hoc 서명이며 Developer ID 서명·Apple 공증은 받지 않았습니다.**
+Gatekeeper나 시스템 전체 보안 기능을 끄지 마세요. 두 파일이 있는 폴더에서 체크섬을 확인할 수 있습니다.
 
-<small>위 홈·설정·폼·상점·가방·난이도·일별 차트·회고 이미지는 샘플 데이터로 실제 UI를 로컬 렌더링한 이미지입니다.</small>
-
-## 지원 도구
-
-| 도구 | 집계 범위 | 공식 한도 |
-|---|---|---|
-| **Claude Code** | 오늘 · 5시간 블록 · 주 · 월 | ✅ 5시간 / 주간 |
-| **Codex** | 오늘 · 주 · 월 | ✅ 5시간 / 주간 |
-| **Gemini CLI** | 오늘 · 주 · 월 | — |
-| **Antigravity** | 오늘 · 5시간 블록 · 주 · 월 | ✅ 5시간 / 주간 |
-| **OpenCode** | 오늘 · 5시간 블록 · 주 · 월 | — |
-| **Hermes Agent** | 오늘 · 5시간 블록 · 주 · 월 | — |
-| **Cursor** | 오늘 · 5시간 블록 · 주 · 월 | — |
-| **Grok CLI** | 오늘 · 5시간 블록 · 주 · 월 | — |
-| **Copilot CLI** | 오늘 · 5시간 블록 · 주 · 월 | — |
-| **Kiro CLI** | 오늘 · 5시간 블록 · 주 · 월 | — (추정치) |
-| **Pi Agent** | 오늘 · 5시간 블록 · 주 · 월 | — |
-| **omp** (oh-my-pi) | 오늘 · 5시간 블록 · 주 · 월 | — |
-| **Aside** | 오늘 · 5시간 블록 · 주 · 월 | — |
-| **Kimi Code** | 오늘 · 5시간 블록 · 주 · 월 | — |
-
-모두 로컬에서 읽습니다 — 외부 사용량 CLI 불필요. 도구는 프로바이더 구현과 등록으로 추가합니다([CONTRIBUTING.ko.md](CONTRIBUTING.ko.md) 참고).
-
-## 설치
-
-### 요구사항
-
-macOS 14+ (Apple Silicon 또는 Intel). 끝입니다 — 토큰 사용량은 로컬 Claude Code·Codex·Gemini CLI·Antigravity·OpenCode·Hermes Agent·Cursor·Grok CLI·Copilot CLI·Kiro CLI·Pi Agent·omp·Aside·Kimi Code 데이터에서 직접 읽으며 외부 사용량 CLI가 필요 없습니다.
-
-### Homebrew
-
-```bash
-brew install --cask chattymin/tap/poke-token-bar
+```sh
+shasum -a 256 -c DigiTokenBar-0.1.0-macos-arm64.zip.sha256
 ```
 
-ad-hoc/자체 서명 앱이라 Cask 설치 시 격리 속성을 자동 제거합니다.
+업데이트는 앱 종료 후 응용 프로그램의 앱 파일을 교체하면 됩니다. 육성 저장 데이터는 Application Support에 유지됩니다.
 
-### 직접 설치 (Homebrew 없이)
+## 소스에서 빌드
 
-Homebrew를 쓰지 않는다면 [최신 릴리스](https://github.com/chattymin/PokeTokenBar/releases/latest)에서 `PokeTokenBar.zip`을 내려받아 압축을 풀고 `PokeTokenBar.app`을 `/Applications`로 드래그합니다.
+macOS 14 이상, Swift 6 및 Apple 개발 도구가 필요합니다.
+현재 배포 후보는 Apple Silicon에서 검증하며 Intel·Universal 빌드는 아직 검증하지 않았습니다.
 
-이 앱은 ad-hoc/자체 서명(Apple 개발자 계정 공증 없음)이라 첫 실행 시 Gatekeeper가 "확인되지 않은 개발자" 경고를 띄웁니다. 아래 둘 중 하나로 한 번만 해제하면 됩니다.
-
-- **Finder:** `PokeTokenBar.app`을 우클릭(또는 Control+클릭) → **열기** → 대화상자에서 **열기**를 다시 클릭.
-- **터미널:** `xattr -dr com.apple.quarantine /Applications/PokeTokenBar.app`
-
-(Homebrew Cask는 격리 속성을 자동 제거하므로 이 과정이 필요 없습니다.)
-
-### 소스 빌드
-
-```bash
-swift build                  # 디버그
-swift test                   # 단위 테스트
-./scripts/build-app.sh       # release → PokeTokenBar.app → /Applications
+```sh
+git clone https://github.com/Choisiz/DigiTokenBar.git
+cd DigiTokenBar
+./scripts/build-digimon-app.sh
+open build/DigiTokenBar.app
 ```
 
-## 데이터 소스
+빌드는 기본적으로 release 최적화를 사용하고 앱을 ad-hoc 서명합니다.
+기존 앱을 종료하거나 자동 설치하지 않으므로 실행 중인 다른 사본은 먼저 종료하세요.
+내부 Swift 패키지/타깃 이름 `PokeTokenBar`는 원본 호환을 위해 유지합니다.
 
-| 소스 | 용도 | 비고 |
-|---|---|---|
-| `~/.claude/projects/**/*.jsonl`, `<설정 폴더>/projects/**/*.jsonl` | Claude Code daily/blocks/weekly/monthly | 직접 읽음; 메시지 id 로 중복제거; 증분 캐시 |
-| `~/.claude.json`, `~/.claude-*/.claude.json` | Claude 계정: 로그인된 설정 폴더와 계정 이름 | `oauthAccount` 블록만 사용; export 된 `CLAUDE_CONFIG_DIR` 과 설정 → 고급의 폴더도 포함 |
-| `~/.claude/history.jsonl`, `<설정 폴더>/history.jsonl` | 계정별 Claude 토큰; 마지막으로 사용한 계정 | 세션 id 와 프롬프트 시각만 읽고 프롬프트 내용은 읽지 않음; 새로 추가된 줄만 읽음 |
-| `~/.gemini/tmp/**/chats/*.json(l)` | Gemini CLI daily/monthly | 세션 레코드(메시지별 `tokens`); 주간 = daily 합산 |
-| `~/.gemini/antigravity/conversations/*.db`<br>`~/.gemini/antigravity-cli/conversations/*.db`<br>`~/.gemini/antigravity-ide/conversations/*.db` | Antigravity daily/blocks/weekly/monthly | SQLite 읽기 전용; Cascade protobuf blob 의 호출별 사용량; Antigravity 2.0/Core, CLI, IDE 모두 지원; Gemini 에 합산하지 않는 별도 프로바이더; 구독제라 비용은 추정하지 않음 |
-| `~/.codex/sessions/**/*.jsonl` | Codex daily/monthly | `token_count` 이벤트; 주간 = daily 합산 |
-| `~/.local/share/opencode/opencode.db` | OpenCode daily/blocks/weekly/monthly | SQLite 읽기 전용; 레거시 `storage/message` JSON도 지원 |
-| `~/.hermes/state.db` | Hermes Agent daily/blocks/weekly/monthly | SQLite 읽기 전용; 세션 토큰 합계와 저장된 비용 |
-| `~/Library/Application Support/Cursor/User/globalStorage/state.vscdb` | Cursor daily/blocks/weekly/monthly | SQLite 읽기 전용 폴백(`cursorDiskKV` 버블 엔트리의 `tokenCount`); 로그인 상태면 `cursor.com` 대시보드 API 가 기본 소스(개인정보 항목 참고) |
-| `cursor.com`(대시보드 API) | Cursor daily/blocks/weekly/monthly | 비공식 JSON endpoint(`get-filtered-usage-events`); 세션은 `state.vscdb` 의 `cursorAuth/accessToken` 또는 `CURSOR_SESSION_TOKEN`; 프로바이더가 새로고침될 때마다 다시 가져옴; 네트워크 실패 시 계정별로 분리된 최대 6시간 이내의 디스크 캐시로 대체; `CURSOR_USAGE_API=0` 으로 비활성화 |
-| `api2.cursor.sh`(대시보드 한도 API) | Cursor 공식 월간 included usage | Connect RPC `GetCurrentPeriodUsage`; `state.vscdb` 또는 `CURSOR_SESSION_TOKEN` 의 Bearer JWT; usage events 와 같은 비활성화 스위치 |
-| `~/.grok/sessions/**/updates.jsonl` | Grok CLI daily/blocks/weekly/monthly | `turn_completed` 레코드(턴 단위 `usage`, 서버 보고 비용); `$GROK_HOME` 설정 시 그 경로; 서브에이전트 세션은 토큰이 부모 턴에 이미 포함돼 제외 |
-| `~/.copilot/session-store.db` | Copilot CLI daily/blocks/weekly/monthly | SQLite 읽기 전용; `assistant_usage_events` 1행 = API 호출 1건; `$COPILOT_HOME` 설정 시 그 경로; `input_tokens` 에 캐시 프롬프트가 이미 포함돼 캐시 read/write 를 빼고 집계; premium request 과금이라 비용은 추정하지 않음 |
-| `~/Library/Application Support/kiro-cli/data.sqlite3`<br>`~/.kiro/sessions/cli/*.jsonl`<br>`~/.kiro/sessions/<ws>/<session>/messages.jsonl` | Kiro CLI daily/blocks/weekly/monthly | 2.20 이전 SQLite + 2.20+/`--v3` JSONL; 어느 쪽도 실제 토큰 수를 저장하지 않아 input 은 매 턴 재전송되는 누적 대화 텍스트를 바이트÷4 로 **추정**; `usage_summary` 크레딧은 USD 로 바꾸지 않음; `/clear`·압축으로 지워진 SQLite 대화의 이미 집계된 토큰은 앱을 재시작하기 전까지 계속 집계; `$KIRO_CLI_HOME`·`$KIRO_HOME` 지원 |
-| `~/.pi/agent/sessions/**/*.jsonl` | Pi Agent daily/blocks/weekly/monthly | 모든 프로젝트의 저장된 usage를 직접 집계; `$PI_CODING_AGENT_DIR`·`$PI_CODING_AGENT_SESSION_DIR` override 지원; output에는 reasoning이 이미 포함되어 별도 합산하지 않음; fork 복사본은 entry ID로 중복 제거; 기록된 비용 사용 |
-| `~/.omp/agent/sessions/**/*.jsonl` | omp (oh-my-pi) daily/blocks/weekly/monthly | pi 포맷 세션 JSONL; 모든 assistant `usage` 이벤트를 합산(되돌린 분기도 이미 청구된 토큰)하고 서브에이전트 세션 파일도 부모에 합산되지 않으므로 함께 집계; `$OMP_CODING_AGENT_DIR` 지원; 이벤트별 `cost` 가 기록돼 있으면 그대로 신뢰; `bridge/` 아래 변환 사본은 원본이 이미 집계되므로 제외 |
-| `~/.aside/u/*/state.db` | Aside daily/blocks/weekly/monthly | SQLite 턴 합계 읽기 전용; 삭제된 턴은 스캔 캐시 초기화까지 집계 유지; 기록된 비용만 사용 |
-| `~/.kimi-code/sessions/**/agents/*/wire.jsonl` | Kimi Code daily/blocks/weekly/monthly | 모든 `usage.record`(요청 단위, `turn`·`session` 스코프)를 메인·서브에이전트 wire 파일 전체에서 합산; `$KIMI_CODE_HOME` 과 Kimi 데스크톱 런타임 루트 지원; `/fork` 사본은 레코드 내용으로 중복 제거; Kimi 는 비용을 기록하지 않아 비용은 '없음'으로 표시 |
-| Keychain(`Claude Code-credentials`, 다른 설정 폴더마다 `Claude Code-credentials-<hash>`) / `<설정 폴더>/.credentials.json` → `api.anthropic.com` | 계정별 Claude 공식 5h/주간 % | 비공식 endpoint; Keychain 은 **갱신 버튼을 누를 때만** 읽음 — 자동 폴링은 읽지 않음 |
-| `codex app-server` | Codex 공식 5h/주간 % | 로컬 자식 프로세스; 계정 snapshot만, 모델 turn 없음 |
-| [PokéAPI](https://pokeapi.co/) — `pokeapi.co`, `graphql.pokeapi.co` | 포켓몬 종·능력치·특성·기술·진화 | 런타임 fetch; 로컬 캐시, 번들 안 함 |
-| `raw.githubusercontent.com/PokeAPI/sprites` | 포켓몬·아이템 스프라이트 | 런타임 fetch; Application Support 에 캐시, 번들 안 함 |
-| `status.claude.com`, `status.openai.com` | 프로바이더 장애 배너 | statuspage 요약; 표시 전용 — 설정에서 끌 수 있음 |
-| `api.github.com` | 업데이트 확인 | 최신 릴리스 태그; 기동 시와 팝오버를 열 때 |
+**Developer ID 서명·Apple 공증은 완료되지 않았습니다.** ad-hoc 서명 검증과 Gatekeeper 승인은 다릅니다.
+이 포크의 Homebrew 설치·자동 업데이트·App Store 배포는 제공하지 않습니다.
+로컬 ZIP과 체크섬은 `./scripts/package-digimon-app.sh`로 준비하며 공개 업로드는 수행하지 않습니다.
+`python3 scripts/verify-digimon-package.py <ZIP경로> --launch`로 재추출·자산·서명·격리 실행을 확인할 수 있습니다.
+실행 중인 앱을 유지하려면 `--parallel-launch`를 사용합니다. 임시 식별자와 별도 상태 폴더로 검증하며, 배포 파일과 개인 육성은 변경하지 않습니다. 실행 파일의 로컬 빌드 경로도 검사합니다.
 
-로그가 **위 기본 경로 밖**에 있으면 **설정 → 고급 → 추가 스캔 폴더**에 그 폴더를 넣습니다. 프로바이더를 먼저 고르세요 — 폴더는 그 프로바이더만 파싱하므로, Gemini 칸에 Claude 로그를 넣으면 토큰이 잘못 귀속됩니다. 추가 폴더는 기본 위치에 *더해질* 뿐 대체하지 않습니다.
+## 저장·개인정보
 
-## 프라이버시 & 권한
+- 저장 위치: `~/Library/Application Support/DigiTokenBar/`
+- 내보내기 확장자: `.digitokenbar.save`
+- 원본 PokeTokenBar 저장 데이터를 자동으로 가져오거나 덮어쓰지 않습니다.
+- 개인 저장 파일·인증 정보·빌드/계측 결과는 Git에서 제외합니다.
+- 사용량은 로컬 기록에서 읽으며 사용 로그나 프롬프트를 업로드하지 않습니다.
+- 공급자 한도 조회·상태 조회 등 선택적 네트워크 기능이 있어 완전한 오프라인 앱은 아닙니다.
+- 디지몬·디지바이스·펜던트·캡슐·도사·알 이미지는 외부에서 필요할 때 내려받습니다.
+- 캐시는 `~/Library/Application Support/DigiTokenBar/sprites/external-artwork-v1/`에 저장합니다. 첫 표시는 인터넷이 필요하며 받은 이미지는 오프라인에서도 사용합니다.
+- 캡슐은 배경 제거 없이 원본을 표시합니다. 직접 만든 X항체·앱 아이콘과 도감 데이터·프로필 발췌는 앱에 포함됩니다.
+- 원본 PokeTokenBar의 자동 업데이트 조회는 비활성화했습니다.
 
-- **온디바이스 우선.** 토큰 사용량은 로컬 Claude Code·Codex·Gemini CLI·Antigravity·OpenCode·Hermes Agent·Cursor·Grok CLI·Copilot CLI·Kiro CLI·Pi Agent·omp·Aside·Kimi Code 데이터에서 직접 읽습니다. 사용량을 업로드하거나 모델 turn을 실행하지 않습니다. Claude 사용량을 계정별로 나누려고 설정 폴더마다 `history.jsonl` 에서 세션 id 와 프롬프트 시각만 읽습니다. 프롬프트 내용은 읽지 않고 Mac 밖으로 보내지도 않습니다.
-- **외부 요청.** 앱은 완전 오프라인이 아닙니다. 13개 호스트에 접속합니다 — `pokeapi.co`·`graphql.pokeapi.co`(종·진화), `raw.githubusercontent.com`(스프라이트), `api.anthropic.com`(Claude 공식 한도), `claude.ai`(설정에서 claude.ai 세션 키를 저장한 경우의 Claude 공식 한도 — 그 키만, 프롬프트·프로젝트 경로 없음), `cursor.com`(로컬에서 Cursor 에 로그인한 경우 Cursor 사용량 요약 — 세션 자격증명만, 프롬프트·프로젝트 경로 없음), `api2.cursor.sh`(Cursor 공식 월간 included usage — Bearer JWT만, IDE 로그인과 동일한 자격증명), `cloudcode-pa.googleapis.com`·`daily-cloudcode-pa.googleapis.com`(Antigravity 공식 한도)와 `oauth2.googleapis.com`(토큰 갱신), `status.claude.com`·`status.openai.com`(장애 배너 — 설정에서 끌 수 있음), `api.github.com`(업데이트 확인). **어느 요청에도 사용량 로그·프롬프트·프로젝트 경로는 담기지 않습니다** — 요청 자체만 나갑니다(Cursor 는 웹 대시보드와 동일하게 본인 사용량 행을 가져오기 위해 세션 쿠키를 보냅니다).
-- **Keychain(선택).** Claude OAuth 자격증명은 **갱신 버튼을 누를 때만** 읽습니다(설정, 또는 팝오버의 한도 행). 자동 폴링은 Keychain 을 건드리지 않으므로 비밀번호 프롬프트가 뜨지 않고, `~/.claude/.credentials.json` 이 있으면 매 폴마다 다시 읽어 `/login` 으로 계정을 바꿔도 갱신 버튼 없이 따라갑니다. 토큰은 메모리에만 두며 **앱 자체 Keychain 항목은 만들지 않습니다.** 자격증명 파일이 없으면 캐시 토큰이 만료될 때까지(또는 갱신 버튼을 누를 때까지) 한도는 이전 값으로 남습니다. 설정에서 끄면 한도 섹션만 숨겨집니다. Claude 계정이 여러 개면 갱신할 때 다른 설정 폴더의 항목도 폴더마다 한 번씩 읽고, 프롬프트를 거절하면 나머지는 묻지 않습니다.
-- **포켓몬 데이터와 에셋**은 런타임에 PokéAPI에서 받아오며 `~/Library/Application Support/PokeTokenBar/`에만 캐시됩니다. 생성된 개체값(IV·성별·특성·배운 기술 등)은 값이 변하지 않도록 로컬 파트너 세이브에 저장됩니다. 앱 바이너리와 릴리스 아티팩트에는 포켓몬 에셋이 포함되지 않습니다.
+## 테스트
 
-## 기여자
+전체 Xcode 환경에서는 `swift test`를 사용합니다.
+정식 회귀 테스트와 `./scripts/test-gate.sh`는 공개 소스에 포함합니다. 개인 QA 데이터·임시 테스트 도구·시안·작업 지침은 제외합니다.
+[검증 보고서](docs/reference/distribution-validation.md)에 성공한 검사와 확인하지 못한 항목을 구분합니다.
 
-크기에 상관없이 모든 기여를 환영합니다 — 빌드·테스트·풀 리퀘스트 방법은 [CONTRIBUTING.ko.md](CONTRIBUTING.ko.md)를 참고하세요.
+[진화 규칙](docs/reference/digimon-evolution-methods.md) · [이어 키우기](docs/reference/digimon-continue-training.md) · [이름 매핑](docs/reference/digimon-korean-names.md)
 
-[![Contributors](https://contrib.rocks/image?repo=chattymin/PokeTokenBar)](https://github.com/chattymin/PokeTokenBar/graphs/contributors)
+## 원본·저작권
 
-## 라이선스 & 면책
+원본 앱은 **chattymin과 PokeTokenBar 기여자**가 제작했습니다. 원본 Git 이력과 MIT 고지를 보존하고,
+Choisiz의 디지몬 육성·UI·자산 연결·문서 변경을 추가했습니다. 원본 공식 배포판은 아닙니다.
 
-**MIT** — [LICENSE](LICENSE) 참고. MIT는 본 프로젝트의 **원본 소스 코드에만** 적용되며, 앱을 통해 접근하는 제3자의 상표·아트워크·데이터에 대한 권리는 부여하지 않습니다.
+디지몬 관련 권리는 BANDAI·Akiyoshi Hongo·Toei Animation·Bandai Namco Entertainment 등 해당 권리자에게 있습니다.
+본 프로젝트는 이들의 승인·후원·제휴를 받지 않았고, 관련 캐릭터·상표·이미지의 소유권을 주장하지 않습니다.
+독립적으로 그린 앱 아이콘도 디지바이스 디자인에 기반한 팬 아트입니다.
 
-PokeTokenBar는 **비공식·비상업 팬 프로젝트**입니다. **Nintendo, Game Freak, Creatures Inc., The Pokémon Company와 제휴·보증·후원·승인 관계가 없습니다.** "포켓몬(Pokémon)"과 관련 명칭·캐릭터·이미지는 각 권리자의 상표 및 저작물이며, 본 프로젝트는 어떤 포켓몬 지식재산에 대해서도 소유권이나 권리를 주장하지 않습니다.
-
-- **앱 바이너리와 릴리스 아티팩트에는 포켓몬 에셋이 포함되지 않습니다.** 포켓몬 종 데이터와 스프라이트는 공개 [PokéAPI](https://pokeapi.co)에서 **런타임에** 받아 사용자 기기에 로컬 캐시되며, PokéAPI를 통해 제공되는 스프라이트 이미지의 권리는 각 권리자에게 있습니다.
-- 저장소 문서(스크린샷/GIF)에 보이는 포켓몬 이미지는 앱 기능 설명 목적으로만 표시됩니다.
-- 본 앱은 **개인적·비상업적 용도로만** 무료 제공됩니다.
-- 권리자께서 본 프로젝트에 대해 우려가 있으시면 이슈를 열거나 메인테이너에게 연락 주시면 신속히 대응하겠습니다.
-
-*본 프로젝트는 어떠한 보증도 없이 "있는 그대로" 제공됩니다. 본 고지는 법률 자문이 아닙니다.*
+**MIT는 타사 자산의 재배포 권리를 부여하지 않습니다.** 비상업 팬 프로젝트라는 설명도 허가를 대신하지 않습니다.
+공식 사이트·이미지 제공자·팬 아티스트의 권리를 각각 확인해야 합니다.
+상세 출처와 미확인 권한은 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)에 기록했습니다.
+권리 관련 문의·수정·삭제 요청은 [이슈](https://github.com/Choisiz/DigiTokenBar/issues)로 보내주세요.

@@ -56,7 +56,7 @@ final class CollectionReadabilityRenderingTests: XCTestCase {
             }
             let species = try XCTUnwrap(store.dexSpecies.first)
             await store.loadPokemonDetails(speciesID: species.id)
-            try await capture(PokemonDetailView(store: store, species: species, onBack: {}), language: language,
+            try await capture(PokemonDetailView(store: store, species: species, onBack: {}).environment(PopoverNavigation()), language: language,
                               expectedTexts: [store.l.pokemonIndividual],
                               to: directory.appendingPathComponent("\(language.rawValue)-detail.png"))
         }

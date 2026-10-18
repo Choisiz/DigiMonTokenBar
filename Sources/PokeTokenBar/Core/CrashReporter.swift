@@ -20,9 +20,9 @@ enum CrashReporter {
     private static let logsDir: URL =
         FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask)[0]
             .appendingPathComponent("Logs")
-    private static var markerURL: URL { logsDir.appendingPathComponent("PokeTokenBar.running") }
+    private static var markerURL: URL { logsDir.appendingPathComponent("DigiTokenBar.running") }
     /// 크래시-시점 기록 전용(회전 안 함). 시그널/예외 핸들러가 async-signal-safe 하게 append.
-    private static var crashLogURL: URL { logsDir.appendingPathComponent("PokeTokenBar.crash.log") }
+    private static var crashLogURL: URL { logsDir.appendingPathComponent("DigiTokenBar.crash.log") }
     /// 위 crash.log 로 미리 연 fd(설치 시 1회 open). 회전 대상이 아니라 세션 내내 유효.
     nonisolated(unsafe) fileprivate static var logFD: Int32 = -1
 
@@ -36,10 +36,10 @@ enum CrashReporter {
         // 1) 직전 세션 비정상 종료 감지 — 마커가 남아 있으면 정상 종료되지 않은 것.
         if FileManager.default.fileExists(atPath: markerURL.path) {
             AppLog.write("⚠️ 직전 세션이 정상 종료되지 않았습니다(크래시·OOM·강제종료 추정). "
-                + "원인 스택은 ~/Library/Logs/DiagnosticReports/PokeTokenBar-*.ips 참조.")
+                + "원인 스택은 ~/Library/Logs/DiagnosticReports/DigiTokenBar-*.ips 참조.")
         }
         try? Data().write(to: markerURL, options: .atomic)   // 이번 세션 running 마커
-        AppLog.write("launch: PokeTokenBar \(version) 시작")
+        AppLog.write("launch: DigiTokenBar \(version) 시작")
 
         // 3) 정상 종료 시 마커 제거(다음 실행이 '비정상'으로 오인하지 않게).
         NotificationCenter.default.addObserver(

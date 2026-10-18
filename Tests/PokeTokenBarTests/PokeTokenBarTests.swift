@@ -459,7 +459,7 @@ final class SupportMailTests: XCTestCase {
         let body = L(.ko).reportMailBody(version: "2.3.3", os: "Version 14.5 (Build 23F79)")
         XCTAssertTrue(body.contains("v2.3.3"))
         XCTAssertTrue(body.contains("Version 14.5"))
-        XCTAssertTrue(body.contains("PokeTokenBar.log"))
+        XCTAssertTrue(body.contains("DigiTokenBar.log"))
     }
 }
 

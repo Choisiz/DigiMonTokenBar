@@ -55,7 +55,7 @@ struct CodexRateLimitsProvider: CodexLimitsProviding {
                 "params": [
                     "clientInfo": [
                         "name": "token_mac",
-                        "title": "PokeTokenBar",
+                        "title": "DigiTokenBar",
                         "version": version,
                     ],
                     "capabilities": [

@@ -1,0 +1,128 @@
+{
+  "gennai": {
+    "page": "https://wikimon.net/Gennai",
+    "image": "https://wikimon.net/images/2/2e/Gennai.jpg"
+  },
+  "evolutionTag": {
+    "sharedReference": "https://share.google/DyUTtfF9JqLrJrBgV",
+    "artist": "jojogape",
+    "page": "https://www.deviantart.com/jojogape/art/Digimon-Tag-HD-578170061",
+    "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7e10f116-23f3-4001-97b0-93512ba08938/d9k86vh-d5f86142-2bc8-4d64-8882-e151a14dd770.png",
+    "note": "Signed download query omitted; see the artist page for original attribution. Redistribution permission not verified."
+  },
+  "digivice": {
+    "page": "https://wikimon.net/Digivice",
+    "filePage": "https://wikimon.net/File:Digivice.png",
+    "image": "https://wikimon.net/images/d/dc/Digivice.png",
+    "selection": "User-selected Adventure base model, candidate 1; original PNG, unmodified"
+  },
+  "digitama": {
+    "image": "https://digimon.net/profile/images/profile/labo/img_labo_01.png",
+    "page": "https://digimon.net/profile/report011/",
+    "note": "User-selected official transparent PNG, 420x320, original bytes unmodified; existing native alpha-bounds fitting removes empty margins at display time."
+  },
+  "evolutionItems": [
+    {
+      "key": "capsule-courage",
+      "file": "capsule-courage.png",
+      "sourcePage": "https://wikimon.net/Digimental_of_Courage",
+      "sourceImage": "https://wikimon.net/images/2/2b/Digimental_courage.jpg",
+      "method": "Runtime download of original JPG; background retained"
+    },
+    {
+      "key": "capsule-friendship",
+      "file": "capsule-friendship.png",
+      "sourcePage": "https://wikimon.net/Digimental_of_Friendship",
+      "sourceImage": "https://wikimon.net/images/1/13/Digimental_friendship.jpg",
+      "method": "Runtime download of original JPG; background retained"
+    },
+    {
+      "key": "capsule-miracles",
+      "file": "capsule-miracles.png",
+      "sourcePage": "https://wikimon.net/Digimental_of_Miracles",
+      "sourceImage": "https://wikimon.net/images/a/a8/Digimental_miracles.jpg",
+      "method": "Runtime download of original JPG; background retained"
+    },
+    {
+      "key": "capsule-love",
+      "file": "capsule-love.png",
+      "sourcePage": "https://wikimon.net/Digimental_of_Love",
+      "sourceImage": "https://wikimon.net/images/d/de/Digimental_love.jpg",
+      "method": "Runtime download of original JPG; background retained"
+    },
+    {
+      "key": "capsule-purity",
+      "file": "capsule-purity.png",
+      "sourcePage": "https://wikimon.net/Digimental_of_Purity",
+      "sourceImage": "https://wikimon.net/images/3/33/Digimental_purity.jpg",
+      "method": "Runtime download of original JPG; background retained"
+    },
+    {
+      "key": "capsule-knowledge",
+      "file": "capsule-knowledge.png",
+      "sourcePage": "https://wikimon.net/Digimental_of_Knowledge",
+      "sourceImage": "https://wikimon.net/images/6/6a/Digimental_knowledge.jpg",
+      "method": "Runtime download of original JPG; background retained"
+    },
+    {
+      "key": "capsule-sincerity",
+      "file": "capsule-sincerity.png",
+      "sourcePage": "https://wikimon.net/Digimental_of_Sincerity",
+      "sourceImage": "https://wikimon.net/images/3/34/Digimental_reliability.jpg",
+      "method": "Runtime download of original JPG; background retained"
+    },
+    {
+      "key": "capsule-hope",
+      "file": "capsule-hope.png",
+      "sourcePage": "https://wikimon.net/Digimental_of_Hope",
+      "sourceImage": "https://wikimon.net/images/a/aa/Digimental_hope.jpg",
+      "method": "Runtime download of original JPG; background retained"
+    },
+    {
+      "key": "capsule-light",
+      "file": "capsule-light.png",
+      "sourcePage": "https://wikimon.net/Digimental_of_Light",
+      "sourceImage": "https://wikimon.net/images/c/c0/Digimental_light.jpg",
+      "method": "Runtime download of original JPG; background retained"
+    },
+    {
+      "key": "capsule-fate",
+      "file": "capsule-fate.png",
+      "sourcePage": "https://wikimon.net/Digimental_of_Fate",
+      "sourceImage": "https://wikimon.net/images/0/06/Digimental_fate.jpg",
+      "method": "Runtime download of original JPG; background retained"
+    },
+    {
+      "key": "x-antibody-a",
+      "file": "x-antibody-a.png",
+      "sourcePage": null,
+      "sourceImage": null,
+      "method": "original generated binary sphere proposal",
+      "size": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        253
+      ],
+      "sha256": "82e5a08a6abc07d7486a1d85bb84a7d0fc59a4700546edeccd63d787575e9563"
+    },
+    {
+      "key": "x-antibody-s",
+      "file": "x-antibody-s.png",
+      "sourcePage": null,
+      "sourceImage": null,
+      "method": "original generated binary sphere proposal",
+      "size": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "sha256": "bc4fb7d0a2a82f9d5eb318eeed791eeafec93cd143d97bd45651c0b37e6bfddd"
+    }
+  ]
+}

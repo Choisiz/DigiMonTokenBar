@@ -180,6 +180,54 @@ enum ItemKind: String, Codable, Sendable, CaseIterable {
     case rareCandy
     case mint
     case shinyCharm
+    case xAntibodyA, xAntibodyS
+    case capsuleCourage, capsuleFriendship, capsuleMiracles, capsuleLove, capsulePurity
+    case capsuleKnowledge, capsuleSincerity, capsuleHope, capsuleLight, capsuleFate
+
+    var evolutionAsset: String? {
+        switch self {
+        case .mint: return "digivice-adventure"
+        case .xAntibodyA: return "x-antibody-a"
+        case .xAntibodyS: return "x-antibody-s"
+        default:
+            guard let key = capsuleKey else { return nil }
+            return "capsule-" + key
+        }
+    }
+    var capsuleKey: String? {
+        switch self {
+        case .capsuleCourage: return "courage"
+        case .capsuleFriendship: return "friendship"
+        case .capsuleMiracles: return "miracles"
+        case .capsuleLove: return "love"
+        case .capsulePurity: return "purity"
+        case .capsuleKnowledge: return "knowledge"
+        case .capsuleSincerity: return "sincerity"
+        case .capsuleHope: return "hope"
+        case .capsuleLight: return "light"
+        case .capsuleFate: return "fate"
+        default: return nil
+        }
+    }
+    var digimonOnly: Bool { capsuleKey != nil || self == .xAntibodyA || self == .xAntibodyS }
+    var isEvolutionItem: Bool { self == .mint || digimonOnly }
+    var digimonName: String {
+        switch self {
+        case .xAntibodyA: return "X항체 A"
+        case .xAntibodyS: return "X항체 S"
+        case .capsuleCourage: return "용기의 캡슐"
+        case .capsuleFriendship: return "우정의 캡슐"
+        case .capsuleMiracles: return "기적의 캡슐"
+        case .capsuleLove: return "사랑의 캡슐"
+        case .capsulePurity: return "순수의 캡슐"
+        case .capsuleKnowledge: return "지식의 캡슐"
+        case .capsuleSincerity: return "성실의 캡슐"
+        case .capsuleHope: return "희망의 캡슐"
+        case .capsuleLight: return "빛의 캡슐"
+        case .capsuleFate: return "운명의 캡슐"
+        default: return "디지바이스"
+        }
+    }
 
     /// PokéAPI 아이템 스프라이트 파일명(.../sprites/items/{name}.png). nil = 스프라이트 없음(이모지 폴백만).
     var spriteName: String? {
@@ -187,6 +235,7 @@ enum ItemKind: String, Codable, Sendable, CaseIterable {
         case .rareCandy: return "rare-candy"
         case .mint: return nil   // PokéAPI 에 민트 스프라이트 없음(8세대 아이템) → 이모지 폴백
         case .shinyCharm: return "shiny-charm"
+        default: return nil
         }
     }
     /// 스프라이트 로딩 전/미제공/실패 시 폴백 이모지.
@@ -195,6 +244,7 @@ enum ItemKind: String, Codable, Sendable, CaseIterable {
         case .rareCandy: return "🍬"
         case .mint: return "🌿"
         case .shinyCharm: return "✨"
+        default: return "◈"
         }
     }
     /// 상점 판매가(재화 = 사용한 토큰). nil = 상점 미판매.
@@ -203,13 +253,15 @@ enum ItemKind: String, Codable, Sendable, CaseIterable {
         case .rareCandy: return RareCandy.price
         case .mint: return Mint.price
         case .shinyCharm: return ShinyCharm.price
+        case .xAntibodyS: return 1_000_000_000
+        default: return 200_000_000
         }
     }
     /// 보유형(패시브) 아이템 — 소비하지 않고 보유하는 동안 상시 효과. 1회 구매(재구매 불가), 가방엔 "적용 중" 표시.
     var isPassive: Bool {
         switch self {
-        case .rareCandy, .mint: return false
         case .shinyCharm: return true
+        default: return false
         }
     }
 }
@@ -321,7 +373,7 @@ enum PokemonAssets {
     static let animatedSpeciesIDs = 1...649
 
     static func hasAnimatedSprite(speciesID: Int) -> Bool {
-        animatedSpeciesIDs.contains(speciesID)
+        animatedSpeciesIDs.contains(speciesID) || DigimonCatalog.find(speciesID) != nil
     }
 }
 
@@ -453,6 +505,7 @@ enum PokemonOdds {
 struct MonState: Codable, Sendable {
     var baseID: Int
     var pathIDs: [Int]      // 실제 진화 경로(분기 선택 반영)
+    var selectedEvolutionID: Int? = nil // Digimon: explicit next target, persisted across relaunch
     var plannedPathIDs: [Int] // 사전에 선택한 전체 진화 경로
     var stageIndex: Int     // pathIDs 내 현재 위치
     var usedAtStage: Int    // 현재 형태에서 누적 사용량
@@ -475,8 +528,8 @@ struct MonState: Codable, Sendable {
     var phaseThreshold: Int {
         PokemonBalance.phaseThreshold(
             rarity: rarity,
-            totalForms: totalForms,
-            stageIndex: stageIndex,
+            totalForms: DigimonCatalog.find(baseID) != nil ? 7 : totalForms,
+            stageIndex: DigimonCatalog.find(currentID)?.stage ?? stageIndex,
             growthMultiplier: hasGrowthBoost ? PokemonBalance.repeatGrowthMultiplier : 1)
     }
 
@@ -518,6 +571,7 @@ struct MonState: Codable, Sendable {
         } else {
             plannedPathIDs = pathIDs
         }
+        selectedEvolutionID = (try? c.decodeIfPresent(Int.self, forKey: .selectedEvolutionID)) ?? nil
         let decodedStageIndex = try c.decode(Int.self, forKey: .stageIndex)
         stageIndex = min(max(0, decodedStageIndex), pathIDs.count - 1)
         usedAtStage = try c.decode(Int.self, forKey: .usedAtStage)
@@ -630,6 +684,16 @@ private extension KeyedDecodingContainer {
 }
 
 /// 영속 상태(Application Support JSON). 포켓몬 전환 — 이전 커스텀 캐릭터 상태는 폐기(새로 시작).
+/// One parked Digimon. Optional/egg fields remain decodable for migration from earlier builds.
+struct StoredDigimonTraining: Codable, Sendable, Identifiable {
+    var id = UUID().uuidString
+    var mon: MonState?
+    var eggUsage: Int = 0
+    var eggTier: Rarity?
+    var pendingHatchID: Int?
+    var pendingForm: PokemonForm?
+}
+
 struct CompanionState: Codable, Sendable {
     // 토큰: 설치 이후만 측정
     var installBaselineSet = false
@@ -658,6 +722,9 @@ struct CompanionState: Codable, Sendable {
     var lastDate = ""
     // 현재 포켓몬(없으면 알)
     var active: MonState?
+    var storedTraining: [StoredDigimonTraining] = []
+    var specialEvolutionSpecies: Set<Int> = []
+    var collectedTrainingMons: [MonState] { [active].compactMap { $0 } + storedTraining.compactMap(\.mon) }
     // 메뉴바와 플로팅 펫에 고정한 대표 종. nil = 현재 키우는 포켓몬(또는 알)을 그대로 따라간다.
     // 종 단위 선택이라 성격 같은 개체 정보는 들고 있지 않는다. 선택 가능한 범위는 도감과 동일하게
     // 졸업분 + 현재 개체의 도달 단계이며, 그 범위에서 빠지면 reconcileRepresentativeSelection 이 nil 로 복구한다.
@@ -716,6 +783,14 @@ struct CompanionState: Codable, Sendable {
         candyGrantTier     = c.lenient([String: Int].self, forKey: .candyGrantTier, default: [:])
         candyWindowEpoch   = c.lenient([String: String].self, forKey: .candyWindowEpoch, default: [:])
         candyFeatureSeeded = c.lenient(Bool.self, forKey: .candyFeatureSeeded, default: false)
+        storedTraining = c.lenient([Lossy<StoredDigimonTraining>].self, forKey: .storedTraining, default: []).compactMap(\.value)
+        specialEvolutionSpecies = c.lenient(Set<Int>.self, forKey: .specialEvolutionSpecies, default: [])
+        if !c.contains(.specialEvolutionSpecies) {
+            // Earlier builds recorded special results in the Notebook without an origin field.
+            specialEvolutionSpecies = Set(DigimonEvolutionRules.rules.filter {
+                [.fusion, .item, .buff].contains($0.kind) && ownsSpecies($0.target)
+            }.map(\.target))
+        }
     }
 
     /// 졸업 기록 또는 현재 개체가 실제로 도달한 단계에 이 종이 포함되는가.
@@ -726,9 +801,10 @@ struct CompanionState: Codable, Sendable {
             $0.chainOrder.contains(speciesID)
                 && PokemonForm.resolved(speciesID: speciesID, form: $0.form) == form
         }) { return true }
-        guard let active else { return false }
-        return active.pathIDs.prefix(active.stageIndex + 1).contains(speciesID)
-            && PokemonForm.resolved(speciesID: speciesID, form: active.form) == form
+        return collectedTrainingMons.contains { mon in
+            mon.pathIDs.prefix(mon.stageIndex + 1).contains(speciesID)
+                && PokemonForm.resolved(speciesID: speciesID, form: mon.form) == form
+        }
     }
 
     func hasCollectedFinal(forBaseID baseID: Int) -> Bool {
@@ -742,9 +818,8 @@ struct CompanionState: Codable, Sendable {
         var forms = Set(dex.filter { $0.chainOrder.contains(speciesID) }.compactMap {
             PokemonForm.resolved(speciesID: speciesID, form: $0.form)
         })
-        if let active, active.pathIDs.prefix(active.stageIndex + 1).contains(speciesID),
-           let form = PokemonForm.resolved(speciesID: speciesID, form: active.form) {
-            forms.insert(form)
+        for mon in collectedTrainingMons where mon.pathIDs.prefix(mon.stageIndex + 1).contains(speciesID) {
+            if let form = PokemonForm.resolved(speciesID: speciesID, form: mon.form) { forms.insert(form) }
         }
         return forms
     }
@@ -768,10 +843,10 @@ struct CompanionState: Codable, Sendable {
             $0.isShiny && $0.chainOrder.contains(speciesID)
                 && PokemonForm.resolved(speciesID: speciesID, form: $0.form) == form
         }) { return true }
-        guard let active,
-              active.pathIDs.prefix(active.stageIndex + 1).contains(speciesID),
-              PokemonForm.resolved(speciesID: speciesID, form: active.form) == form else { return false }
-        return active.displaysShiny
+        return collectedTrainingMons.contains { mon in
+            mon.pathIDs.prefix(mon.stageIndex + 1).contains(speciesID)
+                && PokemonForm.resolved(speciesID: speciesID, form: mon.form) == form && mon.displaysShiny
+        }
     }
 
     /// 대표 포켓몬은 사용자가 현재 보유한 종만 가리킨다. Fresh Egg·메타몽 리빌·손편집 세이브가

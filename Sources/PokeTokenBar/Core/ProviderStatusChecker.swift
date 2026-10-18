@@ -80,7 +80,7 @@ struct StatuspageStatusProvider: ProviderStatusProviding {
 
     private static func fetchOne(_ url: URL, componentName: String) async -> ProviderStatus? {
         var request = URLRequest(url: url, timeoutInterval: 10)
-        request.setValue("PokeTokenBar", forHTTPHeaderField: "User-Agent")
+        request.setValue("DigiTokenBar", forHTTPHeaderField: "User-Agent")
         guard let (data, response) = try? await URLSession.shared.data(for: request),
               (response as? HTTPURLResponse)?.statusCode == 200 else { return nil }
         return parseComponent(data, named: componentName)

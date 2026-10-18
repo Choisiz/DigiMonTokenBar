@@ -108,3 +108,13 @@ struct TypeBadges: View {
         }
     }
 }
+
+/// Retained for legacy item tiers; Digimon notebook labels use evolution stages.
+private func rarityColor(_ rarity: Rarity?) -> Color {
+    switch rarity {
+    case .uncommon: return .green
+    case .rare: return .blue
+    case .legendary: return .orange
+    default: return .gray
+    }
+}

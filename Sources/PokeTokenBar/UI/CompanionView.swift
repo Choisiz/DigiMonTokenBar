@@ -1,17 +1,11 @@
 import SwiftUI
 
-func rarityColor(_ r: Rarity?) -> Color {
-    switch r {
-    case .uncommon: return .green
-    case .rare: return .blue
-    case .legendary: return .orange
-    default: return .gray
-    }
+func evolutionStageColor(_ stage: Int?) -> Color {
+    let colors: [Color] = [.gray, .mint, .green, .cyan, .blue, .orange, .purple]
+    guard let stage, colors.indices.contains(stage) else { return .secondary }
+    return colors[stage]
 }
-
-/// 희귀도 캡슐을 늘어놓는 순서(귀한 것부터) — 포획 로그 요약 헤더와 도감 헤더가 공유한다.
-/// 순수 표시 순서다. 목록 정렬에는 쓰지 않는다.
-let rarityDisplayOrder: [Rarity] = [.legendary, .rare, .uncommon, .common]
+let evolutionStageDisplayOrder = Array(0...6)
 
 /// 아이템 아이콘 — 실제 스프라이트(런타임 로드+캐시) 우선, 로딩 전/미제공/실패 시 이모지 폴백.
 @MainActor
@@ -23,8 +17,18 @@ struct ItemIconView: View {
     init(kind: ItemKind, size: CGFloat = 30) {
         self.kind = kind
         self.size = size
-        // 캐시에 있으면 즉시(동기) 표시 — 재렌더 플래시 방지.
-        _img = State(initialValue: kind.spriteName.flatMap { SpriteLoader.cachedItemImage(name: $0) })
+        _img = State(initialValue: Self.initialImage(kind: kind,
+            asset: { CyberAssets.image(name: $0, ext: "png") },
+            legacy: { SpriteLoader.cachedItemImage(name: $0) }))
+    }
+
+    static func assetName(for kind: ItemKind) -> String? {
+        kind == .rareCandy ? "evolution-tag" : kind.evolutionAsset
+    }
+    /// External Digimon assets must never be seeded from an older Pokémon item cache.
+    static func initialImage(kind: ItemKind, asset: (String) -> NSImage?, legacy: (String) -> NSImage?) -> NSImage? {
+        if let key = assetName(for: kind) { return asset(key) }
+        return kind.spriteName.flatMap(legacy)
     }
 
     var body: some View {
@@ -33,17 +37,27 @@ struct ItemIconView: View {
                 // 아이템 PNG 는 대체로 정사각(30×30)이라 늘려도 티가 안 났지만, 소스가 외부(PokeAPI
                 // items)라 비정사각이 섞이면 그대로 왜곡된다 — 스프라이트와 같은 SpriteFit 규율.
                 let fit = SpriteFit.size(for: img.size, box: size)
-                Image(nsImage: img).resizable().interpolation(.none)
+                Image(nsImage: img).resizable().interpolation(.high)
                     .frame(width: fit.width, height: fit.height)
+                    .frame(width: size, height: size)
+            } else if Self.assetName(for: kind) != nil {
+                Image(systemName: "photo").font(.system(size: size * 0.65)).foregroundStyle(.secondary)
                     .frame(width: size, height: size)
             } else {
                 Text(kind.fallbackEmoji).font(.system(size: size))
                     .frame(width: size, height: size)
             }
         }
-        .task(id: kind.spriteName ?? "") {
-            guard img == nil, let name = kind.spriteName else { return }
-            img = await SpriteLoader.itemImage(name: name)
+        .task(id: kind.rawValue) {
+            guard img == nil else { return }
+            let asset = Self.assetName(for: kind)
+            if let asset {
+                let loaded = await CyberAssets.loadImage(name: asset, ext: "png")
+                if !Task.isCancelled { img = loaded }
+            } else if let name = kind.spriteName {
+                let loaded = await SpriteLoader.itemImage(name: name)
+                if !Task.isCancelled { img = loaded }
+            }
         }
     }
 }
@@ -420,7 +434,7 @@ struct EvoLineView: View {
             } label: {
                 Image(systemName: forward ? "chevron.right" : "chevron.left")
                     .font(.system(size: 9, weight: .bold))
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(CyberPalette.muted)
                     .frame(width: 16, height: 16)
                     .background(.regularMaterial, in: Circle())
                     .overlay(Circle().strokeBorder(Color.primary.opacity(0.12)))
@@ -473,7 +487,7 @@ struct EvoLineView: View {
             ForEach(Array(nodes.enumerated()), id: \.offset) { i, node in
                 if i > 0 {
                     Image(systemName: "arrow.right").font(.system(size: thumb * 0.2))
-                        .foregroundStyle(.tertiary)
+                        .foregroundStyle(CyberPalette.muted.opacity(0.85))
                         .frame(width: thumb * Self.arrowRatio)
                         .padding(.top, thumb * 0.4)   // 스프라이트 세로 중앙에 정렬
                 }
@@ -499,7 +513,7 @@ struct EvoLineView: View {
                     if let names, case .species(let id) = node.content {
                         // Labels are one thumbnail wide: only Unown's letter fits, the sprite shows other forms.
                         Text(PokemonForm.displayName(names[id] ?? "…", speciesID: id, form: form, label: nil))
-                            .font(.system(size: nameFontSize)).foregroundStyle(.secondary)
+                            .font(.system(size: nameFontSize)).foregroundStyle(CyberPalette.muted)
                             .lineLimit(nameLineLimit).minimumScaleFactor(nameMinimumScaleFactor)
                             .multilineTextAlignment(.center)
                             .frame(maxWidth: thumb + Self.nameSlack)
@@ -529,10 +543,10 @@ struct LabeledProgressBar: View {
     private static let expandedHeight: CGFloat = 12
 
     var body: some View {
-        Capsule().fill(Color.secondary.opacity(0.2))
+        Capsule().fill(CyberPalette.cyan.opacity(0.12))
             .overlay(alignment: .leading) {
                 GeometryReader { geo in
-                    Capsule().fill(Color.orange).frame(width: geo.size.width * min(1, max(0, value)))
+                    Capsule().fill(LinearGradient(colors: [CyberPalette.cyan, CyberPalette.yellow], startPoint: .leading, endPoint: .trailing)).frame(width: geo.size.width * min(1, max(0, value)))
                 }
             }
             .overlay {
@@ -629,6 +643,7 @@ extension DexEntryLink {
 @MainActor
 struct CompanionHeader: View {
     let store: CompanionStore
+    @Environment(PopoverNavigation.self) private var navigation
     /// Opens a species' Pokédex detail page (`PopoverNavigation.openDexEntry`). nil = sprites inert.
     var onOpenDexEntry: ((String) -> Void)? = nil
     // 연출 상태 — 부화/진화 순간 흰 플래시 + 스프링 스케일(본가 진화 신 오마주)
@@ -661,12 +676,28 @@ struct CompanionHeader: View {
         // Computed once per render and shared by the big sprite and the evolution line.
         let dexLinks = onOpenDexEntry == nil ? [:] : store.dexLinkTargets
         VStack(alignment: .leading, spacing: 6) {
-            HStack(alignment: .center, spacing: 12) {
-                SpriteView(speciesID: store.currentSpeciesID, size: 76, bob: true, animated: true,
+            if store.evolutionAlertCount > 0 {
+                HStack {
+                    Text(store.l.digimonUI("Evolution / continuation ready · {0}", [String(store.evolutionAlertCount)]))
+                        .font(.caption).foregroundStyle(CyberPalette.yellow)
+                    Spacer()
+                    EvolutionReadyButton(language: store.language) { navigation.showingSpecialEvolutionPicker = true }
+                }
+            }
+            if !store.state.storedTraining.isEmpty {
+                Button(store.l.digimonUI("Stored training · {0} / 1", [String(store.state.storedTraining.count)])) { navigation.showingSpecialEvolutionPicker = true }
+                    .buttonStyle(TerminalCommandStyle()).controlSize(.small)
+            }
+            HStack(alignment: .center, spacing: 16) {
+                SpriteView(speciesID: store.currentSpeciesID, size: 100, bob: true, animated: true,
                            shiny: store.currentIsShiny, form: store.currentForm)
-                    .frame(width: 76, height: 76)
-                    .background(Color.secondary.opacity(0.06))
-                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                    .frame(width: 110, height: 120)
+                    .background(Color(red: 0.90, green: 0.96, blue: 1))
+                    .clipShape(CyberCutCorner(cut: 12))
+                    .padding(14)
+                    .background {
+                        Circle().stroke(CyberPalette.cyan.opacity(0.22), style: StrokeStyle(lineWidth: 1, dash: [2, 10]))
+                    }
                     .rotationEffect(.degrees(eggImminent && eggWiggle ? 5 : (eggImminent ? -5 : 0)))
                     .scaleEffect(celebScale)
                     .overlay(RoundedRectangle(cornerRadius: 12).fill(.white).opacity(flashOpacity))
@@ -710,55 +741,69 @@ struct CompanionHeader: View {
                         target: store.currentSpeciesID.flatMap { dexLinks[$0] },
                         hint: store.l.dexOpenEntryHint, accessibilityName: store.displayName,
                         cornerRadius: 12, open: onOpenDexEntry))
-                VStack(alignment: .leading, spacing: 4) {
+                VStack(alignment: .leading, spacing: 5) {
+                    Text("DIGIMON / " + (store.currentSpeciesID.map { DigimonCatalog.numberLabel(for: $0) } ?? "DIGITAMA"))
+                        .font(.system(size: 8, design: .monospaced)).foregroundStyle(CyberPalette.muted)
                     HStack(spacing: 6) {
-                        Text(store.displayName).font(.callout.weight(.semibold))
+                        Text(store.displayName).font(.system(size: 23, weight: .semibold)).lineLimit(2).minimumScaleFactor(0.7)
                         if store.currentIsShiny { Text("✨").font(.system(size: 11)) }
-                        if let r = store.rarity {
-                            Badge(store.l.rarityLabel(r).uppercased(), tint: .rarity(r))
+                    }
+                    if let id = store.currentSpeciesID {
+                        HStack(alignment: .top, spacing: 7) {
+                            Text(store.evolutionStageLabel(speciesID: id)).font(.system(size: 9))
+                                .padding(.horizontal, 8).padding(.vertical, 3)
+                                .overlay(Rectangle().stroke(CyberPalette.cyan.opacity(0.4), lineWidth: 0.7))
+                                .fixedSize()
+                            if DigimonCatalog.find(id) != nil {
+                                let moves = DigimonInfo.records[id]?.moves ?? []
+                                Text(moves.isEmpty ? store.l.digimonUI("No move information") : store.l.digimonUI("Moves · ") + moves.joined(separator: " · "))
+                                    .font(.system(size: 10)).foregroundStyle(CyberPalette.cyan)
+                                    .fixedSize(horizontal: false, vertical: true)
+                                    .padding(.top, 2)
+                            }
                         }
                     }
                     if store.hasActive, let id = store.currentSpeciesID, let details = store.pokemonDetailsByID[id] {
                         TypeBadges(types: details.types, language: store.language)
                         if !PokemonForm.isDefault(store.currentForm, speciesID: id) {
                             Text(store.l.defaultFormDataNote)
-                                .font(.caption2).foregroundStyle(.secondary)
+                                .font(.caption2).foregroundStyle(CyberPalette.muted)
                                 .fixedSize(horizontal: false, vertical: true)
                         }
                     }
                     if store.hasActive {
-                        // 단계 + 성격(부화 시 확정된 개체 아이덴티티)
-                        let nature = store.currentNature.map { " · \($0.name(store.language))" } ?? ""
                         HStack(spacing: 5) {
-                            Text(store.stageText + nature).font(.caption2).foregroundStyle(.secondary)
+                            if !store.usesDigimonEvolution, let nature = store.currentNature {
+                                Text(nature.name(store.language)).font(.caption2).foregroundStyle(CyberPalette.muted)
+                            }
                             if let multiplier = store.growthMultiplier {
                                 Badge(store.l.growthBoost(multiplier), tint: .orange, style: .tinted)
                                     .fixedSize()
                             }
                         }
-                        LabeledProgressBar(value: store.progress,
-                                           label: Self.progressDetail(used: store.state.active?.usedAtStage ?? 0,
-                                                                      total: store.threshold))
+                        TerminalGrowth(value: store.progress, used: store.state.active?.usedAtStage ?? 0,
+                                       total: store.threshold, label: store.isFinalStage ? (store.language == .ko ? store.l.digimonUI("TRAINING DATA") : "TRAINING DATA") : (store.language == .ko ? store.l.digimonUI("EVOLUTION DATA") : "EVOLUTION DATA"))
                         if store.tokensToNext > 0 {
                             let amount = TokenFormatter.compact(store.tokensToNext)
-                            Text(store.isFinalStage ? store.l.toGraduation(amount) : store.l.toNextEvolution(amount))
-                                .font(.caption2).foregroundStyle(.tertiary)
+                            Text(store.isFinalStage && !store.state.storedTraining.isEmpty
+                                 ? (store.language == .ko ? store.l.digimonUI("{0} until stored training resumes", [String(amount)]) : "\(amount) until stored training resumes")
+                                 : store.isFinalStage ? store.l.toGraduation(amount) : store.l.toNextEvolution(amount))
+                                .font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                         }
                     } else {
                         // 알 인큐베이션 — 부화까지 진행 (임박 시 문구·색 전환)
                         HStack(spacing: 6) {
                             Text(eggImminent ? store.l.eggImminent : store.l.eggIncubating)
                                 .font(.caption2)
-                                .foregroundStyle(eggImminent ? AnyShapeStyle(.orange) : AnyShapeStyle(.secondary))
+                                .foregroundStyle(eggImminent ? AnyShapeStyle(.orange) : AnyShapeStyle(CyberPalette.muted))
                             // 등급 보증 알이면 무엇을 품고 있는지 — 도감 칩과 같은 라벨·색.
                             // 알 스프라이트는 한 장뿐이라 등급 구분은 이 배지가 유일한 신호다.
                             if let guarantee = store.eggGuarantee {
                                 Badge(store.l.eggGuaranteeHint(guarantee), tint: .rarity(guarantee))
                             }
                         }
-                        LabeledProgressBar(value: store.eggProgress,
-                                           label: Self.progressDetail(used: store.state.eggUsage,
-                                                                      total: store.eggHatchThreshold))
+                        TerminalGrowth(value: store.eggProgress, used: store.state.eggUsage,
+                                       total: store.eggHatchThreshold, label: store.language == .ko ? store.l.digimonUI("INCUBATION DATA") : "INCUBATION DATA")
                         if store.isEgg, store.isHatchRetryDelayed {
                             Text(store.l.eggHatchDelayed)
                                 .font(.caption2)
@@ -766,25 +811,53 @@ struct CompanionHeader: View {
                                 .fixedSize(horizontal: false, vertical: true)
                         } else {
                             Text(store.l.eggToHatch(TokenFormatter.compact(store.eggTokensToHatch)))
-                                .font(.caption2).foregroundStyle(.tertiary)
+                                .font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                         }
                         // 첫 실행(적립 0) — 정적 알 앞에서 "고장났나" 오해 방지용 한 줄 안내
                         if !store.eggStarted {
                             Text(store.l.eggFirstRunHint(TokenFormatter.compact(store.eggHatchThreshold)))
-                                .font(.caption2).foregroundStyle(.tertiary)
+                                .font(.caption2).foregroundStyle(CyberPalette.muted.opacity(0.85))
                                 .fixedSize(horizontal: false, vertical: true)
                         }
                     }
-                    Text(statusLine).font(.caption2).foregroundStyle(.secondary)
+                    Text(statusLine).font(.caption2).foregroundStyle(CyberPalette.muted)
                 }
                 Spacer()
             }
             if store.hasActive, !store.lineNodes.isEmpty {
-                // 폭을 안 주면 분기 라인(이브이)이 넘쳐 팝오버 콘텐츠 전체가 좌우로 잘린다.
+                Rectangle().fill(CyberPalette.line).frame(height: 0.5).padding(.top, 4)
+                Text(store.language == .ko ? store.l.digimonUI("EVOLUTION PATH") : "EVOLUTION PATH")
+                    .font(.system(size: 8)).foregroundStyle(CyberPalette.muted)
                 EvoLineView(nodes: store.lineNodes, mysteryLabel: store.l.unknownNextEvolution,
-                            language: store.language, shiny: store.currentIsShiny,
-                            maxWidth: PopoverMetrics.scrollContentWidth, form: store.currentForm,
+                            language: store.language, thumb: 34, shiny: store.currentIsShiny,
+                            names: Dictionary(uniqueKeysWithValues: store.lineNodes.compactMap { node in
+                                guard case .species(let id) = node.content, let species = DigimonCatalog.find(id) else { return nil }
+                                return (id, species.names[store.language.rawValue] ?? species.english)
+                            }),
+                            maxWidth: PopoverMetrics.scrollContentWidth - 24, form: store.currentForm,
                             dexLinks: dexLinks, onOpenDexEntry: onOpenDexEntry)
+            }
+            if store.usesDigimonEvolution, !store.evolutionChoices.isEmpty {
+                Rectangle().fill(CyberPalette.line).frame(height: 0.5).padding(.top, 4)
+                HStack(alignment: .center, spacing: 8) {
+                    Text(store.hasOnlyManualEvolutions ? "MANUAL" : store.selectedEvolutionID == nil ? "AUTO" : "TARGET")
+                        .font(.system(size: 7, design: .monospaced)).foregroundStyle(CyberPalette.yellow)
+                        .padding(4).overlay(Rectangle().stroke(CyberPalette.yellow.opacity(0.4), lineWidth: 0.7))
+                    VStack(alignment: .leading, spacing: 3) {
+                        if let id = store.selectedEvolutionID, let target = DigimonCatalog.find(id) {
+                            Text(store.l.digivolutionTraining + " · " + (target.names[store.language.rawValue] ?? target.english))
+                                .font(.caption).foregroundStyle(CyberPalette.cyan)
+                        } else {
+                            Text(store.hasOnlyManualEvolutions ? (store.language == .ko ? store.l.digimonUI("Fusion and item evolution require a manual start after meeting their conditions.") : "Fusion and item evolution require a manual start after meeting their conditions.") : store.l.digivolutionChooseFirst).font(.caption2)
+                                .foregroundStyle(CyberPalette.muted).fixedSize(horizontal: false, vertical: true)
+                        }
+                    }
+                    Spacer(minLength: 0)
+                    Button(store.l.chooseDigivolution) { navigation.showingEvolutionPicker = true }
+                        .buttonStyle(TerminalCommandStyle()).controlSize(.small)
+                        .disabled(store.isHatching || store.currentLine == nil)
+                        .accessibilityIdentifier("digimon.chooseEvolution")
+                }
             }
             if let g = store.justGraduated {
                 Text(store.l.graduated(g))
@@ -891,7 +964,7 @@ struct CompanionHeader: View {
 ///  텍스트는 .primary 라 모드 자동 적응, 색 정체성은 점·링·체크로 유지 → 엔트리 배지와 안 어긋남.)
 /// 0이면 흐리게(필터 불가).
 @MainActor
-struct RarityTally: View {
+struct EvolutionStageTally: View {
     let label: String
     let count: Int
     let color: Color
@@ -900,6 +973,7 @@ struct RarityTally: View {
         HStack(spacing: 3) {
             Circle().fill(color).frame(width: 6, height: 6)
             Text(label).font(.system(size: 11, weight: isSelected ? .semibold : .medium))
+                .lineLimit(1).minimumScaleFactor(0.7)
             Text("\(count)").font(.system(size: 11, weight: .bold))
             if isSelected {
                 Image(systemName: "checkmark")
@@ -916,37 +990,34 @@ struct RarityTally: View {
     }
 }
 
-/// 포획 로그 요약 헤더 — 총 개체 수 + 희귀도별 개체 수 캡슐.
+/// 포획 로그 요약 헤더 — 총 개체 수 + 진화 단계별 개체 수 캡슐.
 /// 개수 단위가 개체(store.dexCount)라 종 단위인 도감 헤더와 공유하지 않는다.
 @MainActor
 struct DexSummaryHeader: View {
     let store: CompanionStore
-    let selected: Rarity?                  // nil = 필터 없음(전체)
-    let onSelect: (Rarity) -> Void         // 캡슐 탭 → 토글
+    let selected: Int?                  // nil = 필터 없음(전체)
+    let onSelect: (Int) -> Void         // 캡슐 탭 → 토글
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             HStack(spacing: 6) {
                 Text(store.l.catchLogTitle).font(.callout.weight(.semibold))
                 Text(store.l.dexTotal(store.dexEntries.count))
-                    .font(.caption).foregroundStyle(.secondary)
+                    .font(.caption).foregroundStyle(CyberPalette.muted)
             }
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 4) {
-                    ForEach(rarityDisplayOrder, id: \.self) { r in
-                        let count = store.dexCount(r)
+            LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 4), count: 4),
+                      alignment: .leading, spacing: 4) {
+                    ForEach(evolutionStageDisplayOrder, id: \.self) { r in
+                        let count = store.dexEntries.filter { store.evolutionStage(speciesID: $0.finalID) == r }.count
                         Button { onSelect(r) } label: {
-                            RarityTally(
-                                label: store.l.rarityLabel(r), count: count, color: rarityColor(r),
+                            EvolutionStageTally(
+                                label: store.l.digimonStage(r), count: count, color: evolutionStageColor(r),
                                 isSelected: selected == r)
                         }
                         .buttonStyle(.plain)
-                        .disabled(count == 0)          // 0마리 희귀도는 필터 불가
+                        .disabled(count == 0)          // 수집 기록이 없는 단계는 필터 불가
                         .help(store.l.dexFilterHint)
                     }
-                }
-                .fixedSize(horizontal: true, vertical: false)
             }
-            .fixedSize(horizontal: false, vertical: true)
         }
     }
 }
@@ -962,7 +1033,7 @@ struct DexSummaryHeader: View {
 struct CollectionView: View {
     let store: CompanionStore
     let navigation: PopoverNavigation
-    @State private var selectedRarity: Rarity?
+    @State private var selectedStage: Int?
     @State private var searchText = ""
     @State private var shinyOnly = false
     @State private var dexSort: CompanionStore.DexSortOption = .numberAsc
@@ -982,7 +1053,7 @@ struct CollectionView: View {
     private var visibleEntries: [DexEntry] {
         store.filteredDexEntries(
             query: searchText,
-            rarity: selectedRarity,
+            stage: selectedStage,
             shinyOnly: shinyOnly,
             sort: logSort
         )
@@ -995,7 +1066,7 @@ struct CollectionView: View {
     private func resetFilters() {
         searchText = ""
         shinyOnly = false
-        selectedRarity = nil
+        selectedStage = nil
         dexSort = .numberAsc
         logSort = .recentFirst
     }
@@ -1011,7 +1082,10 @@ struct CollectionView: View {
                 if !nav.showingCollectionLog { dexReturnAnchor = id }
                 nav.dexDetailCollectionID = nil
             }
+                .environment(navigation)
                 .id(species.collectionID)
+                .padding(12)
+                .cyberPanel(binary: true, patternOffset: CGPoint(x: 0, y: -8))
                 .frame(height: Self.contentHeight)
         } else {
             VStack(alignment: .leading, spacing: 6) {
@@ -1032,7 +1106,7 @@ struct CollectionView: View {
                         searchText: searchText,
                         shinyOnly: shinyOnly,
                         sortOption: dexSort,
-                        selectedRarity: $selectedRarity,
+                        selectedStage: $selectedStage,
                         returnAnchor: dexReturnAnchor,
                         onSelectSpecies: { sp in nav.dexDetailCollectionID = sp.collectionID },
                         onResetFilters: resetFilters
@@ -1050,7 +1124,7 @@ struct CollectionView: View {
         HStack(spacing: 6) {
             HStack(spacing: 4) {
                 Image(systemName: "magnifyingglass")
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(CyberPalette.muted)
                     .font(.system(size: 13))
                 TextField(store.l.dexSearchPlaceholder, text: $searchText)
                     .textFieldStyle(.plain)
@@ -1060,7 +1134,7 @@ struct CollectionView: View {
                         searchText = ""
                     } label: {
                         Image(systemName: "xmark.circle.fill")
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(CyberPalette.muted)
                             .font(.system(size: 13))
                     }
                     .buttonStyle(.plain)
@@ -1069,7 +1143,7 @@ struct CollectionView: View {
             }
             .padding(.horizontal, 6)
             .padding(.vertical, 4)
-            .background(Color(nsColor: .controlBackgroundColor))
+            .background(CyberPalette.panelRaised)
             .clipShape(RoundedRectangle(cornerRadius: 6))
             .overlay(
                 RoundedRectangle(cornerRadius: 6)
@@ -1150,9 +1224,9 @@ struct CollectionView: View {
     private var catchLog: some View {
         let dexLinks = store.dexLinkTargets   // once for all rows, not per row
         return VStack(alignment: .leading, spacing: 6) {
-            DexSummaryHeader(store: store, selected: selectedRarity) { r in
+            DexSummaryHeader(store: store, selected: selectedStage) { r in
                 withAnimation(.easeInOut(duration: 0.15)) {
-                    selectedRarity = (selectedRarity == r) ? nil : r
+                    selectedStage = (selectedStage == r) ? nil : r
                 }
             }
             if visibleEntries.isEmpty {
@@ -1184,7 +1258,7 @@ struct CollectionView: View {
                         proxy.scrollTo(anchor, anchor: .center)
                     }
                     // 필터·검색·정렬 변경 시 새 결과를 처음부터 보여준다.
-                    .onChange(of: selectedRarity) {
+                    .onChange(of: selectedStage) {
                         withAnimation(.easeInOut(duration: 0.2)) { proxy.scrollTo("dexTop", anchor: .top) }
                     }
                     .onChange(of: searchText) {
@@ -1206,10 +1280,10 @@ struct CollectionView: View {
             Spacer()
             Image(systemName: "magnifyingglass")
                 .font(.system(size: 24))
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(CyberPalette.muted.opacity(0.85))
             Text(store.l.noSearchResults)
                 .font(.callout.weight(.medium))
-                .foregroundStyle(.secondary)
+                .foregroundStyle(CyberPalette.muted)
             Button(store.l.clearFilters) {
                 withAnimation(.easeInOut(duration: 0.15)) {
                     resetFilters()
@@ -1225,10 +1299,12 @@ struct CollectionView: View {
     /// 빈 도감 — 안내 마스코트(피카츄, PokéAPI) + 포켓몬을 모으라는 문구.
     private var emptyState: some View {
         VStack(spacing: 10) {
-            SpriteView(speciesID: 25, size: 96, animated: true)
+            SpriteView(speciesID: 2003, size: 96, animated: true)
+            Text("\(store.collectedDigimonCount) / \(DigimonCatalog.species.count)")
+                .font(.system(size: 16, design: .monospaced)).foregroundStyle(CyberPalette.cyan)
             Text(store.l.dexEmptyTitle).font(.callout.weight(.semibold))
             Text(store.l.dexEmptyHint)
-                .font(.caption).foregroundStyle(.secondary)
+                .font(.caption).foregroundStyle(CyberPalette.muted)
                 .multilineTextAlignment(.center)
         }
         .frame(maxWidth: .infinity)
@@ -1375,7 +1451,7 @@ private struct DexGridView: View {
     let searchText: String
     let shinyOnly: Bool
     let sortOption: CompanionStore.DexSortOption
-    @Binding var selectedRarity: Rarity?
+    @Binding var selectedStage: Int?
     let onSelectSpecies: (CompanionStore.DexSpecies) -> Void
     let onResetFilters: () -> Void
 
@@ -1395,7 +1471,7 @@ private struct DexGridView: View {
     /// `returnAnchor` = the species whose detail page was just closed. The grid opens on its page,
     /// set here rather than in `onAppear`, which would flash page 1 for a frame first.
     init(store: CompanionStore, searchText: String, shinyOnly: Bool,
-         sortOption: CompanionStore.DexSortOption, selectedRarity: Binding<Rarity?>,
+         sortOption: CompanionStore.DexSortOption, selectedStage: Binding<Int?>,
          returnAnchor: String?,
          onSelectSpecies: @escaping (CompanionStore.DexSpecies) -> Void,
          onResetFilters: @escaping () -> Void) {
@@ -1403,7 +1479,7 @@ private struct DexGridView: View {
         self.searchText = searchText
         self.shinyOnly = shinyOnly
         self.sortOption = sortOption
-        _selectedRarity = selectedRarity
+        _selectedStage = selectedStage
         self.onSelectSpecies = onSelectSpecies
         self.onResetFilters = onResetFilters
         _returnAnchor = State(initialValue: returnAnchor)
@@ -1413,7 +1489,7 @@ private struct DexGridView: View {
         let all = store.dexSpecies
         let visible = store.filteredDexSpecies(
             query: searchText,
-            rarity: selectedRarity,
+            stage: selectedStage,
             shinyOnly: shinyOnly,
             sort: sortOption
         )
@@ -1439,7 +1515,7 @@ private struct DexGridView: View {
         .onChange(of: searchText) { page = 0; selectedID = nil }
         .onChange(of: shinyOnly) { page = 0; selectedID = nil }
         .onChange(of: sortOption) { page = 0; selectedID = nil }
-        .onChange(of: selectedRarity) { page = 0; selectedID = nil }
+        .onChange(of: selectedStage) { page = 0; selectedID = nil }
         .task { await store.backfillMissingDexNames() }
     }
 
@@ -1448,10 +1524,10 @@ private struct DexGridView: View {
             Spacer()
             Image(systemName: "magnifyingglass")
                 .font(.system(size: 24))
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(CyberPalette.muted.opacity(0.85))
             Text(store.l.noSearchResults)
                 .font(.callout.weight(.medium))
-                .foregroundStyle(.secondary)
+                .foregroundStyle(CyberPalette.muted)
             Button(store.l.clearFilters) {
                 withAnimation(.easeInOut(duration: 0.15)) {
                     onResetFilters()
@@ -1468,30 +1544,27 @@ private struct DexGridView: View {
         VStack(alignment: .leading, spacing: 5) {
             HStack(spacing: 6) {
                 Text(store.l.dexTitle).font(.callout.weight(.semibold))
-                Text(store.l.dexSpeciesTotal(all.count)).font(.caption).foregroundStyle(.secondary)
+                Text("\(store.collectedDigimonCount) / \(DigimonCatalog.species.count)").font(.caption).foregroundStyle(CyberPalette.muted)
             }
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 4) {
-                    ForEach(rarityDisplayOrder, id: \.self) { r in
-                        let count = all.lazy.filter { $0.rarity == r }.count
+            LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 4), count: 4),
+                      alignment: .leading, spacing: 4) {
+                    ForEach(evolutionStageDisplayOrder, id: \.self) { r in
+                        let count = all.lazy.filter { store.evolutionStage(speciesID: $0.id) == r }.count
                         Button {
                             withAnimation(.easeInOut(duration: 0.15)) {
-                                selectedRarity = (selectedRarity == r) ? nil : r
+                                selectedStage = (selectedStage == r) ? nil : r
                                 page = 0
                                 selectedID = nil
                             }
                         } label: {
-                            RarityTally(label: store.l.rarityLabel(r), count: count,
-                                        color: rarityColor(r), isSelected: selectedRarity == r)
+                            EvolutionStageTally(label: store.l.digimonStage(r), count: count,
+                                        color: evolutionStageColor(r), isSelected: selectedStage == r)
                         }
                         .buttonStyle(.plain)
                         .disabled(count == 0)
                         .help(store.l.dexFilterHint)
                     }
-                }
-                .fixedSize(horizontal: true, vertical: false)
             }
-            .fixedSize(horizontal: false, vertical: true)
         }
     }
 
@@ -1530,8 +1603,8 @@ private struct DexGridView: View {
         HStack(spacing: 8) {
             if let sel = slice.first(where: { $0.collectionID == selectedID }) {
                 // 칸은 번호·스프라이트·이름만 보여주므로 희귀도가 선택으로 얻는 정보다.
-                Text("#\(sel.id) \(sel.name) · \(store.l.rarityLabel(sel.rarity))")
-                    .font(.system(size: 11)).foregroundStyle(.secondary).lineLimit(1)
+                Text("\(DigimonCatalog.numberLabel(for: sel.id)) \(sel.name) · \(store.evolutionStageLabel(speciesID: sel.id))")
+                    .font(.system(size: 11)).foregroundStyle(CyberPalette.muted).lineLimit(1)
                 if !PokemonForm.hasForms(speciesID: sel.id) {
                     let isRepresentative = store.isRepresentative(sel)
                     RepresentativeFooterButton(localization: store.l,
@@ -1551,7 +1624,7 @@ private struct DexGridView: View {
                     .disabled(current == 0)
                     Text("\(current + 1) / \(pageCount)")
                         .font(.system(size: 12, weight: .semibold)).monospacedDigit()
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(CyberPalette.muted)
                         .accessibilityLabel(store.l.dexPageLabel(current + 1, pageCount))
                     DexPageButton(forward: true, label: store.l.dexPageNext) {
                         page = min(pageCount - 1, current + 1); selectedID = nil
@@ -1570,6 +1643,7 @@ private struct DexGridView: View {
 /// picker selects the exact persisted profile while the immutable PokéAPI section stays shared.
 @MainActor
 struct PokemonDetailView: View {
+    @Environment(PopoverNavigation.self) private var navigation
     let store: CompanionStore
     let species: CompanionStore.DexSpecies
     let onBack: () -> Void
@@ -1622,18 +1696,52 @@ struct PokemonDetailView: View {
                 }
                 .buttonStyle(.borderless)
                 Spacer()
-                Text("#\(species.id)").font(.callout).foregroundStyle(.secondary)
+                Text(DigimonCatalog.numberLabel(for: species.id)).font(.callout).foregroundStyle(CyberPalette.muted)
             }
+            .padding(.vertical, 4)
+            .background(CyberPalette.panel)
             ScrollView {
                 VStack(alignment: .leading, spacing: 12) {
                     if PokemonForm.hasForms(speciesID: species.id) { formPicker }
                     if displayedSpecies.hasNormal && displayedSpecies.isShiny { appearancePicker }
                     identityHeader
+                    if store.canContinueSpecialDigimon(species.id) {
+                        VStack(alignment: .leading, spacing: 7) {
+                            Button(store.continuationTitle(species.id)) {
+                                if store.continueSpecialDigimon(species.id) { navigation.reset() }
+                            }.buttonStyle(TerminalCommandStyle())
+                                .disabled(store.continuationBlockReason(species.id) != nil)
+                            if let error = store.trainingSwitchError { Text(error).font(.caption).foregroundStyle(.orange) }
+                            Text(store.continuationBlockReason(species.id) ?? store.l.digimonUI("Park the current Digimon to begin. Filling the final training gauge restores it automatically. Only the active partner grows."))
+                                .font(.caption).foregroundStyle(CyberPalette.muted)
+                        }.padding(12).cyberPanel()
+                    }
                     if individuals.count > 1 { individualPicker }
                     if individuals.isEmpty {
-                        Text(store.l.dexAppearancePreview).font(.callout).foregroundStyle(.secondary)
+                        Text(store.l.dexAppearancePreview).font(.callout).foregroundStyle(CyberPalette.muted)
                     }
-                    if let details = store.pokemonDetailsByID[species.id] {
+                    if let digimon = DigimonCatalog.find(species.id) {
+                        DigimonInfoView(speciesID: species.id, language: store.language)
+                        VStack(alignment: .leading, spacing: 10) {
+                            Text(L(store.language).digivolutionRoute)
+                                .font(.headline)
+                            Text("Digimon Story Time Stranger").font(.caption).foregroundStyle(CyberPalette.muted)
+                            ForEach(DigimonCatalog.choices(from: digimon.id, visited: [digimon.id]), id: \.id) { candidate in
+                                HStack {
+                                    SpriteView(speciesID: candidate.id, size: 38, animated: false)
+                                    VStack(alignment: .leading, spacing: 3) {
+                                        Text(store.language.resolveName(candidate.names) ?? candidate.english)
+                                        Text(store.evolutionRequirement(from: species.id, to: candidate.id))
+                                            .font(.caption2).foregroundStyle(CyberPalette.muted)
+                                    }
+                                    Spacer()
+                                    if store.isEvolutionRegistered(candidate.id) {
+                                        Image(systemName: "checkmark.circle.fill").foregroundStyle(CyberPalette.yellow)
+                                    }
+                                }
+                            }
+                        }.padding(.vertical, 12)
+                    } else if let details = store.pokemonDetailsByID[species.id] {
                         if let individual, let profile = individual.profile {
                             individualSection(entry: individual, profile: profile, details: details)
                         } else {
@@ -1643,13 +1751,13 @@ struct PokemonDetailView: View {
                         movesSection(details)
                     } else if store.failedPokemonDetailIDs.contains(species.id) {
                         VStack(spacing: 8) {
-                            Text(store.l.pokemonDetailsUnavailable).foregroundStyle(.secondary)
+                            Text(store.l.pokemonDetailsUnavailable).foregroundStyle(CyberPalette.muted)
                             Button(store.l.retry) { Task { await store.loadPokemonDetails(speciesID: species.id) } }
                         }
                         .frame(maxWidth: .infinity).padding(.vertical, 24)
                     } else {
                         HStack { Spacer(); ProgressView(); Text(store.l.loadingPokemonDetails); Spacer() }
-                            .foregroundStyle(.secondary).padding(.vertical, 30)
+                            .foregroundStyle(CyberPalette.muted).padding(.vertical, 30)
                     }
                 }
                 .padding(.bottom, 8)
@@ -1724,36 +1832,49 @@ struct PokemonDetailView: View {
 
     private var identityHeader: some View {
         let species = displayedSpecies
-        return HStack(spacing: 14) {
-            SpriteView(speciesID: species.id, size: 104, animated: true,
-                       shiny: displayedShiny, spriteStore: spriteStore, form: species.form)
-                .frame(width: 104, height: 104)
+        let isDigimon = DigimonCatalog.find(species.id) != nil
+        let imageSize: CGFloat = isDigimon ? PopoverMetrics.width - 48 : 104
+        let layout = isDigimon ? AnyLayout(VStackLayout(alignment: .leading, spacing: 14)) : AnyLayout(HStackLayout(spacing: 14))
+        let artwork = SpriteView(speciesID: species.id, size: imageSize, animated: true,
+                                 shiny: displayedShiny, spriteStore: spriteStore, form: species.form)
+            .frame(width: imageSize, height: imageSize)
+        let isRepresentative = store.isRepresentative(species)
+        let representativeButton = RepresentativeFooterButton(localization: store.l,
+                                                              isRepresentative: isRepresentative) {
+            _ = store.setRepresentativeSpeciesID(isRepresentative ? nil : species.id, form: species.form)
+        }
+        return layout {
+            if !isDigimon { artwork }
             VStack(alignment: .leading, spacing: 5) {
                 HStack(alignment: .firstTextBaseline) {
-                    Text(species.name).font(.title3.weight(.bold))
+                    HStack(alignment: .firstTextBaseline, spacing: 6) {
+                        Text(species.name)
+                            .font(isDigimon ? .system(size: 26, weight: .bold) : .title3.weight(.bold))
+                            .fixedSize(horizontal: false, vertical: true)
+                        if isDigimon { representativeButton }
+                    }.layoutPriority(1)
                     Spacer(minLength: 8)
-                    Text(store.l.rarityLabel(species.rarity))
-                        .font(.callout.weight(.semibold)).foregroundStyle(.secondary)
+                    Text(store.evolutionStageLabel(speciesID: species.id))
+                        .font(.callout.weight(.semibold)).foregroundStyle(CyberPalette.muted)
+                        .fixedSize()
                 }
                 if let details = store.pokemonDetailsByID[species.id] {
                     TypeBadges(types: details.types, language: store.language, size: 11,
                                horizontalPadding: 7, verticalPadding: 2)
                     if !PokemonForm.isDefault(species.form, speciesID: species.id) {
                         Text(store.l.defaultFormDataNote)
-                            .font(.caption2).foregroundStyle(.secondary)
+                            .font(.caption2).foregroundStyle(CyberPalette.muted)
                             .fixedSize(horizontal: false, vertical: true)
                     }
                 }
                 if displayedShiny { Text("✨ \(store.l.dexShinyLabel)").font(.callout) }
                 if let individual, store.isActiveDexEntry(individual) { Text(store.l.dexRaising).font(.callout).foregroundStyle(Color.accentColor) }
-                let isRepresentative = store.isRepresentative(species)
-                RepresentativeFooterButton(localization: store.l,
-                                           isRepresentative: isRepresentative) {
-                    _ = store.setRepresentativeSpeciesID(isRepresentative ? nil : species.id,
-                                                         form: species.form)
-                }
+                if !isDigimon { representativeButton }
             }
             .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.vertical, 4)
+            .background(CyberPalette.panel)
+            if isDigimon { artwork }
         }
     }
 
@@ -1795,7 +1916,7 @@ struct PokemonDetailView: View {
                 valuePair(store.l.nature, entry.nature?.name(store.language) ?? "—")
             }
             VStack(alignment: .leading, spacing: 1) {
-                Text(store.l.ability).font(.system(size: 11)).foregroundStyle(.secondary)
+                Text(store.l.ability).font(.system(size: 11)).foregroundStyle(CyberPalette.muted)
                 if let name = profile.abilityName {
                     PokemonNameLabel(.ability, name, language: store.language,
                                      suffix: profile.abilityIsHidden ? " · " + store.l.hiddenAbility : "")
@@ -1807,13 +1928,13 @@ struct PokemonDetailView: View {
             statsSection(PokemonStatCalculator.stats(details: details, profile: profile, nature: entry.nature))
             detailTitle(store.l.activeMoves)
             if profile.moves.isEmpty {
-                Text(store.l.noLevelMoves).font(.callout).foregroundStyle(.secondary)
+                Text(store.l.noLevelMoves).font(.callout).foregroundStyle(CyberPalette.muted)
             } else {
                 ForEach(profile.moves) { move in
                     HStack {
                         PokemonNameLabel(.move, move.name, language: store.language)
                         Spacer()
-                        Text("Lv. \(move.learnedAtLevel)").foregroundStyle(.secondary)
+                        Text("Lv. \(move.learnedAtLevel)").foregroundStyle(CyberPalette.muted)
                     }
                     .font(.callout)
                 }
@@ -1849,7 +1970,7 @@ struct PokemonDetailView: View {
             Text(store.l.statLabel(name)).frame(width: 74, alignment: .leading)
             ProgressView(value: Double(value), total: Double(scaleMaximum)).tint(Color.accentColor)
             Text("\(value)").monospacedDigit().frame(width: 30, alignment: .trailing)
-            if let iv { Text("IV \(iv)").foregroundStyle(.secondary).frame(width: 38, alignment: .trailing) }
+            if let iv { Text("IV \(iv)").foregroundStyle(CyberPalette.muted).frame(width: 38, alignment: .trailing) }
         }
         .font(.system(size: 12))
     }
@@ -1867,7 +1988,7 @@ struct PokemonDetailView: View {
                 PokemonNameItem(resource: .init(kind: .ability, name: option.name),
                                 suffix: option.isHidden ? " (\(store.l.hidden))" : "")
             }, language: store.language)
-            .font(.callout).foregroundStyle(.secondary)
+            .font(.callout).foregroundStyle(CyberPalette.muted)
         }
         .detailCard()
     }
@@ -1880,7 +2001,7 @@ struct PokemonDetailView: View {
                     PokemonNameLabel(.move, move.name, language: store.language)
                     Spacer()
                     Text(move.learnMethods.map(store.l.moveMethod).uniqued().joined(separator: " · "))
-                        .foregroundStyle(.secondary).multilineTextAlignment(.trailing)
+                        .foregroundStyle(CyberPalette.muted).multilineTextAlignment(.trailing)
                 }
                 .font(.callout)
                 Divider()
@@ -1890,12 +2011,12 @@ struct PokemonDetailView: View {
     }
 
     private func detailTitle(_ text: String) -> some View {
-        Text(text).font(.callout.weight(.semibold)).foregroundStyle(.secondary)
+        Text(text).font(.callout.weight(.semibold)).foregroundStyle(CyberPalette.muted)
     }
 
     private func valuePair(_ label: String, _ value: String, suffix: String? = nil) -> some View {
         VStack(alignment: .leading, spacing: 1) {
-            Text(label).font(.system(size: 11)).foregroundStyle(.secondary)
+            Text(label).font(.system(size: 11)).foregroundStyle(CyberPalette.muted)
             Text(value + (suffix.map { " · \($0)" } ?? "")).font(.callout.weight(.semibold))
         }
     }
@@ -1967,15 +2088,10 @@ private struct DexSpeciesCell: View {
             .padding(2)
             // 대표 = 영속적인 accent 배경, 방금 클릭한 칸 = 기존 accent 테두리.
             // 서로 다른 카드여도 같은 강조 두 개가 선택된 것처럼 보이지 않는다.
-            .background(isRepresentative ? Color.accentColor.opacity(0.16)
-                                         : Color.secondary.opacity(isSelected ? 0.16 : 0.06))
-            .clipShape(RoundedRectangle(cornerRadius: 8))
-            .overlay {
-                if isSelected {
-                    RoundedRectangle(cornerRadius: 8)
-                        .strokeBorder(Color.accentColor, lineWidth: 1.5)
-                }
-            }
+            .background(Rectangle().fill(isRepresentative
+                ? CyberPalette.cyan.opacity(0.15) : CyberPalette.panel.opacity(0.9)))
+            .overlay(Rectangle().stroke(isSelected ? CyberPalette.yellow : CyberPalette.line,
+                                                 lineWidth: isSelected ? 1.5 : 0.7))
             // 호버 = 클릭 가능 피드백. 확대는 격자 간격 안에 머무는 폭으로만.
             // 그림자는 카드 모양에만 — 칸 전체에 `.shadow` 를 걸면 번호·이름·스프라이트 글자마다 그림자가 진다.
             .background {
@@ -2011,7 +2127,7 @@ private struct DexSpeciesCell: View {
     /// 스프라이트 위 라벨에 이미 쓰는 패턴과 동일.
     private var numberTag: some View {
         HStack(spacing: 2) {
-            Text("#\(species.id)")
+            Text(DigimonCatalog.numberLabel(for: species.id))
             // 기존 번호 캡슐에 결합해 이로치(우측 상단)·키우는 중(스프라이트 하단)·이름과
             // 새 자리를 다투지 않는다. 아이콘은 언어에 따라 폭이 달라지지 않고, 의미는 셀의
             // 현지화된 툴팁·접근성 라벨이 보완한다.
@@ -2022,9 +2138,9 @@ private struct DexSpeciesCell: View {
                     .accessibilityHidden(true)
             }
         }
-            // 번호 색 = 희귀도 — "전체" 보기에서도 칸마다 희귀도가 보인다.
+            // 번호 색 = 진화 단계 — "전체" 보기에서도 칸마다 희귀도가 보인다.
             .font(.system(size: 10, weight: .semibold))
-            .foregroundStyle(rarityColor(species.rarity))
+            .foregroundStyle(evolutionStageColor(store.evolutionStage(speciesID: species.id)))
             .padding(.horizontal, 2)
             .background(.regularMaterial, in: Capsule())
     }
@@ -2039,7 +2155,7 @@ private struct DexSpeciesCell: View {
     /// 툴팁과 접근성 라벨이 같은 문장을 쓴다 — 칸이 글자로 못 보여주는 희귀도를 담는다.
     /// ✨ 는 이모지라 스크린리더가 일관되게 읽지 못하므로 명사로 함께 넣는다.
     private var tooltip: String {
-        var parts = ["#\(species.id) \(species.name)", store.l.rarityLabel(species.rarity)]
+        var parts = ["\(DigimonCatalog.numberLabel(for: species.id)) \(species.name)", store.evolutionStageLabel(speciesID: species.id)]
         if let formCount { parts.append(store.l.formsCollected(formCount, of: formTotal)) }
         if species.isShiny { parts.append(store.l.dexShinyLabel) }
         if species.isRaising { parts.append(store.l.dexRaising) }
@@ -2066,7 +2182,7 @@ private struct DexEntryRow: View {
         let names = store.dexStoredChainNames(entry) ?? (resolved.isEmpty ? nil : resolved)
         VStack(alignment: .leading, spacing: 3) {
             HStack {
-                Badge(store.l.rarityLabel(entry.rarity).uppercased(), tint: .rarity(entry.rarity), size: 10)
+                Badge(store.evolutionStageLabel(speciesID: entry.finalID), tint: .accent, size: 10)
                 if store.isActiveDexEntry(entry) {
                     Badge(store.l.dexRaising.uppercased(), tint: .accent, style: .tinted, size: 10)
                 } else if entry.isReleased {
@@ -2082,7 +2198,7 @@ private struct DexEntryRow: View {
                 Spacer()
                 if let nature = entry.nature {
                     Text(nature.name(store.language))
-                        .font(.system(size: 11)).foregroundStyle(.secondary)
+                        .font(.system(size: 11)).foregroundStyle(CyberPalette.muted)
                 }
             }
             EvoLineView(nodes: entry.chainOrder.map { EvoLineItem(.species($0), .done) },
@@ -2092,11 +2208,11 @@ private struct DexEntryRow: View {
                         nameFontSize: 11, nameLineLimit: 2, nameMinimumScaleFactor: 1,
                         dexLinks: dexLinks, onOpenDexEntry: onOpenDexEntry)
             if let caughtAt = entry.caughtAt {
-                Text(caughtAt, style: .relative).font(.system(size: 11)).foregroundStyle(.secondary)
+                Text(caughtAt, style: .relative).font(.system(size: 11)).foregroundStyle(CyberPalette.muted)
             }
         }
         .padding(Self.cardPadding)
-        .background(Color.secondary.opacity(0.06))
+        .background(CyberPalette.panelRaised)
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .task(id: "\(entry.id)-\(store.language.rawValue)") {
             resolved = await store.dexResolveChainNames(entry)

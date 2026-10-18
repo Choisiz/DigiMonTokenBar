@@ -35,16 +35,14 @@ struct DifficultySettingsSection: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
             Text(l.difficultySectionTitle)
-                .font(.caption).fontWeight(.semibold).foregroundStyle(.secondary)
+                .font(.caption).fontWeight(.semibold).foregroundStyle(CyberPalette.muted)
                 .textCase(.uppercase).padding(.leading, 4)
             VStack(spacing: 0) {
                 row(l.difficultyGrowthLabel, value: $draft.growth, low: l.difficultyGrowthLowLabel, high: l.difficultyGrowthHighLabel)
                 Divider()
                 row(l.difficultyShopLabel, value: $draft.shop, low: l.difficultyShopLowLabel, high: l.difficultyShopHighLabel)
             }
-            .background(Color(nsColor: .controlBackgroundColor), in: RoundedRectangle(cornerRadius: 8))
-            .overlay(RoundedRectangle(cornerRadius: 8)
-                .stroke(Color(nsColor: .separatorColor).opacity(0.6), lineWidth: 1))
+            .cyberPanel()
             if draft.differs(from: companion) {
                 HStack {
                     Spacer()
@@ -74,7 +72,7 @@ struct DifficultySettingsSection: View {
                 Spacer()
                 Text(high)
             }
-            .font(.caption2).foregroundStyle(.secondary)
+            .font(.caption2).foregroundStyle(CyberPalette.muted)
             .padding(.leading, 86).padding(.trailing, 62)
             .accessibilityHidden(true) // Read via the slider's hint instead.
         }

@@ -1,0 +1,3806 @@
+{
+  "source": "Digimon official EN/KO reference; paired by directory_name",
+  "capturedAt": "2026-10-17",
+  "records": [
+    {
+      "id": 10001,
+      "english": "Kuramon",
+      "korean": "쿠라몬",
+      "directory": "kuramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kuramon"
+    },
+    {
+      "id": 10002,
+      "english": "Choromon",
+      "korean": "뽈뽈몬",
+      "directory": "choromon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=choromon"
+    },
+    {
+      "id": 10003,
+      "english": "Dodomon",
+      "korean": "도도몬",
+      "directory": "dodomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dodomon"
+    },
+    {
+      "id": 10004,
+      "english": "Pabumon",
+      "korean": "뽀글몬",
+      "directory": "bubbmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=bubbmon"
+    },
+    {
+      "id": 2007,
+      "english": "Punimon",
+      "korean": "푸니몬",
+      "directory": "punimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=punimon"
+    },
+    {
+      "id": 2001,
+      "english": "Botamon",
+      "korean": "깜몬",
+      "directory": "botamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=botamon"
+    },
+    {
+      "id": 10007,
+      "english": "Poyomon",
+      "korean": "포요몬",
+      "directory": "poyomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=poyomon"
+    },
+    {
+      "id": 10008,
+      "english": "Kapurimon",
+      "korean": "카프리몬",
+      "directory": "capromon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=capromon"
+    },
+    {
+      "id": 2002,
+      "english": "Koromon",
+      "korean": "코로몬",
+      "directory": "koromon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=koromon"
+    },
+    {
+      "id": 10010,
+      "english": "Tanemon",
+      "korean": "시드몬",
+      "directory": "tanemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tanemon"
+    },
+    {
+      "id": 2008,
+      "english": "Tsunomon",
+      "korean": "뿔몬",
+      "directory": "tunomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tunomon"
+    },
+    {
+      "id": 10012,
+      "english": "Tsumemon",
+      "korean": "츠메몬",
+      "directory": "tsumemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tsumemon"
+    },
+    {
+      "id": 10013,
+      "english": "Tokomon",
+      "korean": "토코몬",
+      "directory": "tokomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tokomon"
+    },
+    {
+      "id": 10014,
+      "english": "Dorimon",
+      "korean": "도리몬",
+      "directory": "dorimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dorimon"
+    },
+    {
+      "id": 10015,
+      "english": "Nyaromon",
+      "korean": "야옹몬",
+      "directory": "nyaromon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=nyaromon"
+    },
+    {
+      "id": 10016,
+      "english": "Pagumon",
+      "korean": "퍼그몬",
+      "directory": "pagumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=pagumon"
+    },
+    {
+      "id": 10017,
+      "english": "Yokomon",
+      "korean": "어니몬",
+      "directory": "pyocomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=pyocomon"
+    },
+    {
+      "id": 10018,
+      "english": "Bukamon",
+      "korean": "둥실몬",
+      "directory": "pukamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=pukamon"
+    },
+    {
+      "id": 10019,
+      "english": "Motimon",
+      "korean": "모티몬",
+      "directory": "mochimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mochimon"
+    },
+    {
+      "id": 10020,
+      "english": "Wanyamon",
+      "korean": "와냐몬",
+      "directory": "wanyamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=wanyamon"
+    },
+    {
+      "id": 2003,
+      "english": "Agumon",
+      "korean": "아구몬",
+      "directory": "agumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=agumon"
+    },
+    {
+      "id": 10022,
+      "english": "Kudamon",
+      "korean": "쿠다몬",
+      "directory": "kudamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kudamon"
+    },
+    {
+      "id": 10023,
+      "english": "Gomamon",
+      "korean": "쉬라몬",
+      "directory": "gomamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gomamon"
+    },
+    {
+      "id": 10024,
+      "english": "Coronamon",
+      "korean": "코로나몬",
+      "directory": "coronamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=coronamon"
+    },
+    {
+      "id": 10025,
+      "english": "Zubamon",
+      "korean": "즈바몬",
+      "directory": "zubamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=zubamon"
+    },
+    {
+      "id": 10026,
+      "english": "Solarmon",
+      "korean": "황금톱니몬",
+      "directory": "solarmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=solarmon"
+    },
+    {
+      "id": 10027,
+      "english": "Terriermon",
+      "korean": "테리어몬",
+      "directory": "terriermon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=terriermon"
+    },
+    {
+      "id": 10028,
+      "english": "Tentomon",
+      "korean": "텐타몬",
+      "directory": "tentomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tentomon"
+    },
+    {
+      "id": 10029,
+      "english": "ToyAgumon",
+      "korean": "토이아구몬",
+      "directory": "toyagumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=toyagumon"
+    },
+    {
+      "id": 10030,
+      "english": "Tapirmon",
+      "korean": "테이파몬",
+      "directory": "bakumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=bakumon"
+    },
+    {
+      "id": 10031,
+      "english": "Hyokomon",
+      "korean": "효코몬",
+      "directory": "hyokomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=hyokomon"
+    },
+    {
+      "id": 10032,
+      "english": "Biyomon",
+      "korean": "피요몬",
+      "directory": "piyomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=piyomon"
+    },
+    {
+      "id": 10033,
+      "english": "Falcomon",
+      "korean": "팔코몬",
+      "directory": "falcomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=falcomon"
+    },
+    {
+      "id": 10034,
+      "english": "Salamon",
+      "korean": "플롯트몬",
+      "directory": "plotmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=plotmon"
+    },
+    {
+      "id": 10035,
+      "english": "Bearmon",
+      "korean": "베어몬",
+      "directory": "bearmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=bearmon"
+    },
+    {
+      "id": 10036,
+      "english": "Penmon",
+      "korean": "펭귄몬",
+      "directory": "penmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=penmon"
+    },
+    {
+      "id": 10037,
+      "english": "Monodramon",
+      "korean": "모노드라몬",
+      "directory": "monodramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=monodramon"
+    },
+    {
+      "id": 10038,
+      "english": "Ryudamon",
+      "korean": "류우다몬",
+      "directory": "ryudamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ryudamon"
+    },
+    {
+      "id": 10039,
+      "english": "Lucemon",
+      "korean": "루체몬",
+      "directory": "lucemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lucemon"
+    },
+    {
+      "id": 10040,
+      "english": "Elecmon",
+      "korean": "에렉몬",
+      "directory": "elecmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=elecmon"
+    },
+    {
+      "id": 10041,
+      "english": "Gaomon",
+      "korean": "가오몬",
+      "directory": "gaomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gaomon"
+    },
+    {
+      "id": 10042,
+      "english": "Crabmon",
+      "korean": "크랩몬",
+      "directory": "ganimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ganimon"
+    },
+    {
+      "id": 2009,
+      "english": "Gabumon",
+      "korean": "파피몬",
+      "directory": "gabumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gabumon"
+    },
+    {
+      "id": 10044,
+      "english": "Kamemon",
+      "korean": "카메몬",
+      "directory": "kamemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kamemon"
+    },
+    {
+      "id": 10045,
+      "english": "Kokuwamon",
+      "korean": "코쿠와몬",
+      "directory": "kokuwamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kokuwamon"
+    },
+    {
+      "id": 10046,
+      "english": "Gotsumon",
+      "korean": "울퉁몬",
+      "directory": "gottsumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gottsumon"
+    },
+    {
+      "id": 10047,
+      "english": "Kotemon",
+      "korean": "코테몬",
+      "directory": "kotemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kotemon"
+    },
+    {
+      "id": 10048,
+      "english": "Shoutmon",
+      "korean": "샤우트몬",
+      "directory": "shoutmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=shoutmon"
+    },
+    {
+      "id": 10049,
+      "english": "Dracomon",
+      "korean": "드라코몬",
+      "directory": "dracomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dracomon"
+    },
+    {
+      "id": 10050,
+      "english": "Dorumon",
+      "korean": "도루몬",
+      "directory": "dorumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dorumon"
+    },
+    {
+      "id": 10051,
+      "english": "Patamon",
+      "korean": "파닥몬",
+      "directory": "patamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=patamon"
+    },
+    {
+      "id": 10052,
+      "english": "Huckmon",
+      "korean": "헉몬",
+      "directory": "huckmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=huckmon"
+    },
+    {
+      "id": 10053,
+      "english": "Palmon",
+      "korean": "팔몬",
+      "directory": "palmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=palmon"
+    },
+    {
+      "id": 10054,
+      "english": "Floramon",
+      "korean": "플로라몬",
+      "directory": "floramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=floramon"
+    },
+    {
+      "id": 10055,
+      "english": "Muchomon",
+      "korean": "레드펭귄몬",
+      "directory": "muchomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=muchomon"
+    },
+    {
+      "id": 10056,
+      "english": "Lalamon",
+      "korean": "라라몬",
+      "directory": "lalamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lalamon"
+    },
+    {
+      "id": 10057,
+      "english": "Lunamon",
+      "korean": "루나몬",
+      "directory": "lunamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lunamon"
+    },
+    {
+      "id": 10058,
+      "english": "Renamon",
+      "korean": "레나몬",
+      "directory": "renamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=renamon"
+    },
+    {
+      "id": 10059,
+      "english": "Lopmon",
+      "korean": "로프몬",
+      "directory": "lopmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lopmon"
+    },
+    {
+      "id": 10060,
+      "english": "Impmon",
+      "korean": "임프몬",
+      "directory": "impmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=impmon"
+    },
+    {
+      "id": 10061,
+      "english": "Otamamon",
+      "korean": "올챙몬",
+      "directory": "otamamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=otamamon"
+    },
+    {
+      "id": 10062,
+      "english": "Gazimon",
+      "korean": "가지몬",
+      "directory": "gazimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gazimon"
+    },
+    {
+      "id": 10063,
+      "english": "Gizamon",
+      "korean": "기자몬",
+      "directory": "gizamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gizamon"
+    },
+    {
+      "id": 10064,
+      "english": "Guilmon",
+      "korean": "길몬",
+      "directory": "guilmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=guilmon"
+    },
+    {
+      "id": 10065,
+      "english": "Goblimon",
+      "korean": "고부리몬",
+      "directory": "goburimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=goburimon"
+    },
+    {
+      "id": 10066,
+      "english": "Shamamon",
+      "korean": "원시고부리몬",
+      "directory": "shamamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=shamamon"
+    },
+    {
+      "id": 10067,
+      "english": "Syakomon",
+      "korean": "샤코몬",
+      "directory": "shakomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=shakomon"
+    },
+    {
+      "id": 10068,
+      "english": "SnowGoblimon",
+      "korean": "스노우고부리몬",
+      "directory": "snowgoburimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=snowgoburimon"
+    },
+    {
+      "id": 10069,
+      "english": "Chuumon",
+      "korean": "츄몬",
+      "directory": "tyumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tyumon"
+    },
+    {
+      "id": 10070,
+      "english": "Dracmon",
+      "korean": "드라큐몬",
+      "directory": "dracumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dracumon"
+    },
+    {
+      "id": 10071,
+      "english": "Hagurumon",
+      "korean": "톱니몬",
+      "directory": "hagurumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=hagurumon"
+    },
+    {
+      "id": 10072,
+      "english": "DemiDevimon",
+      "korean": "피코데블몬",
+      "directory": "picodevimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=picodevimon"
+    },
+    {
+      "id": 10073,
+      "english": "FunBeemon",
+      "korean": "아기벌몬",
+      "directory": "funbeemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=funbeemon"
+    },
+    {
+      "id": 10074,
+      "english": "Betamon",
+      "korean": "베타몬",
+      "directory": "betamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=betamon"
+    },
+    {
+      "id": 10075,
+      "english": "Mushroomon",
+      "korean": "머슈몬",
+      "directory": "mushmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mushmon"
+    },
+    {
+      "id": 10076,
+      "english": "Armadillomon",
+      "korean": "아르마몬",
+      "directory": "armadimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=armadimon"
+    },
+    {
+      "id": 10077,
+      "english": "Veemon",
+      "korean": "브이몬",
+      "directory": "v-mon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=v-mon"
+    },
+    {
+      "id": 10078,
+      "english": "Hawkmon",
+      "korean": "호크몬",
+      "directory": "hawkmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=hawkmon"
+    },
+    {
+      "id": 10079,
+      "english": "Wormmon",
+      "korean": "추추몬",
+      "directory": "wormmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=wormmon"
+    },
+    {
+      "id": 10080,
+      "english": "Keramon",
+      "korean": "케라몬",
+      "directory": "keramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=keramon"
+    },
+    {
+      "id": 10081,
+      "english": "Aegiomon",
+      "korean": "아이기오몬",
+      "directory": "aegiomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=aegiomon"
+    },
+    {
+      "id": 10082,
+      "english": "Ikkakumon",
+      "korean": "원뿔몬",
+      "directory": "ikkakumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ikkakumon"
+    },
+    {
+      "id": 10083,
+      "english": "Airdramon",
+      "korean": "에어드라몬",
+      "directory": "airdramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=airdramon"
+    },
+    {
+      "id": 10084,
+      "english": "Angemon",
+      "korean": "엔젤몬",
+      "directory": "angemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=angemon"
+    },
+    {
+      "id": 10085,
+      "english": "Kabuterimon",
+      "korean": "캅테리몬",
+      "directory": "kabuterimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kabuterimon"
+    },
+    {
+      "id": 10086,
+      "english": "Gargomon",
+      "korean": "가르고몬",
+      "directory": "galgomon",
+      "method": "reviewed-variant",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=galgomon"
+    },
+    {
+      "id": 2010,
+      "english": "Garurumon",
+      "korean": "가루몬",
+      "directory": "garurumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=garurumon"
+    },
+    {
+      "id": 10088,
+      "english": "Ginryumon",
+      "korean": "긴류우몬",
+      "directory": "ginryumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ginryumon"
+    },
+    {
+      "id": 10089,
+      "english": "Grizzlymon",
+      "korean": "그리즈몬",
+      "directory": "gryzmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gryzmon"
+    },
+    {
+      "id": 2004,
+      "english": "Greymon",
+      "korean": "그레이몬",
+      "directory": "greymon-first",
+      "method": "reviewed-variant",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=greymon-first"
+    },
+    {
+      "id": 10091,
+      "english": "Coredramon (Blue)",
+      "korean": "코어드라몬(청)",
+      "directory": "coredramon_b",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=coredramon_b"
+    },
+    {
+      "id": 10092,
+      "english": "GeoGreymon",
+      "korean": "지오그레이몬",
+      "directory": "geogreymon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=geogreymon"
+    },
+    {
+      "id": 10093,
+      "english": "Strikedramon",
+      "korean": "스트라이크드라몬",
+      "directory": "strikedramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=strikedramon"
+    },
+    {
+      "id": 10094,
+      "english": "Snimon",
+      "korean": "스나이몬",
+      "directory": "snimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=snimon"
+    },
+    {
+      "id": 10095,
+      "english": "ZubaEagermon",
+      "korean": "즈바이거몬",
+      "directory": "zubaeagermon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=zubaeagermon"
+    },
+    {
+      "id": 10096,
+      "english": "Sorcermon",
+      "korean": "소서리몬",
+      "directory": "sorcerimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=sorcerimon"
+    },
+    {
+      "id": 10097,
+      "english": "Gatomon",
+      "korean": "가트몬",
+      "directory": "tailmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tailmon"
+    },
+    {
+      "id": 10098,
+      "english": "Dobermon",
+      "korean": "도베르몬",
+      "directory": "dobermon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dobermon"
+    },
+    {
+      "id": 10099,
+      "english": "Birdramon",
+      "korean": "버드라몬",
+      "directory": "birdramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=birdramon"
+    },
+    {
+      "id": 10100,
+      "english": "Firamon",
+      "korean": "파이라몬",
+      "directory": "firamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=firamon"
+    },
+    {
+      "id": 10101,
+      "english": "Veedramon",
+      "korean": "브이드라몬",
+      "directory": "v-dramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=v-dramon"
+    },
+    {
+      "id": 10102,
+      "english": "Buraimon",
+      "korean": "부라이몬",
+      "directory": "buraimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=buraimon"
+    },
+    {
+      "id": 10103,
+      "english": "Peckmon",
+      "korean": "펙크몬",
+      "directory": "peckmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=peckmon"
+    },
+    {
+      "id": 10104,
+      "english": "Mojyamon",
+      "korean": "모털몬",
+      "directory": "mojyamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mojyamon"
+    },
+    {
+      "id": 10105,
+      "english": "Frigimon",
+      "korean": "프리지몬",
+      "directory": "yukidarumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=yukidarumon"
+    },
+    {
+      "id": 10106,
+      "english": "Unimon",
+      "korean": "유니몬",
+      "directory": "yunimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=yunimon"
+    },
+    {
+      "id": 10107,
+      "english": "Raptordramon",
+      "korean": "라프타드라몬",
+      "directory": "raptordramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=raptordramon"
+    },
+    {
+      "id": 10108,
+      "english": "Deputymon",
+      "korean": "카우보이몬",
+      "directory": "revolmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=revolmon"
+    },
+    {
+      "id": 10109,
+      "english": "Leomon",
+      "korean": "레오몬",
+      "directory": "leomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=leomon"
+    },
+    {
+      "id": 10110,
+      "english": "Reppamon",
+      "korean": "레파몬",
+      "directory": "reppamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=reppamon"
+    },
+    {
+      "id": 10111,
+      "english": "Icemon",
+      "korean": "아이스몬",
+      "directory": "icemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=icemon"
+    },
+    {
+      "id": 10112,
+      "english": "Wizardmon",
+      "korean": "위자몬",
+      "directory": "wizarmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=wizarmon"
+    },
+    {
+      "id": 10113,
+      "english": "Witchmon",
+      "korean": "위치몬",
+      "directory": "witchmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=witchmon"
+    },
+    {
+      "id": 10114,
+      "english": "Gaogamon",
+      "korean": "가오가몬",
+      "directory": "gaogamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gaogamon"
+    },
+    {
+      "id": 10115,
+      "english": "Gawappamon",
+      "korean": "가와파몬",
+      "directory": "gawappamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gawappamon"
+    },
+    {
+      "id": 10116,
+      "english": "Kiwimon",
+      "korean": "키위몬",
+      "directory": "kiwimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kiwimon"
+    },
+    {
+      "id": 10117,
+      "english": "Kyubimon",
+      "korean": "구미호몬",
+      "directory": "kyubimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kyubimon"
+    },
+    {
+      "id": 10118,
+      "english": "Clockmon",
+      "korean": "타임몬",
+      "directory": "clockmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=clockmon"
+    },
+    {
+      "id": 10119,
+      "english": "Centarumon",
+      "korean": "켄터스몬",
+      "directory": "centalmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=centalmon"
+    },
+    {
+      "id": 10120,
+      "english": "Sunflowmon",
+      "korean": "해바라기몬",
+      "directory": "sunflowmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=sunflowmon"
+    },
+    {
+      "id": 10121,
+      "english": "Seadramon",
+      "korean": "시드라몬",
+      "directory": "seadramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=seadramon"
+    },
+    {
+      "id": 10122,
+      "english": "Coelamon",
+      "korean": "실리컨몬",
+      "directory": "coelamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=coelamon"
+    },
+    {
+      "id": 10123,
+      "english": "Shellmon",
+      "korean": "쉘몬",
+      "directory": "shellmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=shellmon"
+    },
+    {
+      "id": 10124,
+      "english": "Starmon",
+      "korean": "스타몬",
+      "directory": "starmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=starmon"
+    },
+    {
+      "id": 10125,
+      "english": "Tankmon",
+      "korean": "탱크몬",
+      "directory": "tankmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tankmon"
+    },
+    {
+      "id": 10126,
+      "english": "MudFrigimon",
+      "korean": "머드프리지몬",
+      "directory": "tuchidarumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tuchidarumon"
+    },
+    {
+      "id": 10127,
+      "english": "Dinohyumon",
+      "korean": "다이노휴몬",
+      "directory": "dinohumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dinohumon"
+    },
+    {
+      "id": 10128,
+      "english": "Tyrannomon",
+      "korean": "티라노몬",
+      "directory": "tyranomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tyranomon"
+    },
+    {
+      "id": 10129,
+      "english": "Turuiemon",
+      "korean": "토리에몬",
+      "directory": "turuiemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=turuiemon"
+    },
+    {
+      "id": 10130,
+      "english": "Togemon",
+      "korean": "니드몬",
+      "directory": "togemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=togemon"
+    },
+    {
+      "id": 10131,
+      "english": "Drimogemon",
+      "korean": "두리몬",
+      "directory": "drimogemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=drimogemon"
+    },
+    {
+      "id": 10132,
+      "english": "Dorugamon",
+      "korean": "도루가몬",
+      "directory": "dorugamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dorugamon"
+    },
+    {
+      "id": 10133,
+      "english": "BaoHuckmon",
+      "korean": "바오헉몬",
+      "directory": "baohuckmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=baohuckmon"
+    },
+    {
+      "id": 10134,
+      "english": "Blimpmon",
+      "korean": "브링프몬",
+      "directory": "blimpmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=blimpmon"
+    },
+    {
+      "id": 10135,
+      "english": "Meramon",
+      "korean": "메라몬",
+      "directory": "meramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=meramon"
+    },
+    {
+      "id": 10136,
+      "english": "Monochromon",
+      "korean": "모노크로몬",
+      "directory": "monochromon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=monochromon"
+    },
+    {
+      "id": 10137,
+      "english": "Lekismon",
+      "korean": "레키스몬",
+      "directory": "lekismon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lekismon"
+    },
+    {
+      "id": 10138,
+      "english": "IceDevimon",
+      "korean": "아이스데블몬",
+      "directory": "icedevimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=icedevimon"
+    },
+    {
+      "id": 10139,
+      "english": "Wendigomon",
+      "korean": "웬디몬",
+      "directory": "wendimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=wendimon"
+    },
+    {
+      "id": 10140,
+      "english": "Woodmon",
+      "korean": "우드몬",
+      "directory": "woodmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=woodmon"
+    },
+    {
+      "id": 10141,
+      "english": "Ogremon",
+      "korean": "우가몬",
+      "directory": "orgemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=orgemon"
+    },
+    {
+      "id": 10142,
+      "english": "Octomon",
+      "korean": "옥토몬",
+      "directory": "octmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=octmon"
+    },
+    {
+      "id": 10143,
+      "english": "Guardromon",
+      "korean": "가드로몬",
+      "directory": "guardromon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=guardromon"
+    },
+    {
+      "id": 10144,
+      "english": "ShellNumemon",
+      "korean": "달팽이워매몬",
+      "directory": "karatukinumemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=karatukinumemon"
+    },
+    {
+      "id": 10145,
+      "english": "Growlmon",
+      "korean": "그라우몬",
+      "directory": "growmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=growmon"
+    },
+    {
+      "id": 10146,
+      "english": "Kuwagamon",
+      "korean": "쿠가몬",
+      "directory": "kuwagamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kuwagamon"
+    },
+    {
+      "id": 10147,
+      "english": "Gekomon",
+      "korean": "개굴몬",
+      "directory": "gekomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gekomon"
+    },
+    {
+      "id": 10148,
+      "english": "Geremon",
+      "korean": "옐로우워매몬",
+      "directory": "geremon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=geremon"
+    },
+    {
+      "id": 10149,
+      "english": "Coredramon (Green)",
+      "korean": "코어드라몬(녹)",
+      "directory": "coredramon_g",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=coredramon_g"
+    },
+    {
+      "id": 10150,
+      "english": "GoldNumemon",
+      "korean": "골드워매몬",
+      "directory": "goldnumemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=goldnumemon"
+    },
+    {
+      "id": 10151,
+      "english": "Golemon",
+      "korean": "록몬",
+      "directory": "golemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=golemon"
+    },
+    {
+      "id": 10152,
+      "english": "Cyclonemon",
+      "korean": "사이크로몬",
+      "directory": "cyclomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=cyclomon"
+    },
+    {
+      "id": 10153,
+      "english": "Sangloupmon",
+      "korean": "상굴몬",
+      "directory": "sangloupmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=sangloupmon"
+    },
+    {
+      "id": 10154,
+      "english": "Sukamon",
+      "korean": "스카몬",
+      "directory": "scumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=scumon"
+    },
+    {
+      "id": 10155,
+      "english": "Tuskmon",
+      "korean": "태스크몬",
+      "directory": "tuskmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tuskmon"
+    },
+    {
+      "id": 10156,
+      "english": "Devimon",
+      "korean": "데블몬",
+      "directory": "devimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=devimon"
+    },
+    {
+      "id": 10157,
+      "english": "Deltamon",
+      "korean": "델타몬",
+      "directory": "deltamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=deltamon"
+    },
+    {
+      "id": 10158,
+      "english": "Dokugumon",
+      "korean": "스파이더몬",
+      "directory": "dokugumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dokugumon"
+    },
+    {
+      "id": 10159,
+      "english": "Nanimon",
+      "korean": "모야몬",
+      "directory": "nanimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=nanimon"
+    },
+    {
+      "id": 10160,
+      "english": "Numemon",
+      "korean": "워매몬",
+      "directory": "numemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=numemon"
+    },
+    {
+      "id": 10161,
+      "english": "Bakemon",
+      "korean": "고스몬",
+      "directory": "bakemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=bakemon"
+    },
+    {
+      "id": 10162,
+      "english": "Hyogamon",
+      "korean": "블루우가몬",
+      "directory": "hyougamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=hyougamon"
+    },
+    {
+      "id": 10163,
+      "english": "Fugamon",
+      "korean": "푸가몬",
+      "directory": "fugamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=fugamon"
+    },
+    {
+      "id": 10164,
+      "english": "Flymon",
+      "korean": "플라이몬",
+      "directory": "flymon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=flymon"
+    },
+    {
+      "id": 10165,
+      "english": "PlatinumSukamon",
+      "korean": "화이트스카몬",
+      "directory": "platinasukamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=platinasukamon"
+    },
+    {
+      "id": 10166,
+      "english": "BlackGatomon",
+      "korean": "블랙가트몬",
+      "directory": "blacktailmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=blacktailmon"
+    },
+    {
+      "id": 10167,
+      "english": "Vegiemon",
+      "korean": "베지몬",
+      "directory": "vegimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=vegimon"
+    },
+    {
+      "id": 10168,
+      "english": "Minotarumon",
+      "korean": "미노타몬",
+      "directory": "minotaurmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=minotaurmon"
+    },
+    {
+      "id": 10169,
+      "english": "Musyamon",
+      "korean": "무사몬",
+      "directory": "musyamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=musyamon"
+    },
+    {
+      "id": 10170,
+      "english": "Mekanorimon",
+      "korean": "메카노몬",
+      "directory": "mechanorimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mechanorimon"
+    },
+    {
+      "id": 10171,
+      "english": "Raremon",
+      "korean": "레어몬",
+      "directory": "raremon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=raremon"
+    },
+    {
+      "id": 10172,
+      "english": "Waspmon",
+      "korean": "말벌몬",
+      "directory": "waspmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=waspmon"
+    },
+    {
+      "id": 10173,
+      "english": "Aquilamon",
+      "korean": "아큐라몬",
+      "directory": "aquilamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=aquilamon"
+    },
+    {
+      "id": 10174,
+      "english": "Ankylomon",
+      "korean": "황금아르마몬",
+      "directory": "ankylomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ankylomon"
+    },
+    {
+      "id": 10175,
+      "english": "ExVeemon",
+      "korean": "엑스브이몬",
+      "directory": "xv-mon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=xv-mon"
+    },
+    {
+      "id": 10176,
+      "english": "Guardromon (Gold)",
+      "korean": "가드로몬(금)",
+      "directory": "gardromon_gold",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gardromon_gold"
+    },
+    {
+      "id": 10177,
+      "english": "Stingmon",
+      "korean": "스팅몬",
+      "directory": "stingmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=stingmon"
+    },
+    {
+      "id": 10178,
+      "english": "Kurisarimon",
+      "korean": "크리사리몬",
+      "directory": "chrysalimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=chrysalimon"
+    },
+    {
+      "id": 10179,
+      "english": "Submarimon",
+      "korean": "잠수몬",
+      "directory": "sabmarimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=sabmarimon"
+    },
+    {
+      "id": 10180,
+      "english": "Shurimon",
+      "korean": "수리몬",
+      "directory": "shurimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=shurimon"
+    },
+    {
+      "id": 10181,
+      "english": "Digmon",
+      "korean": "디그몬",
+      "directory": "digmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=digmon"
+    },
+    {
+      "id": 10182,
+      "english": "Nefertimon",
+      "korean": "네페르티몬",
+      "directory": "nefertimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=nefertimon"
+    },
+    {
+      "id": 10183,
+      "english": "Flamedramon",
+      "korean": "화염드라몬",
+      "directory": "fladramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=fladramon"
+    },
+    {
+      "id": 10184,
+      "english": "Pegasusmon",
+      "korean": "페가수스몬",
+      "directory": "pegasmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=pegasmon"
+    },
+    {
+      "id": 10185,
+      "english": "Halsemon",
+      "korean": "호루스몬",
+      "directory": "holsmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=holsmon"
+    },
+    {
+      "id": 10186,
+      "english": "Lighdramon",
+      "korean": "번개드라몬",
+      "directory": "lighdramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lighdramon"
+    },
+    {
+      "id": 10187,
+      "english": "Agunimon",
+      "korean": "아그니몬",
+      "directory": "agnimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=agnimon"
+    },
+    {
+      "id": 10188,
+      "english": "Lobomon",
+      "korean": "볼프몬",
+      "directory": "wolfmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=wolfmon"
+    },
+    {
+      "id": 10189,
+      "english": "Lanamon",
+      "korean": "라나몬",
+      "directory": "ranamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ranamon"
+    },
+    {
+      "id": 10190,
+      "english": "BurningGreymon",
+      "korean": "브리트라몬",
+      "directory": "vritramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=vritramon"
+    },
+    {
+      "id": 10191,
+      "english": "Calmaramon",
+      "korean": "카르마라몬",
+      "directory": "calamaramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=calamaramon"
+    },
+    {
+      "id": 10192,
+      "english": "KendoGarurumon",
+      "korean": "가름몬",
+      "directory": "garummon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=garummon"
+    },
+    {
+      "id": 10193,
+      "english": "Aegiochusmon",
+      "korean": "아이기오투스몬",
+      "directory": "aegiochusmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=aegiochusmon"
+    },
+    {
+      "id": 10194,
+      "english": "Aegiochusmon: Green",
+      "korean": "아이기오투스몬: 그린",
+      "directory": "aegiochusmon:green",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=aegiochusmon:green"
+    },
+    {
+      "id": 10195,
+      "english": "Aegiochusmon: Dark",
+      "korean": "아이기오투스몬: 다크",
+      "directory": "aegiochusmon:dark",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=aegiochusmon:dark"
+    },
+    {
+      "id": 10196,
+      "english": "Aegiochusmon: Blue",
+      "korean": "아이기오투스몬: 블루",
+      "directory": "aegiochusmon:blue",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=aegiochusmon:blue"
+    },
+    {
+      "id": 10197,
+      "english": "Aegiochusmon: Holy",
+      "korean": "아이기오투스몬: 홀리",
+      "directory": "aegiochusmon_holly",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=aegiochusmon_holly"
+    },
+    {
+      "id": 10198,
+      "english": "MegaKabuterimon",
+      "korean": "아트라캅테리몬(레드)",
+      "directory": "atlurkabuterimon",
+      "method": "reviewed-variant",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=atlurkabuterimon"
+    },
+    {
+      "id": 10199,
+      "english": "Andromon",
+      "korean": "안드로몬",
+      "directory": "andromon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=andromon"
+    },
+    {
+      "id": 10200,
+      "english": "Wingdramon",
+      "korean": "윙드라몬",
+      "directory": "wingdramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=wingdramon"
+    },
+    {
+      "id": 10201,
+      "english": "AeroVeedramon",
+      "korean": "에어로브이드라몬",
+      "directory": "earov-dramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=earov-dramon"
+    },
+    {
+      "id": 10202,
+      "english": "ExTyrannomon",
+      "korean": "엑스티라노몬",
+      "directory": "ex-tyranomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ex-tyranomon"
+    },
+    {
+      "id": 10203,
+      "english": "Angewomon",
+      "korean": "엔젤우몬",
+      "directory": "angewomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=angewomon"
+    },
+    {
+      "id": 10204,
+      "english": "Garudamon",
+      "korean": "가루다몬",
+      "directory": "garudamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=garudamon"
+    },
+    {
+      "id": 10205,
+      "english": "GrapLeomon",
+      "korean": "아이언레오몬",
+      "directory": "grappuleomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=grappuleomon"
+    },
+    {
+      "id": 10206,
+      "english": "Grademon",
+      "korean": "그레이드몬",
+      "directory": "grademon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=grademon"
+    },
+    {
+      "id": 10207,
+      "english": "GreatGrizzlymon",
+      "korean": "그레이트 그리즈몬",
+      "directory": "greatgryzmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=greatgryzmon"
+    },
+    {
+      "id": 10208,
+      "english": "Cerberusmon",
+      "korean": "케르베로스몬",
+      "directory": "cerberumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=cerberumon"
+    },
+    {
+      "id": 10209,
+      "english": "Cerberusmon WM",
+      "korean": "케르베로스몬: 인랑 모드",
+      "directory": "cerberumon_werewolfmode",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=cerberumon_werewolfmode"
+    },
+    {
+      "id": 10210,
+      "english": "Cyberdramon",
+      "korean": "사이버드라몬",
+      "directory": "cyberdramon",
+      "method": "reviewed-variant",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=cyberdramon"
+    },
+    {
+      "id": 10211,
+      "english": "JewelBeemon",
+      "korean": "주엘비몬",
+      "directory": "jewelbeemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=jewelbeemon"
+    },
+    {
+      "id": 10212,
+      "english": "Zudomon",
+      "korean": "쥬드몬",
+      "directory": "zudomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=zudomon"
+    },
+    {
+      "id": 10213,
+      "english": "Chirinmon",
+      "korean": "치린몬",
+      "directory": "tyilinmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tyilinmon"
+    },
+    {
+      "id": 10214,
+      "english": "Duramon",
+      "korean": "듀라몬",
+      "directory": "duramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=duramon"
+    },
+    {
+      "id": 10215,
+      "english": "Parrotmon",
+      "korean": "패롯몬",
+      "directory": "parrotmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=parrotmon"
+    },
+    {
+      "id": 10216,
+      "english": "IceLeomon",
+      "korean": "화이트레오몬",
+      "directory": "panjyamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=panjyamon"
+    },
+    {
+      "id": 10217,
+      "english": "Hisyaryumon",
+      "korean": "히샤류우몬",
+      "directory": "hisyaryumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=hisyaryumon"
+    },
+    {
+      "id": 10218,
+      "english": "Butenmon",
+      "korean": "부텐몬",
+      "directory": "butenmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=butenmon"
+    },
+    {
+      "id": 10219,
+      "english": "Flaremon",
+      "korean": "플레어몬",
+      "directory": "flaremon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=flaremon"
+    },
+    {
+      "id": 10220,
+      "english": "Whamon",
+      "korean": "고래몬",
+      "directory": "whamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=whamon"
+    },
+    {
+      "id": 10221,
+      "english": "MagnaAngemon",
+      "korean": "홀리엔젤몬",
+      "directory": "holyangemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=holyangemon"
+    },
+    {
+      "id": 10222,
+      "english": "Mammothmon",
+      "korean": "맘몬",
+      "directory": "mammon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mammon"
+    },
+    {
+      "id": 2005,
+      "english": "MetalGreymon",
+      "korean": "메탈그레이몬(백신종)",
+      "directory": "metalgreymon-v",
+      "method": "reviewed-variant",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=metalgreymon-v"
+    },
+    {
+      "id": 10224,
+      "english": "Monzaemon",
+      "korean": "퍼펫몬",
+      "directory": "monzaemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=monzaemon"
+    },
+    {
+      "id": 10225,
+      "english": "Crowmon",
+      "korean": "야타가라몬",
+      "directory": "yatagaramon_axcel",
+      "method": "reviewed-variant",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=yatagaramon_axcel"
+    },
+    {
+      "id": 10226,
+      "english": "RizeGreymon",
+      "korean": "라이즈그레이몬",
+      "directory": "rizegreymon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=rizegreymon"
+    },
+    {
+      "id": 10227,
+      "english": "Rapidmon",
+      "korean": "래피드몬",
+      "directory": "rapidmon",
+      "method": "reviewed-variant",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=rapidmon"
+    },
+    {
+      "id": 10228,
+      "english": "LoaderLeomon",
+      "korean": "로더레오몬",
+      "directory": "loaderleomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=loaderleomon"
+    },
+    {
+      "id": 2011,
+      "english": "WereGarurumon",
+      "korean": "워가루몬",
+      "directory": "weregarrumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=weregarrumon"
+    },
+    {
+      "id": 10230,
+      "english": "Scorpiomon",
+      "korean": "스콜피오몬",
+      "directory": "anomalocarimon",
+      "method": "reviewed-variant",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=anomalocarimon"
+    },
+    {
+      "id": 10231,
+      "english": "Enbarrmon",
+      "korean": "안바르몬",
+      "directory": "enbarrmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=enbarrmon"
+    },
+    {
+      "id": 10232,
+      "english": "Antylamon",
+      "korean": "안티라몬",
+      "directory": "andiramon_2",
+      "method": "reviewed-variant",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=andiramon_2"
+    },
+    {
+      "id": 10233,
+      "english": "Meteormon",
+      "korean": "운석몬",
+      "directory": "insekimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=insekimon"
+    },
+    {
+      "id": 10234,
+      "english": "OmniShoutmon",
+      "korean": "오메가샤우트몬",
+      "directory": "omegashoutmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=omegashoutmon"
+    },
+    {
+      "id": 10235,
+      "english": "Kimeramon",
+      "korean": "키메라몬",
+      "directory": "chimairamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=chimairamon"
+    },
+    {
+      "id": 10236,
+      "english": "CatchMamemon",
+      "korean": "캐치콩알몬",
+      "directory": "catchmamemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=catchmamemon"
+    },
+    {
+      "id": 10237,
+      "english": "Crescemon",
+      "korean": "크레세몬",
+      "directory": "crescemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=crescemon"
+    },
+    {
+      "id": 10238,
+      "english": "SuperStarmon",
+      "korean": "슈퍼스타몬",
+      "directory": "superstarmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=superstarmon"
+    },
+    {
+      "id": 10239,
+      "english": "SkullBaluchimon",
+      "korean": "스컬벌키몬",
+      "directory": "skullbaluchimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=skullbaluchimon"
+    },
+    {
+      "id": 10240,
+      "english": "SaviorHuckmon",
+      "korean": "세이버헉몬",
+      "directory": "saviorhuckmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=saviorhuckmon"
+    },
+    {
+      "id": 10241,
+      "english": "Sirenmon",
+      "korean": "세이렌몬",
+      "directory": "sirenmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=sirenmon"
+    },
+    {
+      "id": 10242,
+      "english": "Taomon",
+      "korean": "도사몬",
+      "directory": "taomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=taomon"
+    },
+    {
+      "id": 10243,
+      "english": "Digitamamon",
+      "korean": "디지타몬",
+      "directory": "digitamamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=digitamamon"
+    },
+    {
+      "id": 10244,
+      "english": "SkullMeramon",
+      "korean": "데드메라몬",
+      "directory": "deathmeramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=deathmeramon"
+    },
+    {
+      "id": 10245,
+      "english": "Deramon",
+      "korean": "뿌띠몬",
+      "directory": "delumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=delumon"
+    },
+    {
+      "id": 10246,
+      "english": "Triceramon",
+      "korean": "트리케라몬",
+      "directory": "triceramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=triceramon"
+    },
+    {
+      "id": 10247,
+      "english": "DoruGreymon",
+      "korean": "도루그레몬",
+      "directory": "doruguremon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=doruguremon"
+    },
+    {
+      "id": 10248,
+      "english": "Knightmon",
+      "korean": "나이트몬",
+      "directory": "knightmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=knightmon"
+    },
+    {
+      "id": 10249,
+      "english": "Divermon",
+      "korean": "다이버몬",
+      "directory": "hangyomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=hangyomon"
+    },
+    {
+      "id": 10250,
+      "english": "Pandamon",
+      "korean": "팬더몬",
+      "directory": "pandamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=pandamon"
+    },
+    {
+      "id": 10251,
+      "english": "Pumpkinmon",
+      "korean": "펌프몬",
+      "directory": "pumpmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=pumpmon"
+    },
+    {
+      "id": 10252,
+      "english": "BigMamemon",
+      "korean": "빅콩알몬",
+      "directory": "bigmamemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=bigmamemon"
+    },
+    {
+      "id": 10253,
+      "english": "Piximon",
+      "korean": "피콜몬",
+      "directory": "picklemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=picklemon"
+    },
+    {
+      "id": 10254,
+      "english": "HippoGryphonmon",
+      "korean": "히포그리포몬",
+      "directory": "hippogriffomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=hippogriffomon"
+    },
+    {
+      "id": 10255,
+      "english": "Brachiomon",
+      "korean": "브라키몬",
+      "directory": "brachiomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=brachiomon"
+    },
+    {
+      "id": 10256,
+      "english": "Volcanomon",
+      "korean": "볼케몬",
+      "directory": "volcamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=volcamon"
+    },
+    {
+      "id": 10257,
+      "english": "MasterBlimpmon",
+      "korean": "마스터브링프몬",
+      "directory": "masterblimpmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=masterblimpmon"
+    },
+    {
+      "id": 10258,
+      "english": "MachGaogamon",
+      "korean": "마하가오가몬",
+      "directory": "machgaogamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=machgaogamon"
+    },
+    {
+      "id": 10259,
+      "english": "Mamemon",
+      "korean": "콩알몬",
+      "directory": "mamemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mamemon"
+    },
+    {
+      "id": 10260,
+      "english": "MegaSeadramon",
+      "korean": "메가시드라몬",
+      "directory": "megaseadramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=megaseadramon"
+    },
+    {
+      "id": 10261,
+      "english": "MetalMamemon",
+      "korean": "메탈콩알몬",
+      "directory": "metalmamemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=metalmamemon"
+    },
+    {
+      "id": 10262,
+      "english": "Lilamon",
+      "korean": "라일라몬",
+      "directory": "lilamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lilamon"
+    },
+    {
+      "id": 10263,
+      "english": "Lillymon",
+      "korean": "릴리몬",
+      "directory": "lilimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lilimon"
+    },
+    {
+      "id": 10264,
+      "english": "Locomon",
+      "korean": "로코몬",
+      "directory": "locomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=locomon"
+    },
+    {
+      "id": 10265,
+      "english": "Astamon",
+      "korean": "아스타몬",
+      "directory": "astamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=astamon"
+    },
+    {
+      "id": 10266,
+      "english": "Arukenimon",
+      "korean": "아라크네몬",
+      "directory": "archnemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=archnemon"
+    },
+    {
+      "id": 10267,
+      "english": "Myotismon",
+      "korean": "묘티스몬",
+      "directory": "vamdemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=vamdemon"
+    },
+    {
+      "id": 10268,
+      "english": "Etemon",
+      "korean": "에테몬",
+      "directory": "etemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=etemon"
+    },
+    {
+      "id": 10269,
+      "english": "Okuwamon",
+      "korean": "왕쿠가몬",
+      "directory": "okuwamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=okuwamon"
+    },
+    {
+      "id": 10270,
+      "english": "Orochimon",
+      "korean": "오로치몬",
+      "directory": "orochimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=orochimon"
+    },
+    {
+      "id": 10271,
+      "english": "Garbagemon",
+      "korean": "가비지몬",
+      "directory": "gerbemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gerbemon"
+    },
+    {
+      "id": 10272,
+      "english": "Gigadramon",
+      "korean": "기가드라몬",
+      "directory": "gigadramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gigadramon"
+    },
+    {
+      "id": 10273,
+      "english": "CannonBeemon",
+      "korean": "캐논벌몬",
+      "directory": "cannonbeemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=cannonbeemon"
+    },
+    {
+      "id": 10274,
+      "english": "Groundramon",
+      "korean": "그라운드라몬",
+      "directory": "groundramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=groundramon"
+    },
+    {
+      "id": 10275,
+      "english": "Sharkmon",
+      "korean": "샤크몬",
+      "directory": "sharkmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=sharkmon"
+    },
+    {
+      "id": 10276,
+      "english": "Shaujinmon",
+      "korean": "사우자몬",
+      "directory": "shawujinmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=shawujinmon"
+    },
+    {
+      "id": 10277,
+      "english": "Cherrymon",
+      "korean": "쥬레이몬",
+      "directory": "jyureimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=jyureimon"
+    },
+    {
+      "id": 10278,
+      "english": "SkullGreymon",
+      "korean": "스컬그레이몬",
+      "directory": "skullgreymon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=skullgreymon"
+    },
+    {
+      "id": 10279,
+      "english": "SkullSatamon",
+      "korean": "스컬사탄몬",
+      "directory": "skullsatamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=skullsatamon"
+    },
+    {
+      "id": 10280,
+      "english": "SkullSeadramon",
+      "korean": "스컬시드라몬",
+      "directory": "skullseadramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=skullseadramon"
+    },
+    {
+      "id": 10281,
+      "english": "DarkSuperStarmon",
+      "korean": "다크슈퍼스타몬",
+      "directory": "darksuperstarmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=darksuperstarmon"
+    },
+    {
+      "id": 10282,
+      "english": "Dragomon",
+      "korean": "드라고몬",
+      "directory": "dagomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dagomon"
+    },
+    {
+      "id": 10283,
+      "english": "Tankdramon",
+      "korean": "탱크드라몬",
+      "directory": "tankdramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tankdramon"
+    },
+    {
+      "id": 10284,
+      "english": "ShogunGekomon",
+      "korean": "왕개굴몬",
+      "directory": "tonosamagekomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tonosamagekomon"
+    },
+    {
+      "id": 10285,
+      "english": "Datamon",
+      "korean": "데이터몬",
+      "directory": "nanomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=nanomon"
+    },
+    {
+      "id": 10286,
+      "english": "Phantomon",
+      "korean": "팬텀몬",
+      "directory": "fantomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=fantomon"
+    },
+    {
+      "id": 10287,
+      "english": "BlackKingNumemon",
+      "korean": "블랙킹워매몬",
+      "directory": "blackkingnumemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=blackkingnumemon"
+    },
+    {
+      "id": 10288,
+      "english": "BlueMeramon",
+      "korean": "블루메라몬",
+      "directory": "bluemeramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=bluemeramon"
+    },
+    {
+      "id": 10289,
+      "english": "Vademon",
+      "korean": "베이더몬",
+      "directory": "vademon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=vademon"
+    },
+    {
+      "id": 10290,
+      "english": "Matadormon",
+      "korean": "마타돌몬",
+      "directory": "matadrmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=matadrmon"
+    },
+    {
+      "id": 10291,
+      "english": "Mummymon",
+      "korean": "미이라몬",
+      "directory": "mummymon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mummymon"
+    },
+    {
+      "id": 10292,
+      "english": "Mistymon",
+      "korean": "미스티몬",
+      "directory": "mistymon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mistymon"
+    },
+    {
+      "id": 10293,
+      "english": "Megadramon",
+      "korean": "메가드라몬",
+      "directory": "megadramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=megadramon"
+    },
+    {
+      "id": 10294,
+      "english": "WarGrowlmon",
+      "korean": "메가로그라우몬",
+      "directory": "megalogrowmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=megalogrowmon"
+    },
+    {
+      "id": 10295,
+      "english": "MetalTyrannomon",
+      "korean": "메탈티라노몬",
+      "directory": "metaltyranomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=metaltyranomon"
+    },
+    {
+      "id": 10296,
+      "english": "Lucemon CM",
+      "korean": "루체몬: 폴다운 모드",
+      "directory": "rucemonfalldownmode",
+      "method": "reviewed-variant",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=rucemonfalldownmode"
+    },
+    {
+      "id": 10297,
+      "english": "LadyDevimon",
+      "korean": "레이디데블몬",
+      "directory": "ladydevimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ladydevimon"
+    },
+    {
+      "id": 10298,
+      "english": "Wisemon",
+      "korean": "와이즈몬",
+      "directory": "wisemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=wisemon"
+    },
+    {
+      "id": 10299,
+      "english": "WaruSeadramon",
+      "korean": "데블시드라몬",
+      "directory": "waruseadramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=waruseadramon"
+    },
+    {
+      "id": 10300,
+      "english": "Shakkoumon",
+      "korean": "토우몬",
+      "directory": "shakkoumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=shakkoumon"
+    },
+    {
+      "id": 10301,
+      "english": "Silphymon",
+      "korean": "실피드몬",
+      "directory": "silphymon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=silphymon"
+    },
+    {
+      "id": 10302,
+      "english": "Dinobeemon",
+      "korean": "다이노몬",
+      "directory": "dinobeemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dinobeemon"
+    },
+    {
+      "id": 10303,
+      "english": "Paildramon",
+      "korean": "파일드라몬",
+      "directory": "paildramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=paildramon"
+    },
+    {
+      "id": 10304,
+      "english": "Infermon",
+      "korean": "인펠몬",
+      "directory": "infermon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=infermon"
+    },
+    {
+      "id": 10305,
+      "english": "Aldamon",
+      "korean": "아루다몬",
+      "directory": "aldamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=aldamon"
+    },
+    {
+      "id": 10306,
+      "english": "Beowolfmon",
+      "korean": "베오울프몬",
+      "directory": "beowolfmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=beowolfmon"
+    },
+    {
+      "id": 10307,
+      "english": "Apollomon",
+      "korean": "아폴로몬",
+      "directory": "apollomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=apollomon"
+    },
+    {
+      "id": 10308,
+      "english": "Alphamon",
+      "korean": "알파몬",
+      "directory": "alphamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=alphamon"
+    },
+    {
+      "id": 10309,
+      "english": "UlforceVeedramon",
+      "korean": "알포스브이드라몬",
+      "directory": "ulforcevdramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ulforcevdramon"
+    },
+    {
+      "id": 10310,
+      "english": "Varodurumon",
+      "korean": "발두르몬",
+      "directory": "valdurmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=valdurmon"
+    },
+    {
+      "id": 10311,
+      "english": "Venusmon",
+      "korean": "베누스몬",
+      "directory": "venusmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=venusmon"
+    },
+    {
+      "id": 2006,
+      "english": "WarGreymon",
+      "korean": "워그레이몬",
+      "directory": "wargreymon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=wargreymon"
+    },
+    {
+      "id": 10313,
+      "english": "Ouryumon",
+      "korean": "오류우몬",
+      "directory": "ouryumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ouryumon"
+    },
+    {
+      "id": 10314,
+      "english": "Ophanimon",
+      "korean": "오파니몬",
+      "directory": "ofanimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ofanimon"
+    },
+    {
+      "id": 10315,
+      "english": "ClavisAngemon",
+      "korean": "클라비스엔젤몬",
+      "directory": "clavisangemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=clavisangemon"
+    },
+    {
+      "id": 10316,
+      "english": "Craniamon",
+      "korean": "크레니엄몬",
+      "directory": "craniummon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=craniummon"
+    },
+    {
+      "id": 10317,
+      "english": "Eaglemon",
+      "korean": "크로스몬",
+      "directory": "crossmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=crossmon"
+    },
+    {
+      "id": 10318,
+      "english": "Chronomon HM",
+      "korean": "크로노몬: 홀리 모드",
+      "directory": "chronomon_holy",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=chronomon_holy"
+    },
+    {
+      "id": 10319,
+      "english": "Cherubimon (Black)",
+      "korean": "케루비몬(악)",
+      "directory": "cherubimon-vice",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=cherubimon-vice"
+    },
+    {
+      "id": 10320,
+      "english": "Cherubimon (Good)",
+      "korean": "케루비몬(선)",
+      "directory": "cherubimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=cherubimon"
+    },
+    {
+      "id": 10321,
+      "english": "Goldramon",
+      "korean": "갓드라몬",
+      "directory": "goddramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=goddramon"
+    },
+    {
+      "id": 10322,
+      "english": "ShineGreymon",
+      "korean": "샤인그레이몬",
+      "directory": "shinegreymon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=shinegreymon"
+    },
+    {
+      "id": 10323,
+      "english": "Justimon",
+      "korean": "저스티몬: 블리츠 암",
+      "directory": "justimon_blitzarm",
+      "method": "reviewed-variant",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=justimon_blitzarm"
+    },
+    {
+      "id": 10324,
+      "english": "SkullMammothmon",
+      "korean": "스컬맘몬",
+      "directory": "skullmammon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=skullmammon"
+    },
+    {
+      "id": 10325,
+      "english": "SlashAngemon",
+      "korean": "슬래쉬엔젤몬",
+      "directory": "slashangemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=slashangemon"
+    },
+    {
+      "id": 10326,
+      "english": "Kentaurosmon",
+      "korean": "슬레이프몬",
+      "directory": "sleipmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=sleipmon"
+    },
+    {
+      "id": 10327,
+      "english": "Slayerdramon",
+      "korean": "슬레이어드라몬",
+      "directory": "slayerdramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=slayerdramon"
+    },
+    {
+      "id": 10328,
+      "english": "Seraphimon",
+      "korean": "세라피몬",
+      "directory": "seraphimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=seraphimon"
+    },
+    {
+      "id": 10329,
+      "english": "MegaGargomon",
+      "korean": "세인트가르고몬",
+      "directory": "saintgalgomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=saintgalgomon"
+    },
+    {
+      "id": 10330,
+      "english": "Durandamon",
+      "korean": "듀란다몬",
+      "directory": "durandamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=durandamon"
+    },
+    {
+      "id": 10331,
+      "english": "Neptunemon",
+      "korean": "넵튠몬",
+      "directory": "neptunemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=neptunemon"
+    },
+    {
+      "id": 10332,
+      "english": "HiAndromon",
+      "korean": "하이안드로몬",
+      "directory": "hiandromon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=hiandromon"
+    },
+    {
+      "id": 10333,
+      "english": "BanchoLeomon",
+      "korean": "반쵸레오몬",
+      "directory": "bancholeomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=bancholeomon"
+    },
+    {
+      "id": 10334,
+      "english": "HerculesKabuterimon",
+      "korean": "헤라클레스캅테리몬",
+      "directory": "heraklekabuterimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=heraklekabuterimon"
+    },
+    {
+      "id": 10335,
+      "english": "Phoenixmon",
+      "korean": "페닉스몬",
+      "directory": "hououmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=hououmon"
+    },
+    {
+      "id": 10336,
+      "english": "Magnadramon",
+      "korean": "홀리드라몬",
+      "directory": "holydramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=holydramon"
+    },
+    {
+      "id": 10337,
+      "english": "Mastemon",
+      "korean": "마스테몬",
+      "directory": "mastemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mastemon"
+    },
+    {
+      "id": 10338,
+      "english": "MarineAngemon",
+      "korean": "마린엔젤몬",
+      "directory": "marinangemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=marinangemon"
+    },
+    {
+      "id": 10339,
+      "english": "Marsmon",
+      "korean": "마르스몬",
+      "directory": "marsmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=marsmon"
+    },
+    {
+      "id": 10340,
+      "english": "Jupitermon",
+      "korean": "유피테르몬",
+      "directory": "jupitermon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=jupitermon"
+    },
+    {
+      "id": 10341,
+      "english": "Ravemon",
+      "korean": "레이브몬",
+      "directory": "ravmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ravmon"
+    },
+    {
+      "id": 10342,
+      "english": "UltimateBrachiomon",
+      "korean": "얼티메이트브라키몬",
+      "directory": "ultimatebrakimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ultimatebrakimon"
+    },
+    {
+      "id": 10343,
+      "english": "Vulcanusmon",
+      "korean": "불카누스몬",
+      "directory": "vulcanusmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=vulcanusmon"
+    },
+    {
+      "id": 10344,
+      "english": "Gankoomon",
+      "korean": "간쿠몬",
+      "directory": "gankoomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gankoomon"
+    },
+    {
+      "id": 10345,
+      "english": "Kuzuhamon",
+      "korean": "쿠즈하몬",
+      "directory": "kuzuhamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kuzuhamon"
+    },
+    {
+      "id": 10346,
+      "english": "GroundLocomon",
+      "korean": "그랜드로코몬",
+      "directory": "grandlocomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=grandlocomon"
+    },
+    {
+      "id": 10347,
+      "english": "Gryphonmon",
+      "korean": "그리포몬",
+      "directory": "griffomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=griffomon"
+    },
+    {
+      "id": 10348,
+      "english": "Ceresmon",
+      "korean": "케레스몬",
+      "directory": "ceresmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ceresmon"
+    },
+    {
+      "id": 10349,
+      "english": "Ceresmon Medium",
+      "korean": "케레스몬메디움",
+      "directory": "ceresmon",
+      "method": "official-profile",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ceresmon"
+    },
+    {
+      "id": 10350,
+      "english": "SaberLeomon",
+      "korean": "샤벨레오몬",
+      "directory": "saberleomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=saberleomon"
+    },
+    {
+      "id": 10351,
+      "english": "Sakuyamon",
+      "korean": "샤크라몬",
+      "directory": "sakuyamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=sakuyamon"
+    },
+    {
+      "id": 10352,
+      "english": "Jesmon",
+      "korean": "제스몬",
+      "directory": "jesmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=jesmon"
+    },
+    {
+      "id": 10353,
+      "english": "JumboGamemon",
+      "korean": "점보가메몬",
+      "directory": "jumbogamemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=jumbogamemon"
+    },
+    {
+      "id": 10354,
+      "english": "Dianamon",
+      "korean": "디아나몬",
+      "directory": "dianamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dianamon"
+    },
+    {
+      "id": 10355,
+      "english": "Dynasmon",
+      "korean": "듀나스몬",
+      "directory": "dynasmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dynasmon"
+    },
+    {
+      "id": 10356,
+      "english": "Leopardmon",
+      "korean": "두프트몬",
+      "directory": "duftmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=duftmon"
+    },
+    {
+      "id": 10357,
+      "english": "Leopardmon LM",
+      "korean": "두프트몬: 레오파드 모드",
+      "directory": "duftmonleopardmode",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=duftmonleopardmode"
+    },
+    {
+      "id": 10358,
+      "english": "Dorugoramon",
+      "korean": "도루고라몬",
+      "directory": "dorugoramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dorugoramon"
+    },
+    {
+      "id": 10359,
+      "english": "PileVolcanomon",
+      "korean": "파일볼케몬",
+      "directory": "pilevolcamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=pilevolcamon"
+    },
+    {
+      "id": 10360,
+      "english": "PrinceMamemon",
+      "korean": "프린스콩알몬",
+      "directory": "princemamemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=princemamemon"
+    },
+    {
+      "id": 10361,
+      "english": "Plesiomon",
+      "korean": "플레시오몬",
+      "directory": "plesiomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=plesiomon"
+    },
+    {
+      "id": 10362,
+      "english": "Boltmon",
+      "korean": "볼트몬",
+      "directory": "boltmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=boltmon"
+    },
+    {
+      "id": 10363,
+      "english": "MirageGaogamon",
+      "korean": "미라쥬가오가몬",
+      "directory": "miragegaogamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=miragegaogamon"
+    },
+    {
+      "id": 2012,
+      "english": "MetalGarurumon",
+      "korean": "메탈가루몬",
+      "directory": "metalgarurumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=metalgarurumon"
+    },
+    {
+      "id": 10365,
+      "english": "MetalSeadramon",
+      "korean": "메탈시드라몬",
+      "directory": "metalseadramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=metalseadramon"
+    },
+    {
+      "id": 10366,
+      "english": "MedievalGallantmon",
+      "korean": "메디벌듀크몬",
+      "directory": "medievaldukemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=medievaldukemon"
+    },
+    {
+      "id": 10367,
+      "english": "Rosemon",
+      "korean": "로제몬",
+      "directory": "rosemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=rosemon"
+    },
+    {
+      "id": 10368,
+      "english": "Lotosmon",
+      "korean": "로터스몬",
+      "directory": "lotusmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lotusmon"
+    },
+    {
+      "id": 10369,
+      "english": "AvengeKidmon",
+      "korean": "어벤지키드몬",
+      "directory": "avengekidmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=avengekidmon"
+    },
+    {
+      "id": 10370,
+      "english": "Ebemon",
+      "korean": "이바몬",
+      "directory": "ebemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ebemon"
+    },
+    {
+      "id": 10371,
+      "english": "VenomMyotismon",
+      "korean": "베놈묘티스몬",
+      "directory": "venomvamdemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=venomvamdemon"
+    },
+    {
+      "id": 10372,
+      "english": "AncientWisemon",
+      "korean": "에이션트와이즈몬",
+      "directory": "ancientwisetmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ancientwisetmon"
+    },
+    {
+      "id": 10373,
+      "english": "Gaiomon",
+      "korean": "가이오몬",
+      "directory": "gaioumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gaioumon"
+    },
+    {
+      "id": 10374,
+      "english": "ChaosGallantmon",
+      "korean": "카오스듀크몬",
+      "directory": "chaosdukemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=chaosdukemon"
+    },
+    {
+      "id": 10375,
+      "english": "Chaosdramon",
+      "korean": "카오스드라몬",
+      "directory": "chaosdramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=chaosdramon"
+    },
+    {
+      "id": 10376,
+      "english": "Callismon",
+      "korean": "칼리스몬",
+      "directory": "callismon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=callismon"
+    },
+    {
+      "id": 10377,
+      "english": "Gundramon",
+      "korean": "건드라몬",
+      "directory": "gundramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gundramon"
+    },
+    {
+      "id": 10378,
+      "english": "KingEtemon",
+      "korean": "킹에테몬",
+      "directory": "kingetemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kingetemon"
+    },
+    {
+      "id": 10379,
+      "english": "GranDracmon",
+      "korean": "그란드라큐몬",
+      "directory": "granddracumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=granddracumon"
+    },
+    {
+      "id": 10380,
+      "english": "Chronomon DM",
+      "korean": "크로노몬: 디스트로이 모드",
+      "directory": "chronomon_destroy",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=chronomon_destroy"
+    },
+    {
+      "id": 10381,
+      "english": "Zanbamon",
+      "korean": "황금무사몬",
+      "directory": "zanbamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=zanbamon"
+    },
+    {
+      "id": 10382,
+      "english": "ZombiePlutomon",
+      "korean": "좀비플루토몬",
+      "directory": "zombieplutomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=zombieplutomon"
+    },
+    {
+      "id": 10383,
+      "english": "Darkdramon",
+      "korean": "다크드라몬",
+      "directory": "darkdramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=darkdramon"
+    },
+    {
+      "id": 10384,
+      "english": "TigerVespamon",
+      "korean": "타이거베스파몬",
+      "directory": "tigervespamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tigervespamon"
+    },
+    {
+      "id": 10385,
+      "english": "Titamon",
+      "korean": "타이타몬",
+      "directory": "titamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=titamon"
+    },
+    {
+      "id": 10386,
+      "english": "TyrantKabuterimon",
+      "korean": "타이런트캅테리몬",
+      "directory": "tyrantkabuterimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=tyrantkabuterimon"
+    },
+    {
+      "id": 10387,
+      "english": "Creepymon",
+      "korean": "마왕몬",
+      "directory": "demon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=demon"
+    },
+    {
+      "id": 10388,
+      "english": "Gallantmon",
+      "korean": "듀크몬",
+      "directory": "dukemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dukemon"
+    },
+    {
+      "id": 10389,
+      "english": "Bacchusmon",
+      "korean": "바커스몬",
+      "directory": "bacchusmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=bacchusmon"
+    },
+    {
+      "id": 10390,
+      "english": "Bacchusmon DM",
+      "korean": "바커스몬 (DM)",
+      "directory": "bacchusmon",
+      "method": "base-name-original-suffix",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=bacchusmon"
+    },
+    {
+      "id": 10391,
+      "english": "Barbamon",
+      "korean": "발바몬",
+      "directory": "barbamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=barbamon"
+    },
+    {
+      "id": 10392,
+      "english": "Piedmon",
+      "korean": "피에몬",
+      "directory": "piemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=piemon"
+    },
+    {
+      "id": 10393,
+      "english": "Puppetmon",
+      "korean": "피노키몬",
+      "directory": "pinochimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=pinochimon"
+    },
+    {
+      "id": 10394,
+      "english": "Pharaohmon",
+      "korean": "파라오몬",
+      "directory": "pharaohmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=pharaohmon"
+    },
+    {
+      "id": 10395,
+      "english": "Pukumon",
+      "korean": "푸쿠몬",
+      "directory": "pukumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=pukumon"
+    },
+    {
+      "id": 10396,
+      "english": "PlatinumNumemon",
+      "korean": "플래티넘워매몬",
+      "directory": "platinumnumemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=platinumnumemon"
+    },
+    {
+      "id": 10397,
+      "english": "Plutomon",
+      "korean": "플루토몬",
+      "directory": "plutomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=plutomon"
+    },
+    {
+      "id": 10398,
+      "english": "Breakdramon",
+      "korean": "브레이크드라몬",
+      "directory": "breakdramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=breakdramon"
+    },
+    {
+      "id": 10399,
+      "english": "MaloMyotismon",
+      "korean": "베리얼묘티스몬",
+      "directory": "belialvamdemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=belialvamdemon"
+    },
+    {
+      "id": 10400,
+      "english": "BeelStarmon",
+      "korean": "베르스타몬",
+      "directory": "beelstarmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=beelstarmon"
+    },
+    {
+      "id": 10401,
+      "english": "Beelzemon",
+      "korean": "베르제브몬",
+      "directory": "beelzebumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=beelzebumon"
+    },
+    {
+      "id": 10402,
+      "english": "Belphemon SM",
+      "korean": "벨페몬: 슬립 모드",
+      "directory": "belphemonsleepmode",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=belphemonsleepmode"
+    },
+    {
+      "id": 10403,
+      "english": "MagnaKidmon",
+      "korean": "매그너키드몬",
+      "directory": "magnakidmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=magnakidmon"
+    },
+    {
+      "id": 10404,
+      "english": "Minervamon",
+      "korean": "미네르바몬",
+      "directory": "minervamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=minervamon"
+    },
+    {
+      "id": 10405,
+      "english": "Millenniummon",
+      "korean": "밀레니엄몬",
+      "directory": "millenniumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=millenniumon"
+    },
+    {
+      "id": 10406,
+      "english": "Machinedramon",
+      "korean": "파워드라몬",
+      "directory": "mugendramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mugendramon"
+    },
+    {
+      "id": 10407,
+      "english": "Megidramon",
+      "korean": "메기드라몬",
+      "directory": "megidramon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=megidramon"
+    },
+    {
+      "id": 10408,
+      "english": "MetalEtemon",
+      "korean": "메탈에테몬",
+      "directory": "metaletemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=metaletemon"
+    },
+    {
+      "id": 10409,
+      "english": "Merukimon",
+      "korean": "메르크리몬",
+      "directory": "mercurymon",
+      "method": "reviewed-variant",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mercurymon"
+    },
+    {
+      "id": 10410,
+      "english": "Junomon",
+      "korean": "유노몬",
+      "directory": "junomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=junomon"
+    },
+    {
+      "id": 10411,
+      "english": "Junomon HM",
+      "korean": "유노몬: 히스테릭 모드",
+      "directory": "junomon_hysteric",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=junomon_hysteric"
+    },
+    {
+      "id": 10412,
+      "english": "RustTyrannomon",
+      "korean": "러스트티라노몬",
+      "directory": "rusttyranomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=rusttyranomon"
+    },
+    {
+      "id": 10413,
+      "english": "Leviamon",
+      "korean": "리바이어몬",
+      "directory": "leviamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=leviamon"
+    },
+    {
+      "id": 10414,
+      "english": "Lilithmon",
+      "korean": "리리스몬",
+      "directory": "lilithmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lilithmon"
+    },
+    {
+      "id": 10415,
+      "english": "LordKnightmon",
+      "korean": "로드나이트몬",
+      "directory": "lordknightmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lordknightmon"
+    },
+    {
+      "id": 10416,
+      "english": "Imperialdramon DM",
+      "korean": "황제드라몬: 드래곤 모드",
+      "directory": "imperialdramondragonmode",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=imperialdramondragonmode"
+    },
+    {
+      "id": 10417,
+      "english": "Imperialdramon FM",
+      "korean": "황제드라몬: 파이터 모드",
+      "directory": "imperialdramonfightermode",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=imperialdramonfightermode"
+    },
+    {
+      "id": 10418,
+      "english": "Vikemon",
+      "korean": "바이킹몬",
+      "directory": "vikemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=vikemon"
+    },
+    {
+      "id": 10419,
+      "english": "Valkyrimon",
+      "korean": "발키리몬",
+      "directory": "valkyrimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=valkyrimon"
+    },
+    {
+      "id": 10420,
+      "english": "GranKuwagamon",
+      "korean": "그랜쿠가몬",
+      "directory": "grankuwagamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=grankuwagamon"
+    },
+    {
+      "id": 10421,
+      "english": "Diaboromon",
+      "korean": "디아블로몬",
+      "directory": "diablomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=diablomon"
+    },
+    {
+      "id": 10422,
+      "english": "Rapidmon (Armor)",
+      "korean": "래피드몬",
+      "directory": "rapidmon_gold",
+      "method": "reviewed-variant",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=rapidmon_gold"
+    },
+    {
+      "id": 10423,
+      "english": "Magnamon",
+      "korean": "매그너몬",
+      "directory": "magnamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=magnamon"
+    },
+    {
+      "id": 10424,
+      "english": "EmperorGreymon",
+      "korean": "카이젤그레이몬",
+      "directory": "kaisergreymon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=kaisergreymon"
+    },
+    {
+      "id": 10425,
+      "english": "MagnaGarurumon",
+      "korean": "매그너가루몬",
+      "directory": "magnagarurumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=magnagarurumon"
+    },
+    {
+      "id": 10426,
+      "english": "MagnaGarurumon (Detached)",
+      "korean": "매그너가루몬 (Detached)",
+      "directory": "magnagarurumon",
+      "method": "base-name-original-suffix",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=magnagarurumon"
+    },
+    {
+      "id": 10427,
+      "english": "Alphamon: Ouryuken",
+      "korean": "알파몬: 왕룡검",
+      "directory": "alphamon:ouryuken",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=alphamon:ouryuken"
+    },
+    {
+      "id": 10428,
+      "english": "Craniamon + Enbarrmon",
+      "korean": "크레니엄몬+안바르몬",
+      "directory": "craniummon_enbarrmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=craniummon_enbarrmon"
+    },
+    {
+      "id": 10429,
+      "english": "Imperialdramon PM",
+      "korean": "황제드라몬: 팔라딘 모드",
+      "directory": "imperialdramonpaladinmode",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=imperialdramonpaladinmode"
+    },
+    {
+      "id": 10430,
+      "english": "Omnimon",
+      "korean": "오메가몬",
+      "directory": "omegamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=omegamon"
+    },
+    {
+      "id": 10431,
+      "english": "Omnimon Zwart",
+      "korean": "오메가몬 즈왈트",
+      "directory": "omegamon_zwart",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=omegamon_zwart"
+    },
+    {
+      "id": 10432,
+      "english": "Chaosmon",
+      "korean": "카오스몬",
+      "directory": "chaosmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=chaosmon"
+    },
+    {
+      "id": 10433,
+      "english": "Chaosmon: Valdur Arm",
+      "korean": "카오스몬: 발두르 암",
+      "directory": "chaosmonvaldurarm",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=chaosmonvaldurarm"
+    },
+    {
+      "id": 10434,
+      "english": "GraceNovamon",
+      "korean": "그레이스노바몬",
+      "directory": "gracenovamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gracenovamon"
+    },
+    {
+      "id": 10435,
+      "english": "ShineGreymon BM",
+      "korean": "샤인그레이몬: 버스트 모드",
+      "directory": "shinegreymonburstmode",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=shinegreymonburstmode"
+    },
+    {
+      "id": 10436,
+      "english": "Susanomon",
+      "korean": "스사노오몬",
+      "directory": "susanoomon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=susanoomon"
+    },
+    {
+      "id": 10437,
+      "english": "Jupitermon WM",
+      "korean": "유피테르몬: 래스 모드",
+      "directory": "jupitermmon_wrath",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=jupitermmon_wrath"
+    },
+    {
+      "id": 10438,
+      "english": "Ravemon BM",
+      "korean": "레이브몬: 버스트 모드",
+      "directory": "ravmonburstmode",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ravmonburstmode"
+    },
+    {
+      "id": 10439,
+      "english": "Examon",
+      "korean": "엑자몬",
+      "directory": "examon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=examon"
+    },
+    {
+      "id": 10440,
+      "english": "MirageGaogamon BM",
+      "korean": "미라쥬가오가몬: 버스트 모드",
+      "directory": "miragegaogamon:burstmode",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=miragegaogamon:burstmode"
+    },
+    {
+      "id": 10441,
+      "english": "Rosemon BM",
+      "korean": "로제몬: 버스트 모드",
+      "directory": "rosemonburstmode",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=rosemonburstmode"
+    },
+    {
+      "id": 10442,
+      "english": "Titamon + SkullBaluchimon",
+      "korean": "타이타몬 + 스컬벌키몬",
+      "directory": "titamon_skullbaluchimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=titamon_skullbaluchimon"
+    },
+    {
+      "id": 10443,
+      "english": "Gallantmon CM",
+      "korean": "듀크몬: 크림슨 모드",
+      "directory": "dukemoncrimsonmode",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dukemoncrimsonmode"
+    },
+    {
+      "id": 10444,
+      "english": "Beelzemon BM",
+      "korean": "베르제브몬: 블래스트 모드",
+      "directory": "beelzebumonblastmode",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=beelzebumonblastmode"
+    },
+    {
+      "id": 10445,
+      "english": "Belphemon RM",
+      "korean": "벨페몬: 레이지 모드",
+      "directory": "belphemonragemode",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=belphemonragemode"
+    },
+    {
+      "id": 10446,
+      "english": "Mervamon",
+      "korean": "메르바몬",
+      "directory": "mervamon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=mervamon"
+    },
+    {
+      "id": 10447,
+      "english": "Lucemon SM",
+      "korean": "루체몬: 사탄 모드",
+      "directory": "lucemonsatanmode",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=lucemonsatanmode"
+    },
+    {
+      "id": 10448,
+      "english": "Armageddemon",
+      "korean": "아마게몬",
+      "directory": "armagemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=armagemon"
+    },
+    {
+      "id": 10449,
+      "english": "Agumon (Bond of Bravery)",
+      "korean": "아구몬 -용기의 유대-",
+      "directory": "agumon_kizuna",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=agumon_kizuna"
+    },
+    {
+      "id": 10450,
+      "english": "Apocalymon",
+      "korean": "아포카리몬",
+      "directory": "apoclymon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=apoclymon"
+    },
+    {
+      "id": 10451,
+      "english": "Gabumon (Bond of Friendship)",
+      "korean": "파피몬 -우정의 유대-",
+      "directory": "gabumon_kizuna",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gabumon_kizuna"
+    },
+    {
+      "id": 10452,
+      "english": "CresGarurumon",
+      "korean": "크레스가루몬",
+      "directory": "cresgarurumon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=cresgarurumon"
+    },
+    {
+      "id": 10453,
+      "english": "Parallelmon",
+      "korean": "패럴렐몬",
+      "directory": "parallelmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=parallelmon"
+    },
+    {
+      "id": 10454,
+      "english": "BlitzGreymon",
+      "korean": "블리츠그레이몬",
+      "directory": "blitzgreymon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=blitzgreymon"
+    },
+    {
+      "id": 10455,
+      "english": "Omnimon Alter-B",
+      "korean": "오메가몬 alter-B",
+      "directory": "omegamon_alter-b",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=omegamon_alter-b"
+    },
+    {
+      "id": 10456,
+      "english": "Omnimon Alter-S",
+      "korean": "오메가몬 alter-S",
+      "directory": "omegamon-alter-s",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=omegamon-alter-s"
+    },
+    {
+      "id": 10457,
+      "english": "Omnimon Zwart Defeat",
+      "korean": "오메가몬 즈왈트 DEFEAT",
+      "directory": "omegamonzwart_d",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=omegamonzwart_d"
+    },
+    {
+      "id": 10458,
+      "english": "BanchoMamemon",
+      "korean": "반쵸콩알몬",
+      "directory": "banchomamemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=banchomamemon"
+    },
+    {
+      "id": 10459,
+      "english": "BanchoLillymon",
+      "korean": "반쵸릴리몬",
+      "directory": "bancholilimon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=bancholilimon"
+    },
+    {
+      "id": 10460,
+      "english": "BanchoGolemon",
+      "korean": "반쵸록몬",
+      "directory": "banchogolemon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=banchogolemon"
+    },
+    {
+      "id": 10461,
+      "english": "BanchoStingmon",
+      "korean": "반쵸스팅몬",
+      "directory": "banchostingmon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=banchostingmon"
+    },
+    {
+      "id": 10462,
+      "english": "Omnimon MM",
+      "korean": "오메가몬: 머시풀 모드",
+      "directory": "omegamon_merciful",
+      "method": "reviewed-variant",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=omegamon_merciful"
+    },
+    {
+      "id": 10463,
+      "english": "UlforceVeedramon (X Antibody)",
+      "korean": "알포스브이드라몬(X항체)",
+      "directory": "ulforcevdramon_x",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=ulforcevdramon_x"
+    },
+    {
+      "id": 10464,
+      "english": "Magnamon (X Antibody)",
+      "korean": "매그너몬(X항체)",
+      "directory": "magnamon_x",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=magnamon_x"
+    },
+    {
+      "id": 10465,
+      "english": "Jesmon (X Antibody)",
+      "korean": "제스몬(X항체)",
+      "directory": "jesmon_x",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=jesmon_x"
+    },
+    {
+      "id": 10466,
+      "english": "Gallantmon (X Antibody)",
+      "korean": "듀크몬(X항체)",
+      "directory": "dukemon_x",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=dukemon_x"
+    },
+    {
+      "id": 10467,
+      "english": "Omnimon (X Antibody)",
+      "korean": "오메가몬(X항체)",
+      "directory": "omegamon-x",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=omegamon-x"
+    },
+    {
+      "id": 10468,
+      "english": "Agumon (Black)",
+      "korean": "아구몬(흑)",
+      "directory": "agumon-black",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=agumon-black"
+    },
+    {
+      "id": 10469,
+      "english": "Gabumon (Black)",
+      "korean": "파피몬(흑)",
+      "directory": "gabumon_black",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=gabumon_black"
+    },
+    {
+      "id": 10470,
+      "english": "Garurumon (Black)",
+      "korean": "가루몬(흑)",
+      "directory": "garurumon_black",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=garurumon_black"
+    },
+    {
+      "id": 10471,
+      "english": "Greymon (Blue)",
+      "korean": "그레이몬(청)",
+      "directory": "greymon_blue",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=greymon_blue"
+    },
+    {
+      "id": 10472,
+      "english": "MetalGreymon (Blue)",
+      "korean": "메탈그레이몬(바이러스종)",
+      "directory": "metalgreymon-web",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=metalgreymon-web"
+    },
+    {
+      "id": 10473,
+      "english": "WereGarurumon (Black)",
+      "korean": "워가루몬(흑)",
+      "directory": "weregarurumon_black",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=weregarurumon_black"
+    },
+    {
+      "id": 10474,
+      "english": "BlackWarGreymon",
+      "korean": "블랙워그레이몬",
+      "directory": "blackwargreymon",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=blackwargreymon"
+    },
+    {
+      "id": 10475,
+      "english": "MetalGarurumon (Black)",
+      "korean": "메탈가루몬(흑)",
+      "directory": "metalgarurumon_black",
+      "method": "exact-name-or-alias",
+      "source": "https://digimon.net/reference_ko/detail.php?directory_name=metalgarurumon_black"
+    }
+  ]
+}
