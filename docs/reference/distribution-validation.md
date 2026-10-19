@@ -5,6 +5,7 @@ Validated on 2026-10-19 using Xcode 27.1 / Swift 6.4, macOS 26.6.2, Apple Silico
 | Check | Result |
 | --- | --- |
 | XCTest | 1,582 executed: 1,565 passed, 17 skipped, zero failures |
+| Final detail/traffic rendering regressions | 9 passed, zero failures |
 | Logic-core line coverage | 90.77%, above the unchanged 75% gate |
 | Artwork cache | 98.51% line coverage; 89.83% region coverage |
 | Live remote originals | 489/489 downloaded and decoded |
@@ -32,8 +33,8 @@ removed from this fork's current tree.
 
 [Runtime artwork](runtime-artwork.md) · [third-party rights](../../THIRD_PARTY_NOTICES.md)
 
-Release ZIP: `DigiTokenBar-0.1.0-macos-arm64.zip` (6,605,029 bytes).
-SHA-256: `857622dd2a2202d7e1698ec34eebfee5482eb328ad4907bb3ed12175057f201e`.
+Release ZIP: `DigiTokenBar-0.1.0-macos-arm64.zip` (6,606,367 bytes).
+SHA-256: `fc52b114a49fac121552159697485c5d330a455c77240a4c6fe27d6ebef63121`.
 The release archive passed full-byte private-marker scanning and signature checks.
 Its copied executable was launched after re-signing only the isolated temporary-ID
 copy; the distribution archive and currently running user application were unchanged.
