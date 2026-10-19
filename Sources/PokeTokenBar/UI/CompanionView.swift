@@ -1764,6 +1764,9 @@ struct PokemonDetailView: View {
                 .reservesScrollerLane()
             }
         }
+        .foregroundStyle(CyberPalette.text)
+        .tint(CyberPalette.cyan)
+        .environment(\.colorScheme, .dark)
         .task {
             if selectedForm == nil { selectedForm = displayedSpecies.form }
             if selectedInstanceID.isEmpty { selectedInstanceID = individuals.first?.id ?? "" }

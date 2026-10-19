@@ -73,7 +73,7 @@ struct TerminalTrafficConsole: View {
                         }
                     }
                     VStack(spacing: 3) {
-                        Text(l.todayTokens).font(.system(size: 8)).foregroundStyle(CyberPalette.muted)
+                        Text(l.todayTokens).font(.system(size: 10)).foregroundStyle(CyberPalette.text)
                         Text(TokenFormatter.compact(total)).font(.system(size: 23, design: .monospaced))
                             .lineLimit(1).minimumScaleFactor(0.6)
                         Text("TOKENS").font(.system(size: 6, design: .monospaced)).tracking(2).foregroundStyle(CyberPalette.muted)
