@@ -1,6 +1,8 @@
 # DigiTokenBar release procedure
 
 1. Review README installation steps, NOTICE, third-party provenance and rights limits.
+   The website in `site/` is assembled by `python3 site/build.py`; its version/download
+   links follow `scripts/build-digimon-app.sh`. GitHub Pages deploys relevant main changes.
 2. Keep personal saves, credentials, local QA material, screenshots and agent instructions out of Git.
 3. Run `./scripts/test-gate.sh` and `python3 scripts/check-digimon-artwork-distribution.py`.
 4. Run `./scripts/package-digimon-app.sh` and verify the ZIP with

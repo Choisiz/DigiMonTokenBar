@@ -6,6 +6,8 @@
 **AI 코딩에 사용한 토큰으로, macOS 메뉴바에서 디지몬을 키우세요.**
 
 [English](README.md) · **한국어** · [日本語](README.ja.md)
+
+[**소개 사이트 ↗**](https://choisiz.github.io/DigiTokenBar/)
 </div>
 
 [chattymin/PokeTokenBar](https://github.com/chattymin/PokeTokenBar)를 기반으로 만든

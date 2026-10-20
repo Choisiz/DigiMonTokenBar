@@ -16,7 +16,7 @@ No general Digimon artwork redistribution permission has been established.
 | Dedicated capsule illustrations | Wikimon Digimental source pages listed individually in `ui-sources.json` | Original background-bearing JPGs fetched at runtime; no capsule background removal. Original rights remain with their owners; usage permission unverified. |
 | X-Antibody binary spheres | Project-generated cyan/red 0/1 sphere designs | Generated visual assets; no claim to Digimon names, marks or franchise rights. |
 | Application icon | `AppIcon.svg`, independently drawn from the Adventure Digivice concept | New vector drawing; underlying Digivice design remains third-party intellectual property. Not an official logo or clearance. |
-| README feature-tour screenshots | Native production UI renders with synthetic data, under `assets/readme-screenshots/` | Depict runtime-fetched third-party character/item artwork and profile excerpts. Documentation images are not covered by the MIT code license and do not establish permission or endorsement. |
+| README and website feature-tour screenshots / website fusion demo | Native production UI renders with synthetic data, under `assets/readme-screenshots/`; the website fusion clip is rendered from the production HTML with no personal usage data | Depict runtime-fetched third-party character/item artwork and profile excerpts. Documentation images are not covered by the MIT code license and do not establish permission or endorsement. |
 | Historical Pokémon screenshots and upstream examples | Preserved PokeTokenBar source/documentation history | Pokémon rights remain with Nintendo, Game Freak, Creatures and The Pokémon Company as applicable. No Pokémon rights are conveyed by MIT. |
 
 ## Detailed manifests

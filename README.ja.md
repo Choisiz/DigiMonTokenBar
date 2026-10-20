@@ -1,5 +1,7 @@
 # DigiTokenBar
 
+[**紹介サイト ↗**](https://choisiz.github.io/DigiTokenBar/)
+
 **AIコーディングのトークン使用量で、macOSメニューバーのデジモンを育てるファンアプリ。**
 
 [English](README.md) · [한국어](README.ko.md) · **日本語**
