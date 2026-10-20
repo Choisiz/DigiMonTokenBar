@@ -21,14 +21,47 @@ Claude Code、Codexなどのローカル使用記録を読み、孵化・分岐�
 カプセルは背景付きの原画像を使用します。初回はインターネット接続が必要です。
 生成したX抗体画像とアプリアイコン、図鑑データ・説明文の抜粋は同梱します。
 
-## ダウンロード
+## インストール
 
-macOS 14以上・Apple Silicon Mac向けのZIPを[Releases](https://github.com/Choisiz/DigiTokenBar/releases)からダウンロードし、
-展開したDigiTokenBar.appをアプリケーションフォルダへ移動して開きます。ZIP利用者にXcodeや有料開発者アカウントは不要です。
+**macOS 14以上・Apple Silicon Mac**が必要です。Xcodeや有料開発者アカウントは不要です。
+
+### Homebrew
+
+[Homebrew](https://brew.sh)がインストールされていれば、次のコマンドで導入できます。
+
+```sh
+brew install --cask choisiz/tap/digitokenbar
+```
+
+チェックサムは自動確認されます。アプリケーションフォルダから **DigiTokenBar** を開いてください。
+更新時はアプリを終了して `brew update`、`brew upgrade --cask choisiz/tap/digitokenbar` を実行します。
+
+### 直接ダウンロード
+
+1. [ZIPをダウンロード](https://github.com/Choisiz/DigiTokenBar/releases/download/v0.1.0/DigiTokenBar-0.1.0-macos-arm64.zip)します。
+2. 展開した **DigiTokenBar.app** をアプリケーションフォルダへ移動します。
+3. アプリを開くとメニューバーに表示されます。
+
+直接インストールした場合は、アプリを終了して新しいファイルに置き換えます。
+どちらの方法でも育成データは保持されます。初回画像表示にはインターネット接続が必要です。
+
+### 初回起動
+
 Developer ID署名・Apple公証はありません。信頼できるダウンロードがブロックされた場合は、
 [Appleの案内](https://support.apple.com/ja-jp/102445)に従い「プライバシーとセキュリティ」から実行を許可してください。
 管理対象Macでは許可できない場合があります。システム全体の保護を無効化しないでください。
-同時配布のSHA-256ファイルで整合性を確認できます。初回画像表示にはインターネット接続が必要です。
+
+<details>
+<summary>任意：直接ダウンロードのチェックサム確認</summary>
+
+[Releases](https://github.com/Choisiz/DigiTokenBar/releases)から対応する `.sha256` ファイルも取得し、同じフォルダで実行します。
+通常のインストールには必須ではありません。Homebrewでは自動確認されます。
+
+```sh
+shasum -a 256 -c DigiTokenBar-0.1.0-macos-arm64.zip.sha256
+```
+
+</details>
 
 ## ビルド
 
@@ -42,7 +75,7 @@ cd DigiTokenBar
 open build/DigiTokenBar.app
 ```
 
-署名はad-hocです。Gatekeeper承認や公証を意味しません。公開ZIPはReleasesから取得できます。Homebrew・App Store配布は提供していません。
+署名はad-hocです。Gatekeeper承認や公証を意味しません。公開ZIPはReleasesから取得できます。Homebrewにも対応しています。App Store配布・アプリ内自動更新は提供していません。
 詳細は[英語README](README.md)と[検証状況](docs/reference/distribution-validation.md)をご覧ください。
 画面・プロフィールの日本語ローカライズが完全であるとは保証しません。
 

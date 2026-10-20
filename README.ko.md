@@ -51,25 +51,47 @@
 
 ## 다운로드·설치
 
-완성된 앱은 **macOS 14 이상, Apple Silicon Mac(M1 이상)**용입니다.
-ZIP을 받아 사용하는 사람은 Xcode나 유료 개발자 계정이 필요하지 않습니다.
-Intel용 배포 파일은 아직 검증하지 않았습니다.
+**macOS 14 이상, Apple Silicon Mac(M1 이상)**을 지원합니다.
+Xcode나 유료 개발자 계정은 필요하지 않습니다. Intel용 배포 파일은 아직 검증하지 않았습니다.
 
-1. [Releases](https://github.com/Choisiz/DigiTokenBar/releases)에서
-   `DigiTokenBar-0.1.0-macos-arm64.zip`과 `.sha256` 파일을 받습니다.
+### Homebrew로 설치
+
+[Homebrew](https://brew.sh)가 설치되어 있다면 아래 명령어 하나로 설치합니다.
+
+```sh
+brew install --cask choisiz/tap/digitokenbar
+```
+
+체크섬은 Homebrew가 자동 확인합니다. 설치 후 응용 프로그램에서 **DigiTokenBar**를 엽니다.
+업데이트는 앱을 종료한 뒤 `brew update`, `brew upgrade --cask choisiz/tap/digitokenbar`를 실행합니다.
+
+### 직접 설치
+
+1. [ZIP 다운로드](https://github.com/Choisiz/DigiTokenBar/releases/download/v0.1.0/DigiTokenBar-0.1.0-macos-arm64.zip)
 2. 압축을 풀고 **DigiTokenBar.app**을 **응용 프로그램** 폴더로 이동합니다.
-3. 실행이 차단되면 신뢰하는 다운로드인지 확인한 뒤 **시스템 설정 → 개인정보 보호 및 보안 → 확인 없이 열기**를 사용합니다.
-   [Apple 안내](https://support.apple.com/ko-kr/102445)를 참고하세요. 관리되는 Mac에서는 허용되지 않을 수 있습니다.
-4. 메뉴바 아이콘에서 앱을 엽니다. 최초 이미지 로딩은 인터넷이 필요하며 이후에는 로컬 캐시를 재사용합니다.
+3. 앱을 열면 메뉴바에 아이콘이 표시됩니다.
+
+직접 설치한 앱은 종료 후 새 파일로 교체하여 업데이트합니다.
+어느 방법이든 육성 저장 데이터는 유지됩니다. 최초 이미지 로딩은 인터넷이 필요하며 이후에는 로컬 캐시를 재사용합니다.
+
+### 처음 실행할 때
 
 현재 앱은 **ad-hoc 서명이며 Developer ID 서명·Apple 공증은 받지 않았습니다.**
-Gatekeeper나 시스템 전체 보안 기능을 끄지 마세요. 두 파일이 있는 폴더에서 체크섬을 확인할 수 있습니다.
+실행이 차단되면 신뢰하는 다운로드인지 확인한 뒤 **시스템 설정 → 개인정보 보호 및 보안 → 확인 없이 열기**를 사용합니다.
+[Apple 안내](https://support.apple.com/ko-kr/102445)를 참고하세요. 관리되는 Mac에서는 허용되지 않을 수 있습니다.
+시스템 전체 보안 기능을 끄지 마세요.
+
+<details>
+<summary>선택 사항: 직접 다운로드한 파일의 체크섬 확인</summary>
+
+[Releases](https://github.com/Choisiz/DigiTokenBar/releases)에서 같은 버전의 `.sha256` 파일도 받은 뒤,
+두 파일이 있는 폴더에서 실행합니다. 일반 설치 과정에는 필수가 아니며 Homebrew는 자동 확인합니다.
 
 ```sh
 shasum -a 256 -c DigiTokenBar-0.1.0-macos-arm64.zip.sha256
 ```
 
-업데이트는 앱 종료 후 응용 프로그램의 앱 파일을 교체하면 됩니다. 육성 저장 데이터는 Application Support에 유지됩니다.
+</details>
 
 ## 소스에서 빌드
 
@@ -88,7 +110,7 @@ open build/DigiTokenBar.app
 내부 Swift 패키지/타깃 이름 `PokeTokenBar`는 원본 호환을 위해 유지합니다.
 
 **Developer ID 서명·Apple 공증은 완료되지 않았습니다.** ad-hoc 서명 검증과 Gatekeeper 승인은 다릅니다.
-이 포크의 Homebrew 설치·자동 업데이트·App Store 배포는 제공하지 않습니다.
+Homebrew와 ZIP 직접 설치를 지원합니다. 앱 내부 자동 업데이트와 App Store 배포는 제공하지 않습니다.
 로컬 ZIP과 체크섬은 `./scripts/package-digimon-app.sh`로 준비하며 공개 업로드는 수행하지 않습니다.
 `python3 scripts/verify-digimon-package.py <ZIP경로> --launch`로 재추출·자산·서명·격리 실행을 확인할 수 있습니다.
 실행 중인 앱을 유지하려면 `--parallel-launch`를 사용합니다. 임시 식별자와 별도 상태 폴더로 검증하며, 배포 파일과 개인 육성은 변경하지 않습니다. 실행 파일의 로컬 빌드 경로도 검사합니다.

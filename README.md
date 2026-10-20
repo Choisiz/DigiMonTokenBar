@@ -63,32 +63,53 @@ Some inherited Pokémon-oriented internals remain for compatibility; they do not
 Digimon illustrations are static; this version does not promise animated species sprites, shiny
 variants, official combat statistics, or an accurate personality system.
 
-## Download and install
+## Install
 
-The ready-to-run build requires **macOS 14+ on an Apple Silicon Mac (M1 or later)**.
-Users of the ZIP do not need Xcode or a paid Apple developer account. Intel Macs
-must build from source; an Intel release is not yet verified.
+Requires **macOS 14+ and an Apple Silicon Mac (M1 or later)**. You do not need
+Xcode or a paid Apple developer account. Intel Macs must build from source;
+an Intel release is not yet verified.
 
-1. Open [Releases](https://github.com/Choisiz/DigiTokenBar/releases) and download
-   `DigiTokenBar-0.1.0-macos-arm64.zip` and its `.sha256` checksum.
-2. Extract the ZIP and drag **DigiTokenBar.app** into **Applications**.
-3. Open the app. If macOS blocks it as an unidentified/unnotarized app, follow
-   Apple's [Privacy & Security → Open Anyway instructions](https://support.apple.com/102445)
-   only if you trust this download. Managed Macs may disallow this exception.
-4. The companion appears in the menu bar. First image loading needs internet;
-   downloaded images are cached on your Mac.
+### Homebrew
 
-This release is **ad-hoc signed, not Developer ID-signed or Apple-notarized**.
-Do not disable Gatekeeper or system-wide protections. To check the download in
-Terminal, run in the folder containing both files:
+With [Homebrew](https://brew.sh) installed, run:
+
+```sh
+brew install --cask choisiz/tap/digitokenbar
+```
+
+Homebrew checks the download automatically. Open **DigiTokenBar** from Applications.
+To update, quit the app, then run `brew update` and `brew upgrade --cask choisiz/tap/digitokenbar`.
+
+### Direct download
+
+1. [Download the ZIP](https://github.com/Choisiz/DigiTokenBar/releases/download/v0.1.0/DigiTokenBar-0.1.0-macos-arm64.zip).
+2. Extract it and drag **DigiTokenBar.app** into **Applications**.
+3. Open **DigiTokenBar**. Its icon appears in the menu bar.
+
+To update a direct installation, quit the app and replace it with the new download.
+Both methods preserve your saved companion data. First image loading needs internet;
+downloaded images are cached on your Mac.
+
+### First launch
+
+The app is **ad-hoc signed, without Developer ID signing or Apple notarization**.
+If macOS blocks a download you trust, follow Apple's
+[Privacy & Security → Open Anyway instructions](https://support.apple.com/102445).
+Managed Macs may disallow this exception. Do not disable system-wide protections.
+
+<details>
+<summary>Optional: manually verify a direct download</summary>
+
+Download the matching `.sha256` file from [Releases](https://github.com/Choisiz/DigiTokenBar/releases)
+and run this in the folder containing both files:
 
 ```sh
 shasum -a 256 -c DigiTokenBar-0.1.0-macos-arm64.zip.sha256
 ```
 
-To update, quit the running app and replace the app in Applications. Saves remain
-in Application Support. This fork does not provide Homebrew, App Store distribution
-or automatic updates.
+Homebrew already performs this check for its installations.
+
+</details>
 
 ## Build from source
 
@@ -108,8 +129,8 @@ The Swift package/executable remains named `PokeTokenBar` internally for upstrea
 the assembled application is **DigiTokenBar.app**.
 
 This is not a Developer ID-signed or Apple-notarized distribution. An ad-hoc signature verifies
-local integrity and does not imply Gatekeeper approval. No Homebrew cask, App Store listing,
-automatic updater is provided by this fork. Ready-to-run ZIPs are published under Releases.
+local integrity and does not imply Gatekeeper approval. Homebrew and ready-to-run ZIP installation are available above. There is no App Store listing
+or in-app automatic updater.
 
 To prepare a local candidate archive:
 

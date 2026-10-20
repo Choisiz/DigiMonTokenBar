@@ -7,7 +7,9 @@
    `python3 scripts/verify-digimon-package.py <ZIP> --launch` using isolated state.
 5. Review the exact commit, version, English release notes, contributors and SHA-256.
 6. Push the source commit, then publish a matching version tag with the ZIP and checksum.
-7. Confirm the source tree, download files, checksum and public CI result.
+7. Update `version` and `sha256` in [the Homebrew tap](https://github.com/Choisiz/homebrew-tap/blob/main/Casks/digitokenbar.rb)
+   to match the published arm64 ZIP; validate the cask and push the tap update.
+8. Confirm the source tree, download files, checksum and public CI result.
 
 Current release: 0.1.0, Apple Silicon only, macOS 14 minimum deployment target.
 Developer ID signing and Apple notarization have not been performed. Document the
