@@ -18,9 +18,13 @@
 > 공개 바이너리 배포의 권리 확인은 완료되지 않았습니다.
 > [프로젝트 고지](NOTICE.md) · [자산별 출처·권리 상태](THIRD_PARTY_NOTICES.md) · [검증 보고서](docs/reference/distribution-validation.md)
 
+## 0.1.1 업데이트
+
+특수진화 연출·알림·아이템 조건과 475종의 도감 설명·필살기를 영어 설정에 맞게 표시합니다.
+
 ## 화면으로 보는 주요 기능
 
-아래 이미지는 실제 제품 화면 코드를 한국어·가상 샘플 데이터로 렌더링한 화면입니다. 개인 사용 기록이나 새로 그린 시안이 아닙니다. 디지몬·아이템 이미지의 권리는 각 소유자에게 있으며 [출처와 권리 안내](THIRD_PARTY_NOTICES.md)를 참고하세요.
+아래 이미지는 실제 제품 화면 코드를 영어·가상 샘플 데이터로 렌더링한 화면입니다. 개인 사용 기록이나 새로 그린 시안이 아닙니다. 디지몬·아이템 이미지의 권리는 각 소유자에게 있으며 [출처와 권리 안내](THIRD_PARTY_NOTICES.md)를 참고하세요.
 
 <table>
 <tr>
@@ -100,7 +104,7 @@ Apple 공증을 받거나 시스템 전체 보안을 끄는 처리는 아닙니�
 
 ### 직접 설치
 
-1. [ZIP 다운로드](https://github.com/Choisiz/DigiTokenBar/releases/download/v0.1.0/DigiTokenBar-0.1.0-macos-arm64.zip)
+1. [ZIP 다운로드](https://github.com/Choisiz/DigiTokenBar/releases/download/v0.1.1/DigiTokenBar-0.1.1-macos-arm64.zip)
 2. 압축을 풀고 **DigiTokenBar.app**을 **응용 프로그램** 폴더로 이동합니다.
 3. 앱을 열면 메뉴바에 아이콘이 표시됩니다.
 
@@ -121,7 +125,7 @@ Apple 공증을 받거나 시스템 전체 보안을 끄는 처리는 아닙니�
 두 파일이 있는 폴더에서 실행합니다. 일반 설치 과정에는 필수가 아니며 Homebrew는 자동 확인합니다.
 
 ```sh
-shasum -a 256 -c DigiTokenBar-0.1.0-macos-arm64.zip.sha256
+shasum -a 256 -c DigiTokenBar-0.1.1-macos-arm64.zip.sha256
 ```
 
 </details>

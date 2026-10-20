@@ -1,4 +1,28 @@
-# DigiTokenBar 0.1.0 validation
+# DigiTokenBar 0.1.1 validation
+
+Validated on 2026-10-20 on Apple Silicon using the installed Xcode toolchain.
+
+| Check | Result |
+| --- | --- |
+| XCTest release gate | 1,585 executed, 17 skipped, zero failures |
+| English regressions | Included: all recipe/item strings, 475 English profiles and production scene JavaScript |
+| Logic-core line coverage | 91.17%, above the unchanged 75% gate |
+| Source and packaged resources | 18 allowlisted files; no downloaded third-party image files |
+| Extracted optimized app | Signature, checksum, builder-path scan and 12-second isolated native startup passed |
+| Personal save protection | Temporary bundle ID and isolated state; personal save not accessed |
+| Documentation | Eight refreshed native English UI renders with synthetic data |
+
+Release ZIP: `DigiTokenBar-0.1.1-macos-arm64.zip` (6,650,192 bytes).
+
+SHA-256: `5de53a197dd9b0a51e97b658f8872a4d0b3dbfaf4778fcb188f2fc092af4d8ae`.
+
+Runtime artwork sources are unchanged from 0.1.0; a full remote-artwork download was not repeated for this localization patch. The 475 English profile excerpts, classifications and move lists were checked for matching species IDs and Korean text leakage. Screenshots use synthetic data, not personal usage. Recording videos, local saves, capture tools and agent instructions are excluded from Git.
+
+This is an arm64, macOS 14+ build. Intel and a separate physical macOS 14 machine have not been verified. The app is ad-hoc signed without Developer ID signing or Apple notarization; Gatekeeper assessment is expected to reject an unapproved direct download. Homebrew removes only the installed app's quarantine attribute. Passing integrity tests or delivering artwork at runtime does not grant third-party rights.
+
+[Runtime artwork](runtime-artwork.md) · [third-party rights](../../THIRD_PARTY_NOTICES.md) · [public CI](https://github.com/Choisiz/DigiTokenBar/actions)
+
+## Historical 0.1.0 evidence
 
 Validated on 2026-10-19 using Xcode 27.1 / Swift 6.4, macOS 26.6.2, Apple Silicon.
 

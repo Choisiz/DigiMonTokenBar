@@ -8,9 +8,13 @@
 Claude Code、Codexなどのローカル使用記録を読み、孵化・分岐進化・合体・収集につなげます。
 原作者と貢献者のMITライセンス表示・Git履歴を維持しています。
 
+## 0.1.1 の更新
+
+特殊進化の演出・通知・アイテム条件と475種のプロフィール抜粋・必殺技が英語設定に対応しました。
+
 ## 画面で見る機能
 
-実際の製品UIを、韓国語・架空のサンプルデータでレンダリングした画像です。個人の利用記録や新しいモックアップではありません。キャラクター・アイテム画像の権利は各権利者に帰属します。[出典・権利の案内](THIRD_PARTY_NOTICES.md)をご確認ください。
+実際の製品UIを、英語・架空のサンプルデータでレンダリングした画像です。個人の利用記録や新しいモックアップではありません。キャラクター・アイテム画像の権利は各権利者に帰属します。[出典・権利の案内](THIRD_PARTY_NOTICES.md)をご確認ください。
 
 <table>
 <tr>
@@ -75,7 +79,7 @@ Apple公証を取得したりシステム全体の保護を無効化したりす
 
 ### 直接ダウンロード
 
-1. [ZIPをダウンロード](https://github.com/Choisiz/DigiTokenBar/releases/download/v0.1.0/DigiTokenBar-0.1.0-macos-arm64.zip)します。
+1. [ZIPをダウンロード](https://github.com/Choisiz/DigiTokenBar/releases/download/v0.1.1/DigiTokenBar-0.1.1-macos-arm64.zip)します。
 2. 展開した **DigiTokenBar.app** をアプリケーションフォルダへ移動します。
 3. アプリを開くとメニューバーに表示されます。
 
@@ -95,7 +99,7 @@ Developer ID署名・Apple公証はありません。信頼できるダウンロ
 通常のインストールには必須ではありません。Homebrewでは自動確認されます。
 
 ```sh
-shasum -a 256 -c DigiTokenBar-0.1.0-macos-arm64.zip.sha256
+shasum -a 256 -c DigiTokenBar-0.1.1-macos-arm64.zip.sha256
 ```
 
 </details>

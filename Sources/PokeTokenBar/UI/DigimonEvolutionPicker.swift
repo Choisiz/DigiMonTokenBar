@@ -16,7 +16,7 @@ struct DigimonEvolutionPicker: View {
                 Button(store.l.digivolutionDone, action: onClose)
             }
             Text(store.isContinuingSpecialTraining ? store.l.digimonUI("Only paths to uncollected ordinary forms are shown. Registered intermediate forms are free transit.") : store.l.digivolutionChoiceHint).font(.callout)
-            Text(store.language == .ko ? store.l.digimonUI("Fusion, item, release, Burst and Bond evolution require a manual start after meeting their conditions.") : "Fusion and item evolutions have separate requirements and never evolve automatically.")
+            Text(store.l.digimonUI("Fusion, item, release, Burst and Bond evolution require a manual start after meeting their conditions."))
                 .font(.caption).foregroundStyle(CyberPalette.cyan)
             ScrollView {
                 VStack(spacing: 10) {
@@ -92,7 +92,7 @@ struct DigimonSpecialEvolutionPicker: View {
                                 SpriteView(speciesID: target.id, size: 56, animated: false)
                                 VStack(alignment: .leading, spacing: 5) {
                                     Text(store.language.resolveName(target.names) ?? target.english).font(.headline)
-                                    Text(store.l.digimonUI("Source · ") + (DigimonCatalog.find(rule.source)?.korean ?? ""))
+                                    Text(store.l.digimonUI("Source · ") + (DigimonCatalog.find(rule.source).map { store.language.resolveName($0.names) ?? $0.english } ?? ""))
                                         .font(.caption).foregroundStyle(CyberPalette.muted)
                                     Text(store.evolutionRequirement(from: rule.source, to: rule.target))
                                         .font(.caption2).foregroundStyle(CyberPalette.cyan)

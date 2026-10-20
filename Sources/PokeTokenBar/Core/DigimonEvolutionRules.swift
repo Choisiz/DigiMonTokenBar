@@ -11,6 +11,24 @@ struct DigimonEvolutionRule: Decodable, Sendable {
     var dailyTokens: Int? = nil
     var method: String? = nil
     let reference: String
+
+    func localizedMethod(_ l: L) -> String {
+        let methods = ["분류 검토 중": "Classification under review · Evolution unavailable",
+            "아이템·X항체": "X-Antibody evolution", "아이템·데이터": "Data evolution",
+            "아이템·스피릿": "Spirit evolution", "아이템·캡슐": "Armor evolution",
+            "일반·버스트": "Burst evolution", "일반·복귀": "Mode reversion",
+            "일반·성장": "Ordinary evolution", "일반·유대": "Bond evolution",
+            "일반·해방": "Release evolution", "조그레스·힘 계승": "Jogress · Power inheritance"]
+        if let method, let english = methods[method] { return l.digimonUI(english) }
+        switch kind {
+        case .fusion: return l.digimonUI("Jogress evolution")
+        case .item: return l.digimonUI("Item evolution")
+        case .buff: return l.digimonUI("Release evolution")
+        case .unverified: return l.digimonUI("Classification under review · Evolution unavailable")
+        case .normal: return l.digimonUI("Ordinary growth · Game evolution route")
+        }
+    }
+
 }
 
 enum DigimonEvolutionRules {

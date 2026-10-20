@@ -8,12 +8,17 @@ struct DigimonInfo: Decodable {
     let moves: [String]
     let excerpt: String
     let source: String
-    static let records: [Int: DigimonInfo] = {
+    static let records = load("species-info")
+    static let englishRecords = load("species-info-en")
+    static func record(_ id: Int, language: AppLanguage) -> DigimonInfo? {
+        (language == .ko ? records : englishRecords)[id]
+    }
+    private static func load(_ name: String) -> [Int: DigimonInfo] {
         struct Manifest: Decodable { let records: [DigimonInfo] }
-        guard let url = DigimonCatalog.resource("species-info", extension: "json"),
+        guard let url = DigimonCatalog.resource(name, extension: "json"),
               let data = try? Data(contentsOf: url), let manifest = try? JSONDecoder().decode(Manifest.self, from: data) else { return [:] }
         return Dictionary(uniqueKeysWithValues: manifest.records.map { ($0.id, $0) })
-    }()
+    }
 }
 
 @MainActor
@@ -24,7 +29,7 @@ struct DigimonInfoView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             Text(l.digimonUI("Digimon information")).font(.headline)
-            if let info = DigimonInfo.records[speciesID], !info.excerpt.isEmpty {
+            if let info = DigimonInfo.record(speciesID, language: language), !info.excerpt.isEmpty {
                 Text([info.level, info.type, info.attribute].filter { !$0.isEmpty }.joined(separator: " · "))
                     .font(.caption).foregroundStyle(CyberPalette.cyan)
                 if [10349,10390,10426].contains(speciesID) {
@@ -34,7 +39,7 @@ struct DigimonInfoView: View {
                 Text(l.digimonUI("Official profile classification · may differ from the game stage."))
                     .font(.caption2).foregroundStyle(CyberPalette.muted)
                 Text("“" + info.excerpt + "”").font(.callout).textSelection(.enabled)
-                Text(l.digimonUI("Official Korean profile excerpt · wording follows the official translation."))
+                Text(l.digimonUI(language == .ko ? "Official Korean profile excerpt · wording follows the official translation." : "Official English profile excerpt · wording follows the official translation."))
                     .font(.caption2).foregroundStyle(CyberPalette.muted)
                 if !info.moves.isEmpty {
                     Text(l.digimonUI("Moves")).font(.subheadline.bold())

@@ -24,9 +24,13 @@ and fill your Notebook through a black-and-cyan digital terminal interface.
 > permission; public binary distribution is not cleared. See [notices](NOTICE.md),
 > [asset rights](THIRD_PARTY_NOTICES.md) and [validation status](docs/reference/distribution-validation.md).
 
+## Version 0.1.1
+
+English now covers special evolution scenes, notifications, item requirements and all 475 Digimon profile excerpts and move lists.
+
 ## Tour
 
-These images are native renders of the production UI with synthetic sample data, in Korean. They are not captures of personal usage or a redesigned mockup. Character and item artwork retains its owners’ rights; see [third-party notices](THIRD_PARTY_NOTICES.md).
+These images are native renders of the production UI with synthetic sample data, in English. They are not captures of personal usage or a redesigned mockup. Character and item artwork retains its owners’ rights; see [third-party notices](THIRD_PARTY_NOTICES.md).
 
 <table>
 <tr>
@@ -115,7 +119,7 @@ To update, quit the app, then run `brew update` and `brew upgrade --cask choisiz
 
 ### Direct download
 
-1. [Download the ZIP](https://github.com/Choisiz/DigiTokenBar/releases/download/v0.1.0/DigiTokenBar-0.1.0-macos-arm64.zip).
+1. [Download the ZIP](https://github.com/Choisiz/DigiTokenBar/releases/download/v0.1.1/DigiTokenBar-0.1.1-macos-arm64.zip).
 2. Extract it and drag **DigiTokenBar.app** into **Applications**.
 3. Open **DigiTokenBar**. Its icon appears in the menu bar.
 
@@ -137,7 +141,7 @@ Download the matching `.sha256` file from [Releases](https://github.com/Choisiz/
 and run this in the folder containing both files:
 
 ```sh
-shasum -a 256 -c DigiTokenBar-0.1.0-macos-arm64.zip.sha256
+shasum -a 256 -c DigiTokenBar-0.1.1-macos-arm64.zip.sha256
 ```
 
 Homebrew already performs this check for its installations.
@@ -169,7 +173,7 @@ To prepare a local candidate archive:
 
 ```sh
 ./scripts/package-digimon-app.sh
-python3 scripts/verify-digimon-package.py build/distribution/DigiTokenBar-0.1.0-macos-arm64.zip --launch
+python3 scripts/verify-digimon-package.py build/distribution/DigiTokenBar-0.1.1-macos-arm64.zip --launch
 ```
 
 This produces a versioned ZIP and SHA-256 checksum under `build/distribution/`. It does not

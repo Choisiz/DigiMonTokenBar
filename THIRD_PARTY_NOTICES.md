@@ -9,7 +9,7 @@ No general Digimon artwork redistribution permission has been established.
 | Application foundation | [PokeTokenBar](https://github.com/chattymin/PokeTokenBar), [MIT license](https://github.com/chattymin/PokeTokenBar/blob/main/LICENSE) | Original copyright and MIT terms retained in `LICENSE`; source modifications use MIT. |
 | Species art and aliases | [DAPI](https://digi-api.com/), initial twelve images from [Digimon API](https://digimon-api.vercel.app/) / `digimon.shadowsmith.com` | API availability is not an artwork license. Per-species URLs are preserved in `time-stranger.json` and `sources.json`. Redistribution permission unverified. |
 | Time Stranger numbers and graph | [Grindosaur](https://www.grindosaur.com/en/games/digimon-story-time-stranger/digimon) | Per-entry page and image URLs in `time-stranger.json`. Game graph is adapted with explicit app-rule overrides; no official partnership or exhaustive lore verification claimed. Database/image redistribution permission unverified. |
-| Korean names, types, attributes, moves and short excerpts | [Official Digimon Encyclopedia](https://digimon.net/reference_ko/), per-profile links in `korean-names.json` and `species-info.json` | Official text remains third-party material. Short excerpts and attribution are not a permission grant. The [official portal](https://digimon.net/) prohibits unauthorized reuse of images, text and data; permission must be checked before public asset/binary distribution. |
+| Korean names; Korean and English types, attributes, moves and short excerpts | [Official Korean Encyclopedia](https://digimon.net/reference_ko/) and [English Encyclopedia](https://digimon.net/reference_en/), per-profile links in `korean-names.json`, `species-info.json` and `species-info-en.json` | Official text remains third-party material. Short excerpts and attribution are not a permission grant. The [official portal](https://digimon.net/) prohibits unauthorized reuse of images, text and data; permission must be checked before public asset/binary distribution. |
 | Digi-Egg art | [Official profile report #011](https://digimon.net/profile/report011/) | Original transparent PNG; redistribution permission unverified. |
 | Digivice / Gennai | [Wikimon Digivice](https://wikimon.net/Digivice), [file page](https://wikimon.net/File:Digivice.png), [Gennai](https://wikimon.net/Gennai) | Hosting on a wiki does not establish an underlying artwork license. Redistribution permission unverified. |
 | Pendant / Tag illustration | [Digimon Tag HD by jojogape](https://www.deviantart.com/jojogape/art/Digimon-Tag-HD-578170061) | Fan artist attribution retained. No redistribution permission verified; fan art can involve both artist and franchise rights. |
@@ -28,7 +28,7 @@ Under `Sources/PokeTokenBar/Resources/Digimon/`:
 - `ui-sources.json`: item/source pages, historical cutout provenance and original generation records.
 - `external-artwork.json`: 489 runtime sources (including the artist-page resolver).
 - `bundled-files.json`: allowlist enforced before app assembly and after ZIP extraction.
-- `korean-names.json` / `species-info.json`: per-profile official source links.
+- `korean-names.json` / `species-info.json` / `species-info-en.json`: per-profile official source links.
 - `evolution-rules.json`: app-selected evolution rules and supporting references.
 
 Third-party image bytes are excluded from current source resources and new app packages.

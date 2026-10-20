@@ -11,7 +11,7 @@
    to match the published arm64 ZIP; validate the cask and push the tap update.
 8. Confirm the source tree, download files, checksum and public CI result.
 
-Current release: 0.1.0, Apple Silicon only, macOS 14 minimum deployment target.
+Current release: 0.1.1, Apple Silicon only, macOS 14 minimum deployment target.
 Developer ID signing and Apple notarization have not been performed. Document the
 first-run Privacy & Security exception and never advise disabling system-wide protection.
 Original upstream Git history and MIT credits are retained. Runtime image delivery

@@ -46,7 +46,7 @@ struct DigimonEvolutionSceneView: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack {
-                Text(DigimonEvolutionRules.rule(from: scene.source, to: scene.target).method ?? (scene.kind == .fusion ? store.l.digimonUI("Jogress evolution") : scene.kind == .item ? store.l.digimonUI("Item evolution") : store.l.digimonUI("Digimon evolution")))
+                Text(DigimonEvolutionRules.rule(from: scene.source, to: scene.target).localizedMethod(store.l))
                     .font(.system(size: 16, weight: .semibold))
                 Spacer()
                 Button(store.l.digimonUI("Home")) { store.dismissEvolutionScene(); navigation.reset() }
@@ -54,6 +54,7 @@ struct DigimonEvolutionSceneView: View {
             }.padding(14)
             if ready {
                 EvolutionWebScene(store: store, scene: scene, artwork: artwork)
+                    .id(store.language.rawValue)
             } else {
                 Spacer()
                 if loading { ProgressView(store.l.digimonUI("Loading artwork…")) }
@@ -96,7 +97,7 @@ private struct EvolutionWebScene: NSViewRepresentable {
         }
         let leftID = scene.ingredients.first ?? scene.source
         let rightID = scene.ingredients.dropFirst().first ?? scene.source
-        let config: [String: Any] = ["kind": scene.kind == .fusion ? "fusion" : "normal",
+        let config: [String: Any] = ["language": store.language.rawValue, "kind": scene.kind == .fusion ? "fusion" : "normal",
             "left": name(leftID), "right": name(rightID),
             "result": result?.names[store.language.rawValue] ?? result?.english ?? "",
             "art": scene.kind == .fusion

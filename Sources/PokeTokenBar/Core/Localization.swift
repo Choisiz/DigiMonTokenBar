@@ -1500,25 +1500,42 @@ struct L {
 
     /// 아이템 표시명 — species 처럼 공식 현지명.
     func itemName(_ kind: ItemKind) -> String {
-        if kind.digimonOnly { return kind.digimonName }
+        if kind.digimonOnly { return digimonItemName(kind) }
         switch kind {
         case .rareCandy: return t("펜던트", "Pendant", "ペンダント", "Colgante", "Pendentif", "Pingente", "Anhänger", "Кулон")
         case .mint:      return t("디지바이스", "Digivice", "デジヴァイス", "Digivice", "Digivice", "Digivice", "Digivice", "Дигивайс")
         case .shinyCharm: return t("이로치 부적", "Shiny Charm", "ひかるおまもり", "Amuleto Iris", "Charme Chroma", "Amuleto Shiny", "Schillerpin", "Шайни-талисман")
-        default: return kind.digimonName
+        default: return digimonItemName(kind)
         }
+    }
+    private func digimonItemName(_ kind: ItemKind) -> String {
+        let names: [ItemKind: String] = [
+            .xAntibodyA: "X-Antibody A",
+            .xAntibodyS: "X-Antibody S",
+            .capsuleCourage: "Digi-Egg of Courage",
+            .capsuleFriendship: "Digi-Egg of Friendship",
+            .capsuleMiracles: "Digi-Egg of Miracles",
+            .capsuleLove: "Digi-Egg of Love",
+            .capsulePurity: "Digi-Egg of Purity",
+            .capsuleKnowledge: "Digi-Egg of Knowledge",
+            .capsuleSincerity: "Digi-Egg of Sincerity",
+            .capsuleHope: "Digi-Egg of Hope",
+            .capsuleLight: "Digi-Egg of Light",
+            .capsuleFate: "Digi-Egg of Fate",
+        ]
+        return digimonUI(names[kind] ?? "Digivice")
     }
     func itemDescription(_ kind: ItemKind) -> String {
         switch kind {
-        case .mint: return "특정 아이템 진화에 사용하는 장치 · 진화 확정 시 1개 소모"
-        case .xAntibodyA: return "궁극체 이하의 X진화에 사용 · 진화 확정 시 1개 소모"
-        case .xAntibodyS: return "초궁극체 이상의 X진화에 사용 · 진화 확정 시 1개 소모"
+        case .mint: return digimonUI("A device for item evolution · Consumes 1 per evolution")
+        case .xAntibodyA: return digimonUI("For X-evolution up to Mega · Consumes 1 per evolution")
+        case .xAntibodyS: return digimonUI("For X-evolution at Ultra or above · Consumes 1 per evolution")
         default: break
         }
         if kind.isEvolutionItem {
             let targets = Set(DigimonEvolutionRules.rules.filter { $0.item == kind }.map(\.target)).sorted()
-            let labels = targets.compactMap { DigimonCatalog.find($0)?.korean }.joined(separator: " · ")
-            return (labels.isEmpty ? "지정 아이템 진화" : labels) + " · 진화 확정 시 1개 소모"
+            let labels = targets.compactMap { DigimonCatalog.find($0) }.map { lang.resolveName($0.names) ?? $0.english }.joined(separator: " · ")
+            return (labels.isEmpty ? digimonUI("Designated item evolution") : labels) + digimonUI(" · Consumes 1 per evolution")
         }
         switch kind {
         case .rareCandy:
@@ -1540,7 +1557,7 @@ struct L {
                      "Enquanto estiver na sua bolsa, aumenta a chance de nascer um Digimon shiny.",
                      "Erhöht im Beutel die Chance, dass ein schillerndes Digimon schlüpft.",
                      "Пока он у вас, повышает шанс, что вылупится шайни.")
-        default: return "진화 확정 시 1개 소모"
+        default: return digimonUI("Consumes 1 per evolution")
         }
     }
     /// 가방 사용 컨트롤의 효과 힌트 — 민트("성격 랜덤 변경", 사탕의 "+XP" 자리).
@@ -1719,8 +1736,55 @@ extension L {
         "{0} until stored training resumes": "보관 육성 복귀까지 {0}",
     ]
 
+    private static let digimonAdditionalCopy: [String: String] = [
+        "X-Antibody A": "X항체 A",
+        "X-Antibody S": "X항체 S",
+        "Digi-Egg of Courage": "용기의 캡슐",
+        "Digi-Egg of Friendship": "우정의 캡슐",
+        "Digi-Egg of Miracles": "기적의 캡슐",
+        "Digi-Egg of Love": "사랑의 캡슐",
+        "Digi-Egg of Purity": "순수의 캡슐",
+        "Digi-Egg of Knowledge": "지식의 캡슐",
+        "Digi-Egg of Sincerity": "성실의 캡슐",
+        "Digi-Egg of Hope": "희망의 캡슐",
+        "Digi-Egg of Light": "빛의 캡슐",
+        "Digi-Egg of Fate": "운명의 캡슐",
+        "Digivice": "디지바이스",
+        "A device for item evolution · Consumes 1 per evolution": "특정 아이템 진화에 사용하는 장치 · 진화 확정 시 1개 소모",
+        "For X-evolution up to Mega · Consumes 1 per evolution": "궁극체 이하의 X진화에 사용 · 진화 확정 시 1개 소모",
+        "For X-evolution at Ultra or above · Consumes 1 per evolution": "초궁극체 이상의 X진화에 사용 · 진화 확정 시 1개 소모",
+        "Designated item evolution": "지정 아이템 진화",
+        " · Consumes 1 per evolution": " · 진화 확정 시 1개 소모",
+        "Consumes 1 per evolution": "진화 확정 시 1개 소모",
+        "Free transit": "무료 경유",
+        "Currently training": "현재 육성 중",
+        "Cannot switch training right now.": "현재 전환할 수 없습니다.",
+        "This Digimon is currently being trained.": "현재 육성 중입니다.",
+        "Wait until the egg hatches before continuing training.": "알 상태에서는 이어 키우기를 시작할 수 없습니다. 부화 후 시작해 주세요.",
+        "The storage slot is occupied. Resume stored training first.": "보관 슬롯 사용 중 · 새 이어 키우기를 시작할 수 없습니다.",
+        "All ordinary descendants have been collected.": "일반 후속 진화를 모두 수집했습니다.",
+        "Could not save the training switch. Your current partner is unchanged.": "육성 전환을 저장하지 못했습니다. 기존 육성은 유지됩니다.",
+        "{0} · Register {1} in the Notebook": "{0} · {1} 도감 등록 필요",
+        "Item information unavailable": "아이템 정보 미제공",
+        "Requires 1 {0} · Owned: {1} · Consumes 1 per evolution": "{0} 1개 필요 · 보유 {1}개 · 진화 시 1개 소모",
+        "{0} · Requires {1} combined tokens today · Current: {2}": "{0} · 당일 합산 {1} 이상 필요 · 현재 {2}",
+        "Classification under review · Evolution unavailable": "분류 검토 중 · 진화 보류",
+        "Ordinary growth · Game evolution route": "일반 성장 · 게임 진화 경로",
+        "X-Antibody evolution": "아이템·X항체",
+        "Data evolution": "아이템·데이터",
+        "Spirit evolution": "아이템·스피릿",
+        "Armor evolution": "아이템·캡슐",
+        "Burst evolution": "일반·버스트",
+        "Mode reversion": "일반·복귀",
+        "Ordinary evolution": "일반·성장",
+        "Bond evolution": "일반·유대",
+        "Release evolution": "일반·해방",
+        "Jogress · Power inheritance": "조그레스·힘 계승",
+        "Official English profile excerpt · wording follows the official translation.": "공식 영문 도감 발췌 · 공식 번역의 표현을 따릅니다.",
+    ]
+
     func digimonUI(_ english: String, _ arguments: [String] = []) -> String {
-        var text = lang == .ko ? Self.digimonInterfaceCopy[english] ?? english : english
+        var text = lang == .ko ? Self.digimonInterfaceCopy[english] ?? Self.digimonAdditionalCopy[english] ?? english : english
         for (index, value) in arguments.enumerated() {
             text = text.replacingOccurrences(of: "{\(index)}", with: value)
         }

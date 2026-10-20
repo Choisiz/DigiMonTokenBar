@@ -755,7 +755,7 @@ struct CompanionHeader: View {
                                 .overlay(Rectangle().stroke(CyberPalette.cyan.opacity(0.4), lineWidth: 0.7))
                                 .fixedSize()
                             if DigimonCatalog.find(id) != nil {
-                                let moves = DigimonInfo.records[id]?.moves ?? []
+                                let moves = DigimonInfo.record(id, language: store.language)?.moves ?? []
                                 Text(moves.isEmpty ? store.l.digimonUI("No move information") : store.l.digimonUI("Moves · ") + moves.joined(separator: " · "))
                                     .font(.system(size: 10)).foregroundStyle(CyberPalette.cyan)
                                     .fixedSize(horizontal: false, vertical: true)

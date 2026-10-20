@@ -978,14 +978,15 @@ final class CompanionStore {
         let rule = DigimonEvolutionRules.rule(from: source, to: target)
         switch rule.kind {
         case .fusion:
-            return (rule.method ?? "조그레스") + " · " + rule.ingredients.compactMap { DigimonCatalog.find($0)?.korean }.joined(separator: " + ") + " 도감 등록 필요"
+            let names = rule.ingredients.compactMap { DigimonCatalog.find($0) }.map { language.resolveName($0.names) ?? $0.english }
+            return l.digimonUI("{0} · Register {1} in the Notebook", [rule.localizedMethod(l), names.joined(separator: " + ")])
         case .item:
-            guard let item = rule.item else { return "아이템 정보 미제공" }
-            return l.itemName(item) + " 1개 필요 · 보유 \(itemCount(item))개 · 진화 시 1개 소모"
+            guard let item = rule.item else { return l.digimonUI("Item information unavailable") }
+            return l.digimonUI("Requires 1 {0} · Owned: {1} · Consumes 1 per evolution", [l.itemName(item), String(itemCount(item))])
         case .buff:
-            return (rule.method ?? "해방 진화") + " · 당일 합산 " + TokenFormatter.compact(rule.dailyTokens ?? 0) + " 이상 필요 · 현재 " + TokenFormatter.compact(todayEvolutionTokens)
-        case .unverified: return "분류 검토 중 · 진화 보류"
-        case .normal: return rule.method ?? "일반 성장 · 게임 진화 경로"
+            return l.digimonUI("{0} · Requires {1} combined tokens today · Current: {2}", [rule.localizedMethod(l), TokenFormatter.compact(rule.dailyTokens ?? 0), TokenFormatter.compact(todayEvolutionTokens)])
+        case .unverified: return l.digimonUI("Classification under review · Evolution unavailable")
+        case .normal: return rule.localizedMethod(l)
         }
     }
 
@@ -1086,7 +1087,7 @@ final class CompanionStore {
         }
     }
     func evolutionChoiceAction(_ id: Int) -> String {
-        if isContinuingSpecialTraining, isEvolutionRegistered(id) { return "무료 경유" }
+        if isContinuingSpecialTraining, isEvolutionRegistered(id) { return l.digimonUI("Free transit") }
         return isEvolutionRegistered(id) ? l.instantDigivolution : l.startDigivolutionTraining
     }
     var continuableSpecialDigimon: [DigimonCatalog.Species] {
@@ -1100,16 +1101,16 @@ final class CompanionStore {
     private(set) var trainingSwitchError: String?
     var canSwitchTraining: Bool { provider is DigimonProvider && !isHatching && evolutionScene == nil }
     func continuationTitle(_ id: Int) -> String {
-        if state.active?.baseID == id { return "현재 육성 중" }
-        return state.storedTraining.contains { $0.mon?.baseID == id } ? "육성 재개" : "이어 키우기"
+        if state.active?.baseID == id { return l.digimonUI("Currently training") }
+        return state.storedTraining.contains { $0.mon?.baseID == id } ? l.digimonUI("Resume training") : l.digimonUI("Continue training")
     }
     func continuationBlockReason(_ id: Int) -> String? {
-        if !canSwitchTraining { return "현재 전환할 수 없습니다." }
-        if state.active?.baseID == id { return "현재 육성 중입니다." }
+        if !canSwitchTraining { return l.digimonUI("Cannot switch training right now.") }
+        if state.active?.baseID == id { return l.digimonUI("This Digimon is currently being trained.") }
         if state.storedTraining.contains(where: { $0.mon?.baseID == id }) { return nil }
-        if state.active == nil { return "알 상태에서는 이어 키우기를 시작할 수 없습니다. 부화 후 시작해 주세요." }
-        if !state.storedTraining.isEmpty { return "보관 슬롯 사용 중 · 새 이어 키우기를 시작할 수 없습니다." }
-        if missingOrdinaryTargets(id).isEmpty { return "일반 후속 진화를 모두 수집했습니다." }
+        if state.active == nil { return l.digimonUI("Wait until the egg hatches before continuing training.") }
+        if !state.storedTraining.isEmpty { return l.digimonUI("The storage slot is occupied. Resume stored training first.") }
+        if missingOrdinaryTargets(id).isEmpty { return l.digimonUI("All ordinary descendants have been collected.") }
         return nil
     }
     private var currentTrainingSnapshot: StoredDigimonTraining? {
@@ -1124,7 +1125,7 @@ final class CompanionStore {
         // Persist both sides before exposing a switch, so a write failure cannot lose a partner.
         do { try JSONEncoder().encode(next).write(to: fileURL, options: .atomic) }
         catch {
-            trainingSwitchError = "육성 전환을 저장하지 못했습니다. 기존 육성은 유지됩니다."
+            trainingSwitchError = l.digimonUI("Could not save the training switch. Your current partner is unchanged.")
             AppLog.write("training switch save failed: \(error)")
             return false
         }
