@@ -62,7 +62,9 @@ Xcode나 유료 개발자 계정은 필요하지 않습니다. Intel용 배포 �
 brew install --cask choisiz/tap/digitokenbar
 ```
 
-체크섬은 Homebrew가 자동 확인합니다. 설치 후 응용 프로그램에서 **DigiTokenBar**를 엽니다.
+Homebrew가 체크섬을 자동 확인하고, 설치된 앱의 격리 속성(`com.apple.quarantine`)만 제거합니다.
+Apple 공증을 받거나 시스템 전체 보안을 끄는 처리는 아닙니다.
+설치 후 응용 프로그램에서 **DigiTokenBar**를 엽니다.
 업데이트는 앱을 종료한 뒤 `brew update`, `brew upgrade --cask choisiz/tap/digitokenbar`를 실행합니다.
 
 ### 직접 설치
@@ -74,7 +76,7 @@ brew install --cask choisiz/tap/digitokenbar
 직접 설치한 앱은 종료 후 새 파일로 교체하여 업데이트합니다.
 어느 방법이든 육성 저장 데이터는 유지됩니다. 최초 이미지 로딩은 인터넷이 필요하며 이후에는 로컬 캐시를 재사용합니다.
 
-### 처음 실행할 때
+### 직접 설치 후 처음 실행할 때
 
 현재 앱은 **ad-hoc 서명이며 Developer ID 서명·Apple 공증은 받지 않았습니다.**
 실행이 차단되면 신뢰하는 다운로드인지 확인한 뒤 **시스템 설정 → 개인정보 보호 및 보안 → 확인 없이 열기**를 사용합니다.

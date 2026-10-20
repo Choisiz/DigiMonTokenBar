@@ -77,7 +77,9 @@ With [Homebrew](https://brew.sh) installed, run:
 brew install --cask choisiz/tap/digitokenbar
 ```
 
-Homebrew checks the download automatically. Open **DigiTokenBar** from Applications.
+Homebrew checks the download automatically and removes only the installed app's
+`com.apple.quarantine` attribute. This does not grant Apple notarization or disable
+system-wide protection. Open **DigiTokenBar** from Applications.
 To update, quit the app, then run `brew update` and `brew upgrade --cask choisiz/tap/digitokenbar`.
 
 ### Direct download
@@ -90,7 +92,7 @@ To update a direct installation, quit the app and replace it with the new downlo
 Both methods preserve your saved companion data. First image loading needs internet;
 downloaded images are cached on your Mac.
 
-### First launch
+### Direct download: first launch
 
 The app is **ad-hoc signed, without Developer ID signing or Apple notarization**.
 If macOS blocks a download you trust, follow Apple's

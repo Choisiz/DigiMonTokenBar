@@ -33,7 +33,9 @@ Claude Code、Codexなどのローカル使用記録を読み、孵化・分岐�
 brew install --cask choisiz/tap/digitokenbar
 ```
 
-チェックサムは自動確認されます。アプリケーションフォルダから **DigiTokenBar** を開いてください。
+Homebrewがチェックサムを確認し、インストールしたアプリの隔離属性（`com.apple.quarantine`）のみを削除します。
+Apple公証を取得したりシステム全体の保護を無効化したりする処理ではありません。
+アプリケーションフォルダから **DigiTokenBar** を開いてください。
 更新時はアプリを終了して `brew update`、`brew upgrade --cask choisiz/tap/digitokenbar` を実行します。
 
 ### 直接ダウンロード
@@ -45,7 +47,7 @@ brew install --cask choisiz/tap/digitokenbar
 直接インストールした場合は、アプリを終了して新しいファイルに置き換えます。
 どちらの方法でも育成データは保持されます。初回画像表示にはインターネット接続が必要です。
 
-### 初回起動
+### 直接インストール後の初回起動
 
 Developer ID署名・Apple公証はありません。信頼できるダウンロードがブロックされた場合は、
 [Appleの案内](https://support.apple.com/ja-jp/102445)に従い「プライバシーとセキュリティ」から実行を許可してください。
