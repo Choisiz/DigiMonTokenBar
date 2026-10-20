@@ -24,9 +24,40 @@ and fill your Notebook through a black-and-cyan digital terminal interface.
 > permission; public binary distribution is not cleared. See [notices](NOTICE.md),
 > [asset rights](THIRD_PARTY_NOTICES.md) and [validation status](docs/reference/distribution-validation.md).
 
-## Preview
+## Tour
 
-Third-party artwork screenshots and local review previews are omitted from this source distribution.
+These images are native renders of the production UI with synthetic sample data, in Korean. They are not captures of personal usage or a redesigned mockup. Character and item artwork retains its owners’ rights; see [third-party notices](THIRD_PARTY_NOTICES.md).
+
+<table>
+<tr>
+<td width="45%" align="center"><img src="assets/readme-screenshots/home.png" width="280" alt="Your coding, your partner’s growth"></td>
+<td width="55%"><h3>Your coding, your partner’s growth</h3><p>Watch your partner grow alongside today’s token traffic. Switch between Codex and Claude Code, check growth progress, and open the orange lightbulb when special evolutions are available.</p></td>
+</tr>
+<tr>
+<td width="45%" align="center"><img src="assets/readme-screenshots/notebook.png" width="280" alt="Build your Notebook"></td>
+<td width="55%"><h3>Build your Notebook</h3><p>See collected species out of 475, filter by growth stage, search by name or Time Stranger number, and browse your collection page by page.</p></td>
+</tr>
+<tr>
+<td width="45%" align="center"><img src="assets/readme-screenshots/detail.png" width="280" alt="Get to know each Digimon"></td>
+<td width="55%"><h3>Get to know each Digimon</h3><p>Open an entry for a larger illustration, growth stage, a short official profile excerpt, signature move, and the next evolution routes. The source link opens the full official profile.</p></td>
+</tr>
+<tr>
+<td width="45%" align="center"><img src="assets/readme-screenshots/evolution-routes.png" width="280" alt="Choose your next branch"></td>
+<td width="55%"><h3>Choose your next branch</h3><p>Registered ordinary candidates can evolve immediately. Unregistered candidates need growth; without a selection, automatic evolution favors uncollected ordinary candidates.</p></td>
+</tr>
+<tr>
+<td width="45%" align="center"><img src="assets/readme-screenshots/special-evolution.png" width="280" alt="Know what an evolution needs"></td>
+<td width="55%"><h3>Know what an evolution needs</h3><p>The lightbulb opens ready evolution and training candidates. Each row shows the ingredients, item requirement, or daily-token condition. Fusion uses Notebook collection records without consuming the collected Digimon.</p></td>
+</tr>
+<tr>
+<td width="45%" align="center"><img src="assets/readme-screenshots/fusion.png" width="280" alt="Celebrate a fusion"></td>
+<td width="55%"><h3>Celebrate a fusion</h3><p>WarGreymon and MetalGarurumon combine into Omnimon with a data sequence, silhouette, binary belts, and a lasting reveal glow. Item and special ordinary evolutions begin at the silhouette phase.</p></td>
+</tr>
+<tr>
+<td width="45%" align="center"><img src="assets/readme-screenshots/shop.png" width="170" alt="Shop"><img src="assets/readme-screenshots/bag.png" width="170" alt="Bag"></td>
+<td width="55%"><h3>Spend virtual tokens, use your items</h3><p>Buy eggs, Pendants, Digivices, X-Antibodies, and dedicated capsules with virtual tokens. In the bag, check quantities and use Pendants; evolution items are consumed when their evolution is confirmed. No real-money purchases.</p></td>
+</tr>
+</table>
 
 ## How it works
 

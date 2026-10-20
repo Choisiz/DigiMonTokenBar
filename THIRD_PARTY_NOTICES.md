@@ -16,6 +16,7 @@ No general Digimon artwork redistribution permission has been established.
 | Dedicated capsule illustrations | Wikimon Digimental source pages listed individually in `ui-sources.json` | Original background-bearing JPGs fetched at runtime; no capsule background removal. Original rights remain with their owners; usage permission unverified. |
 | X-Antibody binary spheres | Project-generated cyan/red 0/1 sphere designs | Generated visual assets; no claim to Digimon names, marks or franchise rights. |
 | Application icon | `AppIcon.svg`, independently drawn from the Adventure Digivice concept | New vector drawing; underlying Digivice design remains third-party intellectual property. Not an official logo or clearance. |
+| README feature-tour screenshots | Native production UI renders with synthetic data, under `assets/readme-screenshots/` | Depict runtime-fetched third-party character/item artwork and profile excerpts. Documentation images are not covered by the MIT code license and do not establish permission or endorsement. |
 | Historical Pokémon screenshots and upstream examples | Preserved PokeTokenBar source/documentation history | Pokémon rights remain with Nintendo, Game Freak, Creatures and The Pokémon Company as applicable. No Pokémon rights are conveyed by MIT. |
 
 ## Detailed manifests
@@ -40,8 +41,8 @@ Generated X-Antibody spheres and the project icon remain bundled. Catalog/evolut
 metadata and official profile excerpts are also still bundled; this image-only change
 does not remove those materials or establish permission for their use. Runtime fetching
 is a delivery mechanism, not a copyright license or clearance. Previously tracked
-upstream Pokémon documentation/history is preserved. Local artwork previews, screenshots, QA files and agent instructions are
-excluded from the current public source tree. Original upstream history is retained.
+upstream Pokémon documentation/history is preserved. Local review previews, QA files and agent instructions are excluded from the current public source tree.
+The explicitly listed README sample screenshots are included as documentation; they are not bundled in the app. Original upstream history is retained.
 Published ZIPs use an ad-hoc signature without Developer ID/notarization; the
 validation report explains the technical and rights limitations. No rights-holder
 approval or legal clearance is claimed.

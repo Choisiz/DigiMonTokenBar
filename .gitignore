@@ -50,7 +50,10 @@ assets/*/mutation-*.txt
 
 # Digimon review previews contain downloaded artwork; keep them local.
 # Previously tracked upstream examples remain in their original history.
-/assets/
+# Only the explicitly reviewed documentation renders below are public.
+/assets/*
+!/assets/readme-screenshots/
+/assets/readme-screenshots/*
 # Remote originals must never be added back to the resource bundle.
 /Sources/PokeTokenBar/Resources/Digimon/[0-9]*.png
 /Sources/PokeTokenBar/Resources/Digimon/[0-9]*.jpg
@@ -89,3 +92,13 @@ assets/*/mutation-*.txt
 !/docs/reference/digimon-korean-names.md
 !/docs/reference/distribution-validation.md
 !/docs/reference/runtime-artwork.md
+
+# Reviewed native sample screenshots for the README feature tour.
+!/assets/readme-screenshots/home.png
+!/assets/readme-screenshots/notebook.png
+!/assets/readme-screenshots/detail.png
+!/assets/readme-screenshots/evolution-routes.png
+!/assets/readme-screenshots/special-evolution.png
+!/assets/readme-screenshots/fusion.png
+!/assets/readme-screenshots/shop.png
+!/assets/readme-screenshots/bag.png

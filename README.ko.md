@@ -18,9 +18,40 @@
 > 공개 바이너리 배포의 권리 확인은 완료되지 않았습니다.
 > [프로젝트 고지](NOTICE.md) · [자산별 출처·권리 상태](THIRD_PARTY_NOTICES.md) · [검증 보고서](docs/reference/distribution-validation.md)
 
-## 화면
+## 화면으로 보는 주요 기능
 
-외부 이미지가 포함된 스크린샷과 로컬 검토 시안은 소스 공개 대상에서 제외합니다.
+아래 이미지는 실제 제품 화면 코드를 한국어·가상 샘플 데이터로 렌더링한 화면입니다. 개인 사용 기록이나 새로 그린 시안이 아닙니다. 디지몬·아이템 이미지의 권리는 각 소유자에게 있으며 [출처와 권리 안내](THIRD_PARTY_NOTICES.md)를 참고하세요.
+
+<table>
+<tr>
+<td width="45%" align="center"><img src="assets/readme-screenshots/home.png" width="280" alt="코딩한 만큼 자라는 파트너"></td>
+<td width="55%"><h3>코딩한 만큼 자라는 파트너</h3><p>오늘 사용한 토큰과 디지몬 성장 상태를 함께 확인합니다. Codex·Claude Code를 전환하고, 성장 게이지를 확인하며, 특수 진화가 준비되면 주황색 전구로 후보를 엽니다.</p></td>
+</tr>
+<tr>
+<td width="45%" align="center"><img src="assets/readme-screenshots/notebook.png" width="280" alt="475종을 모으는 노트북"></td>
+<td width="55%"><h3>475종을 모으는 노트북</h3><p>모은 디지몬 수를 확인하고 성장 단계별로 분류합니다. 이름·타임 스트레인저 번호 검색과 페이지 이동으로 수집한 디지몬을 찾아보세요.</p></td>
+</tr>
+<tr>
+<td width="45%" align="center"><img src="assets/readme-screenshots/detail.png" width="280" alt="디지몬을 자세히 알아보기"></td>
+<td width="55%"><h3>디지몬을 자세히 알아보기</h3><p>큰 이미지와 성장 단계, 공식 프로필 발췌, 필살기, 다음 진화 경로를 확인합니다. 출처 링크에서는 공식 도감의 전체 설명을 볼 수 있습니다.</p></td>
+</tr>
+<tr>
+<td width="45%" align="center"><img src="assets/readme-screenshots/evolution-routes.png" width="280" alt="다음 진화의 갈림길 선택"></td>
+<td width="55%"><h3>다음 진화의 갈림길 선택</h3><p>노트북에 등록된 일반 후보는 즉시 진화하고, 미등록 후보는 성장 게이지를 채웁니다. 선택하지 않으면 미수집 일반 후보를 우선해 자동으로 진화합니다.</p></td>
+</tr>
+<tr>
+<td width="45%" align="center"><img src="assets/readme-screenshots/special-evolution.png" width="280" alt="진화 조건을 한눈에 확인"></td>
+<td width="55%"><h3>진화 조건을 한눈에 확인</h3><p>전구 알림에서 가능한 진화·육성 후보를 확인합니다. 필요한 재료 디지몬, 아이템, 당일 토큰 조건을 후보별로 표시합니다. 융합 재료는 노트북 수집 기록을 사용하며 수집한 디지몬을 없애지 않습니다.</p></td>
+</tr>
+<tr>
+<td width="45%" align="center"><img src="assets/readme-screenshots/fusion.png" width="280" alt="데이터가 모여 완성되는 융합"></td>
+<td width="55%"><h3>데이터가 모여 완성되는 융합</h3><p>워그레이몬과 메탈가루몬이 오메가몬으로 융합합니다. 데이터 결합, 그림자, 0·1 띠와 등장 후 유지되는 빛으로 연출합니다. 아이템·특수 일반 진화는 그림자 단계부터 시작합니다.</p></td>
+</tr>
+<tr>
+<td width="45%" align="center"><img src="assets/readme-screenshots/shop.png" width="170" alt="Shop"><img src="assets/readme-screenshots/bag.png" width="170" alt="Bag"></td>
+<td width="55%"><h3>토큰으로 사고, 가방에서 사용</h3><p>가상 토큰으로 알·펜던트·디지바이스·X항체·전용 캡슐을 구매합니다. 가방에서 수량을 확인하고 펜던트를 사용하며, 진화 아이템은 진화 확정 시 소모합니다. 실제 결제는 없습니다.</p></td>
+</tr>
+</table>
 
 ## 주요 기능
 

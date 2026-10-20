@@ -25,7 +25,7 @@ under Privacy & Security. Public CI results are available under the repository's
 [Actions](https://github.com/Choisiz/DigiTokenBar/actions) tab.
 
 Debug/local symbols are stripped before signing and the extracted executable is
-checked for builder home paths. User saves, QA fixtures, local screenshots, instrumentation, development logs and
+checked for builder home paths. User saves, QA fixtures, private screenshots, instrumentation, development logs and
 agent instructions are excluded from the current public source tree. Maintained
 regression tests and build/check tools remain. Original upstream commit history
 and author/license attribution are retained; upstream history can include files
@@ -38,3 +38,7 @@ SHA-256: `fc52b114a49fac121552159697485c5d330a455c77240a4c6fe27d6ebef63121`.
 The release archive passed full-byte private-marker scanning and signature checks.
 Its copied executable was launched after re-signing only the isolated temporary-ID
 copy; the distribution archive and currently running user application were unchanged.
+
+Documentation update (2026-10-20): the explicitly reviewed README feature-tour images
+are native renders with synthetic data. These documentation-only images do not change
+the release app or its bundled resource inventory.
