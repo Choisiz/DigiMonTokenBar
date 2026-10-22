@@ -1,6 +1,8 @@
-# DigiTokenBar
+# DigiMonTokenBar
 
-[**紹介サイト ↗**](https://choisiz.github.io/DigiTokenBar/)
+プロジェクト名は **DigiMonTokenBar** に変更しました。互換性のため、現在のアプリ名 `DigiTokenBar.app`、Homebrew cask `digitokenbar`、既存の保存先は維持します。
+
+[**紹介サイト ↗**](https://choisiz.github.io/DigiMonTokenBar/)
 
 **AIコーディングのトークン使用量で、macOSメニューバーのデジモンを育てるファンアプリ。**
 
@@ -81,7 +83,7 @@ Apple公証を取得したりシステム全体の保護を無効化したりす
 
 ### 直接ダウンロード
 
-1. [ZIPをダウンロード](https://github.com/Choisiz/DigiTokenBar/releases/download/v0.1.1/DigiTokenBar-0.1.1-macos-arm64.zip)します。
+1. [ZIPをダウンロード](https://github.com/Choisiz/DigiMonTokenBar/releases/download/v0.1.1/DigiTokenBar-0.1.1-macos-arm64.zip)します。
 2. 展開した **DigiTokenBar.app** をアプリケーションフォルダへ移動します。
 3. アプリを開くとメニューバーに表示されます。
 
@@ -97,7 +99,7 @@ Developer ID署名・Apple公証はありません。信頼できるダウンロ
 <details>
 <summary>任意：直接ダウンロードのチェックサム確認</summary>
 
-[Releases](https://github.com/Choisiz/DigiTokenBar/releases)から対応する `.sha256` ファイルも取得し、同じフォルダで実行します。
+[Releases](https://github.com/Choisiz/DigiMonTokenBar/releases)から対応する `.sha256` ファイルも取得し、同じフォルダで実行します。
 通常のインストールには必須ではありません。Homebrewでは自動確認されます。
 
 ```sh
@@ -112,8 +114,8 @@ macOS 14以上とSwift 6が必要です。現在のローカル配布候補はAp
 Intel、Universal、Developer ID署名、Apple公証は未検証／未完了です。
 
 ```sh
-git clone https://github.com/Choisiz/DigiTokenBar.git
-cd DigiTokenBar
+git clone https://github.com/Choisiz/DigiMonTokenBar.git
+cd DigiMonTokenBar
 ./scripts/build-digimon-app.sh
 open build/DigiTokenBar.app
 ```

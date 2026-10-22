@@ -131,7 +131,7 @@ struct SettingsView: View {
         HStack(spacing: 5) {
             Text("v\(Self.appVersion)")
             Text("·")
-            footerLink("GitHub", "https://github.com/Choisiz/DigiTokenBar")
+            footerLink("GitHub", "https://github.com/Choisiz/DigiMonTokenBar")
             Text("·")
             footerLink("Upstream", "https://github.com/chattymin/PokeTokenBar")
             Text("·")

@@ -1,7 +1,7 @@
-# DigiTokenBar website
+# DigiMonTokenBar website
 
 A static English/Korean introduction and download page, deployed at
-https://choisiz.github.io/DigiTokenBar/ through `.github/workflows/pages.yml`.
+https://choisiz.github.io/DigiMonTokenBar/ through `.github/workflows/pages.yml`.
 
 Build: `python3 site/build.py`. Preview `build/pages-preview/` with a local HTTP server.
 The assembler copies an explicit public allowlist; it never copies saves or the rest

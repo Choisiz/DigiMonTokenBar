@@ -1,13 +1,15 @@
 <div align="center">
 <img src="Sources/PokeTokenBar/Resources/Digimon/AppIcon.png" width="128" alt="디지바이스 팬 아이콘">
 
-# DigiTokenBar
+# DigiMonTokenBar
+
+프로젝트 이름은 **DigiMonTokenBar**로 변경했습니다. 호환성을 위해 현재 앱 파일명 `DigiTokenBar.app`, Homebrew 명령 `digitokenbar`, 기존 저장 경로는 유지합니다.
 
 **AI 코딩에 사용한 토큰으로, macOS 메뉴바에서 디지몬을 키우세요.**
 
 [English](README.md) · **한국어** · [日本語](README.ja.md)
 
-[**소개 사이트 ↗**](https://choisiz.github.io/DigiTokenBar/)
+[**소개 사이트 ↗**](https://choisiz.github.io/DigiMonTokenBar/)
 </div>
 
 [chattymin/PokeTokenBar](https://github.com/chattymin/PokeTokenBar)를 기반으로 만든
@@ -106,7 +108,7 @@ Apple 공증을 받거나 시스템 전체 보안을 끄는 처리는 아닙니�
 
 ### 직접 설치
 
-1. [ZIP 다운로드](https://github.com/Choisiz/DigiTokenBar/releases/download/v0.1.1/DigiTokenBar-0.1.1-macos-arm64.zip)
+1. [ZIP 다운로드](https://github.com/Choisiz/DigiMonTokenBar/releases/download/v0.1.1/DigiTokenBar-0.1.1-macos-arm64.zip)
 2. 압축을 풀고 **DigiTokenBar.app**을 **응용 프로그램** 폴더로 이동합니다.
 3. 앱을 열면 메뉴바에 아이콘이 표시됩니다.
 
@@ -123,7 +125,7 @@ Apple 공증을 받거나 시스템 전체 보안을 끄는 처리는 아닙니�
 <details>
 <summary>선택 사항: 직접 다운로드한 파일의 체크섬 확인</summary>
 
-[Releases](https://github.com/Choisiz/DigiTokenBar/releases)에서 같은 버전의 `.sha256` 파일도 받은 뒤,
+[Releases](https://github.com/Choisiz/DigiMonTokenBar/releases)에서 같은 버전의 `.sha256` 파일도 받은 뒤,
 두 파일이 있는 폴더에서 실행합니다. 일반 설치 과정에는 필수가 아니며 Homebrew는 자동 확인합니다.
 
 ```sh
@@ -138,8 +140,8 @@ macOS 14 이상, Swift 6 및 Apple 개발 도구가 필요합니다.
 현재 배포 후보는 Apple Silicon에서 검증하며 Intel·Universal 빌드는 아직 검증하지 않았습니다.
 
 ```sh
-git clone https://github.com/Choisiz/DigiTokenBar.git
-cd DigiTokenBar
+git clone https://github.com/Choisiz/DigiMonTokenBar.git
+cd DigiMonTokenBar
 ./scripts/build-digimon-app.sh
 open build/DigiTokenBar.app
 ```
@@ -187,4 +189,4 @@ Choisiz의 디지몬 육성·UI·자산 연결·문서 변경을 추가했습니
 **MIT는 타사 자산의 재배포 권리를 부여하지 않습니다.** 비상업 팬 프로젝트라는 설명도 허가를 대신하지 않습니다.
 공식 사이트·이미지 제공자·팬 아티스트의 권리를 각각 확인해야 합니다.
 상세 출처와 미확인 권한은 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)에 기록했습니다.
-권리 관련 문의·수정·삭제 요청은 [이슈](https://github.com/Choisiz/DigiTokenBar/issues)로 보내주세요.
+권리 관련 문의·수정·삭제 요청은 [이슈](https://github.com/Choisiz/DigiMonTokenBar/issues)로 보내주세요.

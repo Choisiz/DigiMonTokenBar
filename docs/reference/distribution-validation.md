@@ -1,4 +1,4 @@
-# DigiTokenBar 0.1.1 validation
+# DigiMonTokenBar 0.1.1 validation
 
 Validated on 2026-10-20 on Apple Silicon using the installed Xcode toolchain.
 
@@ -20,7 +20,7 @@ Runtime artwork sources are unchanged from 0.1.0; a full remote-artwork download
 
 This is an arm64, macOS 14+ build. Intel and a separate physical macOS 14 machine have not been verified. The app is ad-hoc signed without Developer ID signing or Apple notarization; Gatekeeper assessment is expected to reject an unapproved direct download. Homebrew removes only the installed app's quarantine attribute. Passing integrity tests or delivering artwork at runtime does not grant third-party rights.
 
-[Runtime artwork](runtime-artwork.md) · [third-party rights](../../THIRD_PARTY_NOTICES.md) · [public CI](https://github.com/Choisiz/DigiTokenBar/actions)
+[Runtime artwork](runtime-artwork.md) · [third-party rights](../../THIRD_PARTY_NOTICES.md) · [public CI](https://github.com/Choisiz/DigiMonTokenBar/actions)
 
 ## Historical 0.1.0 evidence
 
@@ -46,7 +46,7 @@ The current downloadable build is arm64. Intel/universal and a separate physical
 macOS 14 machine have not been verified. It uses an ad-hoc signature, without
 Developer ID or Apple notarization; downloaded apps may require a manual exception
 under Privacy & Security. Public CI results are available under the repository's
-[Actions](https://github.com/Choisiz/DigiTokenBar/actions) tab.
+[Actions](https://github.com/Choisiz/DigiMonTokenBar/actions) tab.
 
 Debug/local symbols are stripped before signing and the extracted executable is
 checked for builder home paths. User saves, QA fixtures, private screenshots, instrumentation, development logs and

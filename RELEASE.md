@@ -1,4 +1,4 @@
-# DigiTokenBar release procedure
+# DigiMonTokenBar release procedure
 
 1. Review README installation steps, NOTICE, third-party provenance and rights limits.
    The website in `site/` is assembled by `python3 site/build.py`; its version/download

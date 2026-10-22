@@ -1,7 +1,9 @@
 <div align="center">
-<img src="Sources/PokeTokenBar/Resources/Digimon/AppIcon.png" width="128" alt="DigiTokenBar fan-made Digivice icon">
+<img src="Sources/PokeTokenBar/Resources/Digimon/AppIcon.png" width="128" alt="DigiMonTokenBar fan-made Digivice icon">
 
-# DigiTokenBar
+# DigiMonTokenBar
+
+The project is now **DigiMonTokenBar**. For compatibility, the current app remains `DigiTokenBar.app`, the Homebrew cask remains `digitokenbar`, and existing save locations are unchanged.
 
 **Turn your AI coding tokens into Digimon growth, right in your macOS menu bar.**
 
@@ -11,10 +13,10 @@
 
 **English** · [한국어](README.ko.md) · [日本語](README.ja.md)
 
-[**Website ↗**](https://choisiz.github.io/DigiTokenBar/)
+[**Website ↗**](https://choisiz.github.io/DigiMonTokenBar/)
 </div>
 
-DigiTokenBar is an unofficial, non-commercial Digimon fan adaptation of
+DigiMonTokenBar is an unofficial, non-commercial Digimon fan adaptation of
 [PokeTokenBar](https://github.com/chattymin/PokeTokenBar) by chattymin and its contributors.
 Your existing Claude Code, Codex and other supported local coding-tool usage raises a
 Digimon companion. Hatch eggs, choose branching evolutions, collect fusion partners,
@@ -121,7 +123,7 @@ To update, quit the app, then run `brew update` and `brew upgrade --cask choisiz
 
 ### Direct download
 
-1. [Download the ZIP](https://github.com/Choisiz/DigiTokenBar/releases/download/v0.1.1/DigiTokenBar-0.1.1-macos-arm64.zip).
+1. [Download the ZIP](https://github.com/Choisiz/DigiMonTokenBar/releases/download/v0.1.1/DigiTokenBar-0.1.1-macos-arm64.zip).
 2. Extract it and drag **DigiTokenBar.app** into **Applications**.
 3. Open **DigiTokenBar**. Its icon appears in the menu bar.
 
@@ -139,7 +141,7 @@ Managed Macs may disallow this exception. Do not disable system-wide protections
 <details>
 <summary>Optional: manually verify a direct download</summary>
 
-Download the matching `.sha256` file from [Releases](https://github.com/Choisiz/DigiTokenBar/releases)
+Download the matching `.sha256` file from [Releases](https://github.com/Choisiz/DigiMonTokenBar/releases)
 and run this in the folder containing both files:
 
 ```sh
@@ -156,8 +158,8 @@ Requires **macOS 14+**, Swift 6, and Apple developer tools. The local release ca
 been tested on Apple Silicon only; Intel and a universal package are not currently verified.
 
 ```sh
-git clone https://github.com/Choisiz/DigiTokenBar.git
-cd DigiTokenBar
+git clone https://github.com/Choisiz/DigiMonTokenBar.git
+cd DigiMonTokenBar
 ./scripts/build-digimon-app.sh
 open build/DigiTokenBar.app
 ```
@@ -246,4 +248,4 @@ material is claimed. The independently drawn icon is fan art based on the Digivi
 
 [MIT](LICENSE) applies to project source code; it does **not** relicense third-party material.
 Non-commercial fan intent is not permission from a rights holder. For concerns or removal
-requests, [contact the maintainer](https://github.com/Choisiz/DigiTokenBar/issues).
+requests, [contact the maintainer](https://github.com/Choisiz/DigiMonTokenBar/issues).

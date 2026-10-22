@@ -1,12 +1,12 @@
 # Attribution and project status
 
-DigiTokenBar is an independently maintained, unofficial Digimon fan adaptation of
+DigiMonTokenBar is an independently maintained, unofficial Digimon fan adaptation of
 [PokeTokenBar](https://github.com/chattymin/PokeTokenBar), originally created by
 chattymin and its contributors. It is not an official PokeTokenBar release.
 
 Upstream base: commit `2f2fb32` (PokeTokenBar 2.5.6 development history).
 The upstream source history, original MIT copyright and permission text are
-preserved. DigiTokenBar modifications are Copyright (c) 2026 Choisiz, under the
+preserved. DigiMonTokenBar modifications are Copyright (c) 2026 Choisiz, under the
 same MIT source-code license. Original upstream commits remain available in Git history and in the linked
 upstream repository. Local development instructions are not part of the public tree.
 
@@ -32,4 +32,4 @@ and an independently drawn fan icon do not establish redistribution permission.
 See `THIRD_PARTY_NOTICES.md` for provenance and unresolved permissions.
 
 For correction or removal requests, contact the maintainer through
-https://github.com/Choisiz/DigiTokenBar/issues. No legal clearance is claimed.
+https://github.com/Choisiz/DigiMonTokenBar/issues. No legal clearance is claimed.

@@ -1,8 +1,8 @@
-# DigiTokenBar 실행 안내
+# DigiMonTokenBar 실행 안내
 
 최신 사용법·설치·진화 규칙·권리 고지는 [한국어 README](README.ko.md)를 참고하세요.
 
-- 현재 소스: [Choisiz/DigiTokenBar](https://github.com/Choisiz/DigiTokenBar)
+- 현재 소스: [Choisiz/DigiMonTokenBar](https://github.com/Choisiz/DigiMonTokenBar)
 - 원본: [chattymin/PokeTokenBar](https://github.com/chattymin/PokeTokenBar)
 - 빌드: `./scripts/build-digimon-app.sh`
 - 실행: `open build/DigiTokenBar.app`

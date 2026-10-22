@@ -1,6 +1,6 @@
-# Contributing to DigiTokenBar
+# Contributing to DigiMonTokenBar
 
-DigiTokenBar is an independent fan adaptation of
+DigiMonTokenBar is an independent fan adaptation of
 [chattymin/PokeTokenBar](https://github.com/chattymin/PokeTokenBar). Retain the
 original MIT copyright and permission notices. See [NOTICE](NOTICE.md) and
 [third-party notices](THIRD_PARTY_NOTICES.md) before changing artwork or data.
