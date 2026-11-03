@@ -22,7 +22,11 @@
 > 공개 바이너리 배포의 권리 확인은 완료되지 않았습니다.
 > [프로젝트 고지](NOTICE.md) · [자산별 출처·권리 상태](THIRD_PARTY_NOTICES.md) · [검증 보고서](docs/reference/distribution-validation.md)
 
-## 0.1.1 업데이트
+## Windows 1.0.0 업데이트
+
+Windows 데스크톱 버전을 추가한 주요 업데이트입니다. [다운로드·사용법](#windows-다운로드-및-사용법)을 확인하세요. macOS 배포는 기존 0.1.1을 유지합니다.
+
+## macOS 0.1.1 업데이트
 
 특수진화 연출·알림·아이템 조건과 475종의 도감 설명·필살기를 영어 설정에 맞게 표시합니다.
 
@@ -90,9 +94,9 @@
 
 ## Windows 다운로드 및 사용법
 
-**Windows x64 프리뷰 0.2.11이 추가되었습니다.** 기존 macOS 버전도 계속 제공합니다.
+**Windows x64 프리뷰 1.0.0이 추가되었습니다.** 기존 macOS 버전도 계속 제공합니다.
 
-1. [Windows ZIP 다운로드](https://github.com/Choisiz/DigiMonTokenBar/releases/download/windows-v0.2.11/DigiMonTokenBar-0.2.11-Windows-x64.zip) 또는 [릴리스 안내](https://github.com/Choisiz/DigiMonTokenBar/releases/tag/windows-v0.2.11)를 엽니다.
+1. [Windows ZIP 다운로드](https://github.com/Choisiz/DigiMonTokenBar/releases/download/windows-v1.0.0/DigiMonTokenBar-1.0.0-Windows-x64.zip) 또는 [릴리스 안내](https://github.com/Choisiz/DigiMonTokenBar/releases/tag/windows-v1.0.0)를 엽니다.
 2. 원하는 폴더에 **압축을 해제**하고 `DigiMonTokenBar.exe`를 실행합니다.
 3. Claude Code·Codex를 사용하면 로컬 기록을 읽어 토큰 사용량과 디지몬 성장에 반영합니다. 최초 스캔은 기준점을 잡으며, 이후 증가량부터 성장에 반영합니다.
 4. 기록을 찾지 못하면 **설정 → 고급 설정 → 추가 스캔 폴더**에 로그 폴더를 지정합니다. 수동 갱신은 하단 새로고침 버튼입니다.

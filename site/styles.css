@@ -8,3 +8,6 @@ h2,.showcase-caption h3{white-space:pre-line}html[lang=ko] h1{font-size:clamp(42
 
 /* Windows preview download and quick start. */
 .windows-install>p{max-width:none}.windows-install h4{margin-top:24px}.windows-install .download{margin-top:22px;align-self:stretch}.windows-steps{padding-left:20px;margin-top:22px;color:#a0b6c4;font-size:12px;line-height:1.9}.windows-steps li+li{margin-top:8px}.windows-install .install-disclosure{font-size:11px;margin-top:22px}
+
+/* Readable release information on desktop and mobile. */
+.platform-heading{flex-wrap:wrap;row-gap:12px}.version{font-size:14px;font-weight:600;line-height:1.4;padding:6px 10px;white-space:nowrap}.hero-meta{font-size:12px}.windows-install>p{font-size:15px;line-height:1.85}.windows-install h4{font-size:26px;line-height:1.4}.windows-steps{font-size:14px;line-height:1.9}.windows-install .install-disclosure{font-size:13px;line-height:1.85}

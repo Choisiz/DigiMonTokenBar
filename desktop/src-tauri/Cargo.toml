@@ -1,6 +1,6 @@
 [package]
 name = "digimon-tokenbar"
-version = "0.2.11"
+version = "1.0.0"
 edition = "2021"
 
 [lib]
