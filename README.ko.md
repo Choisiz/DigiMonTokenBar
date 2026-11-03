@@ -5,7 +5,7 @@
 
 프로젝트 이름은 **DigiMonTokenBar**로 변경했습니다. 호환성을 위해 현재 앱 파일명 `DigiTokenBar.app`, Homebrew 명령 `digitokenbar`, 기존 저장 경로는 유지합니다.
 
-**AI 코딩에 사용한 토큰으로, macOS 메뉴바에서 디지몬을 키우세요.**
+**AI 코딩에 사용한 토큰으로 디지몬을 키우세요. macOS 메뉴바와 Windows 데스크톱을 지원합니다.**
 
 [English](README.md) · **한국어** · [日本語](README.ja.md)
 
@@ -17,7 +17,7 @@
 로컬 사용 기록을 읽어 부화·분기 진화·융합·노트북 수집으로 연결합니다.
 
 > **소스 코드는 MIT입니다. 디지몬 이미지·문구·상표·데이터의 권리는 별도입니다.**
-> 외부 이미지는 앱에 포함하지 않고 실행 시 내려받아 사용자 Mac에 캐시합니다.
+> 외부 이미지는 앱에 포함하지 않고 실행 시 내려받아 사용자 기기에 캐시합니다.
 > 도감 데이터·프로필 발췌는 포함됩니다. 출처 표시는 이용 허가가 아니며,
 > 공개 바이너리 배포의 권리 확인은 완료되지 않았습니다.
 > [프로젝트 고지](NOTICE.md) · [자산별 출처·권리 상태](THIRD_PARTY_NOTICES.md) · [검증 보고서](docs/reference/distribution-validation.md)
@@ -88,7 +88,27 @@
 전체 작품의 공식 설정을 완전히 검증한 데이터베이스는 아닙니다.
 일러스트는 정적 이미지이며, 디지몬 이로치·성격·공식 전투 능력치를 보장하지 않습니다.
 
+## Windows 다운로드 및 사용법
+
+**Windows x64 프리뷰 0.2.11이 추가되었습니다.** 기존 macOS 버전도 계속 제공합니다.
+
+1. [Windows ZIP 다운로드](https://github.com/Choisiz/DigiMonTokenBar/releases/download/windows-v0.2.11/DigiMonTokenBar-0.2.11-Windows-x64.zip) 또는 [릴리스 안내](https://github.com/Choisiz/DigiMonTokenBar/releases/tag/windows-v0.2.11)를 엽니다.
+2. 원하는 폴더에 **압축을 해제**하고 `DigiMonTokenBar.exe`를 실행합니다.
+3. Claude Code·Codex를 사용하면 로컬 기록을 읽어 토큰 사용량과 디지몬 성장에 반영합니다. 최초 스캔은 기준점을 잡으며, 이후 증가량부터 성장에 반영합니다.
+4. 기록을 찾지 못하면 **설정 → 고급 설정 → 추가 스캔 폴더**에 로그 폴더를 지정합니다. 수동 갱신은 하단 새로고침 버튼입니다.
+
+Node.js·Rust·Visual Studio는 일반 사용자에게 필요하지 않습니다. **Microsoft Edge WebView2 Runtime**이 필요하며, 없는 PC에서는 [Microsoft 공식 페이지](https://developer.microsoft.com/microsoft-edge/webview2/)에서 설치합니다. 현재 배포 파일은 x64용이며 이식형 ZIP입니다. Windows 11 x64에서 검증했고, ARM64·32비트는 검증하지 않았습니다.
+
+- **창 닫기(X)**: 트레이에서 계속 실행됩니다. 완전히 종료하려면 하단 전원 버튼 또는 트레이 메뉴의 종료를 선택합니다.
+- **눈 아이콘 / 플로팅 펫 표시**: 같은 바탕화면 파트너 표시 기능입니다. 설정의 표시·항상 위 옵션은 즉시 적용되며, 나머지는 저장을 누르면 적용됩니다.
+- **업데이트**: 기존 앱을 완전히 종료한 뒤 새 ZIP을 압축 해제해 실행합니다. 진행 상황은 EXE와 별도로 저장됩니다. 설정의 **백업 & 이전**에서 내보내기·불러오기를 제공합니다.
+- **지원 범위**: 일반·특수 진화, 노트북·포획 로그, 상점·가방, 로컬 토큰 기록과 트레이·파트너 창. 계정 잔여 한도 조회, 펫 크기·말풍선 알림은 아직 없고 영어 번역은 일부 미완성입니다. macOS 저장 파일과 호환되지 않습니다.
+
+[Windows 상세 안내·소스 빌드](desktop/README.md) · [파일 출처·권리 고지](THIRD_PARTY_NOTICES.md)
+
 ## 다운로드·설치
+
+아래는 **macOS 설치 안내**입니다. Windows는 [위의 Windows 안내](#windows-다운로드-및-사용법)를 참고하세요.
 
 **macOS 14 이상, Apple Silicon Mac(M1 이상)**을 지원합니다.
 Xcode나 유료 개발자 계정은 필요하지 않습니다. Intel용 배포 파일은 아직 검증하지 않았습니다.

@@ -1,0 +1,13 @@
+{
+  "identifier": "desktop",
+  "description": "Local desktop windows only",
+  "windows": [
+    "main",
+    "popup",
+    "pet"
+  ],
+  "permissions": [
+    "core:default",
+    "core:window:allow-start-dragging"
+  ]
+}

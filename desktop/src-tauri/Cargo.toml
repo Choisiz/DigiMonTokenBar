@@ -1,0 +1,44 @@
+[package]
+name = "digimon-tokenbar"
+version = "0.2.11"
+edition = "2021"
+
+[lib]
+name = "digimon_tokenbar"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["tray-icon", "image-png"] }
+tauri-plugin-single-instance = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+chrono = { version = "0.4", features = ["serde"] }
+rand = "0.8"
+walkdir = "2"
+tempfile = "3"
+base64 = "0.22"
+windows-sys = { version = "0.61", features = ["Win32_Networking_WinHttp"] }
+url = "2"
+rfd = "0.15"
+
+regex = "1"
+
+# Keep local Windows builds small.
+[profile.dev]
+debug = 0
+incremental = false
+
+[profile.test]
+debug = 0
+incremental = false
+
+[profile.release]
+strip = true
+
+# Generated Windows bindings need no LLVM optimization; keep peak memory low.
+[profile.release.package.windows]
+opt-level = 0
+codegen-units = 256

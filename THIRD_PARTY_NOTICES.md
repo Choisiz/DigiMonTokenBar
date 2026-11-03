@@ -51,3 +51,7 @@ Source mirrors can have separate terms from the underlying rights holders.
 Consult both before redistributing or repackaging their material. If a source page
 cannot be reached, its license status stays unverified; absence of a notice is not
 permission. The notices above should accompany any permitted distribution.
+
+## Windows UI font
+
+The Windows app bundles Noto Sans KR under SIL Open Font License 1.1. The font and license are in desktop/src/assets; Windows distributions include NotoSansKR-OFL.txt. Source: https://github.com/notofonts/noto-cjk .

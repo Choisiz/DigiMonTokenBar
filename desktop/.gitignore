@@ -1,0 +1,14 @@
+node_modules/
+dist/
+src-tauri/target/
+playwright-report/
+test-results/
+
+# Local design copies, cached artwork and machine-specific QA harnesses
+design-workspace/
+qa/
+src-tauri/gen/
+QA-*.md
+CHANGELOG-*.md
+UI-PARITY.md
+scripts/check-*.mjs

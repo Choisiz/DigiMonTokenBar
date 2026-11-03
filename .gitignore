@@ -102,3 +102,19 @@ assets/*/mutation-*.txt
 !/assets/readme-screenshots/fusion.png
 !/assets/readme-screenshots/shop.png
 !/assets/readme-screenshots/bag.png
+
+# Windows desktop build and private saves
+**/bin/
+**/obj/
+/windows/artifacts/
+*.digimonwin
+windows-state.json*
+
+# Local Windows toolchain and build outputs
+/.local-tools/
+/.build-windows/
+
+/outputs/
+
+# Superseded local WPF prototype (maintained port is desktop/)
+/windows/

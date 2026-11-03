@@ -5,7 +5,7 @@ https://choisiz.github.io/DigiMonTokenBar/ through `.github/workflows/pages.yml`
 
 Build: `python3 site/build.py`. Preview `build/pages-preview/` with a local HTTP server.
 The assembler copies an explicit public allowlist; it never copies saves or the rest
-of the build directory. Version and direct-download links follow the macOS build script.
+of the build directory. macOS version/download links follow the macOS build script; Windows links follow desktop/package.json and the windows-vVERSION release tag.
 Edit page copy in `app.js`, layout in `styles.css`, and structure in `index.html`.
 
 App screenshots use synthetic sample data. `fusion-demo.mp4` is a 17-second rendering

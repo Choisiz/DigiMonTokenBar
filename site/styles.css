@@ -5,3 +5,6 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 h2,.showcase-caption h3{white-space:pre-line}html[lang=ko] h1{font-size:clamp(42px,4.8vw,65px);letter-spacing:-3px}html[lang=ko] .eyebrow{letter-spacing:1.1px}html[lang=ko] .hero-actions{gap:20px}@media(max-width:760px){html[lang=ko] h1{font-size:clamp(38px,8.6vw,60px);letter-spacing:-2.5px}}
 .hero:before{right:0}
+
+/* Windows preview download and quick start. */
+.windows-install>p{max-width:none}.windows-install h4{margin-top:24px}.windows-install .download{margin-top:22px;align-self:stretch}.windows-steps{padding-left:20px;margin-top:22px;color:#a0b6c4;font-size:12px;line-height:1.9}.windows-steps li+li{margin-top:8px}.windows-install .install-disclosure{font-size:11px;margin-top:22px}

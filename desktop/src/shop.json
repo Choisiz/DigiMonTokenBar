@@ -1,0 +1,100 @@
+[
+  {
+    "id": "rareCandy",
+    "name": "펜던트",
+    "price": 500000000,
+    "description": "현재 디지몬의 경험치를 100M 올려줘요.",
+    "asset": "evolution-tag"
+  },
+  {
+    "id": "mint",
+    "name": "디지바이스",
+    "price": 200000000,
+    "description": "특정 아이템 진화에 사용하는 장치 · 진화 확정 시 1개 소모",
+    "asset": "digivice-adventure"
+  },
+  {
+    "id": "xAntibodyA",
+    "name": "X항체 A",
+    "price": 200000000,
+    "description": "궁극체 이하의 X진화에 사용 · 진화 확정 시 1개 소모",
+    "asset": "x-antibody-a"
+  },
+  {
+    "id": "xAntibodyS",
+    "name": "X항체 S",
+    "price": 1000000000,
+    "description": "초궁극체 이상의 X진화에 사용 · 진화 확정 시 1개 소모",
+    "asset": "x-antibody-s"
+  },
+  {
+    "id": "capsuleCourage",
+    "name": "용기의 캡슐",
+    "price": 200000000,
+    "description": "화염드라몬 · 진화 확정 시 1개 소모",
+    "asset": "capsule-courage"
+  },
+  {
+    "id": "capsuleFriendship",
+    "name": "우정의 캡슐",
+    "price": 200000000,
+    "description": "번개드라몬 · 진화 확정 시 1개 소모",
+    "asset": "capsule-friendship"
+  },
+  {
+    "id": "capsuleMiracles",
+    "name": "기적의 캡슐",
+    "price": 200000000,
+    "description": "매그너몬 · 진화 확정 시 1개 소모",
+    "asset": "capsule-miracles"
+  },
+  {
+    "id": "capsuleLove",
+    "name": "사랑의 캡슐",
+    "price": 200000000,
+    "description": "호루스몬 · 진화 확정 시 1개 소모",
+    "asset": "capsule-love"
+  },
+  {
+    "id": "capsulePurity",
+    "name": "순수의 캡슐",
+    "price": 200000000,
+    "description": "수리몬 · 진화 확정 시 1개 소모",
+    "asset": "capsule-purity"
+  },
+  {
+    "id": "capsuleKnowledge",
+    "name": "지식의 캡슐",
+    "price": 200000000,
+    "description": "디그몬 · 진화 확정 시 1개 소모",
+    "asset": "capsule-knowledge"
+  },
+  {
+    "id": "capsuleSincerity",
+    "name": "성실의 캡슐",
+    "price": 200000000,
+    "description": "잠수몬 · 진화 확정 시 1개 소모",
+    "asset": "capsule-sincerity"
+  },
+  {
+    "id": "capsuleHope",
+    "name": "희망의 캡슐",
+    "price": 200000000,
+    "description": "페가수스몬 · 진화 확정 시 1개 소모",
+    "asset": "capsule-hope"
+  },
+  {
+    "id": "capsuleLight",
+    "name": "빛의 캡슐",
+    "price": 200000000,
+    "description": "네페르티몬 · 진화 확정 시 1개 소모",
+    "asset": "capsule-light"
+  },
+  {
+    "id": "capsuleFate",
+    "name": "운명의 캡슐",
+    "price": 200000000,
+    "description": "래피드몬 · 진화 확정 시 1개 소모",
+    "asset": "capsule-fate"
+  }
+]

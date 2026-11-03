@@ -5,7 +5,7 @@
 
 The project is now **DigiMonTokenBar**. For compatibility, the current app remains `DigiTokenBar.app`, the Homebrew cask remains `digitokenbar`, and existing save locations are unchanged.
 
-**Turn your AI coding tokens into Digimon growth, right in your macOS menu bar.**
+**Turn your AI coding tokens into Digimon growth — on the macOS menu bar and Windows desktop.**
 
 [![macOS](https://img.shields.io/badge/macOS-14%2B-0969da)](https://www.apple.com/macos/)
 [![Swift](https://img.shields.io/badge/Swift-6-f05138)](https://swift.org)
@@ -23,7 +23,7 @@ Digimon companion. Hatch eggs, choose branching evolutions, collect fusion partn
 and fill your Notebook through a black-and-cyan digital terminal interface.
 
 > **Source code: MIT. Third-party artwork, text, trademarks and data: separate rights.**
-> Third-party images are downloaded on demand and cached on the user's Mac, not bundled.
+> Third-party images are downloaded on demand and cached on the user's device, not bundled.
 > Attribution is not redistribution
 > permission; public binary distribution is not cleared. See [notices](NOTICE.md),
 > [asset rights](THIRD_PARTY_NOTICES.md) and [validation status](docs/reference/distribution-validation.md).
@@ -102,7 +102,27 @@ Some inherited Pokémon-oriented internals remain for compatibility; they do not
 Digimon illustrations are static; this version does not promise animated species sprites, shiny
 variants, official combat statistics, or an accurate personality system.
 
+## Windows download and usage
+
+**Windows x64 preview 0.2.11 is now available alongside the existing macOS app.**
+
+1. [Download the Windows ZIP](https://github.com/Choisiz/DigiMonTokenBar/releases/download/windows-v0.2.11/DigiMonTokenBar-0.2.11-Windows-x64.zip) or read the [release notes](https://github.com/Choisiz/DigiMonTokenBar/releases/tag/windows-v0.2.11).
+2. **Extract the ZIP** to a folder and run `DigiMonTokenBar.exe`.
+3. Use Claude Code or Codex as usual. The app reads local token logs; the first scan establishes a baseline and later increases drive growth.
+4. If no logs are found, add their folders under **Settings → Advanced settings → Additional scan folders**. Use the footer refresh button for a manual scan.
+
+No Node.js, Rust or Visual Studio installation is needed to run the app. **Microsoft Edge WebView2 Runtime** is required; if missing, install it from [Microsoft](https://developer.microsoft.com/microsoft-edge/webview2/). This is a portable x64 ZIP, verified on Windows 11 x64; ARM64 and 32-bit builds are not verified.
+
+- **Close (X):** keeps the app running in the system tray. Use the footer power button or tray Quit command to exit completely.
+- **Eye icon / Show floating pet:** control the same desktop partner. Visibility and always-on-top apply immediately; other settings require Save.
+- **Update:** fully quit the old app, extract the new ZIP and run it. Progress is stored separately from the EXE. Export/import backups under Settings.
+- **Preview limits:** no account remaining-quota lookup, pet size control or bubble notifications; English translation is partial. macOS saves cannot be imported.
+
+[Windows guide and source build](desktop/README.md) · [Third-party notices](THIRD_PARTY_NOTICES.md)
+
 ## Install
+
+The instructions below are for **macOS**. See [Windows download and usage](#windows-download-and-usage) above for Windows.
 
 Requires **macOS 14+ and an Apple Silicon Mac (M1 or later)**. You do not need
 Xcode or a paid Apple developer account. Intel Macs must build from source;
