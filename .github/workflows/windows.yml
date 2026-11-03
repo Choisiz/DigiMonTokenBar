@@ -1,0 +1,39 @@
+name: Windows desktop
+on:
+  push:
+    branches: [main]
+    paths: ['desktop/**', 'Sources/PokeTokenBar/Resources/Digimon/**', '.github/workflows/windows.yml']
+  pull_request:
+    branches: [main]
+    paths: ['desktop/**', 'Sources/PokeTokenBar/Resources/Digimon/**', '.github/workflows/windows.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build-test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: desktop/package-lock.json
+      - name: Select Rust MSVC stable
+        run: rustup default stable-x86_64-pc-windows-msvc
+      - name: Install frontend dependencies
+        run: npm ci
+        working-directory: desktop
+      - name: Frontend tests
+        run: npm test
+        working-directory: desktop
+      - name: Native tests
+        run: cargo test --lib --manifest-path desktop/src-tauri/Cargo.toml
+      - name: Build Windows executable
+        run: npm run build:windows
+        working-directory: desktop
+      - uses: actions/upload-artifact@v4
+        with:
+          name: DigiMonTokenBar-Windows-x64
+          path: desktop/src-tauri/target/release/digimon-tokenbar.exe
+          if-no-files-found: error

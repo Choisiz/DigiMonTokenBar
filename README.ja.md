@@ -66,6 +66,16 @@ Claude Code、Codexなどのローカル使用記録を読み、孵化・分岐�
 
 ## インストール
 
+## Windows プレビュー
+
+Windows x64版 **0.2.11** を追加しました。macOS版も引き続き提供します。
+
+[Windows ZIPをダウンロード](https://github.com/Choisiz/DigiMonTokenBar/releases/download/windows-v0.2.11/DigiMonTokenBar-0.2.11-Windows-x64.zip)し、展開して `DigiMonTokenBar.exe` を実行してください。開発ツールは不要ですが、Microsoft Edge WebView2 Runtimeが必要です。ウィンドウを閉じてもトレイで動作するため、終了するには電源ボタンまたはトレイメニューを使います。
+
+[Windowsの利用方法・制限事項](desktop/README.md)。macOSのセーブデータとは互換性がありません。以下はmacOS版のインストール方法です。
+
+## macOS インストール
+
 **macOS 14以上・Apple Silicon Mac**が必要です。Xcodeや有料開発者アカウントは不要です。
 
 ### Homebrew

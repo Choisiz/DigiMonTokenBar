@@ -1,0 +1,14 @@
+import {useState,type ReactNode} from 'react';
+import {invoke} from '@tauri-apps/api/core';
+import {native} from './bridge';
+import {byId,name,stages,info,next,rule,missingDescendants,canContinueSpecies} from './catalog';
+import {Icon} from './Icons';
+import type {Snapshot} from './types';
+export function SpeciesDetail({id,s,back,renderArt,continueTraining}:{id:number;s:Snapshot;back:()=>void;renderArt:(id:number)=>ReactNode;continueTraining:(id:number)=>Promise<boolean>}){
+ const[sourceError,setSourceError]=useState('');const mon=byId.get(id)!;const record=info.get(id);const owned=new Set(s.game.collected);const missing=canContinueSpecies(s.game,id);const blocked=s.game.stored?'보관 슬롯 사용 중 · 새 이어 키우기를 시작할 수 없습니다.':!s.game.active?'알 상태에서는 이어 키우기를 시작할 수 없습니다. 부화 후 시작해 주세요.':s.game.active.speciesId===id?'현재 육성 중입니다.':null;
+ function requirement(target:number){const r=rule(id,target);if(r.kind==='fusion')return '조그레스 진화 · '+r.ingredients.map(name).join(' + ');if(r.kind==='item')return '아이템 진화 · '+(s.shop.find(item=>item.id===r.item)?.name||r.item);if(r.kind==='buff')return '토큰 조건 · '+(r.dailyTokens||0).toLocaleString();return r.kind==='normal'?'일반 성장 · 게임 진화 경로':'분류 검토 중 · 진화 보류'}
+ return <div className="species-detail"><div className="detail-toolbar"><button onClick={back}><Icon name="previous"/>뒤로</button><span>#{String(mon.gameID).padStart(3,'0')}</span></div><div className="detail-identity"><h2>{name(id)}</h2><span>{stages[mon.stage]}</span></div><div className="detail-art">{renderArt(id)}</div>
+ {owned.has(id)&&missing&&<div className="panel continuation-panel"><button className="action" disabled={!!blocked} onClick={()=>void continueTraining(id)}>이어 키우기</button><p>{blocked||'현재 디지몬을 보관하고 시작합니다. 최종 형태의 육성 게이지를 채우면 보관한 디지몬으로 자동 복귀합니다. 현재 개체만 토큰으로 성장합니다.'}</p></div>}
+ <div className="panel detail-info"><h3>디지몬 정보</h3><p className="detail-classification">{[record?.level,record?.type,record?.attribute].filter(Boolean).join(' · ')}</p><small>공식 도감 분류 · 게임 성장 단계와 다를 수 있습니다.</small><p>{record?.excerpt||'공식 설명 정보가 제공되지 않았습니다.'}</p><small>공식 한국어 도감 발췌 · 공식 사이트의 번역 표기를 따릅니다.</small><h4>필살기</h4><p>{record?.moves?.join(' · ')||'필살기 정보 없음'}</p>{record?.source&&<a href={record.source} target="_blank" rel="noreferrer" onClick={event=>{if(native){event.preventDefault();void invoke('open_profile_source',{id}).catch(error=>setSourceError(String(error)))}}}>공식 도감에서 전체 설명 보기 ↗</a>}{sourceError&&<p role="alert">{sourceError}</p>}</div>
+ <div className="detail-routes"><h3>디지몬 진화 계열</h3><p>Digimon Story Time Stranger</p>{next(id).map(target=><div className="detail-route-row" key={target}><div className="detail-route-art">{renderArt(target)}</div><div><strong>{name(target)}</strong><small>{requirement(target)}</small></div>{owned.has(target)&&<span className="registered-check" title="노트북 등록됨">✓</span>}</div>)}{!next(id).length&&<p>이번 경로의 마지막 형태예요. 성장 완료 후 새 알을 받아요.</p>}</div></div>
+}
