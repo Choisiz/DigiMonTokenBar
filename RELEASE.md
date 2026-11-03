@@ -13,7 +13,10 @@
    to match the published arm64 ZIP; validate the cask and push the tap update.
 8. Confirm the source tree, download files, checksum and public CI result.
 
-Current release: 0.1.1, Apple Silicon only, macOS 14 minimum deployment target.
+Current macOS release: 0.1.1, Apple Silicon only, macOS 14 minimum deployment target.
+Current Windows preview: 1.0.0, x64; published separately as windows-v1.0.0.
+Windows version metadata is in desktop/package.json and desktop/src-tauri; the website reads the Windows package version independently from the macOS build script.
+Do not relabel old macOS binaries when publishing a Windows version.
 Developer ID signing and Apple notarization have not been performed. Document the
 first-run Privacy & Security exception and never advise disabling system-wide protection.
 Original upstream Git history and MIT credits are retained. Runtime image delivery

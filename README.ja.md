@@ -12,7 +12,11 @@
 Claude Code、Codexなどのローカル使用記録を読み、孵化・分岐進化・合体・収集につなげます。
 原作者と貢献者のMITライセンス表示・Git履歴を維持しています。
 
-## 0.1.1 の更新
+## Windows 1.0.0
+
+Windowsデスクトップ版を追加した大型更新です。macOS配布版は0.1.1を維持します。
+
+## macOS 0.1.1 の更新
 
 特殊進化の演出・通知・アイテム条件と475種のプロフィール抜粋・必殺技が英語設定に対応しました。
 
@@ -68,9 +72,9 @@ Claude Code、Codexなどのローカル使用記録を読み、孵化・分岐�
 
 ## Windows プレビュー
 
-Windows x64版 **0.2.11** を追加しました。macOS版も引き続き提供します。
+Windows x64版 **1.0.0** を追加しました。macOS版も引き続き提供します。
 
-[Windows ZIPをダウンロード](https://github.com/Choisiz/DigiMonTokenBar/releases/download/windows-v0.2.11/DigiMonTokenBar-0.2.11-Windows-x64.zip)し、展開して `DigiMonTokenBar.exe` を実行してください。開発ツールは不要ですが、Microsoft Edge WebView2 Runtimeが必要です。ウィンドウを閉じてもトレイで動作するため、終了するには電源ボタンまたはトレイメニューを使います。
+[Windows ZIPをダウンロード](https://github.com/Choisiz/DigiMonTokenBar/releases/download/windows-v1.0.0/DigiMonTokenBar-1.0.0-Windows-x64.zip)し、展開して `DigiMonTokenBar.exe` を実行してください。開発ツールは不要ですが、Microsoft Edge WebView2 Runtimeが必要です。ウィンドウを閉じてもトレイで動作するため、終了するには電源ボタンまたはトレイメニューを使います。
 
 [Windowsの利用方法・制限事項](desktop/README.md)。macOSのセーブデータとは互換性がありません。以下はmacOS版のインストール方法です。
 

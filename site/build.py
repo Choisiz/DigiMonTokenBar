@@ -26,4 +26,4 @@ expected={'index.html','app.js','styles.css','.nojekyll','assets/app-icon.png','
 actual={p.relative_to(out).as_posix() for p in out.rglob('*') if p.is_file()}
 assert actual==expected, f'Unexpected public output files: {actual ^ expected}'
 assert not any(p.is_symlink() for p in out.rglob('*')), 'Symlinks cannot enter the public artifact'
-print(f'Built public site v{version}: {out}')
+print(f'Built public site: macOS {version}, Windows {windows_version}: {out}')

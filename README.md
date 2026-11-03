@@ -28,7 +28,11 @@ and fill your Notebook through a black-and-cyan digital terminal interface.
 > permission; public binary distribution is not cleared. See [notices](NOTICE.md),
 > [asset rights](THIRD_PARTY_NOTICES.md) and [validation status](docs/reference/distribution-validation.md).
 
-## Version 0.1.1
+## Windows 1.0.0
+
+A major update adding the Windows desktop edition. See [download and usage](#windows-download-and-usage). The existing macOS release remains 0.1.1.
+
+## macOS 0.1.1
 
 English now covers special evolution scenes, notifications, item requirements and all 475 Digimon profile excerpts and move lists.
 
@@ -104,9 +108,9 @@ variants, official combat statistics, or an accurate personality system.
 
 ## Windows download and usage
 
-**Windows x64 preview 0.2.11 is now available alongside the existing macOS app.**
+**Windows x64 preview 1.0.0 is now available alongside the existing macOS app.**
 
-1. [Download the Windows ZIP](https://github.com/Choisiz/DigiMonTokenBar/releases/download/windows-v0.2.11/DigiMonTokenBar-0.2.11-Windows-x64.zip) or read the [release notes](https://github.com/Choisiz/DigiMonTokenBar/releases/tag/windows-v0.2.11).
+1. [Download the Windows ZIP](https://github.com/Choisiz/DigiMonTokenBar/releases/download/windows-v1.0.0/DigiMonTokenBar-1.0.0-Windows-x64.zip) or read the [release notes](https://github.com/Choisiz/DigiMonTokenBar/releases/tag/windows-v1.0.0).
 2. **Extract the ZIP** to a folder and run `DigiMonTokenBar.exe`.
 3. Use Claude Code or Codex as usual. The app reads local token logs; the first scan establishes a baseline and later increases drive growth.
 4. If no logs are found, add their folders under **Settings → Advanced settings → Additional scan folders**. Use the footer refresh button for a manual scan.
